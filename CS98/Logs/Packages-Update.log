@@ -1,0 +1,11 @@
+
+=== Thu Oct 14 20:44:04 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.ads@3.7.5
+  com.unity.analytics@3.6.11
+  com.unity.purchasing@3.2.2
+  com.unity.xr.legacyinputhelpers@2.1.8
