@@ -41,9 +41,6 @@ TagManager:
   - name: Background
     uniqueID: 2555435419
     locked: 0
-  - name: FirstTree
-    uniqueID: 2249737943
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
