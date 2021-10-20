@@ -16,14 +16,10 @@ public class SceneLoader : MonoBehaviour
         for (int i = 0; i < Input.touchCount; i++)
         {
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-            Vector3 NPCPosition = NPC.transform.position;
-            float difference = Vector3.Distance(touchPosition, NPCPosition);
-            Debug.Log(difference);
-            if (difference < 40.05)
-            {
-                Debug.Log("hi");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+            if (NPC.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
