@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: 0}
+  m_AnchoredPosition: {x: 0.0000038146973, y: 3.1082}
   m_SizeDelta: {x: -33.1545, y: -6.2165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377199823
@@ -409,8 +409,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -494.2, y: -410}
-  m_SizeDelta: {x: 120.39, y: 26.9401}
+  m_AnchoredPosition: {x: -489, y: -410.98914}
+  m_SizeDelta: {x: 111.5497, y: 24.9619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801626583
 MonoBehaviour:
@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 809856824}
+    - target: {fileID: 2347873477271452963, guid: 86246726d8ac24ba8b9d8f34ebfd814b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -489
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86246726d8ac24ba8b9d8f34ebfd814b, type: 3}
 --- !u!1001 &6267647888128630430

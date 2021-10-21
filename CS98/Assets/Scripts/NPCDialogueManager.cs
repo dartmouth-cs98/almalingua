@@ -64,6 +64,7 @@ public class NPCDialogueManager : MonoBehaviour
     {
         GameObject.Find("/SpeechBubble/Next").SetActive(false);
         NextButtonShown = false;
+        GameObject.Find("/Respond");
     }
 
 }
