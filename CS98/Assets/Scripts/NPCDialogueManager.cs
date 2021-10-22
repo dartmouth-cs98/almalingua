@@ -7,12 +7,19 @@ using System.Linq;
 
 public class NPCDialogueManager : MonoBehaviour
 {
+
+    public Text Name;
+    public Text Text;
+    public GameObject Panel;
+    public GameObject RespondButton;
+
+
     private NPCDialogue Dialogues;
-    public Text NPCName;
-    public Text NPCText;
     private Queue<string> sentences;
-    string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
-    private bool NextButtonShown = true;
+    private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
+    private bool NPCTalking = true;
+    private TouchScreenKeyboard keyboard;
+
     // Use this for initialization
     void Start()
     {
@@ -26,14 +33,15 @@ public class NPCDialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if (sentences.Count == 0 && NextButtonShown)
+        if (keyboard != null)
         {
-            EndDialogue();
+            Debug.Log(TouchScreenKeyboard.visible);
         }
     }
     public void StartDialogue()
     {
-        NPCName.text = Dialogues.name;
+        Panel.transform.Find("NextButton").gameObject.SetActive(true);
+        Name.text = Dialogues.name;
         sentences.Clear();
         for (int i = 0; i < Dialogues.dialogues.Length; i++)
         {
@@ -48,23 +56,34 @@ public class NPCDialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        if (sentences.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
     }
 
     IEnumerator TypeSentence(string sentence)
     {
-        NPCText.text = "";
+        Text.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            NPCText.text += letter;
+            Text.text += letter;
             yield return null;
         }
     }
 
     void EndDialogue()
     {
-        GameObject.Find("/SpeechBubble/Next").SetActive(false);
-        NextButtonShown = false;
-        GameObject.Find("/Respond");
+        Panel.transform.Find("NextButton").gameObject.SetActive(false);
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        NPCTalking = !NPCTalking;
+    }
+
+    public void UserResponse(string UserInput)
+    {
+        Name.text = "Yo";
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, true, false, false, false);
     }
 
 }

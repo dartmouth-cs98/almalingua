@@ -43,3 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6a70457b1bc4805bbca387c1629f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerName: NPC

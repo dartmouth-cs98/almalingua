@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private GameObject NPC;
+    public string triggerName;
+
+    private GameObject trigger;
     private void Start()
     {
-        NPC = GameObject.Find("NPC");
+        trigger = GameObject.Find(triggerName);
     }
     // Update is called once per frame
     void Update()
@@ -17,11 +19,17 @@ public class SceneLoader : MonoBehaviour
         {
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
 
-            if (NPC.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
+            if (triggerName == "NPC" && trigger.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                LoadScene("NPCInteractionTextBubble");
             }
         }
 
     }
+
+    void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
 }
