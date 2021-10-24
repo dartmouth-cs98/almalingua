@@ -1,7 +1,8 @@
 {
     "name": "Doctor", 
     "dialogues":[ 
-        "Hola",
-        "Welcome to the game, you will be learning a lot about this"
+        "Hola my name is a Doctor",
+        "Welcome to the game, you will be learning a lot about this",
+        "lots of stuff"
     ]
 }

@@ -13,10 +13,10 @@ public class NPCDialogueManager : MonoBehaviour
     public GameObject Panel;
     public GameObject RespondButton;
 
-
     private NPCDialogue Dialogues;
     private Queue<string> sentences;
     private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
+    private int SentenceNumber = 0;
 
     // Use this for initialization
     void Start()
@@ -27,32 +27,28 @@ public class NPCDialogueManager : MonoBehaviour
             string json = stream.ReadToEnd();
             Dialogues = JsonUtility.FromJson<NPCDialogue>(json);
         }
-        StartDialogue();
-    }
 
-    public void StartDialogue()
-    {
-        Panel.transform.Find("NextButton").gameObject.SetActive(true);
-        Name.text = Dialogues.name;
-        sentences.Clear();
         for (int i = 0; i < Dialogues.dialogues.Length; i++)
         {
             sentences.Enqueue(Dialogues.dialogues[i]);
         }
-        DisplayNextSentence();
     }
+
 
     public void DisplayNextSentence()
     {
-
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-        if (sentences.Count == 0)
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        Panel.transform.Find("UserInput").gameObject.SetActive(false);
+        Panel.transform.Find("Text").gameObject.SetActive(true);
+        Name.text = Dialogues.name;
+        RespondButton.GetComponentInChildren<Text>().text = "Respond";
+        if (sentences.Count > 0)
         {
-            EndDialogue();
-            return;
+            string sentence = sentences.Dequeue();
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
         }
+
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -65,18 +61,22 @@ public class NPCDialogueManager : MonoBehaviour
         }
     }
 
-    void EndDialogue()
-    {
-        Panel.transform.Find("NextButton").gameObject.SetActive(false);
-        RespondButton.GetComponent<HideShowObjects>().Show();
-    }
 
     public void UserResponse(string UserInput)
     {
-        Name.text = "Yo";
-        Panel.transform.Find("UserInput").gameObject.SetActive(true);
-        Panel.transform.Find("Text").gameObject.SetActive(false);
-        Debug.Log(UserInput);
+        if (Name.text == "Yo")
+        {
+            DisplayNextSentence();
+        }
+        else
+        {
+            Name.text = "Yo";
+            Panel.transform.Find("UserInput").gameObject.SetActive(true);
+            Panel.transform.Find("Text").gameObject.SetActive(false);
+            RespondButton.GetComponentInChildren<Text>().text = "Done";
+            Debug.Log(UserInput);
+        }
+
     }
 
 }

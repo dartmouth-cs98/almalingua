@@ -5,6 +5,8 @@ using UnityEngine;
 public class NPCInteraction : MonoBehaviour
 {
     public GameObject Panel;
+    public GameObject DialogueScript;
+    private bool DialogueShown = false;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +18,12 @@ public class NPCInteraction : MonoBehaviour
             if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
             {
                 Panel.GetComponent<HideShowObjects>().Show();
+
+                if (!DialogueShown)
+                {
+                    DialogueScript.GetComponent<NPCDialogueManager>().DisplayNextSentence();
+                    DialogueShown = !DialogueShown;
+                }
             }
         }
 
