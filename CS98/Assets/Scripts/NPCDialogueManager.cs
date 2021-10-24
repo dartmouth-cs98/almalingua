@@ -17,8 +17,6 @@ public class NPCDialogueManager : MonoBehaviour
     private NPCDialogue Dialogues;
     private Queue<string> sentences;
     private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
-    private bool NPCTalking = true;
-    private TouchScreenKeyboard keyboard;
 
     // Use this for initialization
     void Start()
@@ -31,13 +29,7 @@ public class NPCDialogueManager : MonoBehaviour
         }
         StartDialogue();
     }
-    private void Update()
-    {
-        if (keyboard != null)
-        {
-            Debug.Log(TouchScreenKeyboard.visible);
-        }
-    }
+
     public void StartDialogue()
     {
         Panel.transform.Find("NextButton").gameObject.SetActive(true);
@@ -77,13 +69,14 @@ public class NPCDialogueManager : MonoBehaviour
     {
         Panel.transform.Find("NextButton").gameObject.SetActive(false);
         RespondButton.GetComponent<HideShowObjects>().Show();
-        NPCTalking = !NPCTalking;
     }
 
     public void UserResponse(string UserInput)
     {
         Name.text = "Yo";
-        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, true, false, false, false);
+        Panel.transform.Find("UserInput").gameObject.SetActive(true);
+        Panel.transform.Find("Text").gameObject.SetActive(false);
+        Debug.Log(UserInput);
     }
 
 }

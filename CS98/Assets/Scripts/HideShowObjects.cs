@@ -2,25 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HideUnhideObject : MonoBehaviour
+public class HideShowObjects : MonoBehaviour
 {
-    public string ObjectName;
+
     // Start is called before the first frame update
 
     private void Awake()
     {
         Hide();
     }
-    void Hide()
+    public void Hide()
     {
-        GameObject.Find(ObjectName).SetActive(false);
+        gameObject.SetActive(false);
 
     }
 
     // Update is called once per frame
-    void Show()
+    public void Show()
     {
-        GameObject.Find(ObjectName).SetActive(true);
+        gameObject.SetActive(true);
 
     }
 }

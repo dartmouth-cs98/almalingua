@@ -5,10 +5,7 @@ using UnityEngine;
 public class NPCInteraction : MonoBehaviour
 {
     public GameObject Panel;
-    private void Start()
-    {
 
-    }
     // Update is called once per frame
     void Update()
     {
