@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-10-19T21:26:48.684-04:00
-  initializedAtString: 2021-10-19T21:26:48.684-04:00
+  lastUpdatedAtString: 2021-10-25T10:36:39.992-04:00
+  initializedAtString: 2021-10-25T10:36:39.992-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/dartmouth-cs98/21f-lingo-defense.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: forest
-    tracking: origin/forest
+    name: JSON_loading
+    tracking: 
   currentConfigBranch:
-    name: forest
+    name: JSON_loading
     remote:
-      name: origin
-      url: https://github.com/dartmouth-cs98/21f-lingo-defense.git
-    trackingBranch: forest
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/dartmouth-cs98/21f-lingo-defense.git
