@@ -13,6 +13,2472 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 0001-01-01T00:00:00.000+00:00
-  initializedAtString: 0001-01-01T00:00:00.000+00:00
-  entries: []
+  lastUpdatedAtString: 2021-10-24T21:19:20.817-04:00
+  initializedAtString: 2021-10-24T20:33:05.786-04:00
+  entries:
+  - path: CS98/Assembly-CSharp.csproj
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Assets/Prefabs/JoystickSpace.prefab
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/JoystickSpace.prefab
+    projectPath: Assets/Prefabs/JoystickSpace.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Assets/Prefabs/JoystickSpace.prefab.meta
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/JoystickSpace.prefab.meta
+    projectPath: Assets/Prefabs/JoystickSpace.prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Assets/Prefabs/UI.meta
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/UI.meta
+    projectPath: Assets/Prefabs/UI.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Prefabs/UI/JoystickSpace.prefab
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/UI/JoystickSpace.prefab
+    projectPath: Assets/Prefabs/UI/JoystickSpace.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Prefabs/UI/JoystickSpace.prefab.meta
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/UI/JoystickSpace.prefab.meta
+    projectPath: Assets/Prefabs/UI/JoystickSpace.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Prefabs/UI/UICanvas.prefab
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/UI/UICanvas.prefab
+    projectPath: Assets/Prefabs/UI/UICanvas.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Prefabs/UI/UICanvas.prefab.meta
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Prefabs/UI/UICanvas.prefab.meta
+    projectPath: Assets/Prefabs/UI/UICanvas.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Scenes/playerMovement.unity
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Scenes/playerMovement.unity
+    projectPath: Assets/Scenes/playerMovement.unity
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Scenes/playerMovement.unity.meta
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Scenes/playerMovement.unity.meta
+    projectPath: Assets/Scenes/playerMovement.unity.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: CS98/Assets/Scripts/PlayerMove.cs
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Assets/Scripts/PlayerMove.cs
+    projectPath: Assets/Scripts/PlayerMove.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/CS98.sln
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/CS98.sln
+    projectPath: CS98.sln
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ArtifactDB
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ArtifactDB
+    projectPath: Library/ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/Artifacts/02/0225e3274468e3bcf37b2fac5e6ce135
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/02/0225e3274468e3bcf37b2fac5e6ce135
+    projectPath: Library/Artifacts/02/0225e3274468e3bcf37b2fac5e6ce135
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/02/022fd6bba10d034ce085f1dd31a5fed2
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/02/022fd6bba10d034ce085f1dd31a5fed2
+    projectPath: Library/Artifacts/02/022fd6bba10d034ce085f1dd31a5fed2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/03/03a944f0cccacee4769fa587985899f1
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/03/03a944f0cccacee4769fa587985899f1
+    projectPath: Library/Artifacts/03/03a944f0cccacee4769fa587985899f1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/04/042da871a8cf06b807ba4d0836a4774e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/04/042da871a8cf06b807ba4d0836a4774e
+    projectPath: Library/Artifacts/04/042da871a8cf06b807ba4d0836a4774e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/06/06a239c5170ee1be0ec51dc7120f2167
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/06/06a239c5170ee1be0ec51dc7120f2167
+    projectPath: Library/Artifacts/06/06a239c5170ee1be0ec51dc7120f2167
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/06/06dfaba1e57aa04b920ed6c5a601e0bb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/06/06dfaba1e57aa04b920ed6c5a601e0bb
+    projectPath: Library/Artifacts/06/06dfaba1e57aa04b920ed6c5a601e0bb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/06/06e6efe5ccf638fbb0896e64caa8d915
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/06/06e6efe5ccf638fbb0896e64caa8d915
+    projectPath: Library/Artifacts/06/06e6efe5ccf638fbb0896e64caa8d915
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/07/07097c70a0ec78280aaa8beacdce6f94
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/07/07097c70a0ec78280aaa8beacdce6f94
+    projectPath: Library/Artifacts/07/07097c70a0ec78280aaa8beacdce6f94
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/07/07885c37013cccedeb621211df3ac0ba
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/07/07885c37013cccedeb621211df3ac0ba
+    projectPath: Library/Artifacts/07/07885c37013cccedeb621211df3ac0ba
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/07/078ab43c748bee9ed8c872e4ab0cb89a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/07/078ab43c748bee9ed8c872e4ab0cb89a
+    projectPath: Library/Artifacts/07/078ab43c748bee9ed8c872e4ab0cb89a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/0a/0aaa26c932e0cea6ff5de3c9973ad8a0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/0a/0aaa26c932e0cea6ff5de3c9973ad8a0
+    projectPath: Library/Artifacts/0a/0aaa26c932e0cea6ff5de3c9973ad8a0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/0b/0b6a9e9709b45c6fe7d336e9265501a3
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/0b/0b6a9e9709b45c6fe7d336e9265501a3
+    projectPath: Library/Artifacts/0b/0b6a9e9709b45c6fe7d336e9265501a3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/0e/0e2b5076fb9c75350607a516a7e90a20
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/0e/0e2b5076fb9c75350607a516a7e90a20
+    projectPath: Library/Artifacts/0e/0e2b5076fb9c75350607a516a7e90a20
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/0e/0ebc7e5ec35ed7cce1382527fe01c705
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/0e/0ebc7e5ec35ed7cce1382527fe01c705
+    projectPath: Library/Artifacts/0e/0ebc7e5ec35ed7cce1382527fe01c705
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/10/10387ba6cba925007ef06447a107a5a5
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/10/10387ba6cba925007ef06447a107a5a5
+    projectPath: Library/Artifacts/10/10387ba6cba925007ef06447a107a5a5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/13/1318f6ab14b9baca8bb48f0896f2eb85
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/13/1318f6ab14b9baca8bb48f0896f2eb85
+    projectPath: Library/Artifacts/13/1318f6ab14b9baca8bb48f0896f2eb85
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/18/18d9d3e42837a51fd9bc764774d53ff2
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/18/18d9d3e42837a51fd9bc764774d53ff2
+    projectPath: Library/Artifacts/18/18d9d3e42837a51fd9bc764774d53ff2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1b/1be953691ca50891e191c4c3d734c36b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1b/1be953691ca50891e191c4c3d734c36b
+    projectPath: Library/Artifacts/1b/1be953691ca50891e191c4c3d734c36b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1c/1c7dd2563e1e45299d25511415cc6df4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1c/1c7dd2563e1e45299d25511415cc6df4
+    projectPath: Library/Artifacts/1c/1c7dd2563e1e45299d25511415cc6df4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1c/1cf42b2723a4e9ee8cdc5e1d75588a6a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1c/1cf42b2723a4e9ee8cdc5e1d75588a6a
+    projectPath: Library/Artifacts/1c/1cf42b2723a4e9ee8cdc5e1d75588a6a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1e/1e0f0a25f397818ad9fbd73068cacfa2
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1e/1e0f0a25f397818ad9fbd73068cacfa2
+    projectPath: Library/Artifacts/1e/1e0f0a25f397818ad9fbd73068cacfa2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1e/1ed1c94ce42fab4026de544ecc0bd02d
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1e/1ed1c94ce42fab4026de544ecc0bd02d
+    projectPath: Library/Artifacts/1e/1ed1c94ce42fab4026de544ecc0bd02d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/1f/1f1413d8268d118d6b30c5aff1b5d379
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/1f/1f1413d8268d118d6b30c5aff1b5d379
+    projectPath: Library/Artifacts/1f/1f1413d8268d118d6b30c5aff1b5d379
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/22/2249795f84332f6bbfca7a4fa7220426
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/22/2249795f84332f6bbfca7a4fa7220426
+    projectPath: Library/Artifacts/22/2249795f84332f6bbfca7a4fa7220426
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/28/28323b664a8c9fb59bda0877d1287293
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/28/28323b664a8c9fb59bda0877d1287293
+    projectPath: Library/Artifacts/28/28323b664a8c9fb59bda0877d1287293
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/28/28ae5432e3cc2e7dbade2040b3778d9a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/28/28ae5432e3cc2e7dbade2040b3778d9a
+    projectPath: Library/Artifacts/28/28ae5432e3cc2e7dbade2040b3778d9a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/28/28e4b1c08c03a180a28a8a1e29c30e5f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/28/28e4b1c08c03a180a28a8a1e29c30e5f
+    projectPath: Library/Artifacts/28/28e4b1c08c03a180a28a8a1e29c30e5f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/29/29c4f4e884550d143826baebe0f89964
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/29/29c4f4e884550d143826baebe0f89964
+    projectPath: Library/Artifacts/29/29c4f4e884550d143826baebe0f89964
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/2c/2cd210b42a1eb061545ffb033d1a63fe
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/2c/2cd210b42a1eb061545ffb033d1a63fe
+    projectPath: Library/Artifacts/2c/2cd210b42a1eb061545ffb033d1a63fe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/30/307d497cc01951cb4ea24e73f9389649
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/30/307d497cc01951cb4ea24e73f9389649
+    projectPath: Library/Artifacts/30/307d497cc01951cb4ea24e73f9389649
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/32/32dd49f899cc5583eb9f4bd97e32cb4e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/32/32dd49f899cc5583eb9f4bd97e32cb4e
+    projectPath: Library/Artifacts/32/32dd49f899cc5583eb9f4bd97e32cb4e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/33/33e59f6583e2a529f7e42e6c1ae876ef
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/33/33e59f6583e2a529f7e42e6c1ae876ef
+    projectPath: Library/Artifacts/33/33e59f6583e2a529f7e42e6c1ae876ef
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/34/34a082aeaddad064c2c6acf58891bb51
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/34/34a082aeaddad064c2c6acf58891bb51
+    projectPath: Library/Artifacts/34/34a082aeaddad064c2c6acf58891bb51
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/35/3581c76ba4ada763eb901fe79768c1c9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/35/3581c76ba4ada763eb901fe79768c1c9
+    projectPath: Library/Artifacts/35/3581c76ba4ada763eb901fe79768c1c9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/35/35e7f774ecffa65c01b3ec117eb0a9dd
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/35/35e7f774ecffa65c01b3ec117eb0a9dd
+    projectPath: Library/Artifacts/35/35e7f774ecffa65c01b3ec117eb0a9dd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/38/3889d61734a8a75f8da6b54042d32e7b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/38/3889d61734a8a75f8da6b54042d32e7b
+    projectPath: Library/Artifacts/38/3889d61734a8a75f8da6b54042d32e7b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/3e/3e75f0c040b05d6734c24b4dc01709cb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/3e/3e75f0c040b05d6734c24b4dc01709cb
+    projectPath: Library/Artifacts/3e/3e75f0c040b05d6734c24b4dc01709cb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/3f/3fa559085a5550a3fc6ea9e9d0b28ea8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/3f/3fa559085a5550a3fc6ea9e9d0b28ea8
+    projectPath: Library/Artifacts/3f/3fa559085a5550a3fc6ea9e9d0b28ea8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/3f/3fad37cd688733160734e50073f90def
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/3f/3fad37cd688733160734e50073f90def
+    projectPath: Library/Artifacts/3f/3fad37cd688733160734e50073f90def
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/43/43121d2860ae0ee639a1b64363263942
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/43/43121d2860ae0ee639a1b64363263942
+    projectPath: Library/Artifacts/43/43121d2860ae0ee639a1b64363263942
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/46/46cbea3e32f78573c4ba144f09650ee0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/46/46cbea3e32f78573c4ba144f09650ee0
+    projectPath: Library/Artifacts/46/46cbea3e32f78573c4ba144f09650ee0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/47/4777a5e2e5f7336cffad2d980cf39e45
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/47/4777a5e2e5f7336cffad2d980cf39e45
+    projectPath: Library/Artifacts/47/4777a5e2e5f7336cffad2d980cf39e45
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/48/482eb59464b2c66ba6cb99fe67ba6fc9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/48/482eb59464b2c66ba6cb99fe67ba6fc9
+    projectPath: Library/Artifacts/48/482eb59464b2c66ba6cb99fe67ba6fc9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/48/4841ba786cfb49da20ccfb42e031e47c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/48/4841ba786cfb49da20ccfb42e031e47c
+    projectPath: Library/Artifacts/48/4841ba786cfb49da20ccfb42e031e47c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/48/4865c1e1fc39551437854763e31e1f29
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/48/4865c1e1fc39551437854763e31e1f29
+    projectPath: Library/Artifacts/48/4865c1e1fc39551437854763e31e1f29
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/49/49eadf6ee8997ae72a2f95bf2095b589
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/49/49eadf6ee8997ae72a2f95bf2095b589
+    projectPath: Library/Artifacts/49/49eadf6ee8997ae72a2f95bf2095b589
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/4b/4bbc452d64111da8ecbc4018023c4feb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/4b/4bbc452d64111da8ecbc4018023c4feb
+    projectPath: Library/Artifacts/4b/4bbc452d64111da8ecbc4018023c4feb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/4d/4d33d44a68dc1f382eae2603b52521c9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/4d/4d33d44a68dc1f382eae2603b52521c9
+    projectPath: Library/Artifacts/4d/4d33d44a68dc1f382eae2603b52521c9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/4d/4d9562ba95f03f99e7278d416a75dc36
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/4d/4d9562ba95f03f99e7278d416a75dc36
+    projectPath: Library/Artifacts/4d/4d9562ba95f03f99e7278d416a75dc36
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/4f/4fd5e520943b9e31017a8d15fdc558ed
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/4f/4fd5e520943b9e31017a8d15fdc558ed
+    projectPath: Library/Artifacts/4f/4fd5e520943b9e31017a8d15fdc558ed
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/50/503d6f2d99779856fd2c2848fe1d332d
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/50/503d6f2d99779856fd2c2848fe1d332d
+    projectPath: Library/Artifacts/50/503d6f2d99779856fd2c2848fe1d332d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/50/50bdfed46c824d3e5aa59d45ae24a0be
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/50/50bdfed46c824d3e5aa59d45ae24a0be
+    projectPath: Library/Artifacts/50/50bdfed46c824d3e5aa59d45ae24a0be
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/52/524347058c880ec38b444ebb89dc77a4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/52/524347058c880ec38b444ebb89dc77a4
+    projectPath: Library/Artifacts/52/524347058c880ec38b444ebb89dc77a4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/54/54062fac2b15da78e80b68bf79f9e77c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/54/54062fac2b15da78e80b68bf79f9e77c
+    projectPath: Library/Artifacts/54/54062fac2b15da78e80b68bf79f9e77c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/55/55de2ed7c1fd4d7bc6319674192bca2f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/55/55de2ed7c1fd4d7bc6319674192bca2f
+    projectPath: Library/Artifacts/55/55de2ed7c1fd4d7bc6319674192bca2f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/56/567741bdc67e88a793cc7932e75e06aa
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/56/567741bdc67e88a793cc7932e75e06aa
+    projectPath: Library/Artifacts/56/567741bdc67e88a793cc7932e75e06aa
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/58/5889901e65c808d93b1eddd399f41f73
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/58/5889901e65c808d93b1eddd399f41f73
+    projectPath: Library/Artifacts/58/5889901e65c808d93b1eddd399f41f73
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/58/5892d74998523ca24ed9d04733e1f9ac
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/58/5892d74998523ca24ed9d04733e1f9ac
+    projectPath: Library/Artifacts/58/5892d74998523ca24ed9d04733e1f9ac
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/59/59bed3d8dd6a15bd1f3afa9edcb473a5
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/59/59bed3d8dd6a15bd1f3afa9edcb473a5
+    projectPath: Library/Artifacts/59/59bed3d8dd6a15bd1f3afa9edcb473a5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/5d/5de7a1d3b2bed7a83445ad9fb661ae6e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/5d/5de7a1d3b2bed7a83445ad9fb661ae6e
+    projectPath: Library/Artifacts/5d/5de7a1d3b2bed7a83445ad9fb661ae6e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/5e/5ee2262e373dd1aa45836b88957a0491
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/5e/5ee2262e373dd1aa45836b88957a0491
+    projectPath: Library/Artifacts/5e/5ee2262e373dd1aa45836b88957a0491
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/60/600fe8543a1de81aceea50bc5dbffa7a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/60/600fe8543a1de81aceea50bc5dbffa7a
+    projectPath: Library/Artifacts/60/600fe8543a1de81aceea50bc5dbffa7a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/60/60df6daaf1d595f758f073618b7061b1
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/60/60df6daaf1d595f758f073618b7061b1
+    projectPath: Library/Artifacts/60/60df6daaf1d595f758f073618b7061b1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/61/619bd88a4acbbcb753a6cbc2322c4575
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/61/619bd88a4acbbcb753a6cbc2322c4575
+    projectPath: Library/Artifacts/61/619bd88a4acbbcb753a6cbc2322c4575
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/62/620896dce8062dd6c6d0a615968d979a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/62/620896dce8062dd6c6d0a615968d979a
+    projectPath: Library/Artifacts/62/620896dce8062dd6c6d0a615968d979a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/62/623662193c87c6491bdcc5be8129977b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/62/623662193c87c6491bdcc5be8129977b
+    projectPath: Library/Artifacts/62/623662193c87c6491bdcc5be8129977b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/63/638cd805471bfe2078e84da9329a86b2
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/63/638cd805471bfe2078e84da9329a86b2
+    projectPath: Library/Artifacts/63/638cd805471bfe2078e84da9329a86b2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/67/671b251f9a9d2f83ed2283dbae458e51
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/67/671b251f9a9d2f83ed2283dbae458e51
+    projectPath: Library/Artifacts/67/671b251f9a9d2f83ed2283dbae458e51
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/6a/6a773b0141e583ffca7843a7c5421302
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/6a/6a773b0141e583ffca7843a7c5421302
+    projectPath: Library/Artifacts/6a/6a773b0141e583ffca7843a7c5421302
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/6b/6b992edeba3c363ca591cfdbc9f546c4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/6b/6b992edeba3c363ca591cfdbc9f546c4
+    projectPath: Library/Artifacts/6b/6b992edeba3c363ca591cfdbc9f546c4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/6d/6d66a48b7c7050913e08033478b2479e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/6d/6d66a48b7c7050913e08033478b2479e
+    projectPath: Library/Artifacts/6d/6d66a48b7c7050913e08033478b2479e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/71/71ce33c84c062128bd155a224dc98a2f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/71/71ce33c84c062128bd155a224dc98a2f
+    projectPath: Library/Artifacts/71/71ce33c84c062128bd155a224dc98a2f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/71/71d0553db0529abeaeef3b30caf13816
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/71/71d0553db0529abeaeef3b30caf13816
+    projectPath: Library/Artifacts/71/71d0553db0529abeaeef3b30caf13816
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/73/73389488c7fae87059946dc860095086
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/73/73389488c7fae87059946dc860095086
+    projectPath: Library/Artifacts/73/73389488c7fae87059946dc860095086
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/73/73770b364fb2b9e7ad330daa0ec112e1
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/73/73770b364fb2b9e7ad330daa0ec112e1
+    projectPath: Library/Artifacts/73/73770b364fb2b9e7ad330daa0ec112e1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/75/75ea552a38d71514572d3e5ea0ad8563
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/75/75ea552a38d71514572d3e5ea0ad8563
+    projectPath: Library/Artifacts/75/75ea552a38d71514572d3e5ea0ad8563
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/77/772329a22594acf223d70b3b118fff21
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/77/772329a22594acf223d70b3b118fff21
+    projectPath: Library/Artifacts/77/772329a22594acf223d70b3b118fff21
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/78/780baa42caee71296ffe9e795d5837b4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/78/780baa42caee71296ffe9e795d5837b4
+    projectPath: Library/Artifacts/78/780baa42caee71296ffe9e795d5837b4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/78/786f155d29f34791357cb9d8484b072c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/78/786f155d29f34791357cb9d8484b072c
+    projectPath: Library/Artifacts/78/786f155d29f34791357cb9d8484b072c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/79/792b0b524a7b28067bea8f45edc646c1
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/79/792b0b524a7b28067bea8f45edc646c1
+    projectPath: Library/Artifacts/79/792b0b524a7b28067bea8f45edc646c1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7a/7a5212400a1cc313747888a401efd077
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7a/7a5212400a1cc313747888a401efd077
+    projectPath: Library/Artifacts/7a/7a5212400a1cc313747888a401efd077
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7a/7a5be266f8028ffe99ed47ee0542d332
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7a/7a5be266f8028ffe99ed47ee0542d332
+    projectPath: Library/Artifacts/7a/7a5be266f8028ffe99ed47ee0542d332
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7a/7a773c82cd288bf1fa772ef5fd54680a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7a/7a773c82cd288bf1fa772ef5fd54680a
+    projectPath: Library/Artifacts/7a/7a773c82cd288bf1fa772ef5fd54680a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7b/7b9afc2f3c7186cf4a6ab33487ce522b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7b/7b9afc2f3c7186cf4a6ab33487ce522b
+    projectPath: Library/Artifacts/7b/7b9afc2f3c7186cf4a6ab33487ce522b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7d/7dadcc6688d19163726fd6e0814f115b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7d/7dadcc6688d19163726fd6e0814f115b
+    projectPath: Library/Artifacts/7d/7dadcc6688d19163726fd6e0814f115b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/7e/7eefeac03fe3bae83ddbab93c1345f65
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/7e/7eefeac03fe3bae83ddbab93c1345f65
+    projectPath: Library/Artifacts/7e/7eefeac03fe3bae83ddbab93c1345f65
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/81/8154546bcce759dc565a623d00be80ee
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/81/8154546bcce759dc565a623d00be80ee
+    projectPath: Library/Artifacts/81/8154546bcce759dc565a623d00be80ee
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/81/81911964270d06661001ca71b22f4f3e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/81/81911964270d06661001ca71b22f4f3e
+    projectPath: Library/Artifacts/81/81911964270d06661001ca71b22f4f3e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/82/8294134225aa5eb3e6c83a04475ecd23
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/82/8294134225aa5eb3e6c83a04475ecd23
+    projectPath: Library/Artifacts/82/8294134225aa5eb3e6c83a04475ecd23
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/82/82b9b5641414a3dd460b77bd9d98d041
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/82/82b9b5641414a3dd460b77bd9d98d041
+    projectPath: Library/Artifacts/82/82b9b5641414a3dd460b77bd9d98d041
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/84/84ce662d0ec4671d7e156e800d1a0694
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/84/84ce662d0ec4671d7e156e800d1a0694
+    projectPath: Library/Artifacts/84/84ce662d0ec4671d7e156e800d1a0694
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/85/85f6f725fe1de0734421fc7ff1a5b745
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/85/85f6f725fe1de0734421fc7ff1a5b745
+    projectPath: Library/Artifacts/85/85f6f725fe1de0734421fc7ff1a5b745
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/87/870dbb0af36f869a172241e507138ced
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/87/870dbb0af36f869a172241e507138ced
+    projectPath: Library/Artifacts/87/870dbb0af36f869a172241e507138ced
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/87/87f61b1d69eac6442009e0782db58795
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/87/87f61b1d69eac6442009e0782db58795
+    projectPath: Library/Artifacts/87/87f61b1d69eac6442009e0782db58795
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/89/89f81dafec51c0aa09893bc765b7be41
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/89/89f81dafec51c0aa09893bc765b7be41
+    projectPath: Library/Artifacts/89/89f81dafec51c0aa09893bc765b7be41
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/8d/8d85e132ef3d08b93bd18b78f9cd2cae
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/8d/8d85e132ef3d08b93bd18b78f9cd2cae
+    projectPath: Library/Artifacts/8d/8d85e132ef3d08b93bd18b78f9cd2cae
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/8f/8f8c3e443b397f819a6468f9c0b70227
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/8f/8f8c3e443b397f819a6468f9c0b70227
+    projectPath: Library/Artifacts/8f/8f8c3e443b397f819a6468f9c0b70227
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/90/9037a69e652c18ea5f30919d8a4c56e3
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/90/9037a69e652c18ea5f30919d8a4c56e3
+    projectPath: Library/Artifacts/90/9037a69e652c18ea5f30919d8a4c56e3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/91/91ba9a771d9433c545a542c166704857
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/91/91ba9a771d9433c545a542c166704857
+    projectPath: Library/Artifacts/91/91ba9a771d9433c545a542c166704857
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/95/95f074a354f48a27e87f19c043655eaf
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/95/95f074a354f48a27e87f19c043655eaf
+    projectPath: Library/Artifacts/95/95f074a354f48a27e87f19c043655eaf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/96/9626b3e8ed0ba5671dc69d9df0cfd036
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/96/9626b3e8ed0ba5671dc69d9df0cfd036
+    projectPath: Library/Artifacts/96/9626b3e8ed0ba5671dc69d9df0cfd036
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/96/962bdd7a5e309b3ad31d6ad2d933680c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/96/962bdd7a5e309b3ad31d6ad2d933680c
+    projectPath: Library/Artifacts/96/962bdd7a5e309b3ad31d6ad2d933680c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/97/9759d43d44a18bb0658eca8782e0ca2c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/97/9759d43d44a18bb0658eca8782e0ca2c
+    projectPath: Library/Artifacts/97/9759d43d44a18bb0658eca8782e0ca2c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/98/989618c75e8b9def453ef1f1158d30fe
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/98/989618c75e8b9def453ef1f1158d30fe
+    projectPath: Library/Artifacts/98/989618c75e8b9def453ef1f1158d30fe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/99/9938c19cf370c46c50a198f8bd9c6a78
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/99/9938c19cf370c46c50a198f8bd9c6a78
+    projectPath: Library/Artifacts/99/9938c19cf370c46c50a198f8bd9c6a78
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/9a/9a37dc19f29d05ccf7addf2fea71fd7b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/9a/9a37dc19f29d05ccf7addf2fea71fd7b
+    projectPath: Library/Artifacts/9a/9a37dc19f29d05ccf7addf2fea71fd7b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/9c/9cf78732d5ccf09d3a0761b7e50dfd21
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/9c/9cf78732d5ccf09d3a0761b7e50dfd21
+    projectPath: Library/Artifacts/9c/9cf78732d5ccf09d3a0761b7e50dfd21
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/9d/9d905d16470684961198a511b0ac24df
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/9d/9d905d16470684961198a511b0ac24df
+    projectPath: Library/Artifacts/9d/9d905d16470684961198a511b0ac24df
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/9d/9de92f5fd92cce2028f78542a5922111
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/9d/9de92f5fd92cce2028f78542a5922111
+    projectPath: Library/Artifacts/9d/9de92f5fd92cce2028f78542a5922111
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a0/a0ac4c9cd159ea573ff3c5a40342b35b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a0/a0ac4c9cd159ea573ff3c5a40342b35b
+    projectPath: Library/Artifacts/a0/a0ac4c9cd159ea573ff3c5a40342b35b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a0/a0b1897c4af424bbd54783d21f7cafe8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a0/a0b1897c4af424bbd54783d21f7cafe8
+    projectPath: Library/Artifacts/a0/a0b1897c4af424bbd54783d21f7cafe8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a2/a29524367d515d48c2563a42cf5443f3
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a2/a29524367d515d48c2563a42cf5443f3
+    projectPath: Library/Artifacts/a2/a29524367d515d48c2563a42cf5443f3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a4/a477fc357934fc49a6e8bc4718cd987a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a4/a477fc357934fc49a6e8bc4718cd987a
+    projectPath: Library/Artifacts/a4/a477fc357934fc49a6e8bc4718cd987a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a5/a556b28e4eace8baa8fba85b41495269
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a5/a556b28e4eace8baa8fba85b41495269
+    projectPath: Library/Artifacts/a5/a556b28e4eace8baa8fba85b41495269
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a9/a93742d3cd0785c54cf5efa7992ada22
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a9/a93742d3cd0785c54cf5efa7992ada22
+    projectPath: Library/Artifacts/a9/a93742d3cd0785c54cf5efa7992ada22
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/a9/a99d8c32ff1d747453a88c4c1a56ff91
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/a9/a99d8c32ff1d747453a88c4c1a56ff91
+    projectPath: Library/Artifacts/a9/a99d8c32ff1d747453a88c4c1a56ff91
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/ab/ab2252bbb6b0e01118618c0bdf9a7e11
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/ab/ab2252bbb6b0e01118618c0bdf9a7e11
+    projectPath: Library/Artifacts/ab/ab2252bbb6b0e01118618c0bdf9a7e11
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/ab/ab9280eaa1d7eb7ed07ec388ccef1140
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/ab/ab9280eaa1d7eb7ed07ec388ccef1140
+    projectPath: Library/Artifacts/ab/ab9280eaa1d7eb7ed07ec388ccef1140
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/ad/ad1dfdf220978ff45c4b78a8dc61d9f0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/ad/ad1dfdf220978ff45c4b78a8dc61d9f0
+    projectPath: Library/Artifacts/ad/ad1dfdf220978ff45c4b78a8dc61d9f0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/af/afeb792ad66e7998683b7ccaf0878073
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/af/afeb792ad66e7998683b7ccaf0878073
+    projectPath: Library/Artifacts/af/afeb792ad66e7998683b7ccaf0878073
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b0/b03ef26201aecca4213bbc87d2db4180
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b0/b03ef26201aecca4213bbc87d2db4180
+    projectPath: Library/Artifacts/b0/b03ef26201aecca4213bbc87d2db4180
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b2/b204d6b09b9016d59d5e9e3dbfa410d6
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b2/b204d6b09b9016d59d5e9e3dbfa410d6
+    projectPath: Library/Artifacts/b2/b204d6b09b9016d59d5e9e3dbfa410d6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b2/b2b2156e3fb86f3d1a412bd337b2e6ae
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b2/b2b2156e3fb86f3d1a412bd337b2e6ae
+    projectPath: Library/Artifacts/b2/b2b2156e3fb86f3d1a412bd337b2e6ae
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b4/b4b08aa6ef3049f600c8e076cf6f2d7d
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b4/b4b08aa6ef3049f600c8e076cf6f2d7d
+    projectPath: Library/Artifacts/b4/b4b08aa6ef3049f600c8e076cf6f2d7d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b4/b4ce931c12ebc158dbe7e51cb9615a2e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b4/b4ce931c12ebc158dbe7e51cb9615a2e
+    projectPath: Library/Artifacts/b4/b4ce931c12ebc158dbe7e51cb9615a2e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b4/b4ff25765f323bf6687ffab36a6cc459
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b4/b4ff25765f323bf6687ffab36a6cc459
+    projectPath: Library/Artifacts/b4/b4ff25765f323bf6687ffab36a6cc459
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b5/b596bb41f503a0d121ed73b9453f6a53
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b5/b596bb41f503a0d121ed73b9453f6a53
+    projectPath: Library/Artifacts/b5/b596bb41f503a0d121ed73b9453f6a53
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b6/b6bcd67dca8f46f2fbfa5b798aa3d143
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b6/b6bcd67dca8f46f2fbfa5b798aa3d143
+    projectPath: Library/Artifacts/b6/b6bcd67dca8f46f2fbfa5b798aa3d143
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/b8/b82924dd7c0f243eb8d5e02b9acc152e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/b8/b82924dd7c0f243eb8d5e02b9acc152e
+    projectPath: Library/Artifacts/b8/b82924dd7c0f243eb8d5e02b9acc152e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/bc/bcc07aea23d10b3f003b53462822a200
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/bc/bcc07aea23d10b3f003b53462822a200
+    projectPath: Library/Artifacts/bc/bcc07aea23d10b3f003b53462822a200
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/bd/bd3595c67f467a518da911acae43bade
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/bd/bd3595c67f467a518da911acae43bade
+    projectPath: Library/Artifacts/bd/bd3595c67f467a518da911acae43bade
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/be/be2e3424a60cedd2fb167acf2ee2d840
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/be/be2e3424a60cedd2fb167acf2ee2d840
+    projectPath: Library/Artifacts/be/be2e3424a60cedd2fb167acf2ee2d840
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/bf/bf9c498d0af060d64e5fc2a6edc68898
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/bf/bf9c498d0af060d64e5fc2a6edc68898
+    projectPath: Library/Artifacts/bf/bf9c498d0af060d64e5fc2a6edc68898
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c2/c2def2f41fb07cd1c8a0984c820b79dd
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c2/c2def2f41fb07cd1c8a0984c820b79dd
+    projectPath: Library/Artifacts/c2/c2def2f41fb07cd1c8a0984c820b79dd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c4/c482ae23133265789de4f01abc97d87a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c4/c482ae23133265789de4f01abc97d87a
+    projectPath: Library/Artifacts/c4/c482ae23133265789de4f01abc97d87a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c5/c55256a9736695275017df7f00208229
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c5/c55256a9736695275017df7f00208229
+    projectPath: Library/Artifacts/c5/c55256a9736695275017df7f00208229
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c5/c5546c2a66e04fe33b9b1fb6cabfcd1b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c5/c5546c2a66e04fe33b9b1fb6cabfcd1b
+    projectPath: Library/Artifacts/c5/c5546c2a66e04fe33b9b1fb6cabfcd1b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c5/c5619427a54ba1de352ea631eba1bb2b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c5/c5619427a54ba1de352ea631eba1bb2b
+    projectPath: Library/Artifacts/c5/c5619427a54ba1de352ea631eba1bb2b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c6/c672ae3e6ac9b7b9d7818313ca89dcfe
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c6/c672ae3e6ac9b7b9d7818313ca89dcfe
+    projectPath: Library/Artifacts/c6/c672ae3e6ac9b7b9d7818313ca89dcfe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c7/c7138fd72b8315125343caeaf5c90fb5
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c7/c7138fd72b8315125343caeaf5c90fb5
+    projectPath: Library/Artifacts/c7/c7138fd72b8315125343caeaf5c90fb5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/c9/c9dab684746f4266305a7a9676bf7ae5
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/c9/c9dab684746f4266305a7a9676bf7ae5
+    projectPath: Library/Artifacts/c9/c9dab684746f4266305a7a9676bf7ae5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/cc/cca9d5d27356d5e02e1e82e7ba32b7ab
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/cc/cca9d5d27356d5e02e1e82e7ba32b7ab
+    projectPath: Library/Artifacts/cc/cca9d5d27356d5e02e1e82e7ba32b7ab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/cd/cd27663cb916650e2f393f6823976771
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/cd/cd27663cb916650e2f393f6823976771
+    projectPath: Library/Artifacts/cd/cd27663cb916650e2f393f6823976771
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/cf/cf5c2eb5143f92d7cd7db4ff6bcac56a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/cf/cf5c2eb5143f92d7cd7db4ff6bcac56a
+    projectPath: Library/Artifacts/cf/cf5c2eb5143f92d7cd7db4ff6bcac56a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/cf/cf6a6817918b802c1217d30285042823
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/cf/cf6a6817918b802c1217d30285042823
+    projectPath: Library/Artifacts/cf/cf6a6817918b802c1217d30285042823
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d0/d045b5125e9b057fbdfd2693d2134dd7
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d0/d045b5125e9b057fbdfd2693d2134dd7
+    projectPath: Library/Artifacts/d0/d045b5125e9b057fbdfd2693d2134dd7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d0/d0bb51e56dcea83a5dce6c2f39ebfa09
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d0/d0bb51e56dcea83a5dce6c2f39ebfa09
+    projectPath: Library/Artifacts/d0/d0bb51e56dcea83a5dce6c2f39ebfa09
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d2/d22f6d19895d6424b4765e34be318a4b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d2/d22f6d19895d6424b4765e34be318a4b
+    projectPath: Library/Artifacts/d2/d22f6d19895d6424b4765e34be318a4b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d4/d41fed8c6b682b1f643ce5fb73c2582f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d4/d41fed8c6b682b1f643ce5fb73c2582f
+    projectPath: Library/Artifacts/d4/d41fed8c6b682b1f643ce5fb73c2582f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d4/d4dedb4574983a874d41d1bea97e2aae
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d4/d4dedb4574983a874d41d1bea97e2aae
+    projectPath: Library/Artifacts/d4/d4dedb4574983a874d41d1bea97e2aae
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d5/d583d009f730c8e60a9e2406d4189abb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d5/d583d009f730c8e60a9e2406d4189abb
+    projectPath: Library/Artifacts/d5/d583d009f730c8e60a9e2406d4189abb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d7/d7d560958700c956778ce75a60ffbe3f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d7/d7d560958700c956778ce75a60ffbe3f
+    projectPath: Library/Artifacts/d7/d7d560958700c956778ce75a60ffbe3f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/d8/d88bd165926ce040f603b03b06b4629a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/d8/d88bd165926ce040f603b03b06b4629a
+    projectPath: Library/Artifacts/d8/d88bd165926ce040f603b03b06b4629a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/da/dac9dc02738a0966e1d8aef0c8a647c4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/da/dac9dc02738a0966e1d8aef0c8a647c4
+    projectPath: Library/Artifacts/da/dac9dc02738a0966e1d8aef0c8a647c4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/db/db95f474c4a0d217550b38c5e530dc46
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/db/db95f474c4a0d217550b38c5e530dc46
+    projectPath: Library/Artifacts/db/db95f474c4a0d217550b38c5e530dc46
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/dc/dc76bef139a07695d672d22435a8c902
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/dc/dc76bef139a07695d672d22435a8c902
+    projectPath: Library/Artifacts/dc/dc76bef139a07695d672d22435a8c902
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/dc/dcb04b25b95356199e8db7e9323bcf3c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/dc/dcb04b25b95356199e8db7e9323bcf3c
+    projectPath: Library/Artifacts/dc/dcb04b25b95356199e8db7e9323bcf3c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/dd/dd21cd065ebf1b364d2084ce070bb6de
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/dd/dd21cd065ebf1b364d2084ce070bb6de
+    projectPath: Library/Artifacts/dd/dd21cd065ebf1b364d2084ce070bb6de
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/dd/dd593b0801fb07a3eb165711eda705c9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/dd/dd593b0801fb07a3eb165711eda705c9
+    projectPath: Library/Artifacts/dd/dd593b0801fb07a3eb165711eda705c9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/df/df55b5bc92982ee8854f9f89802fe192
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/df/df55b5bc92982ee8854f9f89802fe192
+    projectPath: Library/Artifacts/df/df55b5bc92982ee8854f9f89802fe192
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e1/e106ac6d74eebc146a0979cd118b2203
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e1/e106ac6d74eebc146a0979cd118b2203
+    projectPath: Library/Artifacts/e1/e106ac6d74eebc146a0979cd118b2203
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e2/e261e982cc2d3fc6e7322de7122615e9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e2/e261e982cc2d3fc6e7322de7122615e9
+    projectPath: Library/Artifacts/e2/e261e982cc2d3fc6e7322de7122615e9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e2/e2769bff92ed1c61391773f8641c7a2b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e2/e2769bff92ed1c61391773f8641c7a2b
+    projectPath: Library/Artifacts/e2/e2769bff92ed1c61391773f8641c7a2b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e2/e2b865c8c4518d4aae1d803fd68f55bf
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e2/e2b865c8c4518d4aae1d803fd68f55bf
+    projectPath: Library/Artifacts/e2/e2b865c8c4518d4aae1d803fd68f55bf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e3/e3976c781cf947569973c6c87b4debde
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e3/e3976c781cf947569973c6c87b4debde
+    projectPath: Library/Artifacts/e3/e3976c781cf947569973c6c87b4debde
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e5/e5d29c56e1b20706df1c3635ed488f16
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e5/e5d29c56e1b20706df1c3635ed488f16
+    projectPath: Library/Artifacts/e5/e5d29c56e1b20706df1c3635ed488f16
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e6/e6334ba296a67c2f5fca1ff83806c63e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e6/e6334ba296a67c2f5fca1ff83806c63e
+    projectPath: Library/Artifacts/e6/e6334ba296a67c2f5fca1ff83806c63e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e8/e80b21c5c32f6befc85ab8b39661f954
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e8/e80b21c5c32f6befc85ab8b39661f954
+    projectPath: Library/Artifacts/e8/e80b21c5c32f6befc85ab8b39661f954
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e8/e8d9cf36df3bb350ef0b28b31e441e28
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e8/e8d9cf36df3bb350ef0b28b31e441e28
+    projectPath: Library/Artifacts/e8/e8d9cf36df3bb350ef0b28b31e441e28
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/e9/e98dde2f5bab7dc131d89e2531cbabac
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/e9/e98dde2f5bab7dc131d89e2531cbabac
+    projectPath: Library/Artifacts/e9/e98dde2f5bab7dc131d89e2531cbabac
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/ed/edf45e559238554138e0f40ae8f8c562
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/ed/edf45e559238554138e0f40ae8f8c562
+    projectPath: Library/Artifacts/ed/edf45e559238554138e0f40ae8f8c562
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/ef/efb0c5d29fc3fba304a5a1eac253e2a3
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/ef/efb0c5d29fc3fba304a5a1eac253e2a3
+    projectPath: Library/Artifacts/ef/efb0c5d29fc3fba304a5a1eac253e2a3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f1/f10066bab48915235252b3af63619874
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f1/f10066bab48915235252b3af63619874
+    projectPath: Library/Artifacts/f1/f10066bab48915235252b3af63619874
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f1/f15a7173bdfac17b4a2fd7b31de0de7e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f1/f15a7173bdfac17b4a2fd7b31de0de7e
+    projectPath: Library/Artifacts/f1/f15a7173bdfac17b4a2fd7b31de0de7e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f2/f21144d74071262dba5fcd213a20432b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f2/f21144d74071262dba5fcd213a20432b
+    projectPath: Library/Artifacts/f2/f21144d74071262dba5fcd213a20432b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f3/f39efaa6443bee888da1483b185baf58
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f3/f39efaa6443bee888da1483b185baf58
+    projectPath: Library/Artifacts/f3/f39efaa6443bee888da1483b185baf58
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f3/f3d15a604acefcc7b32ca3de711fb589
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f3/f3d15a604acefcc7b32ca3de711fb589
+    projectPath: Library/Artifacts/f3/f3d15a604acefcc7b32ca3de711fb589
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f3/f3da28ebb70525e62473985b1d485497
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f3/f3da28ebb70525e62473985b1d485497
+    projectPath: Library/Artifacts/f3/f3da28ebb70525e62473985b1d485497
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f4/f45fad9fe5dd0162f782393d5111e172
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f4/f45fad9fe5dd0162f782393d5111e172
+    projectPath: Library/Artifacts/f4/f45fad9fe5dd0162f782393d5111e172
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f7/f7fc8c977263100c04433f63683644cf
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f7/f7fc8c977263100c04433f63683644cf
+    projectPath: Library/Artifacts/f7/f7fc8c977263100c04433f63683644cf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/f8/f89a2a60e8a19b87283dafbf57cd6b50
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/f8/f89a2a60e8a19b87283dafbf57cd6b50
+    projectPath: Library/Artifacts/f8/f89a2a60e8a19b87283dafbf57cd6b50
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/fc/fce817c8281411f74918a3f84c8e29a4
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/fc/fce817c8281411f74918a3f84c8e29a4
+    projectPath: Library/Artifacts/fc/fce817c8281411f74918a3f84c8e29a4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/fe/fe14f70ca46324b5076f0c8d61d892ef
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/fe/fe14f70ca46324b5076f0c8d61d892ef
+    projectPath: Library/Artifacts/fe/fe14f70ca46324b5076f0c8d61d892ef
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/Artifacts/fe/feb15d6867a2836671883cd23ecd9316
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/Artifacts/fe/feb15d6867a2836671883cd23ecd9316
+    projectPath: Library/Artifacts/fe/feb15d6867a2836671883cd23ecd9316
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/CurrentLayout-default.dwlt
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/CurrentLayout-default.dwlt
+    projectPath: Library/CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/EditorInstance.json
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/EditorInstance.json
+    projectPath: Library/EditorInstance.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/expandedItems
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/expandedItems
+    projectPath: Library/expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/gfu/cache/gitlocks.yaml
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/gfu/cache/gitlocks.yaml
+    projectPath: Library/gfu/cache/gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/gfu/cache/gitstatusentries.yaml
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/gfu/cache/gitstatusentries.yaml
+    projectPath: Library/gfu/cache/gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/gfu/cache/gittrackingstatus.yaml
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/gfu/cache/gittrackingstatus.yaml
+    projectPath: Library/gfu/cache/gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/gfu/cache/repoinfo.yaml
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/gfu/cache/repoinfo.yaml
+    projectPath: Library/gfu/cache/repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/InspectorExpandedItems.asset
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/InspectorExpandedItems.asset
+    projectPath: Library/InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/LastSceneManagerSetup.txt
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/LastSceneManagerSetup.txt
+    projectPath: Library/LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/PackageManager/ProjectCache
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/PackageManager/ProjectCache
+    projectPath: Library/PackageManager/ProjectCache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/PackageManager/ProjectCache.md5
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/PackageManager/ProjectCache.md5
+    projectPath: Library/PackageManager/ProjectCache.md5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/SceneVisibilityState.asset
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/SceneVisibilityState.asset
+    projectPath: Library/SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Analytics.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Analytics.dll
+    projectPath: Library/ScriptAssemblies/Analytics.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Analytics.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Analytics.pdb
+    projectPath: Library/ScriptAssemblies/Analytics.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Assembly-CSharp.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Assembly-CSharp.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Assembly-CSharp.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Assembly-CSharp.pdb
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Library/ScriptAssemblies/PsdPlugin.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/PsdPlugin.dll
+    projectPath: Library/ScriptAssemblies/PsdPlugin.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/PsdPlugin.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/PsdPlugin.pdb
+    projectPath: Library/ScriptAssemblies/PsdPlugin.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Purchasing.Common.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Purchasing.Common.dll
+    projectPath: Library/ScriptAssemblies/Purchasing.Common.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Purchasing.Common.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Purchasing.Common.pdb
+    projectPath: Library/ScriptAssemblies/Purchasing.Common.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Common.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Common.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Common.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Common.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Common.Runtime.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Common.Runtime.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Common.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.IK.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.IK.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.IK.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.IK.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.IK.Runtime.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.IK.Runtime.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.IK.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Path.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Path.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Path.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Path.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.PixelPerfect.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.PixelPerfect.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Sprite.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    projectPath: Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll
+    projectPath: Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.pdb
+    projectPath: Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll
+    projectPath: Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.pdb
+    projectPath: Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mathematics.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mathematics.dll
+    projectPath: Library/ScriptAssemblies/Unity.Mathematics.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Mathematics.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Mathematics.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mathematics.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mathematics.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Mathematics.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.Android.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.Android.dll
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.Android.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.Android.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.Android.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.Android.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.dll
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.iOS.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.iOS.dll
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.iOS.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.iOS.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.iOS.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.iOS.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Notifications.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Notifications.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Notifications.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.PlasticSCM.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Timeline.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Timeline.dll
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.Timeline.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.Timeline.pdb
+    projectPath: Library/ScriptAssemblies/Unity.Timeline.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.VisualStudio.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+    projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.Purchasing.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.Purchasing.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.Purchasing.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.Purchasing.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.Purchasing.pdb
+    projectPath: Library/ScriptAssemblies/UnityEditor.Purchasing.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.SpatialTracking.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.SpatialTracking.pdb
+    projectPath: Library/ScriptAssemblies/UnityEditor.SpatialTracking.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+    projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.UI.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.UI.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.UI.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.UI.pdb
+    projectPath: Library/ScriptAssemblies/UnityEditor.UI.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+    projectPath: Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.pdb
+    projectPath: Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Advertisements.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Advertisements.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Monetization.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Monetization.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Monetization.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Monetization.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Monetization.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Monetization.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleCore.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleMacosStub.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.AppleStub.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTCore.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.Purchasing.WinRTStub.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.SpatialTracking.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.SpatialTracking.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.SpatialTracking.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.UI.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.UI.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.UI.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.UI.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.UI.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+    projectPath: Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb
+    projectPath: Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ScriptMapper
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ScriptMapper
+    projectPath: Library/ScriptMapper
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/ShaderCache/EditorEncounteredVariants
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/ShaderCache/EditorEncounteredVariants
+    projectPath: Library/ShaderCache/EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/SourceAssetDB
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/SourceAssetDB
+    projectPath: Library/SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/SourceAssetDB-lock
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/SourceAssetDB-lock
+    projectPath: Library/SourceAssetDB-lock
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/StateCache/MainStageHierarchy/5d/5dd1e873ab46eb464ddebb78c3ccdb5f.json
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/StateCache/MainStageHierarchy/5d/5dd1e873ab46eb464ddebb78c3ccdb5f.json
+    projectPath: Library/StateCache/MainStageHierarchy/5d/5dd1e873ab46eb464ddebb78c3ccdb5f.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/StateCache/PrefabStageHierarchy/61/6102e69dd48bc5f45c884273e14b8b56.json
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/StateCache/PrefabStageHierarchy/61/6102e69dd48bc5f45c884273e14b8b56.json
+    projectPath: Library/StateCache/PrefabStageHierarchy/61/6102e69dd48bc5f45c884273e14b8b56.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Library/StateCache/SceneView/89/89c567b48362d0658d262cf39e3dfe7a.json
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Library/StateCache/SceneView/89/89c567b48362d0658d262cf39e3dfe7a.json
+    projectPath: Library/StateCache/SceneView/89/89c567b48362d0658d262cf39e3dfe7a.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Logs/AssetImportWorker0.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/AssetImportWorker0.log
+    projectPath: Logs/AssetImportWorker0.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Logs/AssetImportWorker0-prev.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/AssetImportWorker0-prev.log
+    projectPath: Logs/AssetImportWorker0-prev.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Logs/shadercompiler-UnityShaderCompiler4.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/shadercompiler-UnityShaderCompiler4.log
+    projectPath: Logs/shadercompiler-UnityShaderCompiler4.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Logs/shadercompiler-UnityShaderCompiler5.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/shadercompiler-UnityShaderCompiler5.log
+    projectPath: Logs/shadercompiler-UnityShaderCompiler5.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Logs/shadercompiler-UnityShaderCompiler6.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/shadercompiler-UnityShaderCompiler6.log
+    projectPath: Logs/shadercompiler-UnityShaderCompiler6.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Logs/shadercompiler-UnityShaderCompiler7.log
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Logs/shadercompiler-UnityShaderCompiler7.log
+    projectPath: Logs/shadercompiler-UnityShaderCompiler7.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/ProjectSettings/TagManager.asset
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/ProjectSettings/TagManager.asset
+    projectPath: ProjectSettings/TagManager.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Temp/Assembly-CSharp.dll.hash
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/Assembly-CSharp.dll.hash
+    projectPath: Temp/Assembly-CSharp.dll.hash
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Temp/CompilationLog.txt
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/CompilationLog.txt
+    projectPath: Temp/CompilationLog.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: CS98/Temp/UnityTempFile-0201d93a045b742d8a5cd9b74c18aab8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-0201d93a045b742d8a5cd9b74c18aab8
+    projectPath: Temp/UnityTempFile-0201d93a045b742d8a5cd9b74c18aab8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-067542f13624243059f257fcb87537d1
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-067542f13624243059f257fcb87537d1
+    projectPath: Temp/UnityTempFile-067542f13624243059f257fcb87537d1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-0a4300977b1944acfa0809c61e76efb2
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-0a4300977b1944acfa0809c61e76efb2
+    projectPath: Temp/UnityTempFile-0a4300977b1944acfa0809c61e76efb2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-0acaac1b467874f77ac90bd92a239c8e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-0acaac1b467874f77ac90bd92a239c8e
+    projectPath: Temp/UnityTempFile-0acaac1b467874f77ac90bd92a239c8e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-0f88ac116353c459f9b28f47d9e2b7a0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-0f88ac116353c459f9b28f47d9e2b7a0
+    projectPath: Temp/UnityTempFile-0f88ac116353c459f9b28f47d9e2b7a0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-11d4e8bf5f9934fd3a70e7da841bd576
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-11d4e8bf5f9934fd3a70e7da841bd576
+    projectPath: Temp/UnityTempFile-11d4e8bf5f9934fd3a70e7da841bd576
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-134c325911b3b480b8461d6a783eef77
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-134c325911b3b480b8461d6a783eef77
+    projectPath: Temp/UnityTempFile-134c325911b3b480b8461d6a783eef77
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-1a3e5f611b8a3418a97f7c64eb1a5726
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-1a3e5f611b8a3418a97f7c64eb1a5726
+    projectPath: Temp/UnityTempFile-1a3e5f611b8a3418a97f7c64eb1a5726
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-1a71ca4e643194b0381985b06d8c6c22
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-1a71ca4e643194b0381985b06d8c6c22
+    projectPath: Temp/UnityTempFile-1a71ca4e643194b0381985b06d8c6c22
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-1d7d99286a5df4917a56c68a86f9d674
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-1d7d99286a5df4917a56c68a86f9d674
+    projectPath: Temp/UnityTempFile-1d7d99286a5df4917a56c68a86f9d674
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-1f9c302f371074c019f7584db410ff12
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-1f9c302f371074c019f7584db410ff12
+    projectPath: Temp/UnityTempFile-1f9c302f371074c019f7584db410ff12
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-202a0da9feeb7447686499aa83f7d5e0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-202a0da9feeb7447686499aa83f7d5e0
+    projectPath: Temp/UnityTempFile-202a0da9feeb7447686499aa83f7d5e0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-2097f3c41356340758069e83eb871f97
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-2097f3c41356340758069e83eb871f97
+    projectPath: Temp/UnityTempFile-2097f3c41356340758069e83eb871f97
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-223b36d6617704a1bba03f7b9f22e58b
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-223b36d6617704a1bba03f7b9f22e58b
+    projectPath: Temp/UnityTempFile-223b36d6617704a1bba03f7b9f22e58b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-2627b80788979419d94bca29bf913503
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-2627b80788979419d94bca29bf913503
+    projectPath: Temp/UnityTempFile-2627b80788979419d94bca29bf913503
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-33d9740029d5946109bd93a6eb85b40a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-33d9740029d5946109bd93a6eb85b40a
+    projectPath: Temp/UnityTempFile-33d9740029d5946109bd93a6eb85b40a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-3426e812f17ea44cda3c2a670d6275c9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-3426e812f17ea44cda3c2a670d6275c9
+    projectPath: Temp/UnityTempFile-3426e812f17ea44cda3c2a670d6275c9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-354b571a8b414460584730c90f0f2acd
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-354b571a8b414460584730c90f0f2acd
+    projectPath: Temp/UnityTempFile-354b571a8b414460584730c90f0f2acd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-40367b8606cc142d19e8b8b6a4908ec7
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-40367b8606cc142d19e8b8b6a4908ec7
+    projectPath: Temp/UnityTempFile-40367b8606cc142d19e8b8b6a4908ec7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-486053cfe6c9341d2a025c5312e69915
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-486053cfe6c9341d2a025c5312e69915
+    projectPath: Temp/UnityTempFile-486053cfe6c9341d2a025c5312e69915
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-4911db77832414957abe836ac4bb23fc
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-4911db77832414957abe836ac4bb23fc
+    projectPath: Temp/UnityTempFile-4911db77832414957abe836ac4bb23fc
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-512a529eb38c04193a95275b489db69e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-512a529eb38c04193a95275b489db69e
+    projectPath: Temp/UnityTempFile-512a529eb38c04193a95275b489db69e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-53d2ab2a1958444c5a8d75d4464a5893
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-53d2ab2a1958444c5a8d75d4464a5893
+    projectPath: Temp/UnityTempFile-53d2ab2a1958444c5a8d75d4464a5893
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-579e8a2c27c2242ed8901b34a7dc6b05
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-579e8a2c27c2242ed8901b34a7dc6b05
+    projectPath: Temp/UnityTempFile-579e8a2c27c2242ed8901b34a7dc6b05
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-588b4ad4b5aec4336843d08fa42f26b6
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-588b4ad4b5aec4336843d08fa42f26b6
+    projectPath: Temp/UnityTempFile-588b4ad4b5aec4336843d08fa42f26b6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-5bd597d1d45204a69952ad68845c97ce
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-5bd597d1d45204a69952ad68845c97ce
+    projectPath: Temp/UnityTempFile-5bd597d1d45204a69952ad68845c97ce
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-5f61cca1fba5340dfb908ff93c38ab9e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-5f61cca1fba5340dfb908ff93c38ab9e
+    projectPath: Temp/UnityTempFile-5f61cca1fba5340dfb908ff93c38ab9e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-60dac57923e0c4e65b11c9e0a8b38920
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-60dac57923e0c4e65b11c9e0a8b38920
+    projectPath: Temp/UnityTempFile-60dac57923e0c4e65b11c9e0a8b38920
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-65ca8dd1c6737466eaf23a6d0931a92e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-65ca8dd1c6737466eaf23a6d0931a92e
+    projectPath: Temp/UnityTempFile-65ca8dd1c6737466eaf23a6d0931a92e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-74c08aa9d8bd14b3eb858426ae1345ee
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-74c08aa9d8bd14b3eb858426ae1345ee
+    projectPath: Temp/UnityTempFile-74c08aa9d8bd14b3eb858426ae1345ee
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-75b7540c113354fe9ab850669be63352
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-75b7540c113354fe9ab850669be63352
+    projectPath: Temp/UnityTempFile-75b7540c113354fe9ab850669be63352
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-85885f27500934415b24f1da7874b9b9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-85885f27500934415b24f1da7874b9b9
+    projectPath: Temp/UnityTempFile-85885f27500934415b24f1da7874b9b9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-8797c25fb5d0b42219fd91e783a31632
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-8797c25fb5d0b42219fd91e783a31632
+    projectPath: Temp/UnityTempFile-8797c25fb5d0b42219fd91e783a31632
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-8fa16220ab61e41e0b7e5da0c32116e9
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-8fa16220ab61e41e0b7e5da0c32116e9
+    projectPath: Temp/UnityTempFile-8fa16220ab61e41e0b7e5da0c32116e9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-9020dd76da54d49209fff782b95e11df
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-9020dd76da54d49209fff782b95e11df
+    projectPath: Temp/UnityTempFile-9020dd76da54d49209fff782b95e11df
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-92f829c41baac4d95af04f0ee926758c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-92f829c41baac4d95af04f0ee926758c
+    projectPath: Temp/UnityTempFile-92f829c41baac4d95af04f0ee926758c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-95bbabb94360b4cb79f35971f37dcc49
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-95bbabb94360b4cb79f35971f37dcc49
+    projectPath: Temp/UnityTempFile-95bbabb94360b4cb79f35971f37dcc49
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-9c5807fd2815b451689c2f5217943423
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-9c5807fd2815b451689c2f5217943423
+    projectPath: Temp/UnityTempFile-9c5807fd2815b451689c2f5217943423
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-a3bba92cd9d33440eb96a88e9d5b7fc7
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-a3bba92cd9d33440eb96a88e9d5b7fc7
+    projectPath: Temp/UnityTempFile-a3bba92cd9d33440eb96a88e9d5b7fc7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-a4f00f6b3661b4b2485b8b3c6387bd79
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-a4f00f6b3661b4b2485b8b3c6387bd79
+    projectPath: Temp/UnityTempFile-a4f00f6b3661b4b2485b8b3c6387bd79
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-a546ee47ab92146ae816c1ad697ff32a
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-a546ee47ab92146ae816c1ad697ff32a
+    projectPath: Temp/UnityTempFile-a546ee47ab92146ae816c1ad697ff32a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-a62256ab1d18d4e6493e0c84cae16db0
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-a62256ab1d18d4e6493e0c84cae16db0
+    projectPath: Temp/UnityTempFile-a62256ab1d18d4e6493e0c84cae16db0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-aa0ecf9912a2c4c5aa9ae2b3da3f0d04
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-aa0ecf9912a2c4c5aa9ae2b3da3f0d04
+    projectPath: Temp/UnityTempFile-aa0ecf9912a2c4c5aa9ae2b3da3f0d04
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-b5ce41518935048e08beeb012403a82d
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-b5ce41518935048e08beeb012403a82d
+    projectPath: Temp/UnityTempFile-b5ce41518935048e08beeb012403a82d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-c01810d98a4dc4193af872dcf151ac4e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-c01810d98a4dc4193af872dcf151ac4e
+    projectPath: Temp/UnityTempFile-c01810d98a4dc4193af872dcf151ac4e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-c24d7918c2aff49a8ab11aa1cacb95f8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-c24d7918c2aff49a8ab11aa1cacb95f8
+    projectPath: Temp/UnityTempFile-c24d7918c2aff49a8ab11aa1cacb95f8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-c85a7f0cde4ed4b819958066f08b357e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-c85a7f0cde4ed4b819958066f08b357e
+    projectPath: Temp/UnityTempFile-c85a7f0cde4ed4b819958066f08b357e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-ca18c35f24243413ba6b38de9e66f51c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-ca18c35f24243413ba6b38de9e66f51c
+    projectPath: Temp/UnityTempFile-ca18c35f24243413ba6b38de9e66f51c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-d1b20f293c2a649968a7fbde453999b8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-d1b20f293c2a649968a7fbde453999b8
+    projectPath: Temp/UnityTempFile-d1b20f293c2a649968a7fbde453999b8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-d6bc747363018458a9b74fbec8bafdd7
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-d6bc747363018458a9b74fbec8bafdd7
+    projectPath: Temp/UnityTempFile-d6bc747363018458a9b74fbec8bafdd7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-d799e0f357b954f1ca5190c283d63b30
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-d799e0f357b954f1ca5190c283d63b30
+    projectPath: Temp/UnityTempFile-d799e0f357b954f1ca5190c283d63b30
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-d88b55a8ecb7d4f65ab608a756ae12dd
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-d88b55a8ecb7d4f65ab608a756ae12dd
+    projectPath: Temp/UnityTempFile-d88b55a8ecb7d4f65ab608a756ae12dd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-e356be92de68740dba0130b4ff7fdb4f
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-e356be92de68740dba0130b4ff7fdb4f
+    projectPath: Temp/UnityTempFile-e356be92de68740dba0130b4ff7fdb4f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-e7e1a1e7d8aea4fcaaf1e2839f53d297
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-e7e1a1e7d8aea4fcaaf1e2839f53d297
+    projectPath: Temp/UnityTempFile-e7e1a1e7d8aea4fcaaf1e2839f53d297
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-e94485130e21f455aa67056f8913c08e
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-e94485130e21f455aa67056f8913c08e
+    projectPath: Temp/UnityTempFile-e94485130e21f455aa67056f8913c08e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-eabd206243220406ea9e57a3762414f6
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-eabd206243220406ea9e57a3762414f6
+    projectPath: Temp/UnityTempFile-eabd206243220406ea9e57a3762414f6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-ed2f9842b90ab48bd9f37c0c3d53e444
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-ed2f9842b90ab48bd9f37c0c3d53e444
+    projectPath: Temp/UnityTempFile-ed2f9842b90ab48bd9f37c0c3d53e444
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-efcd9b7c7916848a484cf4eea77e5fe8
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-efcd9b7c7916848a484cf4eea77e5fe8
+    projectPath: Temp/UnityTempFile-efcd9b7c7916848a484cf4eea77e5fe8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-f75fadfdb6eec4c6ab9926150a2a4171
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-f75fadfdb6eec4c6ab9926150a2a4171
+    projectPath: Temp/UnityTempFile-f75fadfdb6eec4c6ab9926150a2a4171
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-fe8da6d116135476b8e4d743e1e02f47
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-fe8da6d116135476b8e4d743e1e02f47
+    projectPath: Temp/UnityTempFile-fe8da6d116135476b8e4d743e1e02f47
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/UnityTempFile-ff5259a699a19483baa23f981559f25c
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/UnityTempFile-ff5259a699a19483baa23f981559f25c
+    projectPath: Temp/UnityTempFile-ff5259a699a19483baa23f981559f25c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: CS98/Temp/workerlic
+    fullPath: /Users/raycrist/git/21f-lingo-defense/CS98/Temp/workerlic
+    projectPath: Temp/workerlic
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3

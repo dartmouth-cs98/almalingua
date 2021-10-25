@@ -5,9 +5,8 @@
 Lingo Defense is a RPG focused on learning Spanish. There will be a "quest" aspect and also a combative one. It takes place in a fantasy world, where an outsider gets stuck in another realm and must complete tasks with the villagers in order to return home. 
 
 ## Architecture
-Possible API to call
 * Linguatools: Looks up a word in a spanish collocation database with the top spanish collocations and returns
-* Luis.API
+* Luis.API: A basic intent-classification API, which allows us to ingest user input to NPCs and return a predicted user input.
 
 Design
 * Photoshop 
