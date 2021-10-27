@@ -7,17 +7,15 @@ using System.Linq;
 
 public class NPCDialogueManager : MonoBehaviour
 {
-
     public Text Name;
     public Text Text;
     public GameObject Panel;
     public GameObject RespondButton;
 
-    private NPCDialogue Dialogues;
+    private NPCDialogue dialogues;
     private Queue<string> sentences;
     private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
-    private int SentenceNumber = 0;
-
+    private bool userTalking = false;
     // Use this for initialization
     void Start()
     {
@@ -25,12 +23,12 @@ public class NPCDialogueManager : MonoBehaviour
         using (StreamReader stream = new StreamReader(JSONFilePath))
         {
             string json = stream.ReadToEnd();
-            Dialogues = JsonUtility.FromJson<NPCDialogue>(json);
+            dialogues = JsonUtility.FromJson<NPCDialogue>(json);
         }
 
-        for (int i = 0; i < Dialogues.dialogues.Length; i++)
+        for (int i = 0; i < dialogues.dialogues.Length; i++)
         {
-            sentences.Enqueue(Dialogues.dialogues[i]);
+            sentences.Enqueue(dialogues.dialogues[i]);
         }
     }
 
@@ -38,15 +36,19 @@ public class NPCDialogueManager : MonoBehaviour
     public void DisplayNextSentence()
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
+        RespondButton.GetComponentInChildren<Text>().text = "Respond";
         Panel.transform.Find("UserInput").gameObject.SetActive(false);
         Panel.transform.Find("Text").gameObject.SetActive(true);
-        Name.text = Dialogues.name;
-        RespondButton.GetComponentInChildren<Text>().text = "Respond";
+        Name.text = dialogues.name;
         if (sentences.Count > 0)
         {
             string sentence = sentences.Dequeue();
             StopAllCoroutines();
             StartCoroutine(TypeSentence(sentence));
+        }
+        else
+        {
+            Text.text = "Dialogue Completed";
         }
 
     }
@@ -62,22 +64,29 @@ public class NPCDialogueManager : MonoBehaviour
     }
 
 
-    public void UserResponse(string UserInput)
+    public void ResponseManager()
     {
-        if (Name.text == "Yo")
-        {
-            DisplayNextSentence();
-        }
-        else
+        if (!userTalking)
         {
             Name.text = "Yo";
             Panel.transform.Find("UserInput").gameObject.SetActive(true);
+            Panel.transform.Find("UserInput").GetComponent<InputField>().text = "";
             Panel.transform.Find("Text").gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
-            Debug.Log(UserInput);
         }
+        else
+        {
+            DisplayNextSentence();
+
+        }
+        userTalking = !userTalking;
 
     }
 
+    public void UserResponse(string UserInput)
+    {
+
+        Debug.Log(UserInput);
+    }
 }
 
