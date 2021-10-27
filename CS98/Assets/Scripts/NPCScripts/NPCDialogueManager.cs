@@ -16,22 +16,31 @@ public class NPCDialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
     private bool userTalking = false;
+
+
     // Use this for initialization
     void Start()
     {
-        sentences = new Queue<string>();
         using (StreamReader stream = new StreamReader(JSONFilePath))
         {
             string json = stream.ReadToEnd();
             dialogues = JsonUtility.FromJson<NPCDialogue>(json);
         }
 
+
+    }
+
+    void OnEnable()
+    {
+        sentences = new Queue<string>();
+        Debug.Log("Shown");
+        sentences.Clear();
         for (int i = 0; i < dialogues.dialogues.Length; i++)
         {
             sentences.Enqueue(dialogues.dialogues[i]);
         }
-    }
 
+    }
 
     public void DisplayNextSentence()
     {
@@ -68,6 +77,7 @@ public class NPCDialogueManager : MonoBehaviour
     {
         if (!userTalking)
         {
+            Debug.Log("User talking");
             Name.text = "Yo";
             Panel.transform.Find("UserInput").gameObject.SetActive(true);
             Panel.transform.Find("UserInput").GetComponent<InputField>().text = "";
@@ -85,8 +95,13 @@ public class NPCDialogueManager : MonoBehaviour
 
     public void UserResponse(string UserInput)
     {
-
         Debug.Log(UserInput);
+    }
+
+    public void CloseButton()
+    {
+        Panel.GetComponent<HideShowObjects>().Hide();
+        RespondButton.GetComponent<HideShowObjects>().Hide();
     }
 }
 

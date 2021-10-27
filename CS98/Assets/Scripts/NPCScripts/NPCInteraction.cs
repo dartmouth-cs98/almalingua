@@ -15,7 +15,7 @@ public class NPCInteraction : MonoBehaviour
         {
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
 
-            if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && !dialogueShown)
+            if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && Input.touches[i].phase == TouchPhase.Began)
             {
                 dialogueShown = !dialogueShown;
                 Panel.GetComponent<HideShowObjects>().Show();
