@@ -572,5 +572,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7564046453656301275, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564046453656301275, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564046453656301275, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 2436
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8234e4edef0740c68822cde68207d27, type: 3}
