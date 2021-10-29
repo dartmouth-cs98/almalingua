@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-  public int movementSpeed;
   public int BALL_RANGE = 25;
 
   private Vector2 pointA;
@@ -16,6 +15,11 @@ public class PlayerMove : MonoBehaviour
   private double angleSplit = 45;
 
   public float thrust = 10f;
+
+  // TY Code (animation movement)//
+  public Vector2 movementDirection;
+  public Animator animator;
+  public float movementSpeed;
 
   // Use this for initialization
   void Start () {
@@ -45,15 +49,27 @@ public class PlayerMove : MonoBehaviour
           playerDirection = Vector2.down;
         }
       }
+      // TY Code
+      movementDirection = playerDirection;
 
       ball.GetComponent<RectTransform>().position = BALL_CENTER + (relativePosition.normalized * BALL_RANGE);
       moveCharacter(playerDirection);
+
+      // TY Code
+      animate();
     }
       
   }
 
   void moveCharacter (Vector2 playerDirection) {
       gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
+  }
+
+  // TY Code
+  void animate(){
+    animator.SetFloat("Horizontal", movementDirection.x);
+    animator.SetFloat("Vertical", movementDirection.y);
+    animator.SetFloat("Speed", movementSpeed);
   }
 
 }
