@@ -6,7 +6,6 @@ public class NPCInteraction : MonoBehaviour
 {
     public GameObject Panel;
     public GameObject DialogueScript;
-    private bool DialogueShown = false;
 
     // Update is called once per frame
     void Update()
@@ -15,17 +14,13 @@ public class NPCInteraction : MonoBehaviour
         {
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
 
-            if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
+            if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && Input.touches[i].phase == TouchPhase.Began)
             {
                 Panel.GetComponent<HideShowObjects>().Show();
-
-                if (!DialogueShown)
-                {
-                    DialogueScript.GetComponent<NPCDialogueManager>().DisplayNextSentence();
-                    DialogueShown = !DialogueShown;
-                }
+                // DialogueScript.GetComponent<NPCDialogueManager>().DisplayNextSentence();
             }
         }
 
     }
 }
+
