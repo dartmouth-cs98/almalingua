@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637706310730000000
+      ticks: 637707879650000000
     m_Hash: 3962847188
   m_LockFileStatus:
     m_FilePath: /Users/sadanw/cs98/21f-lingo-defense/CS98/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637706310730000000
+      ticks: 637707879650000000
     m_Hash: 1014642214
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -1537,6 +1537,7 @@ m_PackageAssets:
         - 3.2.3
         - 4.0.0
         - 4.0.3
+        - 4.1.0
         compatible:
         - 0.0.3
         - 0.0.4
@@ -1577,6 +1578,7 @@ m_PackageAssets:
         - 3.2.3
         - 4.0.0
         - 4.0.3
+        - 4.1.0
         verified: 3.2.3
       dependencies:
       - name: com.unity.ugui
