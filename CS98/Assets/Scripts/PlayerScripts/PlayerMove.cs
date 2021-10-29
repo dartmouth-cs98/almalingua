@@ -24,8 +24,10 @@ public class PlayerMove : MonoBehaviour
         ball = GameObject.FindGameObjectsWithTag("JoystickBall")[0];
     }
     camera = Camera.main;
-    BALL_CENTER = ball.GetComponent<RectTransform>().position;
+    BALL_CENTER = Camera.main.WorldToScreenPoint(ball.GetComponent<RectTransform>().position);
     Debug.Log(BALL_CENTER);
+
+    print(Screen.currentResolution);
   }
 
   // Update is called once per frame
@@ -35,7 +37,7 @@ public class PlayerMove : MonoBehaviour
       Vector2 touchPosition = new Vector2(touch.position.x, touch.position.y);
       Vector2 relativePosition = touchPosition - BALL_CENTER;
 
-      // Debug.Log(relativePosition);
+      Debug.Log(touchPosition);
 
       // Get angle of joystick. 
       float relAngle = Vector2.Angle(Vector2.right, relativePosition);
