@@ -17,10 +17,10 @@ public class HideShowObjects : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     public void Show()
     {
         gameObject.SetActive(true);
-
+        Debug.Log("shown");
+        Debug.Log(gameObject.name);
     }
 }

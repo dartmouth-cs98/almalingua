@@ -33,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 10.999992}
-  m_SizeDelta: {x: 742, y: 65}
+  m_AnchorMin: {x: 0.16076715, y: 0.15264732}
+  m_AnchorMax: {x: 0.9475069, y: 0.7914316}
+  m_AnchoredPosition: {x: 12.549988, y: 1.6580963}
+  m_SizeDelta: {x: -99.892, y: 0.90573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2546981430437653021
 CanvasRenderer:
@@ -310,10 +310,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 11}
-  m_SizeDelta: {x: 854.34, y: 65}
+  m_AnchorMin: {x: 0.16076715, y: 0.15264732}
+  m_AnchorMax: {x: 0.9662603, y: 0.7914316}
+  m_AnchoredPosition: {x: 1.3398438, y: 1.2519684}
+  m_SizeDelta: {x: 2.7496033, y: 1.6040001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2546981431078921864
 CanvasRenderer:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7264151, g: 0.5350422, b: 0.36663404, a: 1}
+  m_Color: {r: 0.6509434, g: 0.46614677, b: 0.30397826, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -568,10 +568,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -490.1621, y: 43.961105}
-  m_SizeDelta: {x: 30, y: 30}
+  m_AnchorMin: {x: 0, y: 0.7577843}
+  m_AnchorMax: {x: 0.024506858, y: 1}
+  m_AnchoredPosition: {x: 1.005127, y: -0.42500305}
+  m_SizeDelta: {x: 2.0100098, y: 0.010002136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7468448236157725111
 CanvasRenderer:
@@ -654,7 +654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7468448236157725108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: NPCDialogueManager, Assembly-CSharp
+        m_MethodName: CloseButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7468448236216781852
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,10 +779,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -416, y: 11}
-  m_SizeDelta: {x: 95.88, y: 65}
+  m_AnchorMin: {x: 0.024506858, y: 0.055482607}
+  m_AnchorMax: {x: 0.17054863, y: 0.7914316}
+  m_AnchoredPosition: {x: 1.0599976, y: 1.0744019}
+  m_SizeDelta: {x: -24.120003, y: -2.148798}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8114561307773892871
 CanvasRenderer:
@@ -802,7 +814,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2

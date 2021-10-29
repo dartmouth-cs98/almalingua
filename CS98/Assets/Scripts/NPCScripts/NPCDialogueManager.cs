@@ -9,7 +9,6 @@ public class NPCDialogueManager : MonoBehaviour
 {
     public Text Name;
     public Text Text;
-    public GameObject Panel;
     public GameObject RespondButton;
 
     private NPCDialogue dialogues;
@@ -19,35 +18,31 @@ public class NPCDialogueManager : MonoBehaviour
 
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         using (StreamReader stream = new StreamReader(JSONFilePath))
         {
             string json = stream.ReadToEnd();
             dialogues = JsonUtility.FromJson<NPCDialogue>(json);
         }
-
-
     }
 
     void OnEnable()
     {
         sentences = new Queue<string>();
-        Debug.Log("Shown");
-        sentences.Clear();
         for (int i = 0; i < dialogues.dialogues.Length; i++)
         {
             sentences.Enqueue(dialogues.dialogues[i]);
         }
-
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
         RespondButton.GetComponentInChildren<Text>().text = "Respond";
-        Panel.transform.Find("UserInput").gameObject.SetActive(false);
-        Panel.transform.Find("Text").gameObject.SetActive(true);
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
         Name.text = dialogues.name;
         if (sentences.Count > 0)
         {
@@ -77,11 +72,10 @@ public class NPCDialogueManager : MonoBehaviour
     {
         if (!userTalking)
         {
-            Debug.Log("User talking");
             Name.text = "Yo";
-            Panel.transform.Find("UserInput").gameObject.SetActive(true);
-            Panel.transform.Find("UserInput").GetComponent<InputField>().text = "";
-            Panel.transform.Find("Text").gameObject.SetActive(false);
+            gameObject.transform.GetChild(3).gameObject.GetComponent<HideShowObjects>().Show();
+            gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
+            gameObject.transform.GetChild(1).gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
         }
         else
@@ -95,12 +89,12 @@ public class NPCDialogueManager : MonoBehaviour
 
     public void UserResponse(string UserInput)
     {
-        Debug.Log(UserInput);
+        
     }
 
     public void CloseButton()
     {
-        Panel.GetComponent<HideShowObjects>().Hide();
+        gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
     }
 }
