@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerMove : MonoBehaviour
   public float thrust = 10f;
 
   // TY Code (animation movement)//
+  public Rigidbody2D rb;
   public Vector2 movementDirection;
   public Animator animator;
   public float movementSpeed;
