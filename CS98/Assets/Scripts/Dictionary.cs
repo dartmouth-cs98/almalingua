@@ -25,7 +25,7 @@ public class Dictionary : MonoBehaviour{
 
     void Start()
     {  
-        string path = "../../";
+        string path = "WordFiles/";
 
         List<WordCollection> lists  = new List<WordCollection>();
         lists.Add(readWordFiles(path + "verbs.json"));
