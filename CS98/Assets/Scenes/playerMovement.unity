@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5445440917394531676, guid: 244f0452e4e284f5b9e24a17248a62a4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244f0452e4e284f5b9e24a17248a62a4, type: 3}
 --- !u!1 &1750192861
@@ -568,13 +572,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 623839347381131793, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 623839347381131804, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
     - target: {fileID: 623839347381131806, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 623839347381131806, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 623839347381131806, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_ReferencePixelsPerUnit
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8294295212813612100, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_Name

@@ -15,25 +15,33 @@ public class PlayerMove : MonoBehaviour
 
   public float thrust = 10f;
 
-  Camera camera;
+  protected Joystick joystick; 
 
   // Save a reference to the joystick (should only be 1 per screen)
   // and its center pivot point.
-  void Start () {
-    if (ball == null) {
-        ball = GameObject.FindGameObjectsWithTag("JoystickBall")[0];
-    }
-    camera = Camera.main;
-    BALL_CENTER = Camera.main.WorldToScreenPoint(ball.GetComponent<RectTransform>().position);
-    Debug.Log(BALL_CENTER);
 
-    print(Screen.currentResolution);
+  void Start () {
+    joystick = FindObjectOfType<Joystick>();
   }
 
   // Update is called once per frame
   void FixedUpdate () {
+    Debug.Log(joystick.Direction);
+    moveCharacter(joystick.Direction);
+  }
+
+  void moveCharacter (Vector2 playerDirection) {
+      gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
+  }
+
+}
+
+
+/*
+    /*
     if (Input.touchCount > 0) {
       touch = Input.GetTouch(0);
+
       Vector2 touchPosition = new Vector2(touch.position.x, touch.position.y);
       Vector2 relativePosition = touchPosition - BALL_CENTER;
 
@@ -59,11 +67,4 @@ public class PlayerMove : MonoBehaviour
       ball.GetComponent<RectTransform>().position = BALL_CENTER + (relativePosition.normalized * BALL_RANGE);
       moveCharacter(playerDirection);
     }
-      
-  }
-
-  void moveCharacter (Vector2 playerDirection) {
-      gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
-  }
-
-}
+    */
