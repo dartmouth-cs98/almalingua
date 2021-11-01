@@ -5,23 +5,11 @@ using System;
 
 public class PlayerMove : MonoBehaviour
 {
-  public int BALL_RANGE = 25;
-  private Vector2 BALL_CENTER;
-  private GameObject ball;
-
-  private Vector2 pointA;
-  private Vector2 pointB;
 
   private Touch touch;
-
   public float thrust = 10f;
-
   protected Joystick joystick; 
 
-  // Save a reference to the joystick (should only be 1 per screen)
-  // and its center pivot point.
-
-  // TY Code (animation movement)//
   public Rigidbody2D rb;
   public Vector2 movementDirection;
   public Animator animator;

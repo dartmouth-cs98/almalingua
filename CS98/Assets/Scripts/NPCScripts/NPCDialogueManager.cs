@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Linq;
-using DialogueEditor;
 
 public class NPCDialogueManager : MonoBehaviour
 {
@@ -17,34 +16,17 @@ public class NPCDialogueManager : MonoBehaviour
     private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
     private bool userTalking = false;
 
-    // public NPCConversation MumbleNPCConversation;
-    // public NPCConversation FallbackNPCConversation;
-    public NPCConversation QuestsNPCConversation;
 
-    private ConversationNode currNode;
-
-    void 
-    Start()
+    // Use this for initialization
+    void Awake()
     {
-        // Conversation MumbleConversation = MumbleNPCConversation.Deserialize();
-        // Conversation FallbackConversation = FallbackNPCConversation.Deserialize();
-        Conversation QuestsConversation = QuestsNPCConversation.Deserialize();
-
-        currNode = QuestsConversation.Root;
-
-        AdvanceToOption();
+        using (StreamReader stream = new StreamReader(JSONFilePath))
+        {
+            string json = stream.ReadToEnd();
+            dialogues = JsonUtility.FromJson<NPCDialogue>(json);
+        }
     }
 
-    void
-    AdvanceToOption()
-    {
-      foreach (Connection connection in currNode.Connections) {
-        Debug.Log(connection.ConnectionType);
-      }
-      ;
-    }
-
-    /*
     void OnEnable()
     {
         sentences = new Queue<string>();
@@ -54,7 +36,6 @@ public class NPCDialogueManager : MonoBehaviour
         }
         DisplayNextSentence();
     }
-    */
 
     public void DisplayNextSentence()
     {
