@@ -407,7 +407,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4971393465717085827}
         m_TargetAssemblyTypeName: NPCDialogueManager, Assembly-CSharp
         m_MethodName: UserResponse
         m_Mode: 0
@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 2546981431107690055}
   - component: {fileID: 2546981431107690048}
   - component: {fileID: 2546981431107690054}
+  - component: {fileID: 4971393465717085827}
   m_Layer: 5
   m_Name: SpeechBubble
   m_TagString: Untagged
@@ -534,6 +535,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d273c13141397460d8e47517be046c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4971393465717085827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546981431107690050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c5e10e6a33a4269b933dbe52e70e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: {fileID: 7733799752821115827}
+  Text: {fileID: 2546981431091702954}
+  RespondButton: {fileID: 0}
 --- !u!1 &7468448236157725115
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +671,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4971393465717085827}
         m_TargetAssemblyTypeName: NPCDialogueManager, Assembly-CSharp
         m_MethodName: CloseButton
         m_Mode: 1
