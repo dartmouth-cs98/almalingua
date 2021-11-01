@@ -1,0 +1,148 @@
+{"wlist": [
+    {
+        "w":    "a",
+        "ID":   0,
+        "definition": "to",
+        "encountered": true
+        },
+    {
+        "w":    "ante",
+        "ID":   0,
+        "definition": "before, in the presence of",
+        "encountered": true
+    },
+    {
+        "w": "bajo",
+        "ID":     0,
+        "definition": "below",
+        "encountered": true
+    },
+    {
+        "w":    "con",
+        "ID":   0,
+        "definition": "with",
+        "encountered": true
+    },
+    {
+        "w":    "contra",
+        "ID":   0,
+        "definition": "against",
+        "encountered": true
+    },
+    {
+        "w":    "de",
+        "ID":   0,
+        "definition": "from, about, of",
+        "encountered": true
+    },
+    {
+        "w":    "desde",
+        "ID":   0,
+        "definition": "since, from",
+        "encountered": true
+    },
+    {
+        "w":    "durante",
+        "ID":   0,
+        "definition": "during",
+        "encountered": true
+    },
+    {
+        "w":    "entre",
+        "ID":   0,
+        "definition": "amongst",
+        "encountered": true
+    },
+    {
+        "w":    "hacia",
+        "ID":   0,
+        "definition": "towards",
+        "encountered": true
+    },
+    {
+        "w":    "para",
+        "ID":   0,
+        "definition": "for, in order to, toward",
+        "encountered": true
+    },
+    {
+        "w":    "por",
+        "ID":   0,
+        "definition": "because of, to , for , by , through",
+        "encountered": true
+    }
+    ,
+    {
+        "w":    "según",
+        "ID":   0,
+        "definition": "according to",
+        "encountered": true
+    },
+    {
+        "w":    "sin",
+        "ID":   0,
+        "definition": "without",
+        "encountered": true
+    },
+    {
+        "w":    "tras",
+        "ID":   0,
+        "definition": "after, behind",
+        "encountered": true
+    },
+    {
+        "w":    "además de",
+        "ID":   0,
+        "definition": "as well as, besides",
+        "encountered": true
+    },
+    {
+        "w":    "al lado de",
+        "ID":   0,
+        "definition": "beside",
+        "encountered": true
+    },
+    {
+        "w":    "alrededor de",
+        "ID":   0,
+        "definition": "around",
+        "encountered": true
+    },
+    {
+        "w":    "antes de",
+        "ID":   0,
+        "definition": "before",
+        "encountered": true
+    },
+    {
+        "w":    "a pesar de",
+        "ID":   0,
+        "definition": "despite",
+        "encountered": true
+    },
+    {
+        "w":    "debajo de",
+        "ID":   0,
+        "definition": "under",
+        "encountered": true
+    },
+    {
+        "w":    "dentro de",
+        "ID":   0,
+        "definition": "because of, to , for , by , through",
+        "encountered": true
+    },
+    {
+        "w":    "encima de",
+        "ID":   0,
+        "definition": "on top of, above",
+        "encountered": true
+    },
+    {
+        "w":    "en frente de",
+        "ID":   0,
+        "definition": "in front of, towards, ",
+        "encountered": true
+    }
+    
+]}

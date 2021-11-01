@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -20,18 +21,32 @@ public class PlayerMove : MonoBehaviour
   // Save a reference to the joystick (should only be 1 per screen)
   // and its center pivot point.
 
+  // TY Code (animation movement)//
+  public Rigidbody2D rb;
+  public Vector2 movementDirection;
+  public Animator animator;
+  public float movementSpeed;
+
+  // Use this for initialization
   void Start () {
     joystick = FindObjectOfType<Joystick>();
   }
 
   // Update is called once per frame
   void FixedUpdate () {
-    Debug.Log(joystick.Direction);
     moveCharacter(joystick.Direction);
   }
 
   void moveCharacter (Vector2 playerDirection) {
       gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
+      animate(playerDirection);
+  }
+
+  // TY Code
+  void animate(Vector2 playerDirection){
+    animator.SetFloat("Horizontal", playerDirection.x);
+    animator.SetFloat("Vertical", playerDirection.y);
+    animator.SetFloat("Speed", movementSpeed);
   }
 
 }
@@ -63,8 +78,13 @@ public class PlayerMove : MonoBehaviour
           playerDirection = Vector2.down;
         }
       }
+      // TY Code
+      movementDirection = playerDirection;
 
       ball.GetComponent<RectTransform>().position = BALL_CENTER + (relativePosition.normalized * BALL_RANGE);
       moveCharacter(playerDirection);
+
+      // TY Code
+      animate();
     }
     */
