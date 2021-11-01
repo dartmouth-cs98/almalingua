@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using System.IO;
 using System.Linq;
 
+/** 
+Celina Tala 
+*/
+
 public class NPCDialogueManager : MonoBehaviour
 {
     public Text Name;
@@ -73,7 +77,7 @@ public class NPCDialogueManager : MonoBehaviour
         if (!userTalking)
         {
             Name.text = "Yo";
-            gameObject.transform.GetChild(3).gameObject.GetComponent<HideShowObjects>().Show();
+            gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
@@ -89,7 +93,7 @@ public class NPCDialogueManager : MonoBehaviour
 
     public void UserResponse(string UserInput)
     {
-        
+
     }
 
     public void CloseButton()
