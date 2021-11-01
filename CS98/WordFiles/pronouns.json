@@ -1,0 +1,45 @@
+{"wlist": [
+    {
+        "w":    "yo",
+        "ID":   0,
+        "definition": "I",
+        "encountered": true
+        },
+    {
+        "w":    "tú",
+        "ID":   0,
+        "definition": "you",
+        "encountered": true
+    },
+    {
+        "w":  "él",
+        "ID":     0,
+        "definition": "he/him",
+        "encountered": true
+    },
+    {
+        "w":    "ella",
+        "ID":   0,
+        "definition": "she/her",
+        "encountered": true
+    },
+    {
+        "w":    "usted",
+        "ID":   0,
+        "definition": "you formal",
+        "encountered": true
+    },
+    {
+        "w":    "ellos",
+        "ID":   0,
+        "definition": "them (masculine or generic) \n ellas if all female",
+        "encountered": true
+    },
+    {
+        "w":    "nosotros",
+        "ID":   0,
+        "definition": "us (masculine or generalized) \n nosotras if all female",
+        "encountered": true
+    }
+    
+]}

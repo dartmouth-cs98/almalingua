@@ -1,0 +1,752 @@
+{"wlist": [
+    {
+        "w":    "hombre",
+        "ID":   0,
+        "definition": "el, man",
+        "encountered": false
+        },
+    {
+        "w":    "mujer",
+        "ID":   0,
+        "definition": "la, woman",
+        "encountered": false
+    },
+    {
+        "w":  "niño",
+        "ID":     0,
+        "definition": "el, boy, child \n la niña for girl",
+        "encountered": false
+    },
+    {
+        "w":    "señor",
+        "ID":   0,
+        "definition": "el, sir, mr, gentleman \n la señora for ma'am, miss, lady",
+        "encountered": false
+    },
+    {
+        "w":    "bruja",
+        "ID":   0,
+        "definition": "la, witch \n el brujo for sorcerer, warlock",
+        "encountered": false
+    },
+    {
+        "w":    "pieza",
+        "ID":   0,
+        "definition": "la, piece",
+        "encountered": false
+    },
+    {
+        "w":    "bosque",
+        "ID":   0,
+        "definition": "el, forest",
+        "encountered": false
+    },
+    {
+        "w":    "magia",
+        "ID":   0,
+        "definition": "la, magic ",
+        "encountered": false
+    },
+    {
+        "w":    "caballero",
+        "ID":   0,
+        "definition": "el, knight, gentleman",
+        "encountered": false
+    },
+    {
+        "w":    "cocina",
+        "ID":   0,
+        "definition": "la, cocina",
+        "encountered": false
+    },
+    {
+        "w":    "transporte",
+        "ID":   0,
+        "definition": "el, transportation",
+        "encountered": false
+    },
+    {
+        "w":    "portal",
+        "ID":   0,
+        "definition": "el, portal",
+        "encountered": false
+    },
+    {
+        "w":    "ubicación",
+        "ID":   0,
+        "definition": "la, location",
+        "encountered": false
+    },
+    {
+        "w":    "pueblo",
+        "ID":   0,
+        "definition": "el, town",
+        "encountered": false
+    },
+    {
+        "w":    "casa",
+        "ID":   0,
+        "definition": "la, house",
+        "encountered": false
+    },
+    {
+        "w":    "calle",
+        "ID":   0,
+        "definition": "la, calle",
+        "encountered": false
+    },
+    {
+        "w":    "puente",
+        "ID":   0,
+        "definition": "el, bridge",
+        "encountered": false
+    },
+    {
+        "w":    "granja",
+        "ID":   0,
+        "definition": "la, farm",
+        "encountered": false
+    },
+    {
+        "w":    "escuela",
+        "ID":   0,
+        "definition": "la, school",
+        "encountered": false
+    },
+    {
+        "w":    "cuarto",
+        "ID":   0,
+        "definition": "el, room",
+        "encountered": false
+    },
+    {
+        "w":    "tienda",
+        "ID":   0,
+        "definition": "la, store",
+        "encountered": false
+    },
+    {
+        "w":    "hospital",
+        "ID":   0,
+        "definition": "el, hospital",
+        "encountered": false
+    },
+    {
+        "w":    "biblioteca",
+        "ID":   0,
+        "definition": "la, library",
+        "encountered": false
+    },
+    {
+        "w":    "mercado",
+        "ID":   0,
+        "definition": "el, mercado",
+        "encountered": false
+    },
+    {
+        "w":    "edificio",
+        "ID":   0,
+        "definition": "el, building",
+        "encountered": false
+    },
+    {
+        "w":    "suelo",
+        "ID":   0,
+        "definition": "el, floor",
+        "encountered": false
+    },
+    {
+        "w":    "espacio",
+        "ID":   0,
+        "definition": "el, espacio",
+        "encountered": false
+    },
+    {
+        "w":    "banco",
+        "ID":   0,
+        "definition": "el, bank, bench",
+        "encountered": false
+    },
+    {
+        "w":    "ropa",
+        "ID":   0,
+        "definition": "la, clothing",
+        "encountered": false
+    },
+    {
+        "w":    "color",
+        "ID":   0,
+        "definition": "el, color",
+        "encountered": false
+    },
+    {
+        "w":    "rojo",
+        "ID":   0,
+        "definition": "el, red",
+        "encountered": false
+    },
+    {
+        "w":    "verde",
+        "ID":   0,
+        "definition": "el, green",
+        "encountered": false
+    },
+    {
+        "w":    "azul",
+        "ID":   0,
+        "definition": "el, blue",
+        "encountered": false
+    },
+    {
+        "w":    "amarillo",
+        "ID":   0,
+        "definition": "el, yellow",
+        "encountered": false
+    },
+    {
+        "w":    "marrón",
+        "ID":   0,
+        "definition": "el, brown",
+        "encountered": false
+    },
+    {
+        "w":    "rosa",
+        "ID":   0,
+        "definition": "la, rose, pink",
+        "encountered": false
+    },
+    {
+        "w":    "naranja",
+        "ID":   0,
+        "definition": "la, orange",
+        "encountered": false
+    },
+    {
+        "w":    "negro",
+        "ID":   0,
+        "definition": "el, black",
+        "encountered": false
+    },
+    {
+        "w":    "blanco",
+        "ID":   0,
+        "definition": "el, white",
+        "encountered": false
+    },
+    {
+        "w":    "gris",
+        "ID":   0,
+        "definition": "el, gray",
+        "encountered": false
+    },
+    {
+        "w":    "gente",
+        "ID":   0,
+        "definition": "la, people",
+        "encountered": false
+    },
+    {
+        "w":    "hijo",
+        "ID":   0,
+        "definition": "el, son or child \n la hija for daughter",
+        "encountered": false
+    },
+    {
+        "w":    "madre",
+        "ID":   0,
+        "definition": "la, mother",
+        "encountered": false
+    },
+    {
+        "w":    "padre",
+        "ID":   0,
+        "definition": "el, father",
+        "encountered": false
+    },
+    {
+        "w":    "padres",
+        "ID":   0,
+        "definition": "los, padres",
+        "encountered": false
+    },
+    {
+        "w":    "bebé",
+        "ID":   0,
+        "definition": "el, baby",
+        "encountered": false
+    },
+    {
+        "w":    "hermano",
+        "ID":   0,
+        "definition": "el, brother, sibling \n la hermana for sister",
+        "encountered": false
+    },
+    {
+        "w":    "familia",
+        "ID":   0,
+        "definition": "la, family",
+        "encountered": false
+    },
+    {
+        "w":    "esposo",
+        "ID":   0,
+        "definition": "el, husband \n la esposa for wife",
+        "encountered": false
+    },
+    {
+        "w":    "vecino",
+        "ID":   0,
+        "definition": "el, neighbor",
+        "encountered": false
+    },
+    {
+        "w":    "amigo",
+        "ID":   0,
+        "definition": "el, male friend \n la amiga for female friend",
+        "encountered": false
+    },
+    {
+        "w":    "jugador",
+        "ID":   0,
+        "definition": "el, player \n la jugadora female player",
+        "encountered": false
+    },
+    {
+        "w":    "trabajo",
+        "ID":   0,
+        "definition": "el, job",
+        "encountered": false
+    },
+    {
+        "w":    "maestro",
+        "ID":   0,
+        "definition": "el, teacher \n la maestra for female teacher",
+        "encountered": false
+    },
+    {
+        "w":    "estudiante",
+        "ID":   0,
+        "definition": "el/la, student",
+        "encountered": false
+    },
+    {
+        "w":    "doctor",
+        "ID":   0,
+        "definition": "el, doctor \n la doctora for female doctor",
+        "encountered": false
+    },
+    {
+        "w":    "paciente",
+        "ID":   0,
+        "definition": "el/la, patient",
+        "encountered": false
+    },
+    {
+        "w":    "autor",
+        "ID":   0,
+        "definition": "el, author \n la autora for female author",
+        "encountered": false
+    },
+    {
+        "w":    "muerte",
+        "ID":   0,
+        "definition": "la, death",
+        "encountered": false
+    },
+    {
+        "w":    "medicina",
+        "ID":   0,
+        "definition": "la, medicine",
+        "encountered": false
+    },
+    {
+        "w":    "dinero",
+        "ID":   0,
+        "definition": "el, money",
+        "encountered": false
+    },
+    {
+        "w":    "equipo",
+        "ID":   0,
+        "definition": "el, team",
+        "encountered": false
+    },
+    {
+        "w":    "relación",
+        "ID":   0,
+        "definition": "la, relationship",
+        "encountered": false
+    },
+    {
+        "w":    "energía",
+        "ID":   0,
+        "definition": "la, energy",
+        "encountered": false
+    },
+    {
+        "w":    "war",
+        "ID":   0,
+        "definition": "la, guerra",
+        "encountered": false
+    },
+    {
+        "w":    "combate",
+        "ID":   0,
+        "definition": "el, combat",
+        "encountered": false
+    },
+    {
+        "w":    "izquierda",
+        "ID":   0,
+        "definition": "la, left (direction)",
+        "encountered": false
+    },
+    {
+        "w":    "derecha",
+        "ID":   0,
+        "definition": "la, right (Direction)",
+        "encountered": false
+    },
+    {
+        "w":    "monstruo",
+        "ID":   0,
+        "definition": "el, monster",
+        "encountered": false
+    },
+    {
+        "w":    "enemigo",
+        "ID":   0,
+        "definition": "el, enemy",
+        "encountered": false
+    },
+    {
+        "w":    "búsqueda",
+        "ID":   0,
+        "definition": "la, search",
+        "encountered": false
+    },
+    {
+        "w":    "misión",
+        "ID":   0,
+        "definition": "la, mission, quest",
+        "encountered": false
+    },
+    {
+        "w":    "idioma",
+        "ID":   0,
+        "definition": "el, idioma, lenguaje",
+        "encountered": false
+    },
+    {
+        "w":    "herrero",
+        "ID":   0,
+        "definition": "el, blacksmith ",
+        "encountered": false
+    },
+    {
+        "w":    "mapa",
+        "ID":   0,
+        "definition": "el, map ",
+        "encountered": false
+    },
+    {
+        "w":    "cocinero",
+        "ID":   0,
+        "definition": "el, the cook \n la cocinera for female cook",
+        "encountered": false
+    },
+    {
+        "w":    "granjero",
+        "ID":   0,
+        "definition": "el, farmer \n la granjera for female farmer",
+        "encountered": false
+    },
+    {
+        "w":    "arqueólogo",
+        "ID":   0,
+        "definition": "el, archeoligst \n la arqueólogo for female archeologist",
+        "encountered": false
+    },
+    {
+        "w":    "fuego",
+        "ID":   0,
+        "definition": "el, fire",
+        "encountered": false
+    },
+    {
+        "w":    "agua",
+        "ID":   0,
+        "definition": "el agua (but still feminine)",
+        "encountered": false
+    },
+    {
+        "w":    "perro",
+        "ID":   0,
+        "definition": "el, dog ",
+        "encountered": false
+    }
+    ,
+    {
+        "w":    "este",
+        "ID":   0,
+        "definition": "this one (masc) ",
+        "encountered": false
+    }
+    ,
+    {
+        "w":    "esta",
+        "ID":   0,
+        "definition": "this one (fem) ",
+        "encountered": false
+    },
+    {
+        "w":    "esto",
+        "ID":   0,
+        "definition": "this",
+        "encountered": false
+    },
+    {
+        "w":    "ese",
+        "ID":   0,
+        "definition": "that one (masc) (close to listener)",
+        "encountered": false
+    }
+    ,
+    {
+        "w":    "esa",
+        "ID":   0,
+        "definition": "that one (fem) (close to listener)",
+        "encountered": false
+    },
+    {
+        "w":    "eso",
+        "ID":   0,
+        "definition": "that (close to listener)",
+        "encountered": false
+    },
+    {
+        "w":    "aquel",
+        "ID":   0,
+        "definition": "that one over there (masc)\n (far from listener & speaker)",
+        "encountered": false
+    } ,
+    {
+        "w":    "aquella",
+        "ID":   0,
+        "definition": "that one over there (fem)\n (far from listener & speaker)",
+        "encountered": false
+    },
+    {
+        "w":    "aquello",
+        "ID":   0,
+        "definition": "that one over there \n (far from listener & speaker)",
+        "encountered": false
+    },
+    {
+        "w":    "poción",
+        "ID":   0,
+        "definition": "la, potion",
+        "encountered": false
+    }
+    ,
+    {
+        "w":    "hierba",
+        "ID":   0,
+        "definition": "la, hierba",
+        "encountered": false
+    },
+    {
+        "w":    "flor",
+        "ID":   0,
+        "definition": "la, flower",
+        "encountered": false
+    },
+    {
+        "w":    "material",
+        "ID":   0,
+        "definition": "el, material",
+        "encountered": false
+    },
+    {
+        "w":    "algodón",
+        "ID":   0,
+        "definition": "el, cotton",
+        "encountered": false
+    },
+    {
+        "w":    "hechizo",
+        "ID":   0,
+        "definition": "el, spell",
+        "encountered": false
+    },
+    {
+        "w":    "uno",
+        "ID":   0,
+        "definition": "1",
+        "encountered": true
+    },
+    {
+        "w":    "dos",
+        "ID":   0,
+        "definition": "2",
+        "encountered": true
+    },
+    {
+        "w":    "tres",
+        "ID":   0,
+        "definition": "3",
+        "encountered": false
+    },
+    {
+        "w":    "cuatro",
+        "ID":   0,
+        "definition": "4",
+        "encountered": false
+    },
+    {
+        "w":    "cinco",
+        "ID":   0,
+        "definition": "5",
+        "encountered": false
+    },
+    {
+        "w":    "seis",
+        "ID":   0,
+        "definition": "6",
+        "encountered": false
+    },
+    {
+        "w":    "siete",
+        "ID":   0,
+        "definition": "7",
+        "encountered": false
+    },
+    {
+        "w":    "ocho",
+        "ID":   0,
+        "definition": "8",
+        "encountered": false
+    },
+    {
+        "w":    "nueve",
+        "ID":   0,
+        "definition": "9",
+        "encountered": false
+    },
+    {
+        "w":    "diez",
+        "ID":   0,
+        "definition": "10",
+        "encountered": false
+    },
+    {
+        "w":    "palabra",
+        "ID":   0,
+        "definition": "la, word",
+        "encountered": false
+    },
+    {
+        "w":    "río",
+        "ID":   0,
+        "definition": "el, river",
+        "encountered": false
+    },
+    {
+        "w":    "arroz",
+        "ID":   0,
+        "definition": "el, rice",
+        "encountered": false
+    },
+    {
+        "w":    "leche",
+        "ID":   0,
+        "definition": "la, milk",
+        "encountered": false
+    },
+    {
+        "w":    "azúcar",
+        "ID":   0,
+        "definition": "la, sugar",
+        "encountered": false
+    },
+    {
+        "w":    "comida",
+        "ID":   0,
+        "definition": "la, food",
+        "encountered": false
+    },
+    {
+        "w":    "pollo",
+        "ID":   0,
+        "definition": "el, chicken",
+        "encountered": false
+    },
+    {
+        "w":    "estufa",
+        "ID":   0,
+        "definition": "la, stove",
+        "encountered": false
+    },
+    {
+        "w":    "horno",
+        "ID":   0,
+        "definition": "el, oven",
+        "encountered": false
+    },
+    {
+        "w":    "fruta",
+        "ID":   0,
+        "definition": "la, fruit",
+        "encountered": false
+    },
+    {
+        "w":    "vegetal",
+        "ID":   0,
+        "definition": "el, vegetable",
+        "encountered": false
+    },
+    {
+        "w":    "museo",
+        "ID":   0,
+        "definition": "el, museum",
+        "encountered": false
+    },
+    {
+        "w":    "ruega",
+        "ID":   0,
+        "definition": "la, wheel",
+        "encountered": false
+    },
+    {
+        "w":    "planta",
+        "ID":   0,
+        "definition": "la, plant",
+        "encountered": false
+    },
+    {
+        "w":    "creature",
+        "ID":   0,
+        "definition": "la, criatura",
+        "encountered": false
+    },
+    {
+        "w":    "ruinas",
+        "ID":   0,
+        "definition": "las, ruins",
+        "encountered": false
+    },
+    {
+        "w":    "reino",
+        "ID":   0,
+        "definition": "el, kingdom",
+        "encountered": false
+    },
+    {
+        "w":    "libro",
+        "ID":   0,
+        "definition": "el, book",
+        "encountered": false
+    }
+]}
+
+
