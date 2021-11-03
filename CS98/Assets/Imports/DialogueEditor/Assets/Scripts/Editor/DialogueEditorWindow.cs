@@ -1503,6 +1503,14 @@ namespace DialogueEditor
             {
                 UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene());
             }
+            // ADDED BY RAY!!!
+            // SAVE IF IN PREFAB MODE!
+            var prefabStage = UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage();
+            if (prefabStage != null)
+            {
+                UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(prefabStage.scene);
+            }
+            // END ADDED!!!
 #endif
         }
 
@@ -1532,6 +1540,7 @@ namespace DialogueEditor
             panelWidth = START_PANEL_WIDTH;
         }
 
+        // UPDATED BY RAY --> Change default parameter to manual=true.
         private void Save(bool manual = false)
         {
             if (Application.isPlaying)
