@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - JoystickBall
+  - Joystick
+  - Conversation
   layers:
   - Default
   - TransparentFX

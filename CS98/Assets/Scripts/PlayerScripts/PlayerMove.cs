@@ -5,19 +5,11 @@ using System;
 
 public class PlayerMove : MonoBehaviour
 {
-  public int BALL_RANGE = 25;
 
-  private Vector2 pointA;
-  private Vector2 pointB;
-
-  private GameObject ball;
-  private Vector2 BALL_CENTER;
-
-  private double angleSplit = 45;
-
+  private Touch touch;
   public float thrust = 10f;
+  protected Joystick joystick; 
 
-  // TY Code (animation movement)//
   public Rigidbody2D rb;
   public Vector2 movementDirection;
   public Animator animator;
@@ -25,21 +17,44 @@ public class PlayerMove : MonoBehaviour
 
   // Use this for initialization
   void Start () {
-    if (ball == null) {
-        ball = GameObject.FindGameObjectsWithTag("JoystickBall")[0];
-    }
-    BALL_CENTER = new Vector2(ball.GetComponent<RectTransform>().position.x, ball.GetComponent<RectTransform>().position.y);
+    joystick = FindObjectOfType<Joystick>();
   }
 
   // Update is called once per frame
   void FixedUpdate () {
-    if (Input.GetMouseButton(0)) {
-      Vector2 touchPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+    moveCharacter(joystick.Direction);
+  }
+
+  void moveCharacter (Vector2 playerDirection) {
+      gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
+      animate(playerDirection);
+  }
+
+  // TY Code
+  void animate(Vector2 playerDirection){
+    animator.SetFloat("Horizontal", playerDirection.x);
+    animator.SetFloat("Vertical", playerDirection.y);
+    animator.SetFloat("Speed", movementSpeed);
+  }
+
+}
+
+
+/*
+    /*
+    if (Input.touchCount > 0) {
+      touch = Input.GetTouch(0);
+
+      Vector2 touchPosition = new Vector2(touch.position.x, touch.position.y);
       Vector2 relativePosition = touchPosition - BALL_CENTER;
 
+      Debug.Log(touchPosition);
+
+      // Get angle of joystick. 
       float relAngle = Vector2.Angle(Vector2.right, relativePosition);
       Vector2 playerDirection;
 
+      // Get the nearest cardinal direction of the joystick
       if (relAngle > 135) {
         playerDirection = Vector2.left;
       } else if (relAngle < 45) {
@@ -60,18 +75,4 @@ public class PlayerMove : MonoBehaviour
       // TY Code
       animate();
     }
-      
-  }
-
-  void moveCharacter (Vector2 playerDirection) {
-      gameObject.GetComponent<Rigidbody2D>().AddForce(playerDirection * thrust);
-  }
-
-  // TY Code
-  void animate(){
-    animator.SetFloat("Horizontal", movementDirection.x);
-    animator.SetFloat("Vertical", movementDirection.y);
-    animator.SetFloat("Speed", movementSpeed);
-  }
-
-}
+    */
