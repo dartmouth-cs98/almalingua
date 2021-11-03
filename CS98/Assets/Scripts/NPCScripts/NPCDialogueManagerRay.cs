@@ -6,23 +6,27 @@ using DialogueEditor;
 public class NPCDialogueManagerRay : MonoBehaviour
 {
     public NPCConversation npcConversation;
-    private ConversationNode currNode;
-    private ConversationNode rootNode;
-    private Conversation conversation;
-
-    private  string currIntent = "good";
+    public string npcName;
 
     private System.Random rnd;
+
+    private Conversation conversation;
+    private ConversationNode currNode;
+    private ConversationNode rootNode;
+    
+    private string currIntent = "good";
+    private Dictionary<string, string> entities;
 
     void Start()
     {
         rnd = new System.Random();
         conversation = npcConversation.Deserialize();
         currNode = conversation.Root;
-        Debug.Log(GetNextMessage());
+        entities = new Dictionary<string, string>();
     }
 
-    void UpdateIntent(string input, bool sendToLuis = false)
+  /******************     ****************************/
+    public void UpdateIntent(string input, bool sendToLuis = false)
     {
       if (sendToLuis == false) {
         currIntent = input;
@@ -33,9 +37,18 @@ public class NPCDialogueManagerRay : MonoBehaviour
     /*
      * Returns text of current node, without altering current node.
      */
-    string GetCurrentMessage()
+    public string GetCurrentMessage()
     {
       return currNode.Text;
+    }
+
+    /**************  SaveEntity() *****************/
+    /*
+     * Entity which abstracts the role of entities in this.
+     */
+    public void SaveEntity(string key, string value)
+    {
+      entities.Add(key, value);
     }
 
     /*************** ConnectionConditionsMatch ********************/
@@ -120,7 +133,7 @@ public class NPCDialogueManagerRay : MonoBehaviour
      * If no advancement because of no matches, returns null.
      * 
      */
-    string GetNextMessage()
+    public string GetNextMessage()
     {
       bool didUpdate = false;
       List<ConversationNode> matches = new List<ConversationNode>(); 
