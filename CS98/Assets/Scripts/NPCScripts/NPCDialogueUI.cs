@@ -19,28 +19,30 @@ public class NPCDialogueUI : MonoBehaviour
 
     
     private bool userTalking = false;
+    private bool rootTalking = true;    //if it is the root speechnode (first time it is opened)
 
 
     void OnEnable()
     {
-        // sentences = new Queue<string>();
-        // for (int i = 0; i < dialogues.dialogues.Length; i++)
-        // {
-        //     sentences.Enqueue(dialogues.dialogues[i]);
-        // }
-        // DisplayNextSentence();
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        rootTalking = true;
+
     }
 
     public void DisplayNextSentence()
     {
-        RespondButton.GetComponent<HideShowObjects>().Show();
         RespondButton.GetComponentInChildren<Text>().text = "Respond";
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         NameText.text = NPCName;
-        DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
-        string dialogueText =  DialogueManager.GetComponent<NPCDialogueManagerRay>().GetCurrentMessage();
-        if (dialogueText == null) {
+        string dialogueText;
+        if (rootTalking) { 
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetCurrentMessage();
+            rootTalking = false;
+        } else { 
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
+        }
+        if (dialogueText != null) {
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         } 

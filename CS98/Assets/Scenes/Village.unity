@@ -2435,6 +2435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
 --- !u!1 &1141329484
@@ -4559,7 +4563,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6981132, g: 0.64012796, b: 0.3984514, a: 1}
+    m_NormalColor: {r: 1, g: 0.78039217, b: 0.654902, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4632,28 +4636,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120204008}
   m_CullTransparentMesh: 1
---- !u!114 &934140680217510798 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7733799752821115827, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-  m_PrefabInstance: {fileID: 7468448234360490045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4971393465701098647 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2546981431091702954, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-  m_PrefabInstance: {fileID: 7468448234360490045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &4971393465717085820 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2546981431107690049, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
@@ -4664,11 +4646,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2546981431107690050, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
   m_PrefabInstance: {fileID: 7468448234360490045}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4971393465717085824
+--- !u!114 &4971393465717085824 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+  m_PrefabInstance: {fileID: 7468448234360490045}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4971393465717085823}
   m_Enabled: 1
@@ -4676,11 +4657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5e10e6a33a4269b933dbe52e70e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NameText: {fileID: 934140680217510798}
-  Text: {fileID: 4971393465701098647}
-  NPCName: Doctor
-  RespondButton: {fileID: 2120204008}
-  DialogueManager: {fileID: 1726924013}
 --- !u!1001 &7468448234360490045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4695,14 +4671,6 @@ PrefabInstance:
     - target: {fileID: 2546981430600398740, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.4999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546981431078921866, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546981431078921866, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UserResponse
       objectReference: {fileID: 0}
     - target: {fileID: 2546981431107690049, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_Pivot.x
@@ -4792,18 +4760,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechBubble
       objectReference: {fileID: 0}
-    - target: {fileID: 5028929740813953883, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.0599365
-      objectReference: {fileID: 0}
-    - target: {fileID: 7468448236157725109, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: RespondButton
       value: 
+      objectReference: {fileID: 2120204008}
+    - target: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: DialogueManager
+      value: 
+      objectReference: {fileID: 1726924013}
+    - target: {fileID: 5028929740813953883, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000076293945
       objectReference: {fileID: 0}
-    - target: {fileID: 7468448236157725109, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseButton
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4971393465717085827, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
