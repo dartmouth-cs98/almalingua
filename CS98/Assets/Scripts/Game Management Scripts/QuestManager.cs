@@ -11,11 +11,13 @@ public class QuestManager : MonoBehaviour
     public int QuestStep = 0;
     public GameObject QuestDisplay;
     public GameObject QuestDetails;
+    public TextAsset QuestData;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        LoadJSON.load_JSON(QuestData, baseGame);
         CurrentQuest = PlayerPrefs.GetInt("quest");
         UpdateQuest(CurrentQuest);
         QuestStep = 0;
