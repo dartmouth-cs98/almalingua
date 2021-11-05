@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-    public GameObject Panel;
-    public GameObject DialogueScript;
+    public GameObject Panel;            //the speechbubble panel
 
     // Update is called once per frame
     void Update()
@@ -17,7 +16,7 @@ public class NPCInteraction : MonoBehaviour
             if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && Input.touches[i].phase == TouchPhase.Began)
             {
                 Panel.GetComponent<HideShowObjects>().Show();
-                // DialogueScript.GetComponent<NPCDialogueManager>().DisplayNextSentence();
+                Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
             }
         }
 
