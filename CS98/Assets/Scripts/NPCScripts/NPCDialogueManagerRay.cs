@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
+using System.Text.RegularExpressions;
 
 public class NPCDialogueManagerRay : MonoBehaviour
 {
@@ -13,19 +14,43 @@ public class NPCDialogueManagerRay : MonoBehaviour
     private Conversation conversation;
     private ConversationNode currNode;
     private ConversationNode rootNode;
+
+    private string CurrentText;
     
-    private string currIntent = "good";
+    private string currIntent;
     private Dictionary<string, string> entities;
+
+    private const string QUEST_ID = "quest";
+    private const string QUEST_STEP = "questStep";
+    private const string DEFAULT_INTENT = "hello";
 
     void Start()
     {
         rnd = new System.Random();
         conversation = npcConversation.Deserialize();
+
         currNode = conversation.Root;
         entities = new Dictionary<string, string>();
+
+
+        entities[QUEST_ID] = "1";
+        entities[QUEST_STEP] = "2";
+
+        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=1", "quest"));
+        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=2", "dog"));
+        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=2", "quest"));
     }
 
-  /******************     ****************************/
+    /******************   StartConversation  ************************/
+    public void StartConversation()
+    {
+        currIntent = DEFAULT_INTENT;
+        SaveEntity(QUEST_ID, "1");
+        SaveEntity(QUEST_STEP, "2");
+        checkQuest(1, 2);
+    }
+
+  /******************   UpdateIntent  ************************/
     public void UpdateIntent(string input, bool sendToLuis = false)
     {
       if (sendToLuis == false) {
@@ -33,42 +58,47 @@ public class NPCDialogueManagerRay : MonoBehaviour
       }
     }
 
-    /**************  GetCurrentMessage() *****************/
-    /*
-     * Returns text of current node, without altering current node.
-     */
-    public string GetCurrentMessage()
-    {
-      return currNode.Text;
-    }
-
     /**************  SaveEntity() *****************/
     /*
-     * Entity which abstracts the role of entities in this.
+     * A method for adding/updating any sort of string variable to the conversation. 
+     * Abstracts the function of the entities dictionary.
      */
     public void SaveEntity(string key, string value)
     {
-      entities.Add(key, value);
+      entities[key] = value;
     }
 
-    /*************** ConnectionConditionsMatch ********************/
+    /**************  NextMessageRequiresInput() *****************/
     /*
+     * If the current node's children are of type "OptionNode", return true. Otherwise, 
+     * return false. If no children, returns false.
+     */
+    public bool NextMessageRequiresInput()
+    {
+      if (currNode.Connections.Count == 0) {
+        return false;
+      } else {
+        return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
+      }
+    }
+
+    /*************** ConnectionConditionsValid ********************/
+    /*
+     * PRIVATE FUNCTION!
      * Dialogue Editor allows us to add conditions to dialogue connections,
      * where the connection is only valid if the condition is met. This
      * function parses the condition object, and returns whether or not it
      * is met.
      * 
      * If a connection has no conditions, returns true.
-     *
      */
-    private bool ConnectionConditionsMatch(Connection connection) 
+    private bool ConnectionConditionsValid(Connection connection) 
     {
       foreach (Condition condition in connection.Conditions) {
 
         // GetInt/GetBool updates this variable with OK/False. 
         // I'm assuming it's always going to be OK.
         eParamStatus paramStatus;
-
 
         // See Dialogue Editor documentation for information about Condition types.
         // 2 Types: IntCondition, BoolCondition.
@@ -120,6 +150,66 @@ public class NPCDialogueManagerRay : MonoBehaviour
     return true;
     }
 
+    /*************** OptionMatchesIntent ********************/
+    /*
+     * Each option text will have format "intent e:entityKey='entityVal' e:entityKey='entityVal'..."
+     * This function will test whether the entities specified in text of option
+     * match entities in dictionary. If a given entityKey not specified in dicctionary, is false.
+     * 
+     * (Currrently, just matches intent with no way to add entity).
+     */
+    private bool OptionMatchesIntent(string optionText, string intent)
+    {
+      if (optionText == null || optionText == "") {
+        return false;
+      }
+      string optionIntent = optionText.Split(' ')[0];
+      if (optionIntent != intent) {
+        return false;
+      }
+
+      Regex regex = new Regex(@"e:(\w+)=(\w+)");
+      MatchCollection matches = regex.Matches(optionText);
+
+      foreach (Match match in matches) {
+        string entityKey = match.Groups[1].Value;
+        string entityVal = match.Groups[2].Value;
+
+        string dictVal = "";
+        if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    /*************** checkQuest ********************/
+    /*
+     * This function accepts the users current quest ID and quest step, and checks if there
+     * is an OptionNode child of the root which has the format "quest={int} step={int}"
+     *
+     * If yes, return true. 
+     * Else, return false (leave intent unchanged).
+     * 
+     * SIDE EFFECT: 
+     * If there is a matching quest sub-tree, this updates currIntent to match that sub-tree's intent.
+     */
+    public bool checkQuest(int questId, int questStep)
+    {
+      string questIntent = "quest=" + questId.ToString() + " step=" + questStep.ToString();
+
+      foreach (Connection connection in rootNode.Connections) {
+        if (connection.ConnectionType == Connection.eConnectionType.Option) {
+          if ( ((OptionConnection)connection).OptionNode.Text == questIntent) {
+            currIntent = questIntent;
+            return true;
+          }
+        }
+      }
+      return false;
+    }
+
     /**************  GetNextMessage() *****************/
     /*
      * Find the current speech node's connections. If this node is connected to
@@ -138,8 +228,9 @@ public class NPCDialogueManagerRay : MonoBehaviour
       bool didUpdate = false;
       List<ConversationNode> matches = new List<ConversationNode>(); 
 
+      // Iterate over each connection, add all valid to list of matches.
       foreach (Connection connection in currNode.Connections) {
-        if (ConnectionConditionsMatch(connection)) {
+        if (ConnectionConditionsValid(connection)) {
 
           // Each connected node is of type Option or Speech. 
           // All connected nodes must be the same type.
@@ -147,7 +238,7 @@ public class NPCDialogueManagerRay : MonoBehaviour
             OptionNode option = ((OptionConnection)connection).OptionNode;
 
             // Option only valid if its text matches currIntent.
-            if (option.Text.Equals(currIntent)) {
+            if (OptionMatchesIntent(option.Text, currIntent)) {
               matches.Add(option); 
             }
           } else {
@@ -165,7 +256,19 @@ public class NPCDialogueManagerRay : MonoBehaviour
         if (currNode.NodeType == ConversationNode.eNodeType.Option) {
           GetNextMessage();
         }
-        return currNode.Text;
+
+        // We will return the text at current node.
+        CurrentText = currNode.Text;
+
+        // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
+        // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
+        if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech) {
+          SpeechNode nextNode = ((SpeechConnection)currNode.Connections[0]).SpeechNode;
+          if (nextNode.Text == "") {
+            currNode = nextNode;
+          }
+        }
+        return CurrentText;
       } else {
         return null;
       }

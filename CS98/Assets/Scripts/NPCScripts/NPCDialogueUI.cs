@@ -37,7 +37,7 @@ public class NPCDialogueUI : MonoBehaviour
         NameText.text = NPCName;
         string dialogueText;
         if (rootTalking) { 
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetCurrentMessage();
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
             rootTalking = false;
         } else { 
             dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
