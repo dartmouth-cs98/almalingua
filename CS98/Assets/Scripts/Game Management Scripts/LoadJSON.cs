@@ -6,25 +6,8 @@ using System.IO;
 public class LoadJSON : MonoBehaviour
 {
 
-    public TextAsset questFile;
-    public TextAsset xFile;
-    public BaseGame baseGame;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public static void load_JSON(TextAsset file, BaseGame baseGame)
     {
-        load_JSON();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void load_JSON()
-    {
-        baseGame.qh = JsonUtility.FromJson<BaseGame.QuestHolder>(questFile.text);
+        baseGame.qh = JsonUtility.FromJson<BaseGame.QuestHolder>(file.text);
     }
 }

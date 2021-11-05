@@ -4,13 +4,16 @@
             "questname": "intro",
             "questnum": 0,
             "prereq": -1,
-            "description": "a test quest placeholder"
+            "description": "a test quest placeholder",
+            "steps":  []
+  
         },
         {
             "questname": "first spell",
             "questnum": 1,
             "prereq": 0,
-            "description": "get your first spell nice"
+            "description": "get your first spell nice",
+            "steps":  []
         }
     ]
 }
