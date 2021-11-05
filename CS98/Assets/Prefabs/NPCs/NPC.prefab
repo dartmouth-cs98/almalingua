@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 137661133854011476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.2272, y: 1.3172, z: 0}
-  m_LocalScale: {x: 1.0718937, y: 1.0718937, z: 1.0718937}
+  m_LocalScale: {x: 0.6669733, y: 0.6669733, z: 0.6669733}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -139,14 +139,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137661133854011476}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61c5e10e6a33a4269b933dbe52e70e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: {fileID: 0}
+  NameText: {fileID: 0}
   Text: {fileID: 0}
+  NPCName: Doctor
   RespondButton: {fileID: 0}
+  DialogueManager: {fileID: 0}
 --- !u!114 &1885308880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,13 +156,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137661133854011476}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 904d49b28238f42aeb6d6f70c628595c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 2546981431107690050, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
-  DialogueScript: {fileID: 0}
+  Panel: {fileID: 0}
+  MyQuest: 0
 --- !u!114 &1973080052853145509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +176,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
+  npcName: 
