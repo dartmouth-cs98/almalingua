@@ -9,55 +9,43 @@ using System.Linq;
 Celina Tala 
 */
 
-public class NPCDialogueManager : MonoBehaviour
+public class NPCDialogueUI : MonoBehaviour
 {
-    public Text Name;
-    public Text Text;
-    public GameObject RespondButton;
+    public Text NameText;               //the textbox for the npc name/"yo"
+    public Text Text;                   //the textbook for the actual dialogue
+    public string NPCName;              //name of our NPC
+    public GameObject RespondButton;    //a button
+    public GameObject DialogueManager;  //DialogueManager empty game object
 
-    private NPCDialogue dialogues;
-    private Queue<string> sentences;
-    private string JSONFilePath = "./Assets/Dialogues/doctorScript.json";
+    
     private bool userTalking = false;
+    private bool rootTalking = true;    //if it is the root speechnode (first time it is opened)
 
-
-    // Use this for initialization
-    void Awake()
-    {
-        using (StreamReader stream = new StreamReader(JSONFilePath))
-        {
-            string json = stream.ReadToEnd();
-            dialogues = JsonUtility.FromJson<NPCDialogue>(json);
-        }
-    }
 
     void OnEnable()
     {
-        sentences = new Queue<string>();
-        for (int i = 0; i < dialogues.dialogues.Length; i++)
-        {
-            sentences.Enqueue(dialogues.dialogues[i]);
-        }
-        DisplayNextSentence();
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        rootTalking = true;
+
     }
 
     public void DisplayNextSentence()
     {
-        RespondButton.GetComponent<HideShowObjects>().Show();
         RespondButton.GetComponentInChildren<Text>().text = "Respond";
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
-        Name.text = dialogues.name;
-        if (sentences.Count > 0)
-        {
-            string sentence = sentences.Dequeue();
+        NameText.text = NPCName;
+        string dialogueText;
+        if (rootTalking) { 
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetCurrentMessage();
+            rootTalking = false;
+        } else { 
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
+        }
+        if (dialogueText != null) {
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
-        }
-        else
-        {
-            Text.text = "Dialogue Completed";
-        }
+            StartCoroutine(TypeSentence(dialogueText));
+        } 
 
     }
 
@@ -76,7 +64,7 @@ public class NPCDialogueManager : MonoBehaviour
     {
         if (!userTalking)
         {
-            Name.text = "Yo";
+            NameText.text = "Yo";
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
@@ -93,7 +81,7 @@ public class NPCDialogueManager : MonoBehaviour
 
     public void UserResponse(string UserInput)
     {
-
+        DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput, true);
     }
 
     public void CloseButton()
