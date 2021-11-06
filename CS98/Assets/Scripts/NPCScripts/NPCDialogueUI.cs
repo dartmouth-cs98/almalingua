@@ -26,7 +26,6 @@ public class NPCDialogueUI : MonoBehaviour
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
-
     }
 
     public void DisplayNextSentence()
@@ -37,7 +36,10 @@ public class NPCDialogueUI : MonoBehaviour
         NameText.text = NPCName;
         string dialogueText;
         if (rootTalking) { 
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
+            DialogueManager.GetComponent<NPCDialogueManagerRay>().StartConversation();
+            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().CurrentText;
+            Debug.Log("dial.text:");
+            Debug.Log(dialogueText);
             rootTalking = false;
         } else { 
             dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
@@ -81,7 +83,7 @@ public class NPCDialogueUI : MonoBehaviour
 
     public void UserResponse(string UserInput)
     {
-        DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput, true);
+        DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput);
     }
 
     public void CloseButton()

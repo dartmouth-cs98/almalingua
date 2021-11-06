@@ -277,6 +277,17 @@ Transform:
   m_Father: {fileID: 1686938757}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95451649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2546981431091702954, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+  m_PrefabInstance: {fileID: 7468448234360490045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194429846
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +777,17 @@ Transform:
   m_Father: {fileID: 642047638}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &453464646 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7733799752821115827, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+  m_PrefabInstance: {fileID: 7468448234360490045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &488645446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,63 +1618,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &833475665
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.656661
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.4726977
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -13.239881
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688232, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3771186380850688234, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-      propertyPath: m_Name
-      value: ConvoHowAreYou
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
 --- !u!1 &835563259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,9 +2401,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: Text
+      value: 
+      objectReference: {fileID: 95451649}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: NPCName
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: NameText
+      value: 
+      objectReference: {fileID: 453464646}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: RespondButton
+      value: 
+      objectReference: {fileID: 2120204008}
+    - target: {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: DialogueManager
+      value: 
+      objectReference: {fileID: 1726924013}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
 --- !u!1 &1141329484
@@ -3720,6 +3705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
   npcName: 
+  CurrentText: 
 --- !u!4 &1726924015
 Transform:
   m_ObjectHideFlags: 0
@@ -4666,11 +4652,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2546981430519108190, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.4999981
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2546981430600398740, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.4999981
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2546981431107690049, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_Pivot.x

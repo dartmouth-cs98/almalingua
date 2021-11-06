@@ -8,19 +8,17 @@ public class NPCDialogueManagerRay : MonoBehaviour
 {
     public NPCConversation npcConversation;
     public string npcName;
+    public Dictionary<string, string> entities;
+    public string CurrentText;
 
     private System.Random rnd;
 
     private Conversation conversation;
     private ConversationNode currNode;
-    private ConversationNode rootNode;
 
-    private string CurrentText;
-    
     private string currIntent;
-    private Dictionary<string, string> entities;
 
-    private const string QUEST_ID = "quest";
+    private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
     private const string DEFAULT_INTENT = "hello";
 
@@ -32,40 +30,42 @@ public class NPCDialogueManagerRay : MonoBehaviour
         currNode = conversation.Root;
         entities = new Dictionary<string, string>();
 
-
-        entities[QUEST_ID] = "1";
-        entities[QUEST_STEP] = "2";
-
-        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=1", "quest"));
-        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=2", "dog"));
-        Debug.Log(OptionMatchesIntent("quest e:quest=1 e:questStep=2", "quest"));
+        // Hard coding quest values for testing.
+        entities[QUEST] = "1";
+        entities[QUEST_STEP] = "3";
     }
 
     /******************   StartConversation  ************************/
+    /* 
+     * This function sets the current node to the first speech node in 
+     * either a quest sub-tree or the default sub-tree.
+     * 
+     * The 1st message can be retrieved via "CurrentText"
+     */
     public void StartConversation()
     {
+        Debug.Log("START CONVO!");
         currIntent = DEFAULT_INTENT;
-        SaveEntity(QUEST_ID, "1");
-        SaveEntity(QUEST_STEP, "2");
-        checkQuest(1, 2);
+        if (checkQuest()) {
+          currIntent = QUEST;
+        }
+        GetNextMessage();
     }
 
   /******************   UpdateIntent  ************************/
+  /*
+   * Used to update the intent. If Luis enabled, turns the 'input'
+   * string into an intent by calling Luis API. Else, set intent 
+   * to 'input'.
+   *
+   * [LUIS API NOT YET IMPLEMENTED]
+   *
+   */
     public void UpdateIntent(string input, bool sendToLuis = false)
     {
       if (sendToLuis == false) {
         currIntent = input;
       }
-    }
-
-    /**************  SaveEntity() *****************/
-    /*
-     * A method for adding/updating any sort of string variable to the conversation. 
-     * Abstracts the function of the entities dictionary.
-     */
-    public void SaveEntity(string key, string value)
-    {
-      entities[key] = value;
     }
 
     /**************  NextMessageRequiresInput() *****************/
@@ -160,6 +160,7 @@ public class NPCDialogueManagerRay : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
+      Debug.Log("OPTIONMATCHESINTENT: " + optionText + " " + intent);
       if (optionText == null || optionText == "") {
         return false;
       }
@@ -168,41 +169,45 @@ public class NPCDialogueManagerRay : MonoBehaviour
         return false;
       }
 
-      Regex regex = new Regex(@"e:(\w+)=(\w+)");
+      Regex regex = new Regex(@"(\w+)=(\w+)");
       MatchCollection matches = regex.Matches(optionText);
 
       foreach (Match match in matches) {
         string entityKey = match.Groups[1].Value;
         string entityVal = match.Groups[2].Value;
 
+        Debug.Log("Searching for (" + entityKey + ", " + entityVal + ")");
+
         string dictVal = "";
         if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal) {
           return false;
         }
+
+        Debug.Log("dictVal was: " + dictVal);
       }
+
+      Debug.Log("returning true");
 
       return true;
     }
 
     /*************** checkQuest ********************/
     /*
-     * This function accepts the users current quest ID and quest step, and checks if there
-     * is an OptionNode child of the root which has the format "quest={int} step={int}"
-     *
-     * If yes, return true. 
-     * Else, return false (leave intent unchanged).
-     * 
-     * SIDE EFFECT: 
-     * If there is a matching quest sub-tree, this updates currIntent to match that sub-tree's intent.
+     * This function returns true/false if there
+     * is an OptionNode child of the root representing the appropriate quest/step combo.
      */
-    public bool checkQuest(int questId, int questStep)
+    public bool checkQuest()
     {
-      string questIntent = "quest=" + questId.ToString() + " step=" + questStep.ToString();
+      Debug.Log("checkQuestO");
+      // TO DO HERE -- load in the quests from playerPrefs:
+      // entities[QUEST] = ?
+      // entities[QUEST_STEP] = ?
 
-      foreach (Connection connection in rootNode.Connections) {
+      foreach (Connection connection in conversation.Root.Connections) {
         if (connection.ConnectionType == Connection.eConnectionType.Option) {
-          if ( ((OptionConnection)connection).OptionNode.Text == questIntent) {
-            currIntent = questIntent;
+          OptionNode optionNode = ((OptionConnection)connection).OptionNode;
+          if (OptionMatchesIntent(optionNode.Text, "quest")) {
+            Debug.Log("CheckQuest returning true");
             return true;
           }
         }
