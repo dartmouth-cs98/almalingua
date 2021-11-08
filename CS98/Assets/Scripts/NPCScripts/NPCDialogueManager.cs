@@ -27,8 +27,8 @@ public class NPCDialogueManager : MonoBehaviour
         rnd = new System.Random();
         entities = new Dictionary<string, string>();
         // Hard coding quest values for testing.
-        entities[QUEST] = "1";
-        entities[QUEST_STEP] = "3";
+        entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
+        entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
     }
 
     /******************   StartConversation  ************************/
