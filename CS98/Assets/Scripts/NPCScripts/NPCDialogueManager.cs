@@ -25,11 +25,7 @@ public class NPCDialogueManager : MonoBehaviour
     void Start()
     {
         rnd = new System.Random();
-        conversation = npcConversation.Deserialize();
-
-        currNode = conversation.Root;
         entities = new Dictionary<string, string>();
-
         // Hard coding quest values for testing.
         entities[QUEST] = "1";
         entities[QUEST_STEP] = "3";
@@ -44,28 +40,33 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void StartConversation()
     {
-        Debug.Log("START CONVO!");
+        conversation = npcConversation.Deserialize();
+        currNode = conversation.Root;
+        Debug.Log("START CONVO!" + currNode.Text);
         currIntent = DEFAULT_INTENT;
-        if (checkQuest()) {
-          currIntent = QUEST;
+        if (checkQuest())
+        {
+            currIntent = QUEST;
         }
         GetNextMessage();
+
     }
 
-  /******************   UpdateIntent  ************************/
-  /*
-   * Used to update the intent. If Luis enabled, turns the 'input'
-   * string into an intent by calling Luis API. Else, set intent 
-   * to 'input'.
-   *
-   * [LUIS API NOT YET IMPLEMENTED]
-   *
-   */
+    /******************   UpdateIntent  ************************/
+    /*
+     * Used to update the intent. If Luis enabled, turns the 'input'
+     * string into an intent by calling Luis API. Else, set intent 
+     * to 'input'.
+     *
+     * [LUIS API NOT YET IMPLEMENTED]
+     *
+     */
     public void UpdateIntent(string input, bool sendToLuis = false)
     {
-      if (sendToLuis == false) {
-        currIntent = input;
-      }
+        if (sendToLuis == false)
+        {
+            currIntent = input;
+        }
     }
 
     /**************  NextMessageRequiresInput() *****************/
@@ -75,11 +76,14 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public bool NextMessageRequiresInput()
     {
-      if (currNode.Connections.Count == 0) {
-        return false;
-      } else {
-        return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
-      }
+        if (currNode.Connections.Count == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
+        }
     }
 
     /*************** ConnectionConditionsValid ********************/
@@ -92,62 +96,74 @@ public class NPCDialogueManager : MonoBehaviour
      * 
      * If a connection has no conditions, returns true.
      */
-    private bool ConnectionConditionsValid(Connection connection) 
+    private bool ConnectionConditionsValid(Connection connection)
     {
-      foreach (Condition condition in connection.Conditions) {
+        foreach (Condition condition in connection.Conditions)
+        {
 
-        // GetInt/GetBool updates this variable with OK/False. 
-        // I'm assuming it's always going to be OK.
-        eParamStatus paramStatus;
+            // GetInt/GetBool updates this variable with OK/False. 
+            // I'm assuming it's always going to be OK.
+            eParamStatus paramStatus;
 
-        // See Dialogue Editor documentation for information about Condition types.
-        // 2 Types: IntCondition, BoolCondition.
+            // See Dialogue Editor documentation for information about Condition types.
+            // 2 Types: IntCondition, BoolCondition.
 
-        // Check each condition.
-        if (condition.ConditionType == Condition.eConditionType.IntCondition) {
+            // Check each condition.
+            if (condition.ConditionType == Condition.eConditionType.IntCondition)
+            {
 
-          IntCondition intCondition = (IntCondition)condition;
-          switch (intCondition.CheckType)
-          {
-            case IntCondition.eCheckType.equal:
-              if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus) 
-              == intCondition.RequiredValue)) {
-                return false;
-              }
-              break;
+                IntCondition intCondition = (IntCondition)condition;
+                switch (intCondition.CheckType)
+                {
+                    case IntCondition.eCheckType.equal:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        == intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
 
-            case IntCondition.eCheckType.lessThan:
-              if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus) 
-              < intCondition.RequiredValue)) {
-                return false;
-              }
-              break;
+                    case IntCondition.eCheckType.lessThan:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        < intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
 
-            default:
-              if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus) 
-              > intCondition.RequiredValue)) {
-                return false;
-              }
-              break;
-          }
-        } else {
-
-          BoolCondition boolCondition = (BoolCondition)condition;
-
-          if (boolCondition.CheckType == BoolCondition.eCheckType.equal) {
-            if (!(conversation.GetBool(boolCondition.ParameterName, out paramStatus) 
-            == boolCondition.RequiredValue)) {
-              return false;
+                    default:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        > intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
+                }
             }
-          } else {
-            if (conversation.GetBool(boolCondition.ParameterName, out paramStatus) 
-            == boolCondition.RequiredValue) {
-              return false;
+            else
+            {
+
+                BoolCondition boolCondition = (BoolCondition)condition;
+
+                if (boolCondition.CheckType == BoolCondition.eCheckType.equal)
+                {
+                    if (!(conversation.GetBool(boolCondition.ParameterName, out paramStatus)
+                    == boolCondition.RequiredValue))
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (conversation.GetBool(boolCondition.ParameterName, out paramStatus)
+                    == boolCondition.RequiredValue)
+                    {
+                        return false;
+                    }
+                }
             }
-          }
         }
-      }
-    return true;
+        return true;
     }
 
     /*************** OptionMatchesIntent ********************/
@@ -160,35 +176,38 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
-      Debug.Log("OPTIONMATCHESINTENT: " + optionText + " " + intent);
-      if (optionText == null || optionText == "") {
-        return false;
-      }
-      string optionIntent = optionText.Split(' ')[0];
-      if (optionIntent != intent) {
-        return false;
-      }
-
-      Regex regex = new Regex(@"(\w+)=(\w+)");
-      MatchCollection matches = regex.Matches(optionText);
-
-      foreach (Match match in matches) {
-        string entityKey = match.Groups[1].Value;
-        string entityVal = match.Groups[2].Value;
-
-        Debug.Log("Searching for (" + entityKey + ", " + entityVal + ")");
-
-        string dictVal = "";
-        if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal) {
-          return false;
+        Debug.Log("OPTIONMATCHESINTENT: " + optionText + " " + intent);
+        if (optionText == null || optionText == "")
+        {
+            return false;
+        }
+        string optionIntent = optionText.Split(' ')[0];
+        if (optionIntent != intent)
+        {
+            return false;
         }
 
-        Debug.Log("dictVal was: " + dictVal);
-      }
+        Regex regex = new Regex(@"(\w+)=(\w+)");
+        MatchCollection matches = regex.Matches(optionText);
+        foreach (Match match in matches)
+        {
+            string entityKey = match.Groups[1].Value;
+            string entityVal = match.Groups[2].Value;
 
-      Debug.Log("returning true");
+            Debug.Log("Searching for (" + entityKey + ", " + entityVal + ")");
 
-      return true;
+            string dictVal = "";
+            if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
+            {
+                return false;
+            }
+
+            Debug.Log("dictVal was: " + dictVal);
+        }
+
+        Debug.Log("returning true");
+
+        return true;
     }
 
     /*************** checkQuest ********************/
@@ -198,21 +217,24 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public bool checkQuest()
     {
-      Debug.Log("checkQuestO");
-      // TO DO HERE -- load in the quests from playerPrefs:
-      // entities[QUEST] = ?
-      // entities[QUEST_STEP] = ?
+        Debug.Log("checkQuestO");
+        // TO DO HERE -- load in the quests from playerPrefs:
+        // entities[QUEST] = ?
+        // entities[QUEST_STEP] = ?
 
-      foreach (Connection connection in conversation.Root.Connections) {
-        if (connection.ConnectionType == Connection.eConnectionType.Option) {
-          OptionNode optionNode = ((OptionConnection)connection).OptionNode;
-          if (OptionMatchesIntent(optionNode.Text, "quest")) {
-            Debug.Log("CheckQuest returning true");
-            return true;
-          }
+        foreach (Connection connection in conversation.Root.Connections)
+        {
+            if (connection.ConnectionType == Connection.eConnectionType.Option)
+            {
+                OptionNode optionNode = ((OptionConnection)connection).OptionNode;
+                if (OptionMatchesIntent(optionNode.Text, "quest"))
+                {
+                    Debug.Log("CheckQuest returning true");
+                    return true;
+                }
+            }
         }
-      }
-      return false;
+        return false;
     }
 
     /**************  GetNextMessage() *****************/
@@ -230,53 +252,62 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public string GetNextMessage()
     {
-      bool didUpdate = false;
-      List<ConversationNode> matches = new List<ConversationNode>(); 
+        bool didUpdate = false;
+        List<ConversationNode> matches = new List<ConversationNode>();
+        // Iterate over each connection, add all valid to list of matches.
+        foreach (Connection connection in currNode.Connections)
+        {
+            if (ConnectionConditionsValid(connection))
+            {
 
-      // Iterate over each connection, add all valid to list of matches.
-      foreach (Connection connection in currNode.Connections) {
-        if (ConnectionConditionsValid(connection)) {
+                // Each connected node is of type Option or Speech. 
+                // All connected nodes must be the same type.
+                if (connection.ConnectionType == Connection.eConnectionType.Option)
+                {
+                    OptionNode option = ((OptionConnection)connection).OptionNode;
+                    // Option only valid if its text matches currIntent.
+                    if (OptionMatchesIntent(option.Text, currIntent))
+                    {
+                        matches.Add(option);
 
-          // Each connected node is of type Option or Speech. 
-          // All connected nodes must be the same type.
-          if (connection.ConnectionType == Connection.eConnectionType.Option) {
-            OptionNode option = ((OptionConnection)connection).OptionNode;
-
-            // Option only valid if its text matches currIntent.
-            if (OptionMatchesIntent(option.Text, currIntent)) {
-              matches.Add(option); 
+                    }
+                }
+                else
+                {
+                    matches.Add(((SpeechConnection)connection).SpeechNode);
+                }
             }
-          } else {
-            matches.Add(((SpeechConnection)connection).SpeechNode);
-          }
         }
-      }
+        if (matches.Count > 0)
+        {
+            // In case of multiple matches, return a random match.. 
+            int matchIndex = rnd.Next(matches.Count);
+            currNode = matches[matchIndex];
+            // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
+            if (currNode.NodeType == ConversationNode.eNodeType.Option)
+            {
+                GetNextMessage();
+                return null;
+            }
+            // We will return the text at current node.
+            CurrentText = currNode.Text;
+            // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
+            // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
+            if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
+            {
+                SpeechNode nextNode = ((SpeechConnection)currNode.Connections[0]).SpeechNode;
+                if (nextNode.Text == null)
+                {
+                    currNode = nextNode;
+                }
 
-      if (matches.Count > 0) {
-        // In case of multiple matches, return a random match.. 
-        int matchIndex = rnd.Next(matches.Count);
-        currNode = matches[matchIndex];
-
-        // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
-        if (currNode.NodeType == ConversationNode.eNodeType.Option) {
-          GetNextMessage();
+            }
+            return CurrentText;
         }
-
-        // We will return the text at current node.
-        CurrentText = currNode.Text;
-
-        // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
-        // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
-        if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech) {
-          SpeechNode nextNode = ((SpeechConnection)currNode.Connections[0]).SpeechNode;
-          if (nextNode.Text == "") {
-            currNode = nextNode;
-          }
+        else
+        {
+            return null;
         }
-        return CurrentText;
-      } else {
-        return null;
-      }
     }
 
 }

@@ -2424,7 +2424,8 @@ PrefabInstance:
       propertyPath: DialogueManager
       value: 
       objectReference: {fileID: 1726924013}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8848234465618278853, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
 --- !u!1 &1141329484
 GameObject:
@@ -3966,6 +3967,11 @@ Transform:
   m_Father: {fileID: 642047638}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1890212981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 137661133854011476, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+  m_PrefabInstance: {fileID: 1029045432}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1932620843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4658,6 +4664,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2546981431078921866, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4971393465717085824}
+    - target: {fileID: 2546981431078921866, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UserResponse
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546981431078921866, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NPCDialogueUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2546981431107690049, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4746,6 +4764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechBubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 1890212981}
     - target: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: RespondButton
       value: 
