@@ -27,8 +27,8 @@ public class NPCDialogueManager : MonoBehaviour
         rnd = new System.Random();
         entities = new Dictionary<string, string>();
         // Hard coding quest values for testing.
-        entities[QUEST] = "1";
-        entities[QUEST_STEP] = "3";
+        entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
+        entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
     }
 
     /******************   StartConversation  ************************/
@@ -219,8 +219,8 @@ public class NPCDialogueManager : MonoBehaviour
     {
         Debug.Log("checkQuestO");
         // TO DO HERE -- load in the quests from playerPrefs:
-        // entities[QUEST] = ?
-        // entities[QUEST_STEP] = ?
+        entities[QUEST] = "1";
+        entities[QUEST_STEP] = "1";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
