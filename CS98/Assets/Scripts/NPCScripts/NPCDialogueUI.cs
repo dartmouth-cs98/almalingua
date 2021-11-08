@@ -50,15 +50,14 @@ public class NPCDialogueUI : MonoBehaviour
         if (rootTalking)
         {
             npc.GetComponent<NPCDialogueManager>().StartConversation();
-            dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
             rootTalking = !rootTalking;
         }
         else
         {
             npc.GetComponent<NPCDialogueManager>().GetNextMessage();
-            dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
 
         }
+        dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
         if (dialogueText != null)
         {
             StopAllCoroutines();
