@@ -149,7 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51b350a0c32f43f4bc55c481a51f4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BALL_RANGE: 25
   thrust: 50
   rb: {fileID: 6579106556845355944}
   movementDirection: {x: 0, y: 0}

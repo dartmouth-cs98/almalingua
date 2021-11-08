@@ -22,12 +22,23 @@ public class NPCDialogueUI : MonoBehaviour
     private bool rootTalking = true;    //if it is the root speechnode (first time it is opened)
 
 
+    /***************** OnEnable***********/
+    /* 
+    OnEnable of the speechbuble, we show our respond button
+    */
     void OnEnable()
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
     }
 
+    /***** DisplayNextSentence **********/
+    /*
+    * This function sets the Respond button text to "respond" and displays the TextBox for text
+    * and change the Name Textbox to the name of NPC
+    *  It will either get the current message (when it is the root of the dialogue) or next message
+    * Also types out the sentenec
+    */
     public void DisplayNextSentence()
     {
         RespondButton.GetComponentInChildren<Text>().text = "Respond";
@@ -50,7 +61,11 @@ public class NPCDialogueUI : MonoBehaviour
         } 
 
     }
-
+    
+    /************ TypeSentence *****************/
+    /* 
+      Typing out the sentence
+    */
     IEnumerator TypeSentence(string sentence)
     {
         Text.text = "";
@@ -61,7 +76,10 @@ public class NPCDialogueUI : MonoBehaviour
         }
     }
 
-
+    /********************* ResponseManager ********************/
+    /*
+    * Either the user is responding, in which case we set the NameText to "Yo" and sets userInput to active
+    */
     public void ResponseManager()
     {
         if (!userTalking)
@@ -81,11 +99,16 @@ public class NPCDialogueUI : MonoBehaviour
 
     }
 
+    /********** UserResponse *********************/
+    /* Updating the intent with our UserInput 
+    */
     public void UserResponse(string UserInput)
     {
         DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput);
     }
 
+    /** Closing our speechbubblel and button
+    */
     public void CloseButton()
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
