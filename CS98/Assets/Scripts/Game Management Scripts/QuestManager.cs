@@ -18,10 +18,15 @@ public class QuestManager : MonoBehaviour
     void Start()
     {
         LoadJSON.load_JSON(QuestData, baseGame);
-        CurrentQuest = PlayerPrefs.GetInt("quest");
+        if (! PlayerPrefs.HasKey("Quest"))
+        {
+            PlayerPrefs.SetInt("Quest", 0);
+            QuestStep = 0;
+            PlayerSave.UpdateQuestStep(QuestStep);
+        }
+        CurrentQuest = PlayerPrefs.GetInt("Quest");
+        QuestStep = PlayerPrefs.GetInt("QuestStep");
         UpdateQuest(CurrentQuest);
-        QuestStep = 0;
-        PlayerSave.UpdateQuestStep(QuestStep);
     }
 
     // Update is called once per frame
@@ -40,6 +45,12 @@ public class QuestManager : MonoBehaviour
         TMPro.TextMeshProUGUI det = QuestDetails.GetComponentInChildren<TMPro.TextMeshProUGUI>();
         det.SetText(baseGame.qh.quests[CurrentQuest].description);
         QuestDetails.SetActive(false);
+    }
+
+    public void UpdateQuestStep(int step=0)
+    {
+        PlayerSave.UpdateQuestStep(step);
+        QuestStep = step;
     }
 
 }
