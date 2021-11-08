@@ -5,31 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public string triggerName;
+    public string nextScene;  //name of the scene to load next
 
-    private GameObject trigger;
-    private void Start()
+    public void LoadScene()
     {
-        trigger = GameObject.Find(triggerName);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        for (int i = 0; i < Input.touchCount; i++)
-        {
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-
-            if (triggerName == "NPC" && trigger.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
-            {
-                LoadScene("NPCInteractionTextBubble");
-            }
-        }
-
-    }
-
-    void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(nextScene);
     }
 
 }
