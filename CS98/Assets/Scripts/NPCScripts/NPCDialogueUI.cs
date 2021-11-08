@@ -15,11 +15,12 @@ public class NPCDialogueUI : MonoBehaviour
     public Text Text;                   //the textbook for the actual dialogue
     public string NPCName;              //name of our NPC
     public GameObject RespondButton;    //a button
-    public GameObject DialogueManager;  //DialogueManager empty game object
+    public GameObject npc;
 
-    
-    private bool userTalking = false;
-    private bool rootTalking = true;    //if it is the root speechnode (first time it is opened)
+    private bool userTalking;
+    private bool rootTalking;    //if it is the root speechnode (first time it is opened)
+    private string userResponse;        //the user response
+    private string dialogueText;        //the dialogueText of the NPC
 
 
     /***************** OnEnable***********/
@@ -30,7 +31,7 @@ public class NPCDialogueUI : MonoBehaviour
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
-
+        userTalking = false;
     }
 
     /***** DisplayNextSentence **********/
@@ -46,20 +47,25 @@ public class NPCDialogueUI : MonoBehaviour
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         NameText.text = NPCName;
-        string dialogueText;
-        if (rootTalking) { 
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetCurrentMessage();
-            rootTalking = false;
-        } else { 
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
+        if (rootTalking)
+        {
+            npc.GetComponent<NPCDialogueManager>().StartConversation();
+            rootTalking = !rootTalking;
         }
-        if (dialogueText != null) {
+        else
+        {
+            npc.GetComponent<NPCDialogueManager>().GetNextMessage();
+
+        }
+        dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
+        if (dialogueText != null)
+        {
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
-        } 
+        }
 
     }
-    
+
     /************ TypeSentence *****************/
     /* 
       Typing out the sentence
@@ -90,6 +96,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
+            npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse);
             DisplayNextSentence();
 
         }
@@ -102,7 +109,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
-        DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput, true);
+        userResponse = UserInput;
     }
 
     /** Closing our speechbubblel and button

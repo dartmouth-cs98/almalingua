@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8824430907523169138}
   - component: {fileID: 6545281251983025600}
   - component: {fileID: 7477088323648850781}
-  - component: {fileID: 8848234465618278853}
   - component: {fileID: 1885308880}
   - component: {fileID: 1973080052853145509}
   m_Layer: 0
@@ -132,23 +131,6 @@ PolygonCollider2D:
       - {x: -0.39999998, y: -0.89}
       - {x: -0.04, y: -1.28}
       - {x: 0.01, y: -1.28}
---- !u!114 &8848234465618278853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137661133854011476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c5e10e6a33a4269b933dbe52e70e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NameText: {fileID: 0}
-  Text: {fileID: 0}
-  NPCName: Doctor
-  RespondButton: {fileID: 0}
-  DialogueManager: {fileID: 0}
 --- !u!114 &1885308880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +159,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
   npcName: 
+  CurrentText: 

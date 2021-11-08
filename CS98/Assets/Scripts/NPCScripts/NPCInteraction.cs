@@ -9,6 +9,7 @@ public class NPCInteraction : MonoBehaviour
     public int MyQuest;
 
     // Update is called once per frame
+
     void Update()
     {
         for (int i = 0; i < Input.touchCount; i++)
@@ -22,6 +23,12 @@ public class NPCInteraction : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnMouseDown()
+    {
+        Panel.GetComponent<HideShowObjects>().Show();
+        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
     }
 
     private void OnCollisionEnter(Collision collision)
