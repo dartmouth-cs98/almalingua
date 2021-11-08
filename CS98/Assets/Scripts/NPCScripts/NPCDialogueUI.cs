@@ -15,8 +15,7 @@ public class NPCDialogueUI : MonoBehaviour
     public Text Text;                   //the textbook for the actual dialogue
     public string NPCName;              //name of our NPC
     public GameObject RespondButton;    //a button
-    public GameObject DialogueManager;  //DialogueManager empty game object
-
+    public GameObject npc;
     
     private bool userTalking = false;
     private bool rootTalking = true;    //if it is the root speechnode (first time it is opened)
@@ -47,13 +46,15 @@ public class NPCDialogueUI : MonoBehaviour
         NameText.text = NPCName;
         string dialogueText;
         if (rootTalking) { 
-            DialogueManager.GetComponent<NPCDialogueManagerRay>().StartConversation();
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().CurrentText;
+            Debug.Log(gameObject);
+            Debug.Log(gameObject.GetComponent<NPCDialogueManager>());
+            npc.GetComponent<NPCDialogueManager>().StartConversation();
+            dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
             Debug.Log("dial.text:");
             Debug.Log(dialogueText);
             rootTalking = false;
         } else { 
-            dialogueText = DialogueManager.GetComponent<NPCDialogueManagerRay>().GetNextMessage();
+            dialogueText = npc.GetComponent<NPCDialogueManager>().GetNextMessage();
         }
         if (dialogueText != null) {
             StopAllCoroutines();
@@ -104,7 +105,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
-        DialogueManager.GetComponent<NPCDialogueManagerRay>().UpdateIntent(UserInput);
+        npc.GetComponent<NPCDialogueManager>().UpdateIntent(UserInput);
     }
 
     /** Closing our speechbubblel and button

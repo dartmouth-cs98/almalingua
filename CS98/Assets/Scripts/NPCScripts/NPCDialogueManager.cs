@@ -4,7 +4,7 @@ using UnityEngine;
 using DialogueEditor;
 using System.Text.RegularExpressions;
 
-public class NPCDialogueManagerRay : MonoBehaviour
+public class NPCDialogueManager : MonoBehaviour
 {
     public NPCConversation npcConversation;
     public string npcName;
@@ -152,7 +152,7 @@ public class NPCDialogueManagerRay : MonoBehaviour
 
     /*************** OptionMatchesIntent ********************/
     /*
-     * Each option text will have format "intent e:entityKey='entityVal' e:entityKey='entityVal'..."
+     * Each option text will have format "intent entityKey='entityVal' entityKey='entityVal'..."
      * This function will test whether the entities specified in text of option
      * match entities in dictionary. If a given entityKey not specified in dicctionary, is false.
      * 
