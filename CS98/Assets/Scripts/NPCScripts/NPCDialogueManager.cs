@@ -5,13 +5,15 @@ using DialogueEditor;
 using System.Text.RegularExpressions;
 using UnityEngine.Networking;
 using CandyCoded.env;
+using Newtonsoft.Json.Linq;
 
 public class NPCDialogueManager : MonoBehaviour
 {
-    public NPCConversation npcConversation;
-    public string npcName;
-    public Dictionary<string, string> entities;
+    public NPCConversation MyNPCConversation;
+    public string NPCName;
+    public Dictionary<string, string> Entities;
     public string CurrentText;
+    public bool IsLoading;
 
     private System.Random rnd;
 
@@ -27,7 +29,8 @@ public class NPCDialogueManager : MonoBehaviour
     void Start()
     {
         rnd = new System.Random();
-        entities = new Dictionary<string, string>();
+        Entities = new Dictionary<string, string>();
+        IsLoading = false;
     }
 
     /******************   StartConversation  ************************/
@@ -39,7 +42,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void StartConversation()
     {
-        conversation = npcConversation.Deserialize();
+        conversation = MyNPCConversation.Deserialize();
         currNode = conversation.Root;
         currIntent = DEFAULT_INTENT;
         if (checkQuest())
@@ -49,6 +52,8 @@ public class NPCDialogueManager : MonoBehaviour
         GetNextMessage();
 
     }
+
+    private const string LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps";
 
     /******************   UpdateIntent  ************************/
     /*
@@ -70,14 +75,13 @@ public class NPCDialogueManager : MonoBehaviour
           env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
           env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
 
-          Debug.Log(my_LUIS_APP);
-          Debug.Log(my_LUIS_SUB_KEY);
-          // link = `https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/${process.env.LUIS_APP}/slots/production/predict?subscription-key=${process.env.LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query=${message.text}`
-          // StartCouroutine(GetRequest("hi.com"));
+          string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
+          IsLoading = true;
+          StartCoroutine(GetRequest(uri));
         }
     }
 
-    // EDITED FROM HERE:
+    // COPIED/MODIFIED FROM HERE:
     // https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
     IEnumerator GetRequest(string uri)
     {
@@ -85,18 +89,22 @@ public class NPCDialogueManager : MonoBehaviour
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
-
             switch (webRequest.result)
             {
                 case UnityWebRequest.Result.ConnectionError:
+                    Debug.LogError("Connection error.");
+                    break;
                 case UnityWebRequest.Result.DataProcessingError:
-                    Debug.LogError(": Error: " + webRequest.error);
+                    Debug.LogError("Data Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.ProtocolError:
                     Debug.LogError("HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
                     Debug.Log("Received: " + webRequest.downloadHandler.text);
+                    dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
+                    currIntent = luisResponse.prediction.topIntent;
+                    IsLoading = false;
                     break;
             }
         }
@@ -128,6 +136,8 @@ public class NPCDialogueManager : MonoBehaviour
      * is met.
      * 
      * If a connection has no conditions, returns true.
+     *
+     * [We're actually not using connections right now; leaving in case we do later].
      */
     private bool ConnectionConditionsValid(Connection connection)
     {
@@ -205,7 +215,6 @@ public class NPCDialogueManager : MonoBehaviour
      * This function will test whether the entities specified in text of option
      * match entities in dictionary. If a given entityKey not specified in dicctionary, is false.
      * 
-     * (Currrently, just matches intent with no way to add entity).
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
@@ -227,16 +236,11 @@ public class NPCDialogueManager : MonoBehaviour
             string entityVal = match.Groups[2].Value;
 
             string dictVal = "";
-            if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
+            if (!Entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
             {
                 return false;
             }
-
-            Debug.Log("dictVal was: " + dictVal);
         }
-
-        Debug.Log("returning true");
-
         return true;
     }
 
@@ -247,8 +251,8 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public bool checkQuest()
     {
-        entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
-        entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
+        Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
+        Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
 
         foreach (Connection connection in conversation.Root.Connections)
         {
@@ -277,7 +281,7 @@ public class NPCDialogueManager : MonoBehaviour
      * If no advancement because of no matches, returns null.
      * 
      */
-    public string GetNextMessage()
+    public void GetNextMessage()
     {
         bool didUpdate = false;
         List<ConversationNode> matches = new List<ConversationNode>();
@@ -314,27 +318,22 @@ public class NPCDialogueManager : MonoBehaviour
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
             {
                 GetNextMessage();
-                return null;
-            }
-            // We will return the text at current node.
-            CurrentText = currNode.Text;
-            // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
-            // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
-            if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
+            } else
             {
-                SpeechNode nextNode = ((SpeechConnection)currNode.Connections[0]).SpeechNode;
-                if (nextNode.Text == null)
+                // We will return the text at current node.
+                CurrentText = currNode.Text;
+                // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
+                // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
+                if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
                 {
-                    currNode = nextNode;
-                }
+                    SpeechNode nextNode = ((SpeechConnection)currNode.Connections[0]).SpeechNode;
+                    if (nextNode.Text == null)
+                    {
+                        currNode = nextNode;
+                    }
 
+                }
             }
-            return CurrentText;
-        }
-        else
-        {
-            return null;
         }
     }
-
 }

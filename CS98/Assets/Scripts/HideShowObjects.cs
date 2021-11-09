@@ -20,7 +20,5 @@ public class HideShowObjects : MonoBehaviour
     public void Show()
     {
         gameObject.SetActive(true);
-        Debug.Log("shown");
-        Debug.Log(gameObject.name);
     }
 }
