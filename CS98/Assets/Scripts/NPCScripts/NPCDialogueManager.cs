@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 using System.Text.RegularExpressions;
+using UnityEngine.Networking;
+using CandyCoded.env;
 
 public class NPCDialogueManager : MonoBehaviour
 {
@@ -26,9 +28,6 @@ public class NPCDialogueManager : MonoBehaviour
     {
         rnd = new System.Random();
         entities = new Dictionary<string, string>();
-        // Hard coding quest values for testing.
-        entities[QUEST] = "1";
-        entities[QUEST_STEP] = "3";
     }
 
     /******************   StartConversation  ************************/
@@ -42,7 +41,6 @@ public class NPCDialogueManager : MonoBehaviour
     {
         conversation = npcConversation.Deserialize();
         currNode = conversation.Root;
-        Debug.Log("START CONVO!" + currNode.Text);
         currIntent = DEFAULT_INTENT;
         if (checkQuest())
         {
@@ -61,11 +59,46 @@ public class NPCDialogueManager : MonoBehaviour
      * [LUIS API NOT YET IMPLEMENTED]
      *
      */
-    public void UpdateIntent(string input, bool sendToLuis = false)
+    public void UpdateIntent(string input, bool sendToLuis = true)
     {
         if (sendToLuis == false)
         {
             currIntent = input;
+        } else {
+          string my_LUIS_APP;
+          string my_LUIS_SUB_KEY;
+          env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
+          env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
+
+          Debug.Log(my_LUIS_APP);
+          Debug.Log(my_LUIS_SUB_KEY);
+          // link = `https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps/${process.env.LUIS_APP}/slots/production/predict?subscription-key=${process.env.LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query=${message.text}`
+          // StartCouroutine(GetRequest("hi.com"));
+        }
+    }
+
+    // EDITED FROM HERE:
+    // https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
+    IEnumerator GetRequest(string uri)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            switch (webRequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                    Debug.LogError(": Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.ProtocolError:
+                    Debug.LogError("HTTP Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.Success:
+                    Debug.Log("Received: " + webRequest.downloadHandler.text);
+                    break;
+            }
         }
     }
 
@@ -176,7 +209,6 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
-        Debug.Log("OPTIONMATCHESINTENT: " + optionText + " " + intent);
         if (optionText == null || optionText == "")
         {
             return false;
@@ -193,8 +225,6 @@ public class NPCDialogueManager : MonoBehaviour
         {
             string entityKey = match.Groups[1].Value;
             string entityVal = match.Groups[2].Value;
-
-            Debug.Log("Searching for (" + entityKey + ", " + entityVal + ")");
 
             string dictVal = "";
             if (!entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
@@ -219,8 +249,8 @@ public class NPCDialogueManager : MonoBehaviour
     {
         Debug.Log("checkQuestO");
         // TO DO HERE -- load in the quests from playerPrefs:
-        // entities[QUEST] = ?
-        // entities[QUEST_STEP] = ?
+        entities[QUEST] = "1";
+        entities[QUEST_STEP] = "1";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
@@ -229,7 +259,6 @@ public class NPCDialogueManager : MonoBehaviour
                 OptionNode optionNode = ((OptionConnection)connection).OptionNode;
                 if (OptionMatchesIntent(optionNode.Text, "quest"))
                 {
-                    Debug.Log("CheckQuest returning true");
                     return true;
                 }
             }
