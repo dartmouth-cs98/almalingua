@@ -134,6 +134,7 @@ public class NPCDialogueUI : MonoBehaviour
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
+        PicturePanel.GetComponent<HideShowObjects>().Hide();
     }
 }
 
