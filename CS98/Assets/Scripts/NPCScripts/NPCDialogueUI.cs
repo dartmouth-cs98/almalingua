@@ -112,8 +112,12 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse);
-            DisplayNextSentence();
+            if (userResponse != null) {
+                npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, ()=>DisplayNextSentence(), true);
+            } else {
+                DisplayNextSentence();    
+            }
+
 
         }
         userTalking = !userTalking;

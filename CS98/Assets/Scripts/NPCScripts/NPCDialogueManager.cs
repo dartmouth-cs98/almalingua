@@ -64,7 +64,7 @@ public class NPCDialogueManager : MonoBehaviour
      * [LUIS API NOT YET IMPLEMENTED]
      *
      */
-    public void UpdateIntent(string input, bool sendToLuis = true)
+    public void UpdateIntent(string input, System.Action callback, bool sendToLuis = true)
     {
         if (sendToLuis == false)
         {
@@ -77,13 +77,13 @@ public class NPCDialogueManager : MonoBehaviour
 
           string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
           IsLoading = true;
-          StartCoroutine(GetRequest(uri));
+          StartCoroutine(GetRequest(uri, callback));
         }
     }
 
     // COPIED/MODIFIED FROM HERE:
     // https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
-    IEnumerator GetRequest(string uri)
+    IEnumerator GetRequest(string uri, System.Action callback)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
@@ -104,7 +104,7 @@ public class NPCDialogueManager : MonoBehaviour
                     Debug.Log("Received: " + webRequest.downloadHandler.text);
                     dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
                     currIntent = luisResponse.prediction.topIntent;
-                    IsLoading = false;
+                    callback();
                     break;
             }
         }
@@ -254,6 +254,8 @@ public class NPCDialogueManager : MonoBehaviour
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
+
+        Entities[QUEST] = "1";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
