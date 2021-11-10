@@ -251,6 +251,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public bool checkQuest()
     {
+
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
 
