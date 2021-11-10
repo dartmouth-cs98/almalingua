@@ -218,9 +218,8 @@ public class NPCDialogueManager : MonoBehaviour
     public bool checkQuest()
     {
         Debug.Log("checkQuestO");
-        // TO DO HERE -- load in the quests from playerPrefs:
-        // entities[QUEST] = ?
-        // entities[QUEST_STEP] = ?
+        entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
+        entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
 
         foreach (Connection connection in conversation.Root.Connections)
         {
