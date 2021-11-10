@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 6579106556845355944}
   - component: {fileID: 1953361817}
   - component: {fileID: 1953361812}
+  - component: {fileID: 451571086}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -214,3 +215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider: {fileID: 0}
+--- !u!114 &451571086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579106556845355927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be960af6c2da4e63856150e038f327a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseGame: {fileID: 11400000, guid: d0c2a18f4ef3746eea69260cca0b6f6c, type: 2}
+  QuestDisplay: {fileID: 0}
+  QuestDetails: {fileID: 0}
+  QuestData: {fileID: 4900000, guid: 0d57b9c07c5ea4c2f8cde9de1045ca84, type: 3}
