@@ -16,11 +16,13 @@ public class NPCDialogueUI : MonoBehaviour
     public string NPCName;              //name of our NPC
     public GameObject RespondButton;    //a button
     public GameObject npc;
+    public GameObject PicturePanel;     //the panel that holds our pictures
 
     private bool userTalking;
     private bool rootTalking;    //if it is the root speechnode (first time it is opened)
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
+    private int pictureChild;       //which picture to show
 
 
     /***************** OnEnable***********/
@@ -32,6 +34,7 @@ public class NPCDialogueUI : MonoBehaviour
         RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
         userTalking = false;
+        pictureChild = 0;
     }
 
     /***** DisplayNextSentence **********/
@@ -46,7 +49,7 @@ public class NPCDialogueUI : MonoBehaviour
         RespondButton.GetComponentInChildren<Text>().text = "Respond";
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
-        NameText.text = NPCName;
+        NameText.text = NPCName + ":";
         if (rootTalking)
         {
             npc.GetComponent<NPCDialogueManager>().StartConversation();
@@ -62,6 +65,15 @@ public class NPCDialogueUI : MonoBehaviour
         {
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
+        }
+        //this section is checking if we want to show the pictures of the orange/staff 
+        if (PicturePanel != null && dialogueText == "Quieres esto?") {
+            PicturePanel.GetComponent<HideShowObjects>().Show();
+            if (pictureChild > 0) {
+                PicturePanel.transform.GetChild(pictureChild-1).GetComponent<HideShowObjects>().Hide();
+            }
+            PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
+            pictureChild+=1;
         }
 
     }
@@ -88,11 +100,15 @@ public class NPCDialogueUI : MonoBehaviour
     {
         if (!userTalking)
         {
-            NameText.text = "Yo";
+            NameText.text = "Yo:";
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
+            if (PicturePanel != null) {
+                PicturePanel.GetComponent<HideShowObjects>().Hide();
+   
+            }
         }
         else
         {
@@ -118,6 +134,7 @@ public class NPCDialogueUI : MonoBehaviour
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
+        PicturePanel.GetComponent<HideShowObjects>().Hide();
     }
 }
 
