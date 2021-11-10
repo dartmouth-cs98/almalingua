@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f1bf6be9ca042f6bc0b23440a116f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-  npcName: 
+  MyNPCConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
+  NPCName: 
   CurrentText: 
+  IsLoading: 0
