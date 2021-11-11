@@ -211,6 +211,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 34.17978, y: 10.423843}
   m_EdgeRadius: 0
+--- !u!1 &38488476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6579106556845355927, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+  m_PrefabInstance: {fileID: 1932620843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &92323345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,12 +1264,20 @@ PrefabInstance:
       propertyPath: Panel
       value: 
       objectReference: {fileID: 4971393465717085823}
+    - target: {fileID: 1885308880, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 38488476}
     - target: {fileID: 137661133854011476, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 1973080052853145509, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: npcConversation
+      value: 
+      objectReference: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
+    - target: {fileID: 1973080052853145509, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: MyNPCConversation
       value: 
       objectReference: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
     - target: {fileID: 8824430907523169138, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}

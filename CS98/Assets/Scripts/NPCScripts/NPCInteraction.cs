@@ -28,6 +28,7 @@ public class NPCInteraction : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("inside");
         Panel.GetComponent<HideShowObjects>().Show();
         Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
         StartQuest();

@@ -23,6 +23,7 @@ public class NPCDialogueUI : MonoBehaviour
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
     private int pictureChild;       //which picture to show
+    private bool nextMessageRequiresInput;  //does the next message require user input
 
 
     /***************** OnEnable***********/
@@ -46,7 +47,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-        RespondButton.GetComponentInChildren<Text>().text = "Respond";
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         NameText.text = NPCName + ":";
@@ -75,6 +75,13 @@ public class NPCDialogueUI : MonoBehaviour
             PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
             pictureChild+=1;
         }
+        nextMessageRequiresInput = npc.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
+        if (nextMessageRequiresInput) {
+            RespondButton.GetComponentInChildren<Text>().text = "Respond";
+        } else { 
+            RespondButton.GetComponentInChildren<Text>().text = "Next";
+        }
+        
 
     }
 
@@ -98,7 +105,10 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void ResponseManager()
     {
-        if (!userTalking)
+        if (npc.GetComponent<NPCDialogueManager>().OnLastMessage()) {
+            RespondButton.GetComponent<HideShowObjects>().Hide();
+        }
+        if (!userTalking && nextMessageRequiresInput)
         {
             NameText.text = "Yo:";
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
@@ -120,7 +130,7 @@ public class NPCDialogueUI : MonoBehaviour
 
 
         }
-        userTalking = !userTalking;
+        if (nextMessageRequiresInput) userTalking = !userTalking;
 
     }
 

@@ -127,6 +127,15 @@ public class NPCDialogueManager : MonoBehaviour
         }
     }
 
+    /***************** OnLastMessage**************/
+    /*
+    Returns true if curr node is our last message in this sequence
+    */
+    public bool OnLastMessage() 
+    {
+        return (currNode.Connections.Count == 0);
+    }
+
     /*************** ConnectionConditionsValid ********************/
     /*
      * PRIVATE FUNCTION!
@@ -256,6 +265,7 @@ public class NPCDialogueManager : MonoBehaviour
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
 
         Entities[QUEST] = "1";
+        Entities[QUEST_STEP] = "0";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
