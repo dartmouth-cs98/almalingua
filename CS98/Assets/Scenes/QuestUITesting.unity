@@ -319,9 +319,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f1bf6be9ca042f6bc0b23440a116f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
-  npcName: 
+  MyNPCConversation: {fileID: 0}
+  NPCName: 
   CurrentText: 
+  IsLoading: 0
+  player: {fileID: 0}
 --- !u!4 &286790413
 Transform:
   m_ObjectHideFlags: 0
@@ -1558,7 +1560,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 451571086, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
 --- !u!4 &865894167 stripped
 Transform:
@@ -1582,12 +1585,16 @@ PrefabInstance:
       objectReference: {fileID: 451571080}
     - target: {fileID: 1885308880, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: MyQuest
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 137661133854011476, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 1973080052853145509, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 451571080}
     - target: {fileID: 8824430907523169138, guid: 3d78f19b4479e4650b1d02bc3311c2a3, type: 3}
       propertyPath: m_RootOrder
       value: 2

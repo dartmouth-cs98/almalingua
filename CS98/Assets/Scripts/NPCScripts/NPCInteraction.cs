@@ -35,8 +35,7 @@ public class NPCInteraction : MonoBehaviour
 
     private void StartQuest()
     {
-        PlayerSave.UpdateQuest(MyQuest);
-        Player.GetComponent<QuestManager>().UpdateQuest(MyQuest);
+        Player.GetComponent<QuestManager>().SetQuest(MyQuest);
     }
 }
 
