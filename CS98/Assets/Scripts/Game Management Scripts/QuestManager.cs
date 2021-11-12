@@ -16,10 +16,10 @@ public class QuestManager : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("Player pref quest on load: " +PlayerPrefs.GetInt("Quest"));
+        Debug.Log("Player pref quest on load: " + PlayerPrefs.GetInt("Quest"));
 
         LoadJSON.load_JSON(QuestData, baseGame);
-        if (! PlayerPrefs.HasKey("Quest"))
+        if (!PlayerPrefs.HasKey("Quest"))
         {
             PlayerPrefs.SetInt("Quest", 0);
             QuestStep = 0;
@@ -32,7 +32,7 @@ public class QuestManager : MonoBehaviour
 
     // update the stored quest in this class using player prefs
     // and update quest display text
-    public void UpdateQuest(int curr=0)
+    public void UpdateQuest(int curr = 0)
     {
         CurrentQuest = PlayerPrefs.GetInt("Quest");
         TMPro.TextMeshProUGUI txt = QuestDisplay.GetComponentInChildren<TMPro.TextMeshProUGUI>();
@@ -45,7 +45,7 @@ public class QuestManager : MonoBehaviour
         Debug.Log("This class quest: " + CurrentQuest);
     }
 
-    public void UpdateQuestStep(int step=0)
+    public void UpdateQuestStep(int step = 0)
     {
         PlayerSave.UpdateQuestStep(step);
         QuestStep = step;

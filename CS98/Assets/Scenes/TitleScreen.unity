@@ -265,10 +265,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -419,10 +419,10 @@ RectTransform:
   m_Father: {fileID: 491631413}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15244444, y: 0.5326889}
-  m_AnchorMax: {x: 0.8342223, y: 0.78525716}
-  m_AnchoredPosition: {x: 2.8924866, y: -1.8713989}
-  m_SizeDelta: {x: 10.215, y: 3.1512985}
+  m_AnchorMin: {x: 0.08311112, y: 0.3902667}
+  m_AnchorMax: {x: 0.91511106, y: 0.7012221}
+  m_AnchoredPosition: {x: -6.5, y: 2.5}
+  m_SizeDelta: {x: 23, y: 4.425598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586887586
 MonoBehaviour:
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e0fdcb3ffd1eb49769c3d86178216244, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1575ce69a3f844d819e3a5e0ff6e0cc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -797,6 +797,10 @@ PrefabInstance:
     - target: {fileID: 762455259580139304, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 762455259580139305, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
+      propertyPath: NextScene
+      value: WitchHouse
       objectReference: {fileID: 0}
     - target: {fileID: 762455259580139306, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_Name

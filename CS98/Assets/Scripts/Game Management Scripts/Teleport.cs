@@ -10,4 +10,6 @@ public class Teleport : MonoBehaviour
     {
         SceneLoader.GetComponent<SceneLoader>().LoadScene();
     }
+
+    
 }

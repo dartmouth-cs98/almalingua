@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public Animator Transition;      //our scene change animation
-
-
     public string NextScene;  //name of the scene to load next
 
     public void LoadScene()
@@ -19,7 +17,6 @@ public class SceneLoader : MonoBehaviour
     IEnumerator SceneAnimate()
     {
         Transition.SetTrigger("Start");
-
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(NextScene);
 
