@@ -14,6 +14,8 @@ public class NPCDialogueManager : MonoBehaviour
     public Dictionary<string, string> Entities;
     public string CurrentText;
     public bool IsLoading;
+    public GameObject player;
+    private QuestManager qm;
 
     private System.Random rnd;
 
@@ -31,6 +33,10 @@ public class NPCDialogueManager : MonoBehaviour
         rnd = new System.Random();
         Entities = new Dictionary<string, string>();
         IsLoading = false;
+        if (player)
+        {
+            qm = player.GetComponent<QuestManager>();
+        }
     }
 
     /******************   StartConversation  ************************/
@@ -263,9 +269,13 @@ public class NPCDialogueManager : MonoBehaviour
     public bool checkQuest()
     {
 
-        Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
-        Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
+        Entities[QUEST] = qm.GetQuest().ToString();
+        Entities[QUEST_STEP] = qm.GetQuestStep().ToString();
 
+<<<<<<< HEAD
+=======
+        // Entities[QUEST] = "1";
+>>>>>>> b247c6198d11ddc927071fef0f09d3ed580e4dd3
 
         foreach (Connection connection in conversation.Root.Connections)
         {

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     public BaseGame baseGame;
-    private int CurrentQuest;
-    private int QuestStep;
     public GameObject QuestDisplay;
     public GameObject QuestDetails;
     public TextAsset QuestData;
@@ -22,26 +20,50 @@ public class QuestManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("Quest"))
         {
             PlayerPrefs.SetInt("Quest", 0);
-            QuestStep = 0;
-            PlayerSave.UpdateQuestStep(QuestStep);
+            PlayerPrefs.SetInt("QuestStep", 0);
         }
-        CurrentQuest = PlayerPrefs.GetInt("Quest");
-        QuestStep = PlayerPrefs.GetInt("QuestStep");
-        UpdateQuest(CurrentQuest);
+        UpdateQuestDisplay();
     }
 
+<<<<<<< HEAD
     // update the stored quest in this class using player prefs
     // and update quest display text
     public void UpdateQuest(int curr = 0)
+=======
+    // getters and setters for quest and quest step
+    public void SetQuest(int quest)
     {
-        CurrentQuest = PlayerPrefs.GetInt("Quest");
+        PlayerPrefs.SetInt("Quest", quest);
+        UpdateQuestDisplay();
+    }
+
+    public int GetQuest()
+    {
+        return PlayerPrefs.GetInt("Quest");
+    }
+
+    public void SetQuestStep(int step)
+    {
+        PlayerPrefs.SetInt("Quest", step);
+    }
+
+    public int GetQuestStep()
+    {
+        return PlayerPrefs.GetInt("QuestStep");
+    }
+
+    // update quest display text using public UI objects
+    public void UpdateQuestDisplay()
+>>>>>>> b247c6198d11ddc927071fef0f09d3ed580e4dd3
+    {
         TMPro.TextMeshProUGUI txt = QuestDisplay.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        txt.SetText(baseGame.qh.quests[CurrentQuest].questname);
+        txt.SetText(baseGame.qh.quests[GetQuest()].questname);
         QuestDetails.SetActive(true);
         TMPro.TextMeshProUGUI det = QuestDetails.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        det.SetText(baseGame.qh.quests[CurrentQuest].description);
+        det.SetText(baseGame.qh.quests[GetQuest()].description);
         QuestDetails.SetActive(false);
         Debug.Log("New player pref quest: " + PlayerPrefs.GetInt("Quest"));
+<<<<<<< HEAD
         Debug.Log("This class quest: " + CurrentQuest);
     }
 
@@ -49,6 +71,9 @@ public class QuestManager : MonoBehaviour
     {
         PlayerSave.UpdateQuestStep(step);
         QuestStep = step;
+=======
+        Debug.Log("This class quest: " + GetQuest());
+>>>>>>> b247c6198d11ddc927071fef0f09d3ed580e4dd3
     }
 
 }
