@@ -47,8 +47,8 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-        gameObject.transform.GetChild(3).gameObject.SetActive(false);
-        gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
         if (rootTalking)
         {
@@ -67,21 +67,35 @@ public class NPCDialogueUI : MonoBehaviour
             StartCoroutine(TypeSentence(dialogueText));
         }
         //this section is checking if we want to show the pictures of the orange/staff 
-        if (PicturePanel != null && dialogueText == "Quieres esto?") {
+        if (PicturePanel != null && dialogueText == "Quieres esto?")
+        {
             PicturePanel.GetComponent<HideShowObjects>().Show();
-            if (pictureChild > 0) {
-                PicturePanel.transform.GetChild(pictureChild-1).GetComponent<HideShowObjects>().Hide();
+            if (pictureChild > 0)
+            {
+                PicturePanel.transform.GetChild(pictureChild - 1).GetComponent<HideShowObjects>().Hide();
             }
             PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
-            pictureChild+=1;
+            pictureChild += 1;
         }
-        nextMessageRequiresInput = npc.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
-        if (nextMessageRequiresInput) {
-            RespondButton.GetComponentInChildren<Text>().text = "Respond";
-        } else { 
-            RespondButton.GetComponentInChildren<Text>().text = "Next";
+        //if we are at our last message, hide the button
+        if (npc.GetComponent<NPCDialogueManager>().OnLastMessage())
+        {
+            Debug.Log("last message");
+            RespondButton.GetComponent<HideShowObjects>().Hide();
         }
-        
+        else
+        {
+            //alter the button text depending on whether the next message requires input
+            nextMessageRequiresInput = npc.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
+            if (nextMessageRequiresInput)
+            {
+                RespondButton.GetComponentInChildren<Text>().text = "Respond";
+            }
+            else
+            {
+                RespondButton.GetComponentInChildren<Text>().text = "Next";
+            }
+        }
 
     }
 
@@ -105,9 +119,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void ResponseManager()
     {
-        if (npc.GetComponent<NPCDialogueManager>().OnLastMessage()) {
-            RespondButton.GetComponent<HideShowObjects>().Hide();
-        }
+
         if (!userTalking && nextMessageRequiresInput)
         {
             NameText.text = "Yo:";
@@ -115,17 +127,21 @@ public class NPCDialogueUI : MonoBehaviour
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
-            if (PicturePanel != null) {
+            if (PicturePanel != null)
+            {
                 PicturePanel.GetComponent<HideShowObjects>().Hide();
-   
+
             }
         }
         else
         {
-            if (userResponse != null) {
-                npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, ()=>DisplayNextSentence(), true);
-            } else {
-                DisplayNextSentence();    
+            if (userResponse != null)
+            {
+                npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
+            }
+            else
+            {
+                DisplayNextSentence();
             }
 
 

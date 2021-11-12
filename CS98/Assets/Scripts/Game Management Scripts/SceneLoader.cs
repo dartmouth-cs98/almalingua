@@ -5,11 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public string nextScene;  //name of the scene to load next
+    public Animator Transition;      //our scene change animation
+
+
+    public string NextScene;  //name of the scene to load next
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(nextScene);
+        StartCoroutine(SceneAnimate());
     }
 
+    //adding the cross fade and loading next scene
+    IEnumerator SceneAnimate()
+    {
+        Transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(NextScene);
+
+    }
 }
