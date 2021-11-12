@@ -12,14 +12,14 @@ public class Dictionary : MonoBehaviour{
 
     public static Dictionary playerDictionary; 
     public static Hashtable wordIdMap; //public static hashmap for words
-    public GameObject searchBox;
+    public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
 
     //private WordCollection InputArray;
     private int length;
     private int startIndex = 0;
-    private string SearchString;
+    private string searchString;
     private int TargetID = -1;
 
 
@@ -36,20 +36,19 @@ public class Dictionary : MonoBehaviour{
 
         foreach (WordCollection l in lists){
             foreach (Word word in l.wlist){
-                masterList.wlist.Add(word);
+                masterList.Add(word);
             }
-            
         }
-
+        length = masterList.wlist.Count;
         masterList.wlist = masterList.wlist.OrderBy(a => a.w).ToList();
         wordIdMap = new Hashtable();
-        for (int i = 0; i < masterList.wlist.Count; i++){
+
+        for (int i = 0; i < length; i++){
             masterList.wlist[i].ID = i;
             masterList.wlist[i].encountered = true;
 
-            wordIdMap.Add(masterList.wlist[i].w, i);
+            wordIdMap.Add(masterList.wlist[i].w, masterList.wlist[i]);
         }
-        length = masterList.wlist.Count;
         refresh();
     }
 
@@ -107,7 +106,7 @@ public class Dictionary : MonoBehaviour{
                 
             }
         }
-        SearchString = "";
+        reset();
         
     }
 
@@ -127,13 +126,27 @@ public class Dictionary : MonoBehaviour{
     }
     public void UpdateSearch(){
         if (!searchBox) return;
-        SearchString = searchBox.GetComponent<UnityEngine.UI.InputField>().text;
-        if (wordIdMap.ContainsKey(SearchString)){
-            int id = (int) wordIdMap[SearchString];
+        searchString = searchBox.text;
+        if (wordIdMap.ContainsKey(searchString)){
+            int id = ((Word) wordIdMap[searchString]).ID;
             startIndex  = id - (id % 8);
             TargetID = id;
             refresh();
 
+        }
+    }
+
+    public void reset(){
+        startIndex = 0;
+        searchString = "";
+        TargetID = -1;
+        searchBox.text = "";
+
+    }
+
+    public void discoveredWord(string newWord){
+        if (wordIdMap.ContainsKey(newWord)){
+            ((Word)wordIdMap[newWord]).encountered = true;
         }
     }
     

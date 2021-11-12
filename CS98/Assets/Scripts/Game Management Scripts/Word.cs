@@ -17,5 +17,10 @@ public class Word{
 public class WordCollection{ 
 
     public List<Word> wlist;
+
+    public void Add(Word w){
+
+        wlist.Add(w);
+    }
 }
 

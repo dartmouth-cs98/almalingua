@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -167,7 +167,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 24
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 2
@@ -247,10 +247,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -480,10 +480,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.7666411}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.6134033, y: 255.1988}
-  m_SizeDelta: {x: 4.2443, y: -589.5077}
+  m_AnchoredPosition: {x: 0, y: -4.246002}
+  m_SizeDelta: {x: 4.2443, y: 8.49231}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2546981431107690055
 CanvasRenderer:
@@ -552,6 +552,7 @@ MonoBehaviour:
   NPCName: Doctor
   RespondButton: {fileID: 0}
   npc: {fileID: 0}
+  PicturePanel: {fileID: 0}
 --- !u!1 &7468448236157725115
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,10 +798,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.024506858, y: 0.055482607}
-  m_AnchorMax: {x: 0.17054863, y: 0.7914316}
-  m_AnchoredPosition: {x: 44.18921, y: -0.48431396}
-  m_SizeDelta: {x: -48.0201, y: -3.0896}
+  m_AnchorMin: {x: 0.052180737, y: 0.066}
+  m_AnchorMax: {x: 0.1885452, y: 0.7914316}
+  m_AnchoredPosition: {x: 2.189209, y: -1.484314}
+  m_SizeDelta: {x: -30.0201, y: -1.0896001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8114561307773892871
 CanvasRenderer:
@@ -832,7 +833,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2

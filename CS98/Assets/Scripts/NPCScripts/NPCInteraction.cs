@@ -7,6 +7,7 @@ public class NPCInteraction : MonoBehaviour
 
     public GameObject Panel;
     public int MyQuest;
+    public GameObject Player;
 
     // Update is called once per frame
 
@@ -29,19 +30,13 @@ public class NPCInteraction : MonoBehaviour
     {
         Panel.GetComponent<HideShowObjects>().Show();
         Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Player")
-        {
-            StartQuest();
-        }
+        StartQuest();
     }
 
     private void StartQuest()
     {
-        QuestManager.QuestMan.UpdateQuest(MyQuest);
+        PlayerSave.UpdateQuest(MyQuest);
+        Player.GetComponent<QuestManager>().UpdateQuest(MyQuest);
     }
 }
 
