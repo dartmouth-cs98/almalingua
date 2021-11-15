@@ -21,13 +21,13 @@
         "w":    "sí",
         "ID":   0,
         "definition": "yes",
-        "encountered": false
+        "encountered": true
     },
     {
         "w":    "no",
         "ID":   0,
         "definition": "no",
-        "encountered": false
+        "encountered": true
     },
     {
         "w":    "manzana",

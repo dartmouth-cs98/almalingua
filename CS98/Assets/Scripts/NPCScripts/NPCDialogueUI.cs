@@ -176,7 +176,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            if (userResponse == "quemar")
+            if (userResponse == "quema")
             {
                 IceBurning.GetComponent<Animator>().Play("Ice_Melting_Animation");
                 CloseButton();
@@ -195,7 +195,6 @@ public class NPCDialogueUI : MonoBehaviour
         }
         if (nextMessageRequiresInput)
         {
-            Debug.Log("Require Input");
             userTalking = !userTalking;
         }
 
