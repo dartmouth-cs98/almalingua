@@ -15,11 +15,11 @@ public class QuestOne : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        int currentStep = Protagonist.GetComponent<QuestManager>().GetQuestStep();
-        Protagonist.GetComponent<QuestManager>().SetQuestStep(currentStep + 1);
+        // int currentStep = Protagonist.GetComponent<QuestManager>().GetQuestStep();
+        Protagonist.GetComponent<QuestManager>().SetQuestStep(2);
         Witch.GetComponent<HideShowObjects>().Show();
         Panel.GetComponent<HideShowObjects>().Show();
-        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence("Witch");
+        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
 
     }
 }

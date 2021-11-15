@@ -14,7 +14,7 @@ public class NPCDialogueManager : MonoBehaviour
     public Dictionary<string, string> Entities;
     public string CurrentText;
     public bool IsLoading;
-    public GameObject player;
+    //public GameObject Player;
     private QuestManager qm;
 
     private System.Random rnd;
@@ -27,16 +27,19 @@ public class NPCDialogueManager : MonoBehaviour
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
     private const string DEFAULT_INTENT = "hello";
+    private GameObject Player;
 
-    void Start()
+    void Awake()
     {
         rnd = new System.Random();
         Entities = new Dictionary<string, string>();
         IsLoading = false;
-        if (player)
-        {
-            qm = player.GetComponent<QuestManager>();
-        }
+        Player = GameObject.Find("Protagonist");
+        // if (Player)
+        // {
+        //     qm = Player.GetComponent<QuestManager>();
+
+        // }
     }
 
     /******************   StartConversation  ************************/
@@ -70,7 +73,7 @@ public class NPCDialogueManager : MonoBehaviour
      * [LUIS API NOT YET IMPLEMENTED]
      *
      */
-    public void UpdateIntent(string input, System.Action callback, bool sendToLuis = true)
+    public void UpdateIntent(string input, System.Action callback, bool sendToLuis = false)
     {
         if (sendToLuis == false)
         {
@@ -269,12 +272,12 @@ public class NPCDialogueManager : MonoBehaviour
     public bool checkQuest()
     {
 
-        Entities[QUEST] = qm.GetQuest().ToString();
-        Entities[QUEST_STEP] = qm.GetQuestStep().ToString();
+        Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
+        Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
         Debug.Log("Quest Step" + Entities[QUEST_STEP]);
 
-        Entities[QUEST] = "1";
-        Entities[QUEST_STEP] = "2";
+        // Entities[QUEST] = "1";
+        // Entities[QUEST_STEP] = "2";
 
         foreach (Connection connection in conversation.Root.Connections)
         {

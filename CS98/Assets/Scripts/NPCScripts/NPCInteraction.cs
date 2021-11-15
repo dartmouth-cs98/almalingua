@@ -4,30 +4,16 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-    [System.Serializable]
-    public class QuestMatching
-    {
-        public string questID;
-        public string NPC;
-    }
 
-    [System.Serializable]
-    public class QuestList
-    {
-        public QuestMatching[] questIDMatching;
-    }
-    public QuestList questIDMatching = new QuestList();
-    public TextAsset JsonFile;
     public GameObject Panel;
     public int MyQuest;
     public GameObject Player;
 
+
+
     // Update is called once per frame
 
-    private void Start()
-    {
-        questIDMatching = JsonUtility.FromJson<QuestList>(JsonFile.text);
-    }
+
     void Update()
     {
         for (int i = 0; i < Input.touchCount; i++)
@@ -37,7 +23,7 @@ public class NPCInteraction : MonoBehaviour
             if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && Input.touches[i].phase == TouchPhase.Began)
             {
                 Panel.GetComponent<HideShowObjects>().Show();
-                Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence(gameObject.name);
+                Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
             }
         }
 
@@ -46,7 +32,7 @@ public class NPCInteraction : MonoBehaviour
     private void OnMouseDown()
     {
         Panel.GetComponent<HideShowObjects>().Show();
-        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence(gameObject.name);
+        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
         //StartQuest();
     }
 
