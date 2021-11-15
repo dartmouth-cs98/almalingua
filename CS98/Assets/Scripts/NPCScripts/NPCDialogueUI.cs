@@ -52,7 +52,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     void OnEnable()
     {
-        player = GameObject.Find("Protagonist");
+        player = GameObject.Find("init_Protagonist");
         if (questNPC.Count < 3)
         {
             questNPC.Add("10", "Witch");
