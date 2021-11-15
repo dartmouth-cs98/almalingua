@@ -14,12 +14,12 @@ public class QuestManager : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("Player pref quest on load: " +PlayerPrefs.GetInt("Quest"));
+        Debug.Log("Player pref quest on load: " + PlayerPrefs.GetInt("Quest"));
 
         LoadJSON.load_JSON(QuestData, baseGame);
-        if (! PlayerPrefs.HasKey("Quest"))
+        if (!PlayerPrefs.HasKey("Quest"))
         {
-            PlayerPrefs.SetInt("Quest", 0);
+            PlayerPrefs.SetInt("Quest", 1);
             PlayerPrefs.SetInt("QuestStep", 0);
         }
         UpdateQuestDisplay();
@@ -39,7 +39,7 @@ public class QuestManager : MonoBehaviour
 
     public void SetQuestStep(int step)
     {
-        PlayerPrefs.SetInt("Quest", step);
+        PlayerPrefs.SetInt("QuestStep", step);
     }
 
     public int GetQuestStep()
