@@ -23,6 +23,10 @@ public class PlayerMove : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate () {
     moveCharacter(joystick.Direction);
+
+    if (joystick){
+
+    }
   }
 
   void moveCharacter (Vector2 playerDirection) {
