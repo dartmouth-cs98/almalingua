@@ -29,8 +29,8 @@ public class SceneLoader : MonoBehaviour
         if (ChangeQuest)
         {
             int currentStep = protagonist.GetComponent<QuestManager>().GetQuestStep();
-            protagonist.GetComponent<QuestManager>().SetQuestStep(currentStep + 1);
-            Debug.Log("past step is " + currentStep + " Current Step is " + protagonist.GetComponent<QuestManager>().GetQuestStep());
+            protagonist.GetComponent<QuestManager>().SetQuestStep(1);
+            // Debug.Log("past step is " + currentStep + " Current Step is " + protagonist.GetComponent<QuestManager>().GetQuestStep());
         }
         StartCoroutine(SceneAnimate(nextScene));
     }

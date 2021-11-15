@@ -4,33 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Linq;
-
+using Newtonsoft.Json;
 /** 
 Celina Tala 
 */
 
 public class NPCDialogueUI : MonoBehaviour
 {
-    [System.Serializable]
     public class QuestMatching
     {
-        public string questID;
-        public string NPC;
+        public string questID { get; set; }
+        public string NPC { get; set; }
     }
 
-    [System.Serializable]
-    public class QuestList
-    {
-        public QuestMatching[] questIDMatching;
-    }
-    public QuestList questIDMatching = new QuestList();
-    public TextAsset JsonFile;
     public Text NameText;               //the textbox for the npc name/"yo"
     public Text Text;                   //the textbook for the actual dialogue
 
     public GameObject RespondButton;    //a button
-    public GameObject npc;
     public GameObject PicturePanel;     //the panel that holds our pictures
+    public GameObject IceBurning;
 
 
     private string NPCName;              //name of our NPC
@@ -40,33 +32,51 @@ public class NPCDialogueUI : MonoBehaviour
     private string dialogueText;        //the dialogueText of the NPC
     private int pictureChild;       //which picture to show
     private bool nextMessageRequiresInput;  //does the next message require user input
-    private string currentQuest;
-    private GameObject NPC;
-    private GameObject player;
+    private string currentQuest = "00";        //the curernt quest we are on
+    private GameObject NPC;             //our NPC connected to the speechbubble
+    private GameObject player;          //our player
+    private Dictionary<string, string> questNPC = new Dictionary<string, string>(); //our dictionary
+    // private string jsonString = @"[
+    //     {'questID': '0100', 
+    //     'NPC': 'Witch'},
+    //     {'questID': '0101',
+    //     'NPC': 'Cesar'},
+    //     {'questID': '0102',
+    //     'NPC': 'Witch'}]";
+
 
 
     /***************** OnEnable***********/
     /* 
     OnEnable of the speechbuble, we show our respond button
     */
-    private void Start()
-    {
-        questIDMatching = JsonUtility.FromJson<QuestList>(JsonFile.text);
-        player = GameObject.Find("Protagonist");
-    }
     void OnEnable()
     {
-        RespondButton.GetComponent<HideShowObjects>().Show();
+        player = GameObject.Find("Protagonist");
+        if (questNPC.Count < 3)
+        {
+            questNPC.Add("10", "Witch");
+            questNPC.Add("11", "Cesar");
+            questNPC.Add("12", "Witch");
+        }
         rootTalking = true;
         userTalking = false;
         pictureChild = 0;
-    }
+        RespondButton.GetComponent<HideShowObjects>().Show();
 
-    private void Update()
-    {
         currentQuest = player.GetComponent<QuestManager>().GetQuest().ToString() + player.GetComponent<QuestManager>().GetQuestStep().ToString();
-    }
 
+        if (questNPC.TryGetValue(currentQuest, out NPCName))
+        {
+            NPC = GameObject.Find(NPCName);
+        }
+
+    }
+    private void OnDisable()
+    {
+        RespondButton.GetComponent<HideShowObjects>().Hide();
+
+    }
     /***** DisplayNextSentence **********/
     /*
     * This function sets the Respond button text to "respond" and displays the TextBox for text
@@ -74,26 +84,23 @@ public class NPCDialogueUI : MonoBehaviour
     *  It will either get the current message (when it is the root of the dialogue) or next message
     * Also types out the sentenec
     */
-    public void DisplayNextSentence(string npcname = null)
+    public void DisplayNextSentence()
     {
-        if (NPCName == null)
-        {
-            NPCName = npcname;
-        }
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
         if (rootTalking)
         {
-            npc.GetComponent<NPCDialogueManager>().StartConversation();
+            Debug.Log("root talking");
+            NPC.GetComponent<NPCDialogueManager>().StartConversation();
             rootTalking = !rootTalking;
         }
         else
         {
-            npc.GetComponent<NPCDialogueManager>().GetNextMessage();
+            NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
 
         }
-        dialogueText = npc.GetComponent<NPCDialogueManager>().CurrentText;
+        dialogueText = NPC.GetComponent<NPCDialogueManager>().CurrentText;
         if (dialogueText != null)
         {
             StopAllCoroutines();
@@ -110,8 +117,9 @@ public class NPCDialogueUI : MonoBehaviour
             PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
             pictureChild += 1;
         }
+
         //if we are at our last message, hide the button
-        if (npc.GetComponent<NPCDialogueManager>().OnLastMessage())
+        if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             Debug.Log("last message");
             RespondButton.GetComponent<HideShowObjects>().Hide();
@@ -119,7 +127,7 @@ public class NPCDialogueUI : MonoBehaviour
         else
         {
             //alter the button text depending on whether the next message requires input
-            nextMessageRequiresInput = npc.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
+            nextMessageRequiresInput = NPC.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
             if (nextMessageRequiresInput)
             {
                 RespondButton.GetComponentInChildren<Text>().text = "Respond";
@@ -168,9 +176,15 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            if (userResponse != null)
+            if (userResponse == "quema")
             {
-                npc.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
+                IceBurning.GetComponent<Animator>().Play("Ice_Melting_Animation");
+                CloseButton();
+                return;
+            }
+            else if (userResponse != null)
+            {
+                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
             }
             else
             {
@@ -179,7 +193,11 @@ public class NPCDialogueUI : MonoBehaviour
 
 
         }
-        if (nextMessageRequiresInput) userTalking = !userTalking;
+        if (nextMessageRequiresInput)
+        {
+            userTalking = !userTalking;
+        }
+
 
     }
 
