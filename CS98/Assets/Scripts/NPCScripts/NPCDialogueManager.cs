@@ -14,6 +14,8 @@ public class NPCDialogueManager : MonoBehaviour
     public Dictionary<string, string> Entities;
     public string CurrentText;
     public bool IsLoading;
+    public GameObject player;
+    private QuestManager qm;
 
     private System.Random rnd;
 
@@ -31,6 +33,10 @@ public class NPCDialogueManager : MonoBehaviour
         rnd = new System.Random();
         Entities = new Dictionary<string, string>();
         IsLoading = false;
+        if (player)
+        {
+            qm = player.GetComponent<QuestManager>();
+        }
     }
 
     /******************   StartConversation  ************************/
@@ -69,15 +75,17 @@ public class NPCDialogueManager : MonoBehaviour
         if (sendToLuis == false)
         {
             currIntent = input;
-        } else {
-          string my_LUIS_APP;
-          string my_LUIS_SUB_KEY;
-          env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
-          env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
+        }
+        else
+        {
+            string my_LUIS_APP;
+            string my_LUIS_SUB_KEY;
+            env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
+            env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
 
-          string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
-          IsLoading = true;
-          StartCoroutine(GetRequest(uri, callback));
+            string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
+            IsLoading = true;
+            StartCoroutine(GetRequest(uri, callback));
         }
     }
 
@@ -125,6 +133,15 @@ public class NPCDialogueManager : MonoBehaviour
         {
             return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
         }
+    }
+
+    /***************** OnLastMessage**************/
+    /*
+    Returns true if curr node is our last message in this sequence
+    */
+    public bool OnLastMessage()
+    {
+        return (currNode.Connections.Count == 0);
     }
 
     /*************** ConnectionConditionsValid ********************/
@@ -252,10 +269,12 @@ public class NPCDialogueManager : MonoBehaviour
     public bool checkQuest()
     {
 
-        Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
-        Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
+        Entities[QUEST] = qm.GetQuest().ToString();
+        Entities[QUEST_STEP] = qm.GetQuestStep().ToString();
+        Debug.Log("Quest Step" + Entities[QUEST_STEP]);
 
         Entities[QUEST] = "1";
+        Entities[QUEST_STEP] = "2";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
@@ -321,7 +340,8 @@ public class NPCDialogueManager : MonoBehaviour
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
             {
                 GetNextMessage();
-            } else
+            }
+            else
             {
                 // We will return the text at current node.
                 CurrentText = currNode.Text;

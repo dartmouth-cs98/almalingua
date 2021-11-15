@@ -18,7 +18,9 @@ public class viewDictionary : MonoBehaviour{
 
             if (DictUI.activeSelf && Dictionary.playerDictionary){ /* if dictionary is being shown , then call refresh*/
                 Dictionary.playerDictionary.refresh();
-                
+                Dictionary.playerDictionary.discoveredWord("morir");
+
+                    
             }
 
         }
