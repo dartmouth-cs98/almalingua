@@ -11,31 +11,60 @@ Celina Tala
 
 public class NPCDialogueUI : MonoBehaviour
 {
+    [System.Serializable]
+    public class QuestMatching
+    {
+        public string questID;
+        public string NPC;
+    }
+
+    [System.Serializable]
+    public class QuestList
+    {
+        public QuestMatching[] questIDMatching;
+    }
+    public QuestList questIDMatching = new QuestList();
+    public TextAsset JsonFile;
     public Text NameText;               //the textbox for the npc name/"yo"
     public Text Text;                   //the textbook for the actual dialogue
-    public string NPCName;              //name of our NPC
+
     public GameObject RespondButton;    //a button
     public GameObject npc;
     public GameObject PicturePanel;     //the panel that holds our pictures
 
+
+    private string NPCName;              //name of our NPC
     private bool userTalking;
     private bool rootTalking;    //if it is the root speechnode (first time it is opened)
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
     private int pictureChild;       //which picture to show
     private bool nextMessageRequiresInput;  //does the next message require user input
+    private string currentQuest;
+    private GameObject NPC;
+    private GameObject player;
 
 
     /***************** OnEnable***********/
     /* 
     OnEnable of the speechbuble, we show our respond button
     */
+    private void Start()
+    {
+        questIDMatching = JsonUtility.FromJson<QuestList>(JsonFile.text);
+        player = GameObject.Find("Protagonist");
+    }
     void OnEnable()
     {
         RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
         userTalking = false;
         pictureChild = 0;
+    }
+
+    private void Update()
+    {
+        currentQuest = player.GetComponent<QuestManager>().GetQuest().ToString() + player.GetComponent<QuestManager>().GetQuestStep().ToString();
     }
 
     /***** DisplayNextSentence **********/
@@ -45,8 +74,12 @@ public class NPCDialogueUI : MonoBehaviour
     *  It will either get the current message (when it is the root of the dialogue) or next message
     * Also types out the sentenec
     */
-    public void DisplayNextSentence()
+    public void DisplayNextSentence(string npcname = null)
     {
+        if (NPCName == null)
+        {
+            NPCName = npcname;
+        }
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
