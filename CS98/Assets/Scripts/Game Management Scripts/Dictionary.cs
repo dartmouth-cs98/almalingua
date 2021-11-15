@@ -21,35 +21,38 @@ public class Dictionary : MonoBehaviour{
     private int startIndex = 0;
     private string searchString;
     private int TargetID = -1;
-
+    // private int discoveredWords = 0;
 
     void Start()
     {  
         string path = "WordFiles/";
 
         List<WordCollection> lists  = new List<WordCollection>();
-        lists.Add(readWordFiles(path + "verbs.json"));
-        lists.Add(readWordFiles(path + "nouns.json"));
-        lists.Add(readWordFiles(path + "pronouns.json"));
-        lists.Add(readWordFiles(path + "prepositions.json"));
-        lists.Add(readWordFiles(path + "adverbs.json"));
+        lists.Add(readWordFiles(path + "quest1.json"));
+        // lists.Add(readWordFiles(path + "verbs.json"));
+        // lists.Add(readWordFiles(path + "nouns.json"));
+        // lists.Add(readWordFiles(path + "pronouns.json"));
+        // lists.Add(readWordFiles(path + "prepositions.json"));
+        // lists.Add(readWordFiles(path + "adverbs.json"));
 
         foreach (WordCollection l in lists){
             foreach (Word word in l.wlist){
                 masterList.Add(word);
             }
         }
+
         length = masterList.wlist.Count;
         masterList.wlist = masterList.wlist.OrderBy(a => a.w).ToList();
         wordIdMap = new Hashtable();
 
+        //give ID's to all the words and add them to the hashtable 
         for (int i = 0; i < length; i++){
             masterList.wlist[i].ID = i;
-            masterList.wlist[i].encountered = true;
 
-            wordIdMap.Add(masterList.wlist[i].w, masterList.wlist[i]);
+            wordIdMap.Add(masterList.wlist[i].w, masterList.wlist[i]);  // key, value = "word", word object
         }
         refresh();
+
     }
 
     private WordCollection readWordFiles(string filename){
@@ -69,6 +72,16 @@ public class Dictionary : MonoBehaviour{
     //sliding window of seeing 8 slots at a time
     public void refresh(){
         int currIdx = startIndex;
+
+
+        // //start dictionary from first learned word if we are not searching for a specific word
+        // if (discoveredWords > 0 && TargetID == -1 && !masterList.wlist[currIdx].encountered){
+        //     while (!masterList.wlist[currIdx].encountered){
+        //         currIdx++;
+        //     }
+        // }
+
+
         if (length <1) return; /*edge case check on startup*/
         int i = 0;
         while (i < 8 && currIdx < length){
@@ -107,11 +120,22 @@ public class Dictionary : MonoBehaviour{
             }
         }
         reset();
+
         
     }
 
+    // public bool validPage(int idx){
+    //     for (int i = idx; i < idx + 8; i++){
+    //         if (masterList.wlist[idx].encountered){
+    //             return true;
+    //         }
+    //     }
+    //     return false;
+    // }
+
+
     public void TurnRight(){
-         if (startIndex < length - 8){
+        if (startIndex < length - 8){
             startIndex+=8;
         }
         refresh(); 
@@ -128,7 +152,8 @@ public class Dictionary : MonoBehaviour{
         if (!searchBox) return;
         searchString = searchBox.text;
         if (wordIdMap.ContainsKey(searchString)){
-            int id = ((Word) wordIdMap[searchString]).ID;
+            Word searched = (Word)wordIdMap[searchString];
+            int id = searched.ID;
             startIndex  = id - (id % 8);
             TargetID = id;
             refresh();
@@ -144,9 +169,12 @@ public class Dictionary : MonoBehaviour{
 
     }
 
+
+    
     public void discoveredWord(string newWord){
         if (wordIdMap.ContainsKey(newWord)){
-            ((Word)wordIdMap[newWord]).encountered = true;
+            Word discovered = (Word)wordIdMap[newWord];
+            discovered.encountered = true;
         }
     }
     

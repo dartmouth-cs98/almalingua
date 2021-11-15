@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 6562078571341395008}
   - component: {fileID: 6562078571341395011}
   - component: {fileID: 6562078571341395010}
+  - component: {fileID: 9204416743132360661}
   m_Layer: 0
   m_Name: init_Protagonist
   m_TagString: Untagged
@@ -171,7 +172,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.51843584, y: -1.295023}
+  m_Offset: {x: 0.055156946, y: -0.37481153}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -182,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5080452, y: 1.9127007}
+  m_Size: {x: 1.6984336, y: 1.9211619}
   m_EdgeRadius: 0
 --- !u!114 &6562078571341395011
 MonoBehaviour:
@@ -214,3 +215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Collider: {fileID: 0}
+--- !u!114 &9204416743132360661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6562078571341395021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be960af6c2da4e63856150e038f327a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseGame: {fileID: 11400000, guid: d0c2a18f4ef3746eea69260cca0b6f6c, type: 2}
+  QuestDisplay: {fileID: 0}
+  QuestDetails: {fileID: 0}
+  QuestData: {fileID: 4900000, guid: 0d57b9c07c5ea4c2f8cde9de1045ca84, type: 3}

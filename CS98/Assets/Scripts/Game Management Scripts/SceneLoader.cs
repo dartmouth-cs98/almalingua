@@ -7,13 +7,13 @@ public class SceneLoader : MonoBehaviour
 {
     public Animator Transition;      //our scene change animation
     public bool ChangeQuest;        //if we need to change the quest on the sceneloader
-    private GameObject protagonist;  //protagonist 
+    public GameObject protagonist;  //protagonist 
 
 
     private void Start()
     {
         int currentQuest = PlayerPrefs.GetInt("Quest");
-        protagonist = GameObject.Find("Protagonist");
+        // protagonist = GameObject.Find("iProtagonist");
         // if (currentQuest > 1)
         // {
         //     protagonist = GameObject.Find("Protagonist");

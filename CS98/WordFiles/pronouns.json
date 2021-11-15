@@ -3,43 +3,43 @@
         "w":    "yo",
         "ID":   0,
         "definition": "I",
-        "encountered": true
+        "encountered": false
         },
     {
         "w":    "tú",
         "ID":   0,
         "definition": "you",
-        "encountered": true
+        "encountered": false
     },
     {
         "w":  "él",
         "ID":     0,
         "definition": "he/him",
-        "encountered": true
+        "encountered": false
     },
     {
         "w":    "ella",
         "ID":   0,
         "definition": "she/her",
-        "encountered": true
+        "encountered": false
     },
     {
         "w":    "usted",
         "ID":   0,
         "definition": "you formal",
-        "encountered": true
+        "encountered": false
     },
     {
         "w":    "ellos",
         "ID":   0,
         "definition": "them (masculine or generic) \n ellas if all female",
-        "encountered": true
+        "encountered": false
     },
     {
         "w":    "nosotros",
         "ID":   0,
         "definition": "us (masculine or generalized) \n nosotras if all female",
-        "encountered": true
+        "encountered": false
     }
     
 ]}
