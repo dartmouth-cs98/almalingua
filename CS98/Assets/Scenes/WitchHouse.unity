@@ -800,6 +800,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6478237103383150962, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
   m_PrefabInstance: {fileID: 6478237103928457314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &595704081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595704080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &605596670
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023e9e78201c844a8ab53856a452dcec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Character: {fileID: 1865090379}
   SceneLoader: {fileID: 2010174062}
   NextScene: Village
 --- !u!60 &605596674
@@ -1384,6 +1395,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2546981431107690050, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
   m_PrefabInstance: {fileID: 1357915694}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &927481162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927481161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &927481163 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4971393465717085824, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
@@ -2758,6 +2781,10 @@ PrefabInstance:
       propertyPath: ChangeQuest
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 762455259580139305, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
+      propertyPath: protagonist
+      value: 
+      objectReference: {fileID: 1865090379}
     - target: {fileID: 762455259580139306, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_Name
       value: SceneLoader

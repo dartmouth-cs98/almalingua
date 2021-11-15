@@ -22,6 +22,7 @@ public class NPCDialogueUI : MonoBehaviour
 
     public GameObject RespondButton;    //a button
     public GameObject PicturePanel;     //the panel that holds our pictures
+    public GameObject IceBurning;
 
 
     private string NPCName;              //name of our NPC
@@ -49,16 +50,6 @@ public class NPCDialogueUI : MonoBehaviour
     /* 
     OnEnable of the speechbuble, we show our respond button
     */
-    private void Start()
-    {
-
-
-        // questNPC = JsonConvert.DeserializeObject<IEnumerable<QuestMatching>>(jsonString).
-        //           Select(p => (Id: p.questID, Record: p.NPC)).
-        //           ToDictionary(t => t.Id, t => t.Record);
-        // foreach (KeyValuePair<string, string> kvp in questNPC)
-        //     Debug.Log("Key = {0}, Value = {1}" + kvp.Key + kvp.Value);
-    }
     void OnEnable()
     {
         player = GameObject.Find("Protagonist");
@@ -68,16 +59,22 @@ public class NPCDialogueUI : MonoBehaviour
             questNPC.Add("11", "Cesar");
             questNPC.Add("12", "Witch");
         }
-        RespondButton.GetComponent<HideShowObjects>().Show();
         rootTalking = true;
         userTalking = false;
         pictureChild = 0;
+        RespondButton.GetComponent<HideShowObjects>().Show();
+
         currentQuest = player.GetComponent<QuestManager>().GetQuest().ToString() + player.GetComponent<QuestManager>().GetQuestStep().ToString();
 
         if (questNPC.TryGetValue(currentQuest, out NPCName))
         {
             NPC = GameObject.Find(NPCName);
         }
+
+    }
+    private void OnDisable()
+    {
+        RespondButton.GetComponent<HideShowObjects>().Hide();
 
     }
     /***** DisplayNextSentence **********/
@@ -120,6 +117,7 @@ public class NPCDialogueUI : MonoBehaviour
             PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
             pictureChild += 1;
         }
+
         //if we are at our last message, hide the button
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
@@ -178,7 +176,13 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            if (userResponse != null)
+            if (userResponse == "quemar")
+            {
+                IceBurning.GetComponent<Animator>().Play("Ice_Melting_Animation");
+                CloseButton();
+                return;
+            }
+            else if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
             }
@@ -189,7 +193,12 @@ public class NPCDialogueUI : MonoBehaviour
 
 
         }
-        if (nextMessageRequiresInput) userTalking = !userTalking;
+        if (nextMessageRequiresInput)
+        {
+            Debug.Log("Require Input");
+            userTalking = !userTalking;
+        }
+
 
     }
 
