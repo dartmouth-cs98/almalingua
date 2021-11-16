@@ -35,11 +35,30 @@ public class NPCDialogueManager : MonoBehaviour
         Entities = new Dictionary<string, string>();
         IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
+        Debug.Log("WORD:");
+        
         // if (Player)
         // {
         //     qm = Player.GetComponent<QuestManager>();
 
         // }
+    }
+
+    private void setCurrentText(string currentText) {
+      string currentTextWithIcons = "";
+
+      foreach (string word in currentText.Split(' ')) {
+        string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
+        string icon = "";
+        if(Dictionary.wordIdMap.ContainsKey(cleanWord)) {
+          icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
+          if (icon != null) {
+            print("icon! for word:" + word);
+          }
+        }
+        currentTextWithIcons += icon + word + ' ';
+      }
+      CurrentText = currentTextWithIcons;
     }
 
     /******************   StartConversation  ************************/
@@ -238,7 +257,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
-        print("option text is " + optionText + " the intent is " + intent);
+        // print("option text is " + optionText + " the intent is " + intent);
         if (optionText == null || optionText == "")
         {
             return false;
@@ -305,8 +324,7 @@ public class NPCDialogueManager : MonoBehaviour
      * If current node's children are SpeechNode(s), advance to (last) SpeechNode
      * whose condition resolves to true.
      *
-     * Returns text of new current node after advancement.
-     * If no advancement because of no matches, returns null.
+     * Returns null. Use CurrentText to access current text. 
      * 
      */
     public void GetNextMessage()
@@ -316,10 +334,10 @@ public class NPCDialogueManager : MonoBehaviour
         // Iterate over each connection, add all valid to list of matches.
         foreach (Connection connection in currNode.Connections)
         {
-            print("Connection type " + connection.Conditions);
+            // print("Connection type " + connection.Conditions);
             if (ConnectionConditionsValid(connection))
             {
-                print("this connection matches");
+                // print("this connection matches");
                 // Each connected node is of type Option or Speech. 
                 // All connected nodes must be the same type.
                 if (connection.ConnectionType == Connection.eConnectionType.Option)
@@ -338,7 +356,7 @@ public class NPCDialogueManager : MonoBehaviour
                 }
             }
         }
-        print("Matches count: " + matches.Count);
+        // print("Matches count: " + matches.Count);
         if (matches.Count > 0)
         {
             // In case of multiple matches, return a random match.. 
@@ -353,8 +371,7 @@ public class NPCDialogueManager : MonoBehaviour
             else
             {
                 // We will return the text at current node.
-                CurrentText = currNode.Text;
-                print("The current text is " + CurrentText);
+                setCurrentText(currNode.Text);
                 // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
                 // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
                 if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
@@ -364,7 +381,6 @@ public class NPCDialogueManager : MonoBehaviour
                     {
                         currNode = nextNode;
                     }
-
                 }
             }
         }

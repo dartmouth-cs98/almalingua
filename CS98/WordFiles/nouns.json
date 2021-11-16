@@ -3,7 +3,8 @@
         "w":    "hombre",
         "ID":   0,
         "definition": "el, man",
-        "encountered": false
+        "encountered": false,
+        "icon": "hi"
         },
     {
         "w":    "mujer",

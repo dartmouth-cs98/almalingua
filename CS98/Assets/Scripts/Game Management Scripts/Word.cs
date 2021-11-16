@@ -9,6 +9,7 @@ public class Word{
     public int ID;
     public string definition;
     public bool encountered;
+    public string icon;
 
 }
 
