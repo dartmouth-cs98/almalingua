@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using TMPro;
 /** 
 Celina Tala 
 */
@@ -18,7 +19,7 @@ public class NPCDialogueUI : MonoBehaviour
     }
 
     public Text NameText;               //the textbox for the npc name/"yo"
-    public Text Text;                   //the textbook for the actual dialogue
+    public TextMeshProUGUI DialogueText;                   //the textbook for the actual dialogue
 
     public GameObject RespondButton;    //a button
     public GameObject PicturePanel;     //the panel that holds our pictures
@@ -147,12 +148,14 @@ public class NPCDialogueUI : MonoBehaviour
     */
     IEnumerator TypeSentence(string sentence)
     {
-        Text.text = "";
+        // DialogueText.SetText(sentence);
+        DialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            Text.text += letter;
+            DialogueText.text += letter;
             yield return null;
         }
+
     }
 
     /********************* ResponseManager ********************/

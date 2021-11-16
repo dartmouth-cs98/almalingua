@@ -26,11 +26,11 @@ public class Dictionary : MonoBehaviour
 
     void Start()
     {
-        string path = "WordFiles/";
+        string path = Application.streamingAssetsPath;
         playerDictionary = this;
 
         List<WordCollection> lists = new List<WordCollection>();
-        lists.Add(readWordFiles(path + "quest1.json"));
+        lists.Add(readWordFiles(path + "/quest1.json"));
         // lists.Add(readWordFiles(path + "verbs.json"));
         // lists.Add(readWordFiles(path + "nouns.json"));
         // lists.Add(readWordFiles(path + "pronouns.json"));

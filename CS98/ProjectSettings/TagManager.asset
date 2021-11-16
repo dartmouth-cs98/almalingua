@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Joystick
   - Conversation
+  - Dictionary
   layers:
   - Default
   - TransparentFX

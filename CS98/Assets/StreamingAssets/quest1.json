@@ -3,13 +3,15 @@
         "w":    "izquierda",
         "ID":   0,
         "definition": "la, left",
-        "encountered": true
+        "encountered": true,
+        "icon": "<sprite name=\"izquierda\">"
         },
     {
         "w":    "derecha",
         "ID":   0,
         "definition": "la, right",
-        "encountered": true
+        "encountered": true,
+        "icon": "<sprite name=\"derecha\">"
     },
     {
         "w":  "hospital",
