@@ -8,9 +8,16 @@ public class QuestOne : MonoBehaviour
 
     // Start is called before the first frame update
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void Update()
     {
-        Protagonist.GetComponent<QuestManager>().SetQuestStep(2);
+
+        float deltaX = Mathf.Pow(transform.position.x - Protagonist.transform.position.x, 2);
+        float deltaY = Mathf.Pow(transform.position.y - Protagonist.transform.position.y, 2);
+        float dist = Mathf.Sqrt(deltaX + deltaY);
+        if (dist < 7)
+        {
+            Protagonist.GetComponent<QuestManager>().SetQuestStep(2);
+        }
 
     }
 

@@ -27,6 +27,7 @@ public class Dictionary : MonoBehaviour
     void Start()
     {
         string path = "WordFiles/";
+        playerDictionary = this;
 
         List<WordCollection> lists = new List<WordCollection>();
         lists.Add(readWordFiles(path + "quest1.json"));
@@ -153,8 +154,6 @@ public class Dictionary : MonoBehaviour
         {
             startIndex += 8;
         }
-        print("start is " + startIndex);
-        print(";ength is " + length);
         refresh();
 
     }
