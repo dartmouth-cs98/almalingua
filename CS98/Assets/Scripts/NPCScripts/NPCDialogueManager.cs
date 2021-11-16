@@ -231,19 +231,17 @@ public class NPCDialogueManager : MonoBehaviour
 
     /*************** OptionMatchesIntent ********************/
     /*
-     * Each option text will have format "intent entityKey='entityVal' entityKey='entityVal'..."
+     * Each option text will have format "intent entityKey=entityVal entityKey=entityVal..."
      * This function will test whether the entities specified in text of option
      * match entities in dictionary. If a given entityKey not specified in dicctionary, is false.
      * 
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
-        print("option text is " + optionText + " the intent is " + intent);
         if (optionText == null || optionText == "")
         {
             return false;
         }
-        if (optionText.ToLower() == intent.ToLower()) return true;
 
         string optionIntent = optionText.Split(' ')[0];
         if (optionIntent != intent)
@@ -314,12 +312,12 @@ public class NPCDialogueManager : MonoBehaviour
         bool didUpdate = false;
         List<ConversationNode> matches = new List<ConversationNode>();
         // Iterate over each connection, add all valid to list of matches.
+        print(currNode.Text);
         foreach (Connection connection in currNode.Connections)
         {
             print("Connection type " + connection.Conditions);
             if (ConnectionConditionsValid(connection))
             {
-                print("this connection matches");
                 // Each connected node is of type Option or Speech. 
                 // All connected nodes must be the same type.
                 if (connection.ConnectionType == Connection.eConnectionType.Option)
@@ -338,7 +336,6 @@ public class NPCDialogueManager : MonoBehaviour
                 }
             }
         }
-        print("Matches count: " + matches.Count);
         if (matches.Count > 0)
         {
             // In case of multiple matches, return a random match.. 
@@ -354,7 +351,6 @@ public class NPCDialogueManager : MonoBehaviour
             {
                 // We will return the text at current node.
                 CurrentText = currNode.Text;
-                print("The current text is " + CurrentText);
                 // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
                 // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
                 if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
@@ -368,5 +364,11 @@ public class NPCDialogueManager : MonoBehaviour
                 }
             }
         }
+        // else if (currNode.Connections.Count > 0)
+        // {
+        //     currNode = ((OptionConnection)currNode.Connections[currNode.Connections.Count - 1]).OptionNode;
+        //     GetNextMessage();
+        //     return;
+        // }
     }
 }

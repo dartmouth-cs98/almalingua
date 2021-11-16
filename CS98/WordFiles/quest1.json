@@ -18,6 +18,18 @@
         "encountered": false
     },
     {
+        "w":  "hacia",
+        "ID":     0,
+        "definition": "towards",
+        "encountered": true
+    },
+    {
+        "w":  "arriba",
+        "ID":     0,
+        "definition": "up",
+        "encountered": true
+    },
+    {
         "w":    "sí",
         "ID":   0,
         "definition": "yes",
