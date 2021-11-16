@@ -108,7 +108,7 @@ public class NPCDialogueUI : MonoBehaviour
             StartCoroutine(TypeSentence(dialogueText));
         }
         //this section is checking if we want to show the pictures of the orange/staff 
-        if (PicturePanel != null && dialogueText == "Quieres esto?")
+        if (PicturePanel != null && dialogueText == "¿Estás buscando esto?")
         {
             PicturePanel.GetComponent<HideShowObjects>().Show();
             if (pictureChild > 0)
@@ -124,6 +124,7 @@ public class NPCDialogueUI : MonoBehaviour
         {
             Debug.Log("last message");
             RespondButton.GetComponent<HideShowObjects>().Hide();
+
         }
         else
         {
