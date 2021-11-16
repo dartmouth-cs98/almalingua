@@ -2276,6 +2276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 623839347381131793, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 623839347381131804, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_Name
       value: UI with Joystick
@@ -3585,7 +3589,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6478237103383150960, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
 --- !u!1001 &8122464156728413199
 PrefabInstance:

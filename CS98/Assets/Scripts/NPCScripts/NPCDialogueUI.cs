@@ -148,15 +148,14 @@ public class NPCDialogueUI : MonoBehaviour
     */
     IEnumerator TypeSentence(string sentence)
     {
-        DialogueText.SetText(sentence);
-        /*print(DialogueText);
+        // DialogueText.SetText(sentence);
         DialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             DialogueText.text += letter;
             yield return null;
-        }*/
-        yield return null;
+        }
+
     }
 
     /********************* ResponseManager ********************/

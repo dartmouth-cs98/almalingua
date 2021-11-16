@@ -458,10 +458,10 @@ RectTransform:
   m_Father: {fileID: 2546981431107690049}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252.17859, y: 28.023994}
-  m_SizeDelta: {x: 899.511, y: 56.266}
+  m_AnchorMin: {x: 0.23149909, y: 0.15264732}
+  m_AnchorMax: {x: 0.9662603, y: 0.7577843}
+  m_AnchoredPosition: {x: -3.5340567, y: 4.5511603}
+  m_SizeDelta: {x: 6.640217, y: 3.0597668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5798854362082677518
 CanvasRenderer:

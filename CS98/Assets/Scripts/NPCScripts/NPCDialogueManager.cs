@@ -35,8 +35,6 @@ public class NPCDialogueManager : MonoBehaviour
         Entities = new Dictionary<string, string>();
         IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
-        Debug.Log("WORD:");
-        
         // if (Player)
         // {
         //     qm = Player.GetComponent<QuestManager>();
@@ -44,21 +42,25 @@ public class NPCDialogueManager : MonoBehaviour
         // }
     }
 
-    private void setCurrentText(string currentText) {
-      string currentTextWithIcons = "";
+    private void setCurrentText(string currentText)
+    {
+        string currentTextWithIcons = "";
 
-      foreach (string word in currentText.Split(' ')) {
-        string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
-        string icon = "";
-        if(Dictionary.wordIdMap.ContainsKey(cleanWord)) {
-          icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
-          if (icon != null) {
-            print("icon! for word:" + word);
-          }
+        foreach (string word in currentText.Split(' '))
+        {
+            string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
+            string icon = "";
+            if (Dictionary.wordIdMap.ContainsKey(cleanWord))
+            {
+                icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
+                if (icon != null)
+                {
+                    print("icon! for word:" + word);
+                }
+            }
+            currentTextWithIcons += icon + word + ' ';
         }
-        currentTextWithIcons += icon + word + ' ';
-      }
-      CurrentText = currentTextWithIcons;
+        CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
     }
 
     /******************   StartConversation  ************************/
@@ -369,6 +371,7 @@ public class NPCDialogueManager : MonoBehaviour
             {
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
+                // CurrentText = currNode.Text;
                 // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
                 // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
                 if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
