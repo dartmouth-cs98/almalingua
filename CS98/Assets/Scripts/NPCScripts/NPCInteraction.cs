@@ -33,20 +33,6 @@ public class NPCInteraction : MonoBehaviour
     {
         Panel.GetComponent<HideShowObjects>().Show();
         Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
-        if (gameObject.name == "Cesar")
-        {
-            foreach (Word w in Dictionary.playerDictionary.masterList.wlist)
-            {
-                w.encountered = true;
-            }
-        }
-        if (gameObject.name == "Witch" && PlayerPrefs.GetInt("QuestStep") == 2)
-        {
-            GameObject Ice = GameObject.Find("Ice_Melting_Done-Sheet_0");
-            Ice.GetComponent<IceCollider>().canMelt = true;
-
-        }
-        //StartQuest();
     }
 
     private void StartQuest()

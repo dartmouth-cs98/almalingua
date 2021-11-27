@@ -10,12 +10,10 @@ using Newtonsoft.Json.Linq;
 public class NPCDialogueManager : MonoBehaviour
 {
     public NPCConversation MyNPCConversation;
-    public string NPCName;
     public Dictionary<string, string> Entities;
     public string CurrentText;
     public bool IsLoading;
-    //public GameObject Player;
-    private QuestManager qm;
+
 
     private System.Random rnd;
 
@@ -72,6 +70,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void StartConversation()
     {
+        EventManager.RaiseOnConversationStart();
         conversation = MyNPCConversation.Deserialize();
         currNode = conversation.Root;
         currIntent = DEFAULT_INTENT;
@@ -80,7 +79,6 @@ public class NPCDialogueManager : MonoBehaviour
             currIntent = QUEST;
         }
         GetNextMessage();
-
     }
 
     private const string LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps";
@@ -99,6 +97,7 @@ public class NPCDialogueManager : MonoBehaviour
         if (sendToLuis == false)
         {
             currIntent = input;
+            callback();
         }
         else
         {
@@ -149,14 +148,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public bool NextMessageRequiresInput()
     {
-        if (currNode.Connections.Count == 0)
-        {
-            return false;
-        }
-        else
-        {
-            return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
-        }
+        return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
     }
 
     /***************** OnLastMessage**************/
@@ -259,6 +251,8 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
+        optionText = optionText.Trim();
+        print("Option Text is " + optionText + " intent is " + intent);
         if (optionText == null || optionText == "")
         {
             return false;
@@ -331,11 +325,11 @@ public class NPCDialogueManager : MonoBehaviour
     {
         bool didUpdate = false;
         List<ConversationNode> matches = new List<ConversationNode>();
+        print("Current node is " + currNode.Text + "with connections " + currNode.Connections.Count);
+
         // Iterate over each connection, add all valid to list of matches.
-        print(currNode.Text);
         foreach (Connection connection in currNode.Connections)
         {
-            // print("Connection type " + connection.Conditions);
             if (ConnectionConditionsValid(connection))
             {
                 // Each connected node is of type Option or Speech. 
@@ -364,6 +358,8 @@ public class NPCDialogueManager : MonoBehaviour
             // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
             {
+                OptionNode x = (OptionNode)currNode;
+                x.Event.Invoke();
                 GetNextMessage();
                 return;
             }
@@ -371,7 +367,11 @@ public class NPCDialogueManager : MonoBehaviour
             {
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
-                // CurrentText = currNode.Text;
+
+                //invoking the event associating with the node
+                SpeechNode x = (SpeechNode)currNode;
+                x.Event.Invoke();
+
                 // If the next node is a blank speech node, advance 1x more. We call these GROUPER nodes.
                 // This node is hidden to the caller. Used for connecting multiple speech nodes to same set of outputs.
                 if (currNode.Connections.Count > 0 && currNode.Connections[0].ConnectionType == Connection.eConnectionType.Speech)
@@ -384,6 +384,7 @@ public class NPCDialogueManager : MonoBehaviour
                 }
             }
         }
+        print("Match count is " + matches.Count + " and new node is " + currNode.Text);
         // else if (currNode.Connections.Count > 0)
         // {
         //     currNode = ((OptionConnection)currNode.Connections[currNode.Connections.Count - 1]).OptionNode;

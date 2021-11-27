@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
-using System.Linq;
-using Newtonsoft.Json;
+using DialogueEditor;
 using TMPro;
 /** 
 Celina Tala 
@@ -12,40 +10,19 @@ Celina Tala
 
 public class NPCDialogueUI : MonoBehaviour
 {
-    public class QuestMatching
-    {
-        public string questID { get; set; }
-        public string NPC { get; set; }
-    }
-
     public Text NameText;               //the textbox for the npc name/"yo"
     public TextMeshProUGUI DialogueText;                   //the textbook for the actual dialogue
-
     public GameObject RespondButton;    //a button
-    public GameObject PicturePanel;     //the panel that holds our pictures
     public GameObject IceBurning;
 
-
     private string NPCName;              //name of our NPC
-    private bool userTalking;
+    private bool userTalking;      //whether our user is talking
     private bool rootTalking;    //if it is the root speechnode (first time it is opened)
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
-    private int pictureChild;       //which picture to show
     private bool nextMessageRequiresInput;  //does the next message require user input
-    private string currentQuest = "00";        //the curernt quest we are on
+    private string currentQuest = "00";        //the current quest we are on
     private GameObject NPC;             //our NPC connected to the speechbubble
-    private GameObject player;          //our player
-    private Dictionary<string, string> questNPC = new Dictionary<string, string>(); //our dictionary
-    // private string jsonString = @"[
-    //     {'questID': '0100', 
-    //     'NPC': 'Witch'},
-    //     {'questID': '0101',
-    //     'NPC': 'Cesar'},
-    //     {'questID': '0102',
-    //     'NPC': 'Witch'}]";
-
-
 
     /***************** OnEnable***********/
     /* 
@@ -53,30 +30,19 @@ public class NPCDialogueUI : MonoBehaviour
     */
     void OnEnable()
     {
-        player = GameObject.Find("init_Protagonist");
-        if (questNPC.Count < 3)
-        {
-            questNPC.Add("10", "Witch");
-            questNPC.Add("11", "Cesar");
-            questNPC.Add("12", "Witch");
-        }
         rootTalking = true;
         userTalking = false;
-        pictureChild = 0;
         RespondButton.GetComponent<HideShowObjects>().Show();
-
-        currentQuest = player.GetComponent<QuestManager>().GetQuest().ToString() + player.GetComponent<QuestManager>().GetQuestStep().ToString();
-
-        if (questNPC.TryGetValue(currentQuest, out NPCName))
+        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString(); ;
+        if (NPCHighlight.questNPC.TryGetValue(currentQuest, out NPCName))
         {
             NPC = GameObject.Find(NPCName);
         }
-
+        EventManager.RaiseOnConversationStart();
     }
     private void OnDisable()
     {
         RespondButton.GetComponent<HideShowObjects>().Hide();
-
     }
     /***** DisplayNextSentence **********/
     /*
@@ -92,12 +58,12 @@ public class NPCDialogueUI : MonoBehaviour
         NameText.text = NPCName + ":";
         if (rootTalking)
         {
-            Debug.Log("root talking");
             NPC.GetComponent<NPCDialogueManager>().StartConversation();
             rootTalking = !rootTalking;
         }
         else
         {
+            print("Getting Next Message");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
 
         }
@@ -107,22 +73,10 @@ public class NPCDialogueUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         }
-        //this section is checking if we want to show the pictures of the orange/staff 
-        if (PicturePanel != null && dialogueText == "¿Estás buscando esto?")
-        {
-            PicturePanel.GetComponent<HideShowObjects>().Show();
-            if (pictureChild > 0)
-            {
-                PicturePanel.transform.GetChild(pictureChild - 1).GetComponent<HideShowObjects>().Hide();
-            }
-            PicturePanel.transform.GetChild(pictureChild).GetComponent<HideShowObjects>().Show();
-            pictureChild += 1;
-        }
 
         //if we are at our last message, hide the button
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
-            Debug.Log("last message");
             RespondButton.GetComponent<HideShowObjects>().Hide();
 
         }
@@ -132,10 +86,12 @@ public class NPCDialogueUI : MonoBehaviour
             nextMessageRequiresInput = NPC.GetComponent<NPCDialogueManager>().NextMessageRequiresInput();
             if (nextMessageRequiresInput)
             {
+                userTalking = true;
                 RespondButton.GetComponentInChildren<Text>().text = "Respond";
             }
             else
             {
+                userTalking = false;
                 RespondButton.GetComponentInChildren<Text>().text = "Next";
             }
         }
@@ -148,7 +104,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     IEnumerator TypeSentence(string sentence)
     {
-        // DialogueText.SetText(sentence);
         DialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
@@ -164,27 +119,20 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void ResponseManager()
     {
-
-        if (!userTalking && nextMessageRequiresInput)
+        if (userTalking)
         {
             NameText.text = "Yo:";
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
             RespondButton.GetComponentInChildren<Text>().text = "Done";
-            if (PicturePanel != null)
-            {
-                PicturePanel.GetComponent<HideShowObjects>().Hide();
-
-            }
+            userTalking = false;
         }
         else
         {
             if (userResponse == "quema")
             {
-                IceBurning.GetComponent<Animator>().Play("Ice_Melting_Animation");
-                CloseButton();
-                return;
+                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), false);
             }
             else if (userResponse != null)
             {
@@ -194,14 +142,7 @@ public class NPCDialogueUI : MonoBehaviour
             {
                 DisplayNextSentence();
             }
-
-
         }
-        if (nextMessageRequiresInput)
-        {
-            userTalking = !userTalking;
-        }
-
 
     }
 
@@ -219,7 +160,7 @@ public class NPCDialogueUI : MonoBehaviour
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
-        PicturePanel.GetComponent<HideShowObjects>().Hide();
+        PicturePanelManager.HidePicturePanel();
     }
 }
 
