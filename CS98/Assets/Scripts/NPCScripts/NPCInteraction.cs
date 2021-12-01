@@ -10,7 +10,6 @@ public class NPCInteraction : MonoBehaviour
     public GameObject Player;
 
 
-
     // Update is called once per frame
 
 

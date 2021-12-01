@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6478237103383150967}
   - component: {fileID: 6478237103383150966}
   - component: {fileID: 6478237103383150961}
-  - component: {fileID: 6478237103383150960}
+  - component: {fileID: 486138857493983134}
   m_Layer: 5
   m_Name: RespondButton
   m_TagString: Untagged
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6478237103383150960
+--- !u!114 &486138857493983134
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6478237103383150962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d273c13141397460d8e47517be046c96, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6478237103841027925

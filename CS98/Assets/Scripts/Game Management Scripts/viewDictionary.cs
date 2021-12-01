@@ -36,4 +36,9 @@ public class viewDictionary : MonoBehaviour
         }
 
     }
+
+    public void ShowHighlightDictionary()
+    {
+        GameObject.Find("DictObj").transform.GetChild(0).gameObject.GetComponent<HideShowObjects>().Show();
+    }
 }

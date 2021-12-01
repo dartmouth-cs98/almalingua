@@ -13,7 +13,6 @@ public class NPCDialogueUI : MonoBehaviour
     public Text NameText;               //the textbox for the npc name/"yo"
     public TextMeshProUGUI DialogueText;                   //the textbook for the actual dialogue
     public GameObject RespondButton;    //a button
-    public GameObject IceBurning;
 
     private string NPCName;              //name of our NPC
     private bool userTalking;      //whether our user is talking
