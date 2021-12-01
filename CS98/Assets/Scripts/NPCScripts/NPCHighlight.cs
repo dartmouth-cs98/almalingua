@@ -14,8 +14,9 @@ public class NPCHighlight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (questNPC.Count < 3)
+        if (questNPC.Count < 4)
         {
+            questNPC.Add("00", "Witch");
             questNPC.Add("10", "Witch");
             questNPC.Add("11", "Cesar");
             questNPC.Add("12", "Witch");

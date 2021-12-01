@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8122464157940644551}
   - component: {fileID: 8122464157940644550}
   - component: {fileID: 8122464157940644549}
+  - component: {fileID: 2397678797273551839}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -113,10 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyNPCConversation: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
-  NPCName: 
   CurrentText: 
   IsLoading: 0
-  player: {fileID: 0}
 --- !u!60 &8122464157940644549
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -149,3 +148,15 @@ PolygonCollider2D:
       - {x: 1.0416667, y: -1.25}
       - {x: 0.897264, y: 0.66330016}
       - {x: 1.0416667, y: 1.25}
+--- !u!114 &2397678797273551839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122464157940644554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459213264786a410bb108bee17e30e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
