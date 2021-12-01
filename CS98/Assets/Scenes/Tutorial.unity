@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 2605587919860582082, guid: 528ef937b8a1e403d8bfc76538f80e52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 528ef937b8a1e403d8bfc76538f80e52, type: 3}
 --- !u!1001 &1096798623
@@ -550,6 +554,10 @@ PrefabInstance:
     - target: {fileID: 3866750823413894009, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245498057129992929, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4245498057212777677, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
       propertyPath: m_Pivot.x
