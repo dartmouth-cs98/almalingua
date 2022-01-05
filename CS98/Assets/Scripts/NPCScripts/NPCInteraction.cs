@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
+
     public GameObject Panel;
-    public GameObject DialogueScript;
+    public int MyQuest;
+    public GameObject Player;
+
 
     // Update is called once per frame
+
+
     void Update()
     {
         for (int i = 0; i < Input.touchCount; i++)
@@ -17,10 +22,21 @@ public class NPCInteraction : MonoBehaviour
             if (gameObject.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition) && Input.touches[i].phase == TouchPhase.Began)
             {
                 Panel.GetComponent<HideShowObjects>().Show();
-                // DialogueScript.GetComponent<NPCDialogueManager>().DisplayNextSentence();
+                Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
             }
         }
 
+    }
+
+    private void OnMouseDown()
+    {
+        Panel.GetComponent<HideShowObjects>().Show();
+        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
+    }
+
+    private void StartQuest()
+    {
+        Player.GetComponent<QuestManager>().SetQuest(MyQuest);
     }
 }
 

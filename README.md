@@ -28,6 +28,7 @@ Code Organization
 ## Deployment
 
 Download unity app, clone the repo, and open the project in unity
+Run in Unity 
 Download git lfs 
 
 ## Authors

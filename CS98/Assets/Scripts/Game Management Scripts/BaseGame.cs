@@ -15,6 +15,7 @@ public class BaseGame : ScriptableObject
         public int questnum;
         public int prereq;
         public string description;
+        public string[] steps;
     }
 
     [System.Serializable]

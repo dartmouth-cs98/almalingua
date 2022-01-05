@@ -11,7 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/NPCInteractionTextBubble.unity
-    guid: 031eabfa7207b4372848af1bb10d333d
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 641aaffbb17964fe3a112e7786b81b86
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: 8d4a1a39e629c4e6eb004c88b8cf623e
+  - enabled: 1
+    path: Assets/Scenes/WitchHouse.unity
+    guid: b5232c1df5f7e46f0b5992c5722c7eb4
   m_configObjects: {}

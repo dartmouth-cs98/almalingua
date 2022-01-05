@@ -5,31 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public string triggerName;
+    public Animator Transition;      //our scene change animation
+    public bool ChangeQuest;        //if we need to change the quest on the sceneloader
+    public GameObject protagonist;  //protagonist 
 
-    private GameObject trigger;
+
     private void Start()
     {
-        trigger = GameObject.Find(triggerName);
+        int currentQuest = PlayerPrefs.GetInt("Quest");
+        // protagonist = GameObject.Find("iProtagonist");
+        // if (currentQuest > 1)
+        // {
+        //     protagonist = GameObject.Find("Protagonist");
+        // }
+        // else
+        // {
+        //     protagonist = GameObject.Find("init_Protagonist");
+        // }
+
     }
-    // Update is called once per frame
-    void Update()
+    public void LoadScene(string nextScene)
     {
-        for (int i = 0; i < Input.touchCount; i++)
+        if (ChangeQuest)
         {
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-
-            if (triggerName == "NPC" && trigger.GetComponent<PolygonCollider2D>().OverlapPoint((Vector2)touchPosition))
-            {
-                LoadScene("NPCInteractionTextBubble");
-            }
+            int currentStep = protagonist.GetComponent<QuestManager>().GetQuestStep();
+            protagonist.GetComponent<QuestManager>().SetQuestStep(1);
+            // Debug.Log("past step is " + currentStep + " Current Step is " + protagonist.GetComponent<QuestManager>().GetQuestStep());
         }
-
+        StartCoroutine(SceneAnimate(nextScene));
     }
 
-    void LoadScene(string sceneName)
+    //adding the cross fade and loading next scene
+    IEnumerator SceneAnimate(string nextScene)
     {
-        SceneManager.LoadScene(sceneName);
-    }
+        Transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(nextScene);
 
+    }
 }

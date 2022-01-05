@@ -4,13 +4,20 @@
             "questname": "intro",
             "questnum": 0,
             "prereq": -1,
-            "description": "a test quest placeholder"
+            "description": "a test quest placeholder",
+            "steps":  []
+  
         },
         {
-            "questname": "first spell",
+            "questname": "Left or Right?",
             "questnum": 1,
             "prereq": 0,
-            "description": "get your first spell nice"
+            "description": "Complete this quest to get your first spell!",
+            "steps": [
+                {"desc": "Talk to the witch"},
+                {"desc": "Find the 'map'" },
+                { "desc": "Follow the directions to find the wand!}"}
+            ]
         }
     ]
 }
