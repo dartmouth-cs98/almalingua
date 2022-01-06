@@ -4,25 +4,13 @@ using UnityEngine;
 
 public class NPCHighlight : MonoBehaviour
 {
-    public static Dictionary<string, string> questNPC = new Dictionary<string, string>(); //our dictionary mapping questIDS to the NPC associated with it
+
     private string currentQuest = "00";        //the current quest we are on
     private GameObject clickedSquarePrefab;           //the prefab square that shows up above a npc
     private GameObject clickedSquare;           //our actual square
     private bool highlight = false;               //if we already highlighted
     private bool firstTime = true;              //the first time we will instantiate our prefab, else we just set active/inactive
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (questNPC.Count < 4)
-        {
-            questNPC.Add("00", "Witch");
-            questNPC.Add("10", "Witch");
-            questNPC.Add("11", "Cesar");
-            questNPC.Add("12", "Witch");
-        }
-
-    }
 
     /**
     We are getting our current quest and checking if the current NPC is associated with our current quest
@@ -31,7 +19,7 @@ public class NPCHighlight : MonoBehaviour
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         string NPCName;
-        if (questNPC.TryGetValue(currentQuest, out NPCName) && NPCName == gameObject.name)  //if everything matches then we will add the box
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName) && NPCName == gameObject.name)  //if everything matches then we will add the box
         {
             HighlightNPC();
         }

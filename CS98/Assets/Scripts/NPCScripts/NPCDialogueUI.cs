@@ -33,7 +33,7 @@ public class NPCDialogueUI : MonoBehaviour
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString(); ;
-        if (NPCHighlight.questNPC.TryGetValue(currentQuest, out NPCName))
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName))
         {
             NPC = GameObject.Find(NPCName);
         }
