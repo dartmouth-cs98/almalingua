@@ -3140,6 +3140,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4634133557930024388, guid: 51ee14d80c4bf44d0af0e56b645a8486, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634133557930024388, guid: 51ee14d80c4bf44d0af0e56b645a8486, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7105af79dcd4048cabcc92890a56eb01, type: 2}
     - target: {fileID: 4634133558193246053, guid: 51ee14d80c4bf44d0af0e56b645a8486, type: 3}
       propertyPath: m_RootOrder
       value: 14
