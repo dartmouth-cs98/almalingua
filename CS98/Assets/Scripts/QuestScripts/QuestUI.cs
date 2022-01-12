@@ -15,9 +15,9 @@ public class QuestUI : MonoBehaviour
         {
             string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Reindeer", "Talk to Cesar" };
+            questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("10", questDetails);
-            questDetails = new string[] { "Cesar", "Wand", "Go find the wand" };
+            questDetails = new string[] { "Cesar", "Reindeer", "Go Talk to Reindeer" };
             questNPC.Add("11", questDetails);
             questDetails = new string[] { "Witch", "Burn", "Burn Ice Cube" };
             questNPC.Add("12", questDetails);
@@ -36,10 +36,19 @@ public class QuestUI : MonoBehaviour
         }
     }
 
+    public void SetQuest(int quest)
+    {
+        PlayerPrefs.SetInt("Quest", quest);
+    }
+
+    public void SetQuestStep(int step)
+    {
+        PlayerPrefs.SetInt("QuestStep", step);
+    }
     void UpdateText(string title, string descrip)
     {
         gameObject.transform.Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
-        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text += descrip;
+        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
     }
 
 }

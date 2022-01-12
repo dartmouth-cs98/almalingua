@@ -157,6 +157,8 @@ public class NPCDialogueManager : MonoBehaviour
     */
     public bool OnLastMessage()
     {
+        if (currNode.Connections.Count == 0)
+            EventManager.RaiseOnConversationEnd();
         return (currNode.Connections.Count == 0);
     }
 
