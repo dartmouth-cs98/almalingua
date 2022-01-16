@@ -32,12 +32,13 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
-        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString(); ;
-        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName))
+        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
+        string[] questDetails = new string[2];
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
+            NPCName = questDetails[0];
             NPC = GameObject.Find(NPCName);
         }
-        EventManager.RaiseOnConversationStart();
     }
     private void OnDisable()
     {
@@ -77,7 +78,7 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-
+            gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         }
         else
         {
