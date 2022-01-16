@@ -49,7 +49,6 @@ public class PlayerMove : MonoBehaviour
 
   // TY Code
   void animate(Vector2 playerDirection){
-    print(playerDirection);
     animator.SetFloat("Horizontal", playerDirection.x);
     animator.SetFloat("Vertical", playerDirection.y);
     animator.SetFloat("Speed", movementSpeed);
