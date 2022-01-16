@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 55
+  CurrentIDCounter: 57
   json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":289,"yPos":-675},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"quest
     quest=1 questStep=0","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":955,"yPos":-631},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"hello","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":1156,"yPos":-218},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"help","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":1384,"yPos":-216},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"hi","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":678,"yPos":-638},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"quest
     quest=1 questStep=2","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":702,"yPos":-173},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"quema","parentUIDs":[46],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":62.25,"yPos":-677},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"quest
@@ -106,14 +106,16 @@ MonoBehaviour:
   - {fileID: 3992218533505419180}
   - {fileID: 5636663998125959710}
   - {fileID: 2466188570540620282}
+  - {fileID: 6490868895368660934}
+  - {fileID: 3952000157507902794}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1821779390472650988, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
         m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
-        m_MethodName: SetQuestStep
+        m_MethodName: SetQuest
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -123,9 +125,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821779390472650988, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
         m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
-        m_MethodName: SetQuest
+        m_MethodName: SetQuestStep
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -173,6 +175,8 @@ GameObject:
   - component: {fileID: 3992218533505419180}
   - component: {fileID: 5636663998125959710}
   - component: {fileID: 2466188570540620282}
+  - component: {fileID: 6490868895368660934}
+  - component: {fileID: 3952000157507902794}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -544,9 +548,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1821779390472650988, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
         m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
-        m_MethodName: SetQuestStep
+        m_MethodName: SetQuest
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -556,9 +560,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821779390472650988, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
         m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
-        m_MethodName: SetQuest
+        m_MethodName: SetQuestStep
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -790,6 +794,44 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 54
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &6490868895368660934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771186381023757129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 55
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &3952000157507902794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771186381023757129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 56
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}

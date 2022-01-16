@@ -27,7 +27,7 @@ public class NPCDialogueManager : MonoBehaviour
     private const string DEFAULT_INTENT = "hello";
 
 
-    private const double MIN_ACCEPTABLE_SCORE = 0.8;
+    private const double MIN_ACCEPTABLE_SCORE = 0.6;
     private const string ERR_INTENT = "none";
     private GameObject Player;
 
@@ -140,9 +140,10 @@ public class NPCDialogueManager : MonoBehaviour
                     dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
                     currIntent = luisResponse.prediction.topIntent;
                     float iScore = luisResponse.prediction.intents[currIntent].score;
-                    if (iScore < MIN_ACCEPTABLE_SCORE) {
-                      Debug.Log(iScore);
-                      currIntent = ERR_INTENT;
+                    if (iScore < MIN_ACCEPTABLE_SCORE)
+                    {
+                        Debug.Log(iScore);
+                        currIntent = ERR_INTENT;
                     }
                     Debug.Log(luisResponse);
                     callback();

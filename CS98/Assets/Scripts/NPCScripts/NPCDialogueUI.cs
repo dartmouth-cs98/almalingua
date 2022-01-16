@@ -53,6 +53,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
@@ -63,7 +64,6 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            print("Getting Next Message");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
 
         }
@@ -151,6 +151,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
+        print(UserInput);
         userResponse = UserInput;
     }
 

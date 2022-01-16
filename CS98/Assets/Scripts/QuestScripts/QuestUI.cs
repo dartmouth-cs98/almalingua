@@ -19,7 +19,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("10", questDetails);
             questDetails = new string[] { "Cesar", "Reindeer", "Go Talk to Reindeer" };
             questNPC.Add("11", questDetails);
-            questDetails = new string[] { "Witch", "Burn", "Burn Ice Cube" };
+            questDetails = new string[] { "Witch", "Find Wand", "Yo te digo dónde está\n-Ve a la izquierda\n-después hacia arriba\n-y finalmente a la izquierda otra vez.  Está al lado del hospital." };
             questNPC.Add("12", questDetails);
         }
 
@@ -31,6 +31,7 @@ public class QuestUI : MonoBehaviour
         string[] questDetails = new string[2];
         if (newQuest != currentQuest && QuestUI.questNPC.TryGetValue(newQuest, out questDetails))
         {
+            print(newQuest + currentQuest);
             currentQuest = newQuest;
             UpdateText(questDetails[1], questDetails[2]);
         }
@@ -47,8 +48,8 @@ public class QuestUI : MonoBehaviour
     }
     void UpdateText(string title, string descrip)
     {
-        gameObject.transform.Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
-        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
+        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
+        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
     }
 
 }
