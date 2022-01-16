@@ -25,6 +25,10 @@ public class NPCDialogueManager : MonoBehaviour
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
     private const string DEFAULT_INTENT = "hello";
+
+
+    private const double MIN_ACCEPTABLE_SCORE = 0.8;
+    private const string ERR_INTENT = "none";
     private GameObject Player;
 
     void Awake()
@@ -135,6 +139,12 @@ public class NPCDialogueManager : MonoBehaviour
                     Debug.Log("Received: " + webRequest.downloadHandler.text);
                     dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
                     currIntent = luisResponse.prediction.topIntent;
+                    float iScore = luisResponse.prediction.intents[currIntent].score;
+                    if (iScore < MIN_ACCEPTABLE_SCORE) {
+                      Debug.Log(iScore);
+                      currIntent = ERR_INTENT;
+                    }
+                    Debug.Log(luisResponse);
                     callback();
                     break;
             }
@@ -291,9 +301,6 @@ public class NPCDialogueManager : MonoBehaviour
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
         Debug.Log("Quest Step" + Entities[QUEST_STEP]);
-
-        // Entities[QUEST] = "1";
-        // Entities[QUEST_STEP] = "2";
 
         foreach (Connection connection in conversation.Root.Connections)
         {
