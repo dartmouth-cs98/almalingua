@@ -18,8 +18,8 @@ public class NPCHighlight : MonoBehaviour
     void Update()
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[2];
-        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails) && questDetails[0] == gameObject.name)  //if everything matches then we will add the box
+        string NPCName;
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName) && NPCName == gameObject.name)  //if everything matches then we will add the box
         {
             HighlightNPC();
         }
