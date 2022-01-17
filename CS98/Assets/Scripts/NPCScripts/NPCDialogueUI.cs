@@ -32,13 +32,12 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
-        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[2];
-        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
+        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString(); ;
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName))
         {
-            NPCName = questDetails[0];
             NPC = GameObject.Find(NPCName);
         }
+        EventManager.RaiseOnConversationStart();
     }
     private void OnDisable()
     {
@@ -53,7 +52,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-        gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
@@ -64,6 +62,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
+            print("Getting Next Message");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
 
         }
@@ -78,7 +77,7 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-            gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+
         }
         else
         {
@@ -151,7 +150,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
-        print(UserInput);
         userResponse = UserInput;
     }
 
