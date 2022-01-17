@@ -6,13 +6,32 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public Animator Transition;      //our scene change animation
+    public bool ChangeQuest;        //if we need to change the quest on the sceneloader
+    public GameObject protagonist;  //protagonist 
+
 
     private void Start()
     {
         int currentQuest = PlayerPrefs.GetInt("Quest");
+        // protagonist = GameObject.Find("iProtagonist");
+        // if (currentQuest > 1)
+        // {
+        //     protagonist = GameObject.Find("Protagonist");
+        // }
+        // else
+        // {
+        //     protagonist = GameObject.Find("init_Protagonist");
+        // }
+
     }
     public void LoadScene(string nextScene)
     {
+        if (ChangeQuest)
+        {
+            int currentStep = protagonist.GetComponent<QuestManager>().GetQuestStep();
+            protagonist.GetComponent<QuestManager>().SetQuestStep(1);
+            // Debug.Log("past step is " + currentStep + " Current Step is " + protagonist.GetComponent<QuestManager>().GetQuestStep());
+        }
         StartCoroutine(SceneAnimate(nextScene));
     }
 
