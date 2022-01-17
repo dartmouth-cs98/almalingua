@@ -16,6 +16,8 @@ public class CombatSystem : MonoBehaviour
 
     public GameObject dialogueText;
 
+    public GameObject SceneLoader;
+
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
 
@@ -127,6 +129,7 @@ public class CombatSystem : MonoBehaviour
         {
             // Return to the Witch's House
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated!";
+            SceneLoader.GetComponent<SceneLoader>().LoadScene("WitchHouse");
         }
     }
 

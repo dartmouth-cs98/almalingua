@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Witch
+  unitName: Player
   unitLevel: 100
   damage: 10
   maxHP: 100
