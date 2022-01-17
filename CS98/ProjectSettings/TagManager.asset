@@ -11,7 +11,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacle
   - Water
   - UI
   - 
@@ -43,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 2555435419
+    locked: 0
+  - name: Quest
+    uniqueID: 2688689631
     locked: 0
   - name: Default
     uniqueID: 0
