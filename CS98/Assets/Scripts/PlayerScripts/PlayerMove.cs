@@ -6,53 +6,67 @@ using System;
 public class PlayerMove : MonoBehaviour
 {
 
-  private Touch touch;
-  public float thrust = 10f;
-  protected Joystick joystick; 
+    private Touch touch;
+    public float thrust = 10f;
+    protected Joystick joystick;
 
-  public Rigidbody2D rb;
-  private Vector2 playerDirection;
-  public Animator animator;
-  public float movementSpeed;
+    public Rigidbody2D rb;
+    private Vector2 playerDirection;
+    public Animator animator;
+    public float movementSpeed;
 
-  // Use this for initialization
-  void Start () {
-    rb = gameObject.GetComponent<Rigidbody2D>();
-  }
-
-  void Update () {
-
-    if (Input.GetKey(KeyCode.A)) {
-      playerDirection = Vector2.left;
-    } else if (Input.GetKey(KeyCode.D)) {
-      playerDirection = Vector2.right;
-    } else if (Input.GetKey(KeyCode.W)) {
-      playerDirection = Vector2.up;
-    } else if (Input.GetKey(KeyCode.S)) {
-      playerDirection = Vector2.down;
-    } else {
-      playerDirection = Vector2.zero;
+    // Use this for initialization
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
-  }
+    void Update()
+    {
 
-  // Update is called once per frame
-  void FixedUpdate () {
-    moveCharacter();
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            playerDirection = Vector2.left;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            playerDirection = Vector2.right;
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            playerDirection = Vector2.up;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            playerDirection = Vector2.down;
+        }
+        else
+        {
+            playerDirection = Vector2.zero;
+        }
 
-  }
+    }
 
-  void moveCharacter () {
-      rb.AddForce(playerDirection * thrust);
-      animate(playerDirection);
-  }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        moveCharacter();
 
-  // TY Code
-  void animate(Vector2 playerDirection){
-    animator.SetFloat("Horizontal", playerDirection.x);
-    animator.SetFloat("Vertical", playerDirection.y);
-    animator.SetFloat("Speed", movementSpeed);
-  }
+    }
+
+    void moveCharacter()
+    {
+        rb.AddForce(playerDirection * thrust);
+        animate(playerDirection);
+    }
+
+    // TY Code
+    void animate(Vector2 playerDirection)
+    {
+        animator.SetFloat("Horizontal", playerDirection.x);
+        animator.SetFloat("Vertical", playerDirection.y);
+        animator.SetFloat("Speed", movementSpeed);
+    }
 
 }
 
