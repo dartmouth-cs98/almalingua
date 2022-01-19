@@ -13,9 +13,6 @@ public class QuestManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        Debug.Log("Player pref quest on load: " + PlayerPrefs.GetInt("Quest"));
-
         // LoadJSON.load_JSON(QuestData, baseGame);
         if (!PlayerPrefs.HasKey("Quest"))
         {
