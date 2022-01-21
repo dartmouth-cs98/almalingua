@@ -12,10 +12,20 @@ public class NPCHighlight : MonoBehaviour
     private bool firstTime = true;              //the first time we will instantiate our prefab, else we just set active/inactive
 
 
+    private void OnEnable()
+    {
+        EventManager.onQuestChange += UpdateQuest;
+        UpdateQuest();
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onQuestChange -= UpdateQuest;
+    }
     /**
     We are getting our current quest and checking if the current NPC is associated with our current quest
     **/
-    void Update()
+    void UpdateQuest()
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         string[] questDetails = new string[2];

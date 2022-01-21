@@ -8,6 +8,8 @@ public class QuestUI : MonoBehaviour
     string questTask;
     string currentQuest;
 
+    GameObject Witch;
+
     // Start is called before the first frame update
     private void OnEnable()
     {
@@ -23,22 +25,30 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("12", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("20", questDetails);
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
+            questNPC.Add("26", questDetails);
+            questDetails = new string[] { "Witch", "Get Spell", "Get the Next Spell" };
+            questNPC.Add("27", questDetails);
+
         }
         EventManager.onProtagonistChange += WitchSpeak;
+        EventManager.onQuestChange += UpdateQuest;
+        UpdateQuest();
     }
 
     private void OnDisable()
     {
         EventManager.onProtagonistChange -= WitchSpeak;
+        EventManager.onQuestChange -= UpdateQuest;
 
     }
-    private void Update()
+    private void UpdateQuest()
     {
-        string newQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[2];
-        if (newQuest != currentQuest && QuestUI.questNPC.TryGetValue(newQuest, out questDetails))
+        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
+        string[] questDetails = new string[3];
+        print(currentQuest);
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
-            currentQuest = newQuest;
             UpdateText(questDetails[1], questDetails[2]);
         }
 
@@ -47,11 +57,15 @@ public class QuestUI : MonoBehaviour
     public void SetQuest(int quest)
     {
         PlayerPrefs.SetInt("Quest", quest);
+        EventManager.RaiseOnQuestChange();
+
     }
 
     public void SetQuestStep(int step)
     {
         PlayerPrefs.SetInt("QuestStep", step);
+        EventManager.RaiseOnQuestChange();
+
     }
     void UpdateText(string title, string descrip)
     {
@@ -64,5 +78,12 @@ public class QuestUI : MonoBehaviour
     {
         SetQuestStep(3);
         GameObject.Find("Witch").GetComponent<NPCInteraction>().StartDialogue();
+    }
+
+    public void GiveSpell()
+    {
+        Vector2 PlayerPosition = GameObject.Find("/CameraPlayer/PlayerManager/Protagonist").transform.position;
+        Witch = GameObject.Find("Witch");
+        Witch.transform.position = new Vector2(PlayerPosition.x - 0.5f, PlayerPosition.y);
     }
 }
