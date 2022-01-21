@@ -37,11 +37,6 @@ public class NPCDialogueManager : MonoBehaviour
         Entities = new Dictionary<string, string>();
         IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
-        // if (Player)
-        // {
-        //     qm = Player.GetComponent<QuestManager>();
-
-        // }
     }
 
     private void setCurrentText(string currentText)
