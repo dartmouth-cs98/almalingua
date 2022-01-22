@@ -33,6 +33,11 @@ public class QuestUI : MonoBehaviour
         }
         EventManager.onProtagonistChange += WitchSpeak;
         EventManager.onQuestChange += UpdateQuest;
+
+    }
+
+    private void Start()
+    {
         UpdateQuest();
     }
 
@@ -46,7 +51,6 @@ public class QuestUI : MonoBehaviour
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         string[] questDetails = new string[3];
-        print(currentQuest);
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             UpdateText(questDetails[1], questDetails[2]);

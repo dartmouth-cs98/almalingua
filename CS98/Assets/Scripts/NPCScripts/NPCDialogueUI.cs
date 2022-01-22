@@ -46,13 +46,11 @@ public class NPCDialogueUI : MonoBehaviour
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         string[] questDetails = new string[3];
-        print(currentQuest + " from dialogueUI");
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             NPCName = questDetails[0];
             NPC = GameObject.Find(NPCName);
         }
-
     }
     public void NPCInteract(string NPCTouched)
     {

@@ -15,7 +15,6 @@ public class NPCHighlight : MonoBehaviour
     private void OnEnable()
     {
         EventManager.onQuestChange += UpdateQuest;
-        UpdateQuest();
     }
 
     private void OnDisable()
@@ -25,16 +24,21 @@ public class NPCHighlight : MonoBehaviour
     /**
     We are getting our current quest and checking if the current NPC is associated with our current quest
     **/
+    private void Start()
+    {
+        UpdateQuest();
+    }
     void UpdateQuest()
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[2];
+        string[] questDetails = new string[3];
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails) && questDetails[0] == gameObject.name)  //if everything matches then we will add the box
         {
             HighlightNPC();
         }
         else
         {
+
             RemoveHighlightNPC();
         }
     }
