@@ -13,7 +13,9 @@ public class QuestUI : MonoBehaviour
     // Start is called before the first frame update
     private void OnEnable()
     {
-        if (questNPC.Count < 4)
+        int questLength = 3;
+        PlayerPrefs.SetInt("QuestLength", questLength);
+        if (questNPC.Count < 11)
         {
             string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("00", questDetails);
@@ -27,8 +29,18 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("20", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("26", questDetails);
-            questDetails = new string[] { "Witch", "Get Spell", "Get the Next Spell" };
+            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
             questNPC.Add("27", questDetails);
+            questDetails = new string[] { "Teacher", "Talk to Teacher", "Talk to the teacher" };
+            questNPC.Add("30", questDetails);
+            questDetails = new string[] { "Cesar", "Talk to Cesar", "Talk to Cesar about children" };
+            questNPC.Add("31", questDetails);
+            questDetails = new string[] { "", "Find children", "Uno está por el río\n-el otro al lado del bosque" };
+            questNPC.Add("32", questDetails);
+            questDetails = new string[] { "Teacher", "Talk to Teacher", "" };
+            questNPC.Add("33", questDetails);
+            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
+            questNPC.Add("34", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;
@@ -61,8 +73,6 @@ public class QuestUI : MonoBehaviour
     public void SetQuest(int quest)
     {
         PlayerPrefs.SetInt("Quest", quest);
-        EventManager.RaiseOnQuestChange();
-
     }
 
     public void SetQuestStep(int step)

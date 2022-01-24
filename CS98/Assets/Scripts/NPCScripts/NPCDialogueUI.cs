@@ -45,7 +45,7 @@ public class NPCDialogueUI : MonoBehaviour
     private void UpdateQuest()
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[3];
+        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             NPCName = questDetails[0];
