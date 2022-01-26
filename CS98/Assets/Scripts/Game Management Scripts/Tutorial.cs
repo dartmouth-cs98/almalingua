@@ -14,13 +14,15 @@ public class Tutorial : MonoBehaviour
     public TextMeshProUGUI TextDetails;
     public GameObject HighlightArrow;
     public GameObject InputField;
+    public GameObject PathObstacle;
 
     private static string message1 = "Hello and welcome to the land of Almalingua.";
     private static string message2 = "Must've been a rough crash... " +
-        "Try using the joystick to make your way to the red circle.";
+        "Try using the WASD keys to make your way to the coin over to your left.";
 
     private static string message3 = "Well done mysterious traveler. What is your name?";
-    private static string message4 = "I may know someone who can help you. Take this path to the house.";
+    private static string message4 = "I may know someone who can help you. " +
+        "Try taking this path towards the town.";
     private string[] messages = { message1, message2, message3, message4 };
     private int currentMessage = 0;
 
@@ -38,6 +40,8 @@ public class Tutorial : MonoBehaviour
         {
             NextMessage();
         }
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     // Updating which message is displayed in the text box
@@ -48,6 +52,7 @@ public class Tutorial : MonoBehaviour
         {
             InputField.SetActive(true);
         }
+
         TextDetails.text = messages[currentMessage];
     }
 
