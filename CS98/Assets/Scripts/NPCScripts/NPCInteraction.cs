@@ -12,10 +12,9 @@ public class NPCInteraction : MonoBehaviour
         if (!Panel.activeSelf)
         {
             Panel.GetComponent<HideShowObjects>().Show();
-            print("here");
         }
 
-        Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
+        Panel.GetComponent<NPCDialogueUI>().NPCInteract(gameObject.name);
     }
 
     //called by QuestUI

@@ -24,6 +24,15 @@ public class Dictionary : MonoBehaviour
     private int TargetID = -1;
     // private int discoveredWords = 0;
 
+    private void OnEnable()
+    {
+        EventManager.onConversationStart += RevealWords;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onConversationStart -= RevealWords;
+    }
     void Start()
     {
         string path = Application.streamingAssetsPath;
@@ -198,6 +207,11 @@ public class Dictionary : MonoBehaviour
             Word discovered = (Word)wordIdMap[newWord];
             discovered.encountered = true;
         }
+    }
+
+    void RevealWords()
+    {
+
     }
 
 }
