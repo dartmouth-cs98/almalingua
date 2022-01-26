@@ -39,9 +39,8 @@ public class Tutorial : MonoBehaviour
         if (currentMessage == 1)
         {
             NextMessage();
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
-
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     // Updating which message is displayed in the text box
