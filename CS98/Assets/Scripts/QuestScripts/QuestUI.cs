@@ -111,6 +111,7 @@ public class QuestUI : MonoBehaviour
         if (Children.Count == 2)
         {
             SetQuestStep(3);
+            print("here");
         }
     }
 }
