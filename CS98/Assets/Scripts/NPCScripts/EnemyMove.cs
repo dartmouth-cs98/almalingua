@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public CircleCollider2D trigger;
+    private Rigidbody2D rb;
+    private CircleCollider2D trigger;
 
     private Vector2 direction;
     public float thrust = 3.0f;
