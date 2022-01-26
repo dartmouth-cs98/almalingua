@@ -7,7 +7,7 @@ public class QuestUI : MonoBehaviour
     public static Dictionary<string, string[]> questNPC = new Dictionary<string, string[]>(); //our dictionary mapping questIDS to the NPC associated with it
     string questTask;
     string currentQuest;
-
+    HashSet<int> Children = new HashSet<int>();
     GameObject Witch;
 
     // Start is called before the first frame update
@@ -31,16 +31,22 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
             questNPC.Add("27", questDetails);
-            questDetails = new string[] { "Teacher", "Talk to Teacher", "Talk to the teacher" };
+            questDetails = new string[] { "Teacher", "Talk to Teacher", "Walk right to the Forest\n-Talk to the teacher" };
             questNPC.Add("30", questDetails);
-            questDetails = new string[] { "Cesar", "Talk to Cesar", "Talk to Cesar about children" };
+            questDetails = new string[] { "Cesar", "Talk to Cesar", "Go back to the village\n-Talk to Cesar about children" };
             questNPC.Add("31", questDetails);
-            questDetails = new string[] { "", "Find children", "Uno está por el río\n-el otro al lado del bosque" };
+            questDetails = new string[] { "Child", "Find children", "Uno está por el río\n-el otro al lado del bosque" };
             questNPC.Add("32", questDetails);
             questDetails = new string[] { "Teacher", "Talk to Teacher", "" };
-            questNPC.Add("33", questDetails);
-            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
             questNPC.Add("34", questDetails);
+            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
+            questNPC.Add("35", questDetails);
+            questDetails = new string[] { "Chef", "Talk to Chef", "Help the Chef" };
+            questNPC.Add("40", questDetails);
+            questDetails = new string[] { "Farmer", "Ask for Ingredients", "Talk to Farmer\n-pedirle arroz, leche, azúcar y canela" };
+            questNPC.Add("41", questDetails);
+            questDetails = new string[] { "Chef", "Go back to Chef", "Go back to the Chef and give him the ingredients" };
+            questNPC.Add("42", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;
@@ -86,8 +92,6 @@ public class QuestUI : MonoBehaviour
         gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
         gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
     }
-
-    //auto 
     public void WitchSpeak()
     {
         SetQuestStep(3);
@@ -99,5 +103,14 @@ public class QuestUI : MonoBehaviour
         Vector2 PlayerPosition = GameObject.Find("/CameraPlayer/PlayerManager/Protagonist").transform.position;
         Witch = GameObject.Find("Witch");
         Witch.transform.position = new Vector2(PlayerPosition.x - 0.5f, PlayerPosition.y);
+    }
+
+    public void ChildPoints(int id)
+    {
+        Children.Add(id);
+        if (Children.Count == 2)
+        {
+            SetQuestStep(3);
+        }
     }
 }

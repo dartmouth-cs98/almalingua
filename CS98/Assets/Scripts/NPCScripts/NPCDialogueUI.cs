@@ -55,7 +55,6 @@ public class NPCDialogueUI : MonoBehaviour
     public void NPCInteract(string NPCTouched)
     {
         NPCTouch = NPCTouched;
-        print(NPCTouch + NPCName);
         if (NPCTouch != NPCName)
         {
             DefaultConversation(NPCTouch);
@@ -189,7 +188,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
-        print(UserInput);
         userResponse = UserInput;
     }
 
