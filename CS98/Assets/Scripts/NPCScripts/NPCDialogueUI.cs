@@ -20,8 +20,9 @@ public class NPCDialogueUI : MonoBehaviour
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
     private bool nextMessageRequiresInput;  //does the next message require user input
-    private string currentQuest = "00";        //the current quest we are on
+    private string currentQuest = "";        //the current quest we are on
     private GameObject NPC;             //our NPC connected to the speechbubble
+    private string NPCTouch;          //the NPC the user clicked on;
 
     /***************** OnEnable***********/
     /* 
@@ -32,17 +33,53 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
+        UpdateQuest();
+    }
+
+
+    private void OnDisable()
+    {
+        RespondButton.GetComponent<HideShowObjects>().Hide();
+    }
+
+    private void UpdateQuest()
+    {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[2];
+        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             NPCName = questDetails[0];
             NPC = GameObject.Find(NPCName);
         }
     }
-    private void OnDisable()
+    public void NPCInteract(string NPCTouched)
     {
+        NPCTouch = NPCTouched;
+        if (NPCTouch != NPCName)
+        {
+            DefaultConversation(NPCTouch);
+        }
+        else
+        {
+            DisplayNextSentence();
+        }
+
+
+    }
+    void DefaultConversation(string npcname)
+    {
+        GameObject NPC_x = GameObject.Find(npcname);
+        NameText.text = npcname;
+        NPC_x.GetComponent<NPCDialogueManager>().StartConversation();
+        dialogueText = NPC_x.GetComponent<NPCDialogueManager>().CurrentText;
+        if (dialogueText != null)
+        {
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(dialogueText));
+        }
         RespondButton.GetComponent<HideShowObjects>().Hide();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+
     }
     /***** DisplayNextSentence **********/
     /*
@@ -130,7 +167,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            if (userResponse == "quema")
+            if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), false);
             }
@@ -151,7 +188,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void UserResponse(string UserInput)
     {
-        print(UserInput);
         userResponse = UserInput;
     }
 

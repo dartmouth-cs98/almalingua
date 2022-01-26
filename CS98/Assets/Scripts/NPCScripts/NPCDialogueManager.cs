@@ -69,6 +69,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void StartConversation()
     {
+
         EventManager.RaiseOnConversationStart();
         conversation = MyNPCConversation.Deserialize();
         currNode = conversation.Root;
@@ -297,7 +298,6 @@ public class NPCDialogueManager : MonoBehaviour
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
-        Debug.Log("Quest Step" + Entities[QUEST_STEP]);
 
         foreach (Connection connection in conversation.Root.Connections)
         {

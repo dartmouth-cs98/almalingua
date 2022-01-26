@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class showProtagonist : MonoBehaviour{
+public class showProtagonist : MonoBehaviour
+{
 
     public GameObject innitPlayer;
     public GameObject defaultPlayer;
@@ -14,18 +15,27 @@ public class showProtagonist : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
-        innitPlayer.SetActive(true);
-        defaultPlayer.SetActive(false);
+        Transform toFollow;
+        if (PlayerPrefs.GetInt("Quest") > 1)
+        {
+            innitPlayer.SetActive(false);
+            defaultPlayer.SetActive(true);
+            toFollow = defaultPlayer.transform.GetChild(0);
+
+        }
+        else
+        {
+            innitPlayer.SetActive(true);
+            defaultPlayer.SetActive(false);
+            toFollow = innitPlayer.transform.GetChild(0);
+        }
         CinemachineVirtualCamera virtualCamera = camObj.GetComponent<CinemachineVirtualCamera>();
-        Transform toFollow = innitPlayer.transform.GetChild(0);
         virtualCamera.m_Follow = toFollow;
-        
     }
 
 
-    public void Switch(){ 
-        Joystick j = innitPlayer.GetComponent<Joystick>();
-        j = null;
+    public void Switch()
+    {
         innitPlayer.SetActive(false);
         defaultPlayer.SetActive(true);
 
@@ -38,9 +48,8 @@ public class showProtagonist : MonoBehaviour{
         //match the transforms
         float x = innitPlayer.transform.position.x;
         float y = innitPlayer.transform.position.y;
-        float z = innitPlayer.transform.position.z;
- 
-        defaultPlayer.transform.position = new Vector3(x, y, z);
+
+        defaultPlayer.transform.position = new Vector2(x, y);
 
 
     }

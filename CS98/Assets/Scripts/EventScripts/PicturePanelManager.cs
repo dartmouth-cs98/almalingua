@@ -26,10 +26,7 @@ public class PicturePanelManager : MonoBehaviour
     public void ConversationStart()
     {
         PlayerPrefs.SetInt("pictureChild", 0);
-        foreach (Word w in Dictionary.playerDictionary.masterList.wlist)
-        {
-            w.encountered = true;
-        }
+
     }
 
     //the event that the dialogue editor will call

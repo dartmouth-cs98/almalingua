@@ -7,7 +7,7 @@ public class QuestSetter : MonoBehaviour
     public int Quest;
     public int QuestStep;
 
-    private void Start()
+    private void Awake()
     {
         PlayerPrefs.SetInt("Quest", Quest);
         PlayerPrefs.SetInt("QuestStep", QuestStep);
