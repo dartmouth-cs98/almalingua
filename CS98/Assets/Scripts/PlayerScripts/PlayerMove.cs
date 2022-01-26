@@ -5,15 +5,13 @@ using System;
 
 public class PlayerMove : MonoBehaviour
 {
-
-    private Touch touch;
     public float thrust = 10f;
-    protected Joystick joystick;
-
-    public Rigidbody2D rb;
-    private Vector2 playerDirection;
-    public Animator animator;
     public float movementSpeed;
+
+    public Animator animator;
+    private Rigidbody2D rb;
+    private Vector2 playerDirection;
+
 
     // Use this for initialization
     void Start()

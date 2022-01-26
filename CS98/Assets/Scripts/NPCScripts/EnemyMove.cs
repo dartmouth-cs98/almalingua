@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-	// TY: animator to animate
-	public Animator animator;
+    private Rigidbody2D rb;
+    private CircleCollider2D trigger;
 
-    public Rigidbody2D rb;
-    private CircleCollider2D trigger; // public or private?
+	  public Animator animator;
 
     private Vector2 direction;
     public float thrust = 8f;
