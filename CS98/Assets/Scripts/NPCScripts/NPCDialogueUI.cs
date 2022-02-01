@@ -152,8 +152,8 @@ public class NPCDialogueUI : MonoBehaviour
 
     /********************* ResponseManager ********************/
     /*
-    * Either the user is responding, in which case we set the NameText to "Yo" and sets userInput to active
-    */
+     * Either the user is responding, in which case we set the NameText to "Yo" and sets userInput to active
+     */
     public void ResponseManager()
     {
         if (userTalking)
@@ -184,8 +184,9 @@ public class NPCDialogueUI : MonoBehaviour
     }
 
     /********** UserResponse *********************/
-    /* Updating the intent with our UserInput 
-    */
+    /* 
+     * Updating the intent with our UserInput 
+     */
     public void UserResponse(string UserInput)
     {
         userResponse = UserInput;
