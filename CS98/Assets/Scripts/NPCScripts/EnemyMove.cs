@@ -27,6 +27,7 @@ public class EnemyMove : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         trigger = gameObject.GetComponent<CircleCollider2D>();
+        trigger.radius = REG_SIGHT_RANGE;
         obstacleMask = LayerMask.GetMask(OBS_LAYER);
     }
 
@@ -60,6 +61,7 @@ public class EnemyMove : MonoBehaviour
           direction = other.transform.position - transform.position;
           trigger.radius = ATTACK_SIGHT_RANGE;
         }
+      } else {
       }
     }
 
@@ -72,7 +74,7 @@ public class EnemyMove : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
       if (other.tag == PLAYER_TAG) {
-        SeesPlayer = true; //TY: changes to true? not triggering this though
+        SeesPlayer = false; //TY: changes to true? not triggering this though
         trigger.radius = REG_SIGHT_RANGE;
       }
     }
