@@ -814,7 +814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735191710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -912, y: 614, z: -17917.05}
+  m_LocalPosition: {x: -912, y: 614, z: 0}
   m_LocalScale: {x: 233.6948, y: 304.09186, z: 174.05183}
   m_Children:
   - {fileID: 690993927}
@@ -1215,11 +1215,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 4298628233231383019, guid: d447420efce094e16bae7cc2cf2e83b6, type: 3}
-  enemyPrefab: {fileID: 3986007245848412178, guid: e114e3e2e4d5d4fd6a3714829661053c, type: 3}
+  enemyPrefab: {fileID: 418994399084123840, guid: 314bab2d6156344f1b8817299f07a737, type: 3}
   playerCombatStation: {fileID: 1918800387}
   enemyCombatStation: {fileID: 489411173}
   dialogueText: {fileID: 1917664337}
-  SceneLoader: {fileID: 0}
+  SceneLoader: {fileID: 1072692738}
   playerHUD: {fileID: 1192645152}
   enemyHUD: {fileID: 735191713}
   state: 0
@@ -1263,7 +1263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192645149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 798, y: -109, z: -17917.05}
+  m_LocalPosition: {x: 798, y: -109, z: 0}
   m_LocalScale: {x: 233.6948, y: 304.09186, z: 174.05183}
   m_Children:
   - {fileID: 751349209}
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2528,7 +2528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6820145360456067561}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31, y: -926, z: -25467.299}
+  m_LocalPosition: {x: -31, y: -869, z: 0}
   m_LocalScale: {x: 487.3407, y: 400.43774, z: 161.3596}
   m_Children:
   - {fileID: 1917664338}
