@@ -154,7 +154,6 @@ public class CombatSystem : MonoBehaviour
         }
         else if (state == CombatState.LOST)
         {
-            // Return to the Witch's House
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated! Try again!";
             SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
         }
