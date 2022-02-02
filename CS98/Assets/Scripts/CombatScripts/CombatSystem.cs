@@ -7,10 +7,11 @@ public enum CombatState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 public class CombatSystem : MonoBehaviour
 {
     public GameObject playerPrefab;
-    public GameObject enemyPrefab;
+
     public Transform  playerCombatStation;
     public Transform enemyCombatStation;
-
+    
+    private GameObject NPC;
     Unit playerUnit;
     Unit enemyUnit;
 
@@ -23,20 +24,40 @@ public class CombatSystem : MonoBehaviour
 
     public CombatState state;
 
+    string currentQuest;
+    string NPCName;
+
+
+    void OnEnable() {
+        state = CombatState.START;
+        string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
+        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+        Debug.Log(currentQuest);
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
+        {
+            print("hi");
+            string NPCName = questDetails[0];
+            NPC = GameObject.Find(NPCName);
+            NPC.GetComponent<HideShowObjects>().Show();
+            StartCoroutine(SetupCombat());
+
+        }
+        print(questDetails);
+    }
     // Start is called before the first frame update
     void Start()
     {
-        state = CombatState.START;
-        StartCoroutine(SetupCombat());
+
     }
 
     IEnumerator SetupCombat()
     {
         GameObject playerGO = Instantiate(playerPrefab, playerCombatStation);
+        print(playerGO); 
         playerUnit = playerGO.GetComponent<Unit>();
 
-        GameObject enemyGO = Instantiate(enemyPrefab, enemyCombatStation);
-        enemyUnit = enemyGO.GetComponent<Unit>();
+        
+        enemyUnit = NPC.GetComponent<Unit>();
 
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "A wild " + enemyUnit.unitName + " approaches...";
 
