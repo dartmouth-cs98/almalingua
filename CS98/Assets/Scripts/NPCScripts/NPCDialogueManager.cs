@@ -42,7 +42,6 @@ public class NPCDialogueManager : MonoBehaviour
     private void setCurrentText(string currentText)
     {
         string currentTextWithIcons = "";
-
         foreach (string word in currentText.Split(' '))
         {
             string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
@@ -285,7 +284,8 @@ public class NPCDialogueManager : MonoBehaviour
                 matches.Add(((SpeechConnection)connection).SpeechNode);
             }
         }
-        if (matches.Count == 0 && currNode.Connections.Count > 0 && fallbackNode != null) {
+        if (matches.Count == 0 && currNode.Connections.Count > 0 && fallbackNode != null)
+        {
             matches.Add(fallbackNode); // If no matching intents, but the convo should continue, set FallbackNode as match.
         }
         if (matches.Count > 0)
@@ -305,7 +305,6 @@ public class NPCDialogueManager : MonoBehaviour
             {
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
-
                 //invoking the event associating with the node
                 SpeechNode x = (SpeechNode)currNode;
                 x.Event.Invoke();
