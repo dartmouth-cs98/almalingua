@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1211163536121324881, guid: db8a587f7db234456b3bac6517226276, type: 3}
       propertyPath: m_Name
-      value: Green_Slime Variant
+      value: GS_Combat
       objectReference: {fileID: 0}
     - target: {fileID: 1211163536121324885, guid: db8a587f7db234456b3bac6517226276, type: 3}
       propertyPath: m_RootOrder
