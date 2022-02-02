@@ -1449,6 +1449,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1211163536121324885, guid: db8a587f7db234456b3bac6517226276, type: 3}
   m_PrefabInstance: {fileID: 1706633633}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &928945708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928945703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: Green Slime
+  unitLevel: 10
+  damage: 10
+  maxHP: 50
+  currentHP: 50
 --- !u!1 &1072692738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,9 +1636,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5508753bf362e41e28b357f7139c5853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 4298628233231383019, guid: d447420efce094e16bae7cc2cf2e83b6, type: 3}
+  playerGO: {fileID: 1315103350}
   playerCombatStation: {fileID: 1918800387}
   enemyCombatStation: {fileID: 489411173}
+  Enemy: {fileID: 1396904052}
   dialogueText: {fileID: 1917664337}
   SceneLoader: {fileID: 60684278}
   playerHUD: {fileID: 1192645152}
@@ -1851,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 6579106555676086742, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6579106556845355927, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
       propertyPath: m_Name
       value: Protagonist
@@ -1899,7 +1921,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6579106556845355944, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+    - {fileID: 1953361812, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+    - {fileID: 1953361817, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+    - {fileID: 6579106556845355945, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
 --- !u!1 &1315103350 stripped
 GameObject:
@@ -1983,15 +2009,15 @@ RectTransform:
   m_GameObject: {fileID: 1403788689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -20.505453}
-  m_LocalScale: {x: 0.03514979, y: 0.027012635, z: 0.047194697}
+  m_LocalScale: {x: 0.03514979, y: 0.027012631, z: 0.0471947}
   m_Children: []
   m_Father: {fileID: 1192645150}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.89, y: 0.38}
-  m_SizeDelta: {x: 25.8, y: 23.5276}
+  m_AnchoredPosition: {x: -0.668, y: 0.38}
+  m_SizeDelta: {x: 152.2306, y: 23.5276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403788691
 MonoBehaviour:
@@ -2076,7 +2102,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 6.649386, z: -61.32482, w: 0}
+  m_margin: {x: 0, y: 6.649386, z: -1.11969, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2888,8 +2914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.89, y: 0.38}
-  m_SizeDelta: {x: 25.8, y: 23.5276}
+  m_AnchoredPosition: {x: -0.8372, y: 0.38}
+  m_SizeDelta: {x: 142.603, y: 23.5276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958847729
 MonoBehaviour:
@@ -2974,7 +3000,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 6.649386, z: -61.32482, w: 0}
+  m_margin: {x: 0, y: 6.649386, z: -0.051059723, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

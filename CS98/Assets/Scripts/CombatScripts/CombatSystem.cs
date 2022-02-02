@@ -27,12 +27,13 @@ public class CombatSystem : MonoBehaviour
 
     string currentQuest;
     string NPCName;
+    string[] questDetails;
 
 
     void OnEnable() {
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+        questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
         Debug.Log("Current quest: " + currentQuest);
         Debug.Log("There are " + QuestUI.questNPC.Count + " named objects.");
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
@@ -148,12 +149,14 @@ public class CombatSystem : MonoBehaviour
         if (state == CombatState.WON)
         {
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You won the battle!";
+            PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep")+1);
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
         }
         else if (state == CombatState.LOST)
         {
             // Return to the Witch's House
-            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated!";
-            SceneLoader.GetComponent<SceneLoader>().LoadScene("WitchHouse");
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated! Try again!";
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
         }
     }
 
