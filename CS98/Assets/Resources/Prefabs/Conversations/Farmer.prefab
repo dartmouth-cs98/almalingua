@@ -44,35 +44,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 61
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-324,\"yPos\":548},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=2 questStep=0\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":328,\"yPos\":526},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hello\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-432,\"yPos\":757},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"seeds\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-283,\"yPos\":1068},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"yes\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-514,\"yPos\":1073},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"no\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-219,\"yPos\":760},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-187,\"yPos\":986},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-94,\"yPos\":547},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=2 questStep=2\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":110.25,\"yPos\":547},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=2 questStep=4\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":285,\"yPos\":386},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=2 questStep=6\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":293,\"yPos\":173},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"answer\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-248,\"yPos\":393},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=4 questStep=1\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-493,\"yPos\":268},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"need\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-276,\"yPos\":268},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[56],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-22,\"yPos\":385},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[root]\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-327,\"yPos\":636},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
-    \xBFqu\xE9 me quieres preguntar ?\",\"parentUIDs\":[32,13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":225,\"yPos\":689},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hi!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":474,\"yPos\":688},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Howdy!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":739,\"yPos\":684},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hey!\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456,\"yPos\":814},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[18,19,20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"[Leave
-    Grouper Nodes Blank]\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-433,\"yPos\":849},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED
+  CurrentIDCounter: 67
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-62.5,\"yPos\":689},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=2 questStep=0\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":589.5,\"yPos\":667},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hello\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-170.5,\"yPos\":898},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"seeds\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-21.5,\"yPos\":1209},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"yes\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-252.5,\"yPos\":1214},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"no\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":42.5,\"yPos\":901},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":74.5,\"yPos\":1127},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[28],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":167.5,\"yPos\":688},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=2 questStep=2\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":371.75,\"yPos\":688},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=2 questStep=4\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":546.5,\"yPos\":527},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=2 questStep=6\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":554.5,\"yPos\":314},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"answer\",\"parentUIDs\":[48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":13.5,\"yPos\":534},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=4 questStep=1\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-231.5,\"yPos\":409},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"need\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-14.5,\"yPos\":409},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[56],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":227,\"yPos\":425},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=6 questStep=1\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":142,\"yPos\":215},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"apple\",\"parentUIDs\":[62],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":357,\"yPos\":233},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[62],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":239.5,\"yPos\":526},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[root]\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-65.5,\"yPos\":777},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+    \xBFqu\xE9 me quieres preguntar ?\",\"parentUIDs\":[32,13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":486.5,\"yPos\":830},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hi!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":735.5,\"yPos\":829},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Howdy!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1000.5,\"yPos\":825},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hey!\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":717.5,\"yPos\":955},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[18,19,20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"[Leave
+    Grouper Nodes Blank]\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-171.5,\"yPos\":990},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED
     las tengo. Primero me haces un favor y despu\xE9s te doy las semillas magicas.
-    Hay monstruos atacando y comi\xE9ndose mis cultivos.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-438,\"yPos\":966},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFPor
-    favor puedes ayudar a matarlos? \",\"parentUIDs\":[27,34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-85,\"yPos\":648},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
-    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-186,\"yPos\":874},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
-    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-545,\"yPos\":1152},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
-    regresa si decides ayudar \",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-285,\"yPos\":1149},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Gracias
+    Hay monstruos atacando y comi\xE9ndose mis cultivos.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-176.5,\"yPos\":1107},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFPor
+    favor puedes ayudar a matarlos? \",\"parentUIDs\":[27,34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":176.5,\"yPos\":789},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":75.5,\"yPos\":1015},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-283.5,\"yPos\":1293},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
+    regresa si decides ayudar \",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-23.5,\"yPos\":1290},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Gracias
     a dios ! Hay un grupo all\xE1 por donde est\xE1n las zanahorias y las papas.
-    \",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-11,\"yPos\":735},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Excelente
-    ! Y ahora hay m\xE1s cerca de los elotes y el trigo.\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":120.25,\"yPos\":644},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
-    \xFAltimo, quedan los que est\xE1n al lado de los aguacates y naranjas. \",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":287,\"yPos\":266},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gracias
+    \",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":250.5,\"yPos\":876},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Excelente
+    ! Y ahora hay m\xE1s cerca de los elotes y el trigo.\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":381.75,\"yPos\":785},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    \xFAltimo, quedan los que est\xE1n al lado de los aguacates y naranjas. \",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":548.5,\"yPos\":407},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gracias
     por salvar mis cultivos. \xBFCu\xE1les cultivos fueron destruidos por los monstruos
-    ?\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":306,\"yPos\":62},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aqu\xED,
-    tienes las semillas que pediste. \",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":51,\"yPos\":74},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Te
+    ?\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":567.5,\"yPos\":203},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aqu\xED,
+    tienes las semillas que pediste. \",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":556.5,\"yPos\":81},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Te
     lo agradezco mucho, ve y explora el pueblo si quieres. Tal vez alguien m\xE1s
-    necesite tu ayuda.\",\"parentUIDs\":[50],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":450,\"yPos\":958},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
-    a farmer! I like plants\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":447,\"yPos\":595},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hi
-    i'm a farmer\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-491,\"yPos\":364},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEn
-    qu\xE9 te puedo ayudar?\",\"parentUIDs\":[59,55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-274,\"yPos\":161},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
-    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[58],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-511,\"yPos\":132},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    Aqu\xED est\xE1 todo, que tengas un buen d\xEDa.\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    necesite tu ayuda.\",\"parentUIDs\":[50],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":711.5,\"yPos\":1099},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    a farmer! I like plants\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":708.5,\"yPos\":736},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hi
+    i'm a farmer\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-229.5,\"yPos\":505},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFEn
+    qu\xE9 te puedo ayudar?\",\"parentUIDs\":[59,55],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-13.5,\"yPos\":302},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[58],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-249.5,\"yPos\":273},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    Aqu\xED est\xE1 todo, que tengas un buen d\xEDa.\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241,\"yPos\":314},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFC\xF3mo
+    te puedo ayudar? \",\"parentUIDs\":[65,61],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":357,\"yPos\":85},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":108,\"yPos\":94},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    alcalde necesita una manzana dorada.\",\"parentUIDs\":[63],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -115,6 +119,12 @@ MonoBehaviour:
   - {fileID: 4568339431229313600}
   - {fileID: 6520974906202024395}
   - {fileID: 2775640639933194166}
+  - {fileID: 374005148694652157}
+  - {fileID: 965151585393324629}
+  - {fileID: 6461513165228579705}
+  - {fileID: 1655444841557237343}
+  - {fileID: 8707457427389904981}
+  - {fileID: 3809539773123261343}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -166,6 +176,12 @@ GameObject:
   - component: {fileID: 4568339431229313600}
   - component: {fileID: 6520974906202024395}
   - component: {fileID: 2775640639933194166}
+  - component: {fileID: 374005148694652157}
+  - component: {fileID: 965151585393324629}
+  - component: {fileID: 6461513165228579705}
+  - component: {fileID: 1655444841557237343}
+  - component: {fileID: 8707457427389904981}
+  - component: {fileID: 3809539773123261343}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -959,6 +975,120 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 60
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &374005148694652157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 61
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &965151585393324629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 62
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &6461513165228579705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 63
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1655444841557237343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 64
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &8707457427389904981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 65
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &3809539773123261343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973411400336921488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 66
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
