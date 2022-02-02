@@ -15,6 +15,12 @@ public class EventManager : MonoBehaviour
     public delegate void ConversationEnd();     //This is to signal the end of a conversation 
     public static event ConversationEnd onConversationEnd;
 
+    public delegate void ProtagonistChange(); //the protagonist picking up the staff
+    public static event ProtagonistChange onProtagonistChange;
+
+    public delegate void QuestChange();     //whenever a quest gets changed
+    public static event QuestChange onQuestChange;
+
     //when conversation starts 
     public static void RaiseOnConversationStart()
     {
@@ -29,6 +35,22 @@ public class EventManager : MonoBehaviour
         if (onConversationEnd != null)
         {
             onConversationEnd();
+        }
+    }
+
+    public static void RaiseOnProtagonistChange()
+    {
+        if (onProtagonistChange != null)
+        {
+            onProtagonistChange();
+        }
+    }
+
+    public static void RaiseOnQuestChange()
+    {
+        if (onQuestChange != null)
+        {
+            onQuestChange();
         }
     }
 }

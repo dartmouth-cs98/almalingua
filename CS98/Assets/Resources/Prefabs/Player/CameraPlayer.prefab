@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 563193251581191984}
   m_Layer: 0
   m_Name: CameraPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,11 +262,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 47.154224, y: 19.810957}
-      - {x: -62.3021, y: 19.521454}
-      - {x: -62.02155, y: -23.935236}
+    - - {x: 59.330734, y: 20.641172}
+      - {x: -51.23254, y: 20.35167}
+      - {x: -50.67525, y: -23.381758}
       - {x: -5.937764, y: -23.928783}
-      - {x: 47.19996, y: -23.829676}
+      - {x: 59.376476, y: -23.552938}
 --- !u!61 &563193252300228614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.5493164, y: -2.2725515}
+  m_Offset: {x: 4.627201, y: -2.2725525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -291,7 +291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 109.74179, y: 43.47576}
+  m_Size: {x: 111.40223, y: 43.47576}
   m_EdgeRadius: 0
 --- !u!1001 &563193252565913075
 PrefabInstance:
@@ -308,17 +308,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2131839126148181954, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2131839126148181964, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2131839126148181964, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.45343
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 2131839126148181964, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6911826
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2131839126148181964, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -366,11 +370,27 @@ PrefabInstance:
       objectReference: {fileID: 563193252300228611}
     - target: {fileID: 5081467559935174821, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.5
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5081467559935174821, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.45
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081467559935174830, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104969736971813449, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104969736971813492, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104969736971813492, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e52a658bc2440adacf945e5f22130e, type: 3}
