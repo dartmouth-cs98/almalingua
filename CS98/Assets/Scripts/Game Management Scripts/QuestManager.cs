@@ -11,19 +11,7 @@ public class QuestManager : MonoBehaviour
     public TextAsset QuestData;
 
     // Start is called before the first frame update
-    void Start()
-    {
 
-        Debug.Log("Player pref quest on load: " + PlayerPrefs.GetInt("Quest"));
-
-        // LoadJSON.load_JSON(QuestData, baseGame);
-        if (!PlayerPrefs.HasKey("Quest"))
-        {
-            PlayerPrefs.SetInt("Quest", 1);
-            PlayerPrefs.SetInt("QuestStep", 0);
-        }
-        // UpdateQuestDisplay();
-    }
 
     // getters and setters for quest and quest step
     public void SetQuest(int quest)
@@ -47,17 +35,5 @@ public class QuestManager : MonoBehaviour
         return PlayerPrefs.GetInt("QuestStep");
     }
 
-    // update quest display text using public UI objects
-    // public void UpdateQuestDisplay()
-    // {
-    //     TMPro.TextMeshProUGUI txt = QuestDisplay.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-    //     txt.SetText(baseGame.qh.quests[GetQuest()].questname);
-    //     QuestDetails.SetActive(true);
-    //     TMPro.TextMeshProUGUI det = QuestDetails.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-    //     det.SetText(baseGame.qh.quests[GetQuest()].description);
-    //     QuestDetails.SetActive(false);
-    //     Debug.Log("New player pref quest: " + PlayerPrefs.GetInt("Quest"));
-    //     Debug.Log("This class quest: " + GetQuest());
-    // }
 
 }

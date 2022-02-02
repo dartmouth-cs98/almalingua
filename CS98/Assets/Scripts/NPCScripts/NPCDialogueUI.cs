@@ -20,8 +20,9 @@ public class NPCDialogueUI : MonoBehaviour
     private string userResponse;        //the user response
     private string dialogueText;        //the dialogueText of the NPC
     private bool nextMessageRequiresInput;  //does the next message require user input
-    private string currentQuest = "00";        //the current quest we are on
+    private string currentQuest = "";        //the current quest we are on
     private GameObject NPC;             //our NPC connected to the speechbubble
+    private string NPCTouch;          //the NPC the user clicked on;
 
     /***************** OnEnable***********/
     /* 
@@ -32,16 +33,53 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
-        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString(); ;
-        if (QuestUI.questNPC.TryGetValue(currentQuest, out NPCName))
-        {
-            NPC = GameObject.Find(NPCName);
-        }
-        EventManager.RaiseOnConversationStart();
+        UpdateQuest();
     }
+
+
     private void OnDisable()
     {
         RespondButton.GetComponent<HideShowObjects>().Hide();
+    }
+
+    private void UpdateQuest()
+    {
+        currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
+        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+        if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
+        {
+            NPCName = questDetails[0];
+            NPC = GameObject.Find(NPCName);
+        }
+    }
+    public void NPCInteract(string NPCTouched)
+    {
+        NPCTouch = NPCTouched;
+        if (NPCTouch != NPCName)
+        {
+            DefaultConversation(NPCTouch);
+        }
+        else
+        {
+            DisplayNextSentence();
+        }
+
+
+    }
+    void DefaultConversation(string npcname)
+    {
+        GameObject NPC_x = GameObject.Find(npcname);
+        NameText.text = npcname;
+        NPC_x.GetComponent<NPCDialogueManager>().StartConversation();
+        dialogueText = NPC_x.GetComponent<NPCDialogueManager>().CurrentText;
+        if (dialogueText != null)
+        {
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(dialogueText));
+        }
+        RespondButton.GetComponent<HideShowObjects>().Hide();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+
     }
     /***** DisplayNextSentence **********/
     /*
@@ -52,6 +90,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
@@ -62,7 +101,6 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            print("Getting Next Message");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
 
         }
@@ -77,7 +115,7 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-
+            gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         }
         else
         {
@@ -114,8 +152,8 @@ public class NPCDialogueUI : MonoBehaviour
 
     /********************* ResponseManager ********************/
     /*
-    * Either the user is responding, in which case we set the NameText to "Yo" and sets userInput to active
-    */
+     * Either the user is responding, in which case we set the NameText to "Yo" and sets userInput to active
+     */
     public void ResponseManager()
     {
         if (userTalking)
@@ -129,7 +167,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            if (userResponse == "quema")
+            if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), false);
             }
@@ -146,8 +184,9 @@ public class NPCDialogueUI : MonoBehaviour
     }
 
     /********** UserResponse *********************/
-    /* Updating the intent with our UserInput 
-    */
+    /* 
+     * Updating the intent with our UserInput 
+     */
     public void UserResponse(string UserInput)
     {
         userResponse = UserInput;
