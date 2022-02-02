@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 using DialogueEditor;
 using System.Text.RegularExpressions;
 using UnityEngine.Networking;
 using CandyCoded.env;
 using Newtonsoft.Json.Linq;
-
-using static System.String;
 
 public class NPCDialogueManager : MonoBehaviour
 {
@@ -29,10 +26,10 @@ public class NPCDialogueManager : MonoBehaviour
     private const string QUEST_STEP = "questStep";
     private const string DEFAULT_INTENT = "hello";
 
+
     private const double MIN_ACCEPTABLE_SCORE = 0.2;
     private const string ERR_INTENT = "none";
     private GameObject Player;
-
 
     void Awake()
     {
@@ -41,7 +38,6 @@ public class NPCDialogueManager : MonoBehaviour
         IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
     }
-
 
     private void setCurrentText(string currentText)
     {
@@ -63,7 +59,6 @@ public class NPCDialogueManager : MonoBehaviour
         CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
     }
 
-
     /******************   StartConversation  ************************/
     /* 
      * This function sets the current node to the first speech node in 
@@ -84,7 +79,6 @@ public class NPCDialogueManager : MonoBehaviour
         }
         GetNextMessage();
     }
-
 
     private const string LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps";
 
@@ -117,7 +111,6 @@ public class NPCDialogueManager : MonoBehaviour
         }
     }
 
-
     // COPIED/MODIFIED FROM HERE:
     // https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
     IEnumerator GetRequest(string uri, System.Action callback)
@@ -138,8 +131,8 @@ public class NPCDialogueManager : MonoBehaviour
                     Debug.LogError("HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
+                    Debug.Log("Received: " + webRequest.downloadHandler.text);
                     dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
-
                     currIntent = luisResponse.prediction.topIntent;
                     float iScore = luisResponse.prediction.intents[currIntent].score;
                     if (iScore < MIN_ACCEPTABLE_SCORE)
@@ -147,31 +140,12 @@ public class NPCDialogueManager : MonoBehaviour
                         Debug.Log("Score is too low; replacing with error intent");
                         currIntent = ERR_INTENT;
                     }
-                    else
-                    {
-                        print(luisResponse.prediction.entities.Children());
-                        foreach (JProperty entityType in luisResponse.prediction.entities)
-                        {
-
-                            if (entityType.Value is JArray)
-                            {
-                                List<string> entitiesOfType = entityType.Value.ToObject<List<string>>();
-                                entitiesOfType.Sort();
-                                Entities[entityType.Name] = string.Join(",", entitiesOfType);
-                            }
-                        }
-                    }
-                    foreach (KeyValuePair<string, string> kvp in Entities)
-                    {
-                        Debug.Log(kvp.Key + ":" + kvp.Value);
-                    }
                     Debug.Log(luisResponse);
                     callback();
                     break;
             }
         }
     }
-
 
     /**************  NextMessageRequiresInput() *****************/
     /*
@@ -182,7 +156,6 @@ public class NPCDialogueManager : MonoBehaviour
     {
         return (currNode.Connections[0].ConnectionType == Connection.eConnectionType.Option);
     }
-
 
     /***************** OnLastMessage**************/
     /*
@@ -195,6 +168,87 @@ public class NPCDialogueManager : MonoBehaviour
         return (currNode.Connections.Count == 0);
     }
 
+    /*************** ConnectionConditionsValid ********************/
+    /*
+     * PRIVATE FUNCTION!
+     * Dialogue Editor allows us to add conditions to dialogue connections,
+     * where the connection is only valid if the condition is met. This
+     * function parses the condition object, and returns whether or not it
+     * is met.
+     * 
+     * If a connection has no conditions, returns true.
+     *
+     * [We're actually not using connections right now; leaving in case we do later].
+     */
+    private bool ConnectionConditionsValid(Connection connection)
+    {
+        foreach (Condition condition in connection.Conditions)
+        {
+
+            // GetInt/GetBool updates this variable with OK/False. 
+            // I'm assuming it's always going to be OK.
+            eParamStatus paramStatus;
+
+            // See Dialogue Editor documentation for information about Condition types.
+            // 2 Types: IntCondition, BoolCondition.
+
+            // Check each condition.
+            if (condition.ConditionType == Condition.eConditionType.IntCondition)
+            {
+
+                IntCondition intCondition = (IntCondition)condition;
+                switch (intCondition.CheckType)
+                {
+                    case IntCondition.eCheckType.equal:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        == intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
+
+                    case IntCondition.eCheckType.lessThan:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        < intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
+
+                    default:
+                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
+                        > intCondition.RequiredValue))
+                        {
+                            return false;
+                        }
+                        break;
+                }
+            }
+            else
+            {
+
+                BoolCondition boolCondition = (BoolCondition)condition;
+
+                if (boolCondition.CheckType == BoolCondition.eCheckType.equal)
+                {
+                    if (!(conversation.GetBool(boolCondition.ParameterName, out paramStatus)
+                    == boolCondition.RequiredValue))
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    if (conversation.GetBool(boolCondition.ParameterName, out paramStatus)
+                    == boolCondition.RequiredValue)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
 
     /*************** OptionMatchesIntent ********************/
     /*
@@ -233,13 +287,12 @@ public class NPCDialogueManager : MonoBehaviour
         return true;
     }
 
-
     /*************** checkQuest ********************/
     /*
      * This function returns true/false if there
      * is an OptionNode child of the root representing the appropriate quest/step combo.
      */
-    private bool checkQuest()
+    public bool checkQuest()
     {
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
@@ -258,7 +311,6 @@ public class NPCDialogueManager : MonoBehaviour
         }
         return false;
     }
-
 
     /**************  GetNextMessage() *****************/
     /*
@@ -279,27 +331,33 @@ public class NPCDialogueManager : MonoBehaviour
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
 
+        print("Current node is " + currNode.Text + "with connections " + currNode.Connections.Count);
+
         // Iterate over each connection, add all valid to list of matches.
         foreach (Connection connection in currNode.Connections)
         {
-            // Each connected node is of type Option or Speech. 
-            // All connected nodes must be the same type.
-            if (connection.ConnectionType == Connection.eConnectionType.Option)
+            // ConnectionConditionsValid always true currently, as we do not use
+            if (ConnectionConditionsValid(connection))
             {
-                OptionNode option = ((OptionConnection)connection).OptionNode;
-                // Option only valid if its text matches currIntent.
-                if (OptionMatchesIntent(option.Text, currIntent))
+                // Each connected node is of type Option or Speech. 
+                // All connected nodes must be the same type.
+                if (connection.ConnectionType == Connection.eConnectionType.Option)
                 {
-                    matches.Add(option);
+                    OptionNode option = ((OptionConnection)connection).OptionNode;
+                    // Option only valid if its text matches currIntent.
+                    if (OptionMatchesIntent(option.Text, currIntent))
+                    {
+                        matches.Add(option);
+                    }
+                    else if (option.Text == ERR_INTENT)
+                    {
+                        fallbackNode = option;
+                    }
                 }
-                else if (option.Text == ERR_INTENT)
+                else
                 {
-                    fallbackNode = option;
+                    matches.Add(((SpeechConnection)connection).SpeechNode);
                 }
-            }
-            else
-            {
-                matches.Add(((SpeechConnection)connection).SpeechNode);
             }
         }
         if (matches.Count == 0 && currNode.Connections.Count > 0 && fallbackNode != null)

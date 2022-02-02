@@ -33,6 +33,7 @@ public class CombatSystem : MonoBehaviour
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
         Debug.Log(currentQuest);
+        Debug.Log("There are " + QuestUI.questNPC.Count + " named objects.");
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             print("hi");
