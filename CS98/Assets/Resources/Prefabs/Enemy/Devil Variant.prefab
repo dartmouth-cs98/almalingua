@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.58176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202197, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_Name
-      value: Devil
+      value: Devil Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202198, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: thrust

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4613655002407027192
+--- !u!1001 &4329619813491540024
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.93
+      value: 40.5
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.24
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -31.58176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_LocalRotation.w
@@ -65,7 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214520822855202197, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
       propertyPath: m_Name
-      value: Slime_Orange
+      value: Slime_Orange Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202198, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: thrust
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
