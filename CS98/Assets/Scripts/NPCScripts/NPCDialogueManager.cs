@@ -151,10 +151,15 @@ public class NPCDialogueManager : MonoBehaviour
                         foreach (JProperty entityType in luisResponse.prediction.entities) {
 
                           if (entityType.Value is JArray) {
-                              List<string> entitiesOfType = entityType.Value.ToObject<List<string>>().Sort();
-                              Entities[entityType.Name] = String.Join(',', entitiesOfType);
+                              List<string> entitiesOfType = entityType.Value.ToObject<List<string>>();
+                              entitiesOfType.Sort();
+                              Entities[entityType.Name] = string.Join(",", entitiesOfType);
                           }     
                         }
+                    }
+                    foreach (KeyValuePair<string, string> kvp in Entities)
+                    {
+                        Debug.Log(kvp.Key + ":" + kvp.Value);
                     }
                     Debug.Log(luisResponse);
                     callback();
