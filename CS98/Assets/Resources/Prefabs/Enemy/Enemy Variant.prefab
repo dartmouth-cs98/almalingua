@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Enemy
   unitLevel: 10
-  damage: 5
+  damage: 100
   maxHP: 50
   currentHP: 50
 --- !u!1001 &3639389359303825106
