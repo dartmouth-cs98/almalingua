@@ -7,9 +7,9 @@ public class EnemyMove : MonoBehaviour
     private Rigidbody2D rb;
     private CircleCollider2D trigger;
 
-	  public Animator animator;
-
+	public Animator animator;
     private Vector2 direction;
+
     public float thrust = 8f;
 
     private const int RAND_RANGE = 50;
@@ -27,6 +27,7 @@ public class EnemyMove : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         trigger = gameObject.GetComponent<CircleCollider2D>();
+        trigger.radius = REG_SIGHT_RANGE;
         obstacleMask = LayerMask.GetMask(OBS_LAYER);
     }
 
@@ -60,6 +61,7 @@ public class EnemyMove : MonoBehaviour
           direction = other.transform.position - transform.position;
           trigger.radius = ATTACK_SIGHT_RANGE;
         }
+      } else {
       }
     }
 
@@ -72,7 +74,7 @@ public class EnemyMove : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
       if (other.tag == PLAYER_TAG) {
-        SeesPlayer = true; //TY: changes to true? not triggering this though
+        SeesPlayer = false; //TY: changes to true? not triggering this though
         trigger.radius = REG_SIGHT_RANGE;
       }
     }
@@ -86,6 +88,7 @@ public class EnemyMove : MonoBehaviour
       animate(direction); // to animate
     }
 
+    // Allows the enemy to move randomly
     void moveRandomly()
     {
       int rand = Random.Range(1, RAND_RANGE);
@@ -113,7 +116,7 @@ public class EnemyMove : MonoBehaviour
     // TY Code: animate based on direction
     void animate(Vector2 playerDirection)
     {
-    	if (direction.x >= 0 && direction.y >= 0){
+    	if (direction.x >= 0 && direction.y >= 0){ //1st quadrant
     		direction = new Vector2(1, 1);
     	} else if (direction.x >= 0 && direction.y < 0){
     		direction = new Vector2(1, -1);
