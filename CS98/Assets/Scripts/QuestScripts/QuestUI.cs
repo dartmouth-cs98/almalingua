@@ -15,7 +15,7 @@ public class QuestUI : MonoBehaviour
     {
         int questLength = 3;
         PlayerPrefs.SetInt("QuestLength", questLength);
-        if (questNPC.Count < 13)
+        if (questNPC.Count < 21)
         {
             string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("00", questDetails);
@@ -51,6 +51,12 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("41", questDetails);
             questDetails = new string[] { "Chef", "Go back to Chef", "Go back to the Chef and give him the ingredients" };
             questNPC.Add("42", questDetails);
+            questDetails = new string[] { "Archeologist", "Go Talk to Archeologist", "Go talk to archeologist for next quest" };
+            questNPC.Add("50", questDetails);
+            questDetails = new string[] { "Archeologist", "List Objects", "List the objects that you found in the quest" };
+            questNPC.Add("52", questDetails);
+            questDetails = new string[] { "Mayor", "Talk to Mayor", "Talk to the mayor about the next quest" };
+            questNPC.Add("60", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;
