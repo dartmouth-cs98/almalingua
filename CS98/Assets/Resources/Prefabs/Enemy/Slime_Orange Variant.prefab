@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4329619813491540024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9214520822560692864, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a0f5a82154fb34fd1931a6b2f281be1b, type: 2}
+    - target: {fileID: 9214520822560692865, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7319931974375245451, guid: 64f8a4f5004804c0785564e5d9e3ac19, type: 3}
+    - target: {fileID: 9214520822560692871, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_Name
+      value: Slime_Orange_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202193, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202197, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: m_Name
+      value: Slime_Orange Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214520822855202198, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
+      propertyPath: thrust
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 709a9df21fccb402c98b65fe95683781, type: 3}
