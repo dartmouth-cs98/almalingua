@@ -368,6 +368,7 @@ public class NPCDialogueManager : MonoBehaviour
         {
             // In case of multiple matches, return a random match.. 
             int matchIndex = rnd.Next(matches.Count);
+            print(matchIndex);
             currNode = matches[matchIndex];
             // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
@@ -379,6 +380,7 @@ public class NPCDialogueManager : MonoBehaviour
             }
             else
             {
+                print(currNode.Text);
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
                 //invoking the event associating with the node
