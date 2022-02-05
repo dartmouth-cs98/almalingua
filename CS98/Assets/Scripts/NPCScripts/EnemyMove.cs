@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public Rigidbody2D rb;
-    public CircleCollider2D trigger;
+    private Rigidbody2D rb;
+    private CircleCollider2D trigger;
 
+	public Animator animator;
     private Vector2 direction;
-    public float thrust = 3.0f;
 
-    private const int RAND_RANGE = 30;
+    public float thrust = 8f;
+
+    private const int RAND_RANGE = 50;
 
     public float ATTACK_SIGHT_RANGE = 8.0f;
     public float REG_SIGHT_RANGE = 5.0f;
@@ -25,6 +27,7 @@ public class EnemyMove : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         trigger = gameObject.GetComponent<CircleCollider2D>();
+        trigger.radius = REG_SIGHT_RANGE;
         obstacleMask = LayerMask.GetMask(OBS_LAYER);
     }
 
@@ -58,6 +61,7 @@ public class EnemyMove : MonoBehaviour
           direction = other.transform.position - transform.position;
           trigger.radius = ATTACK_SIGHT_RANGE;
         }
+      } else {
       }
     }
 
@@ -70,7 +74,7 @@ public class EnemyMove : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
       if (other.tag == PLAYER_TAG) {
-        SeesPlayer = false;
+        SeesPlayer = false; //TY: changes to true? not triggering this though
         trigger.radius = REG_SIGHT_RANGE;
       }
     }
@@ -81,14 +85,50 @@ public class EnemyMove : MonoBehaviour
         moveRandomly();
       }
       rb.AddForce(direction * thrust);
+      animate(direction); // to animate
     }
 
+    // Allows the enemy to move randomly
     void moveRandomly()
     {
       int rand = Random.Range(1, RAND_RANGE);
+      int horizontal = 1;
+      int vertical = 1;
+
       if (rand == 1) {
-        direction = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+      	//TY: change random into only 2 options
+      	if(Random.Range(1,3) == 1){
+      		horizontal = 1;
+      	} else {
+      		horizontal = -1;
+      	}
+      	if(Random.Range(1,3) == 1){
+      		vertical = 1;
+      	} else {
+      		vertical = -1;
+      	} 
+      	//
+
+        direction = new Vector2(horizontal, vertical); //TY: added int to cut it into ints
       }
+    }
+
+    // TY Code: animate based on direction
+    void animate(Vector2 playerDirection)
+    {
+    	if (direction.x >= 0 && direction.y >= 0){ //1st quadrant
+    		direction = new Vector2(1, 1);
+    	} else if (direction.x >= 0 && direction.y < 0){
+    		direction = new Vector2(1, -1);
+    	} else if (direction.x < 0 && direction.y >= 0){
+    		direction = new Vector2(-1, 1);
+    	} else {
+    		direction = new Vector2(-1, -1);
+    	}
+
+        animator.SetFloat("Horizontal", direction.x);
+        animator.SetFloat("Vertical", direction.y);
+        // animator.SetFloat("Speed", movementSpeed);
     }
 
 }

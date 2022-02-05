@@ -35,6 +35,7 @@ public class IceCollider : MonoBehaviour
         if (canMelt)
         {
             PlayerManager.GetComponent<showProtagonist>().Switch();
+            EventManager.RaiseOnProtagonistChange();
             gameObject.SetActive(false);
         }
     }

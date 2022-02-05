@@ -27,7 +27,7 @@ public class NPCDialogueManager : MonoBehaviour
     private const string DEFAULT_INTENT = "hello";
 
 
-    private const double MIN_ACCEPTABLE_SCORE = 0.6;
+    private const double MIN_ACCEPTABLE_SCORE = 0.2;
     private const string ERR_INTENT = "none";
     private GameObject Player;
 
@@ -37,11 +37,6 @@ public class NPCDialogueManager : MonoBehaviour
         Entities = new Dictionary<string, string>();
         IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
-        // if (Player)
-        // {
-        //     qm = Player.GetComponent<QuestManager>();
-
-        // }
     }
 
     private void setCurrentText(string currentText)
@@ -74,6 +69,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void StartConversation()
     {
+
         EventManager.RaiseOnConversationStart();
         conversation = MyNPCConversation.Deserialize();
         currNode = conversation.Root;
@@ -142,7 +138,7 @@ public class NPCDialogueManager : MonoBehaviour
                     float iScore = luisResponse.prediction.intents[currIntent].score;
                     if (iScore < MIN_ACCEPTABLE_SCORE)
                     {
-                        Debug.Log(iScore);
+                        Debug.Log("Score is too low; replacing with error intent");
                         currIntent = ERR_INTENT;
                     }
                     Debug.Log(luisResponse);
@@ -265,7 +261,6 @@ public class NPCDialogueManager : MonoBehaviour
     private bool OptionMatchesIntent(string optionText, string intent)
     {
         optionText = optionText.Trim();
-        print("Option Text is " + optionText + " intent is " + intent);
         if (optionText == null || optionText == "")
         {
             return false;
@@ -303,7 +298,6 @@ public class NPCDialogueManager : MonoBehaviour
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
-        Debug.Log("Quest Step" + Entities[QUEST_STEP]);
 
         foreach (Connection connection in conversation.Root.Connections)
         {
@@ -329,18 +323,22 @@ public class NPCDialogueManager : MonoBehaviour
      * whose condition resolves to true.
      *
      * Returns null. Use CurrentText to access current text. 
+     *
+     * Assumes only 1 error intent.
      * 
      */
     public void GetNextMessage()
     {
-        bool didUpdate = false;
         List<ConversationNode> matches = new List<ConversationNode>();
+        OptionNode fallbackNode = null;
+
         print("Current node is " + currNode.Text + "with connections " + currNode.Connections.Count);
 
         // Iterate over each connection, add all valid to list of matches.
         foreach (Connection connection in currNode.Connections)
         {
-            if (ConnectionConditionsValid(connection))
+            // ConnectionConditionsValid always true currently, as we do not use
+            if (ConnectionConditionsValid(connection))          
             {
                 // Each connected node is of type Option or Speech. 
                 // All connected nodes must be the same type.
@@ -351,7 +349,8 @@ public class NPCDialogueManager : MonoBehaviour
                     if (OptionMatchesIntent(option.Text, currIntent))
                     {
                         matches.Add(option);
-
+                    } else if (option.Text == ERR_INTENT) {
+                      fallbackNode = option;
                     }
                 }
                 else
@@ -359,6 +358,9 @@ public class NPCDialogueManager : MonoBehaviour
                     matches.Add(((SpeechConnection)connection).SpeechNode);
                 }
             }
+        }
+        if (matches.Count == 0 && currNode.Connections.Count > 0 && fallbackNode != null) {
+            matches.Add(fallbackNode); // If no matching intents, but the convo should continue, set FallbackNode as match.
         }
         if (matches.Count > 0)
         {
@@ -395,11 +397,5 @@ public class NPCDialogueManager : MonoBehaviour
             }
         }
         print("Match count is " + matches.Count + " and new node is " + currNode.Text);
-        // else if (currNode.Connections.Count > 0)
-        // {
-        //     currNode = ((OptionConnection)currNode.Connections[currNode.Connections.Count - 1]).OptionNode;
-        //     GetNextMessage();
-        //     return;
-        // }
     }
 }

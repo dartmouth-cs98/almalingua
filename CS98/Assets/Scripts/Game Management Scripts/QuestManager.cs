@@ -44,17 +44,5 @@ public class QuestManager : MonoBehaviour
         return PlayerPrefs.GetInt("QuestStep");
     }
 
-    // update quest display text using public UI objects
-    // public void UpdateQuestDisplay()
-    // {
-    //     TMPro.TextMeshProUGUI txt = QuestDisplay.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-    //     txt.SetText(baseGame.qh.quests[GetQuest()].questname);
-    //     QuestDetails.SetActive(true);
-    //     TMPro.TextMeshProUGUI det = QuestDetails.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-    //     det.SetText(baseGame.qh.quests[GetQuest()].description);
-    //     QuestDetails.SetActive(false);
-    //     Debug.Log("New player pref quest: " + PlayerPrefs.GetInt("Quest"));
-    //     Debug.Log("This class quest: " + GetQuest());
-    // }
 
 }
