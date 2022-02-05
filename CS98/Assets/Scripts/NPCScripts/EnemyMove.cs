@@ -10,7 +10,6 @@ public class EnemyMove : MonoBehaviour
 	public Animator animator;
     private Vector2 direction;
 
-    public int queststep;
 
     public GameObject sceneLoader;
     public float thrust = 8f;
@@ -137,7 +136,6 @@ public class EnemyMove : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
       if (other.gameObject.tag == PLAYER_TAG){
-        PlayerPrefs.SetInt("QuestStep", queststep);
         sceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
       }
     }
