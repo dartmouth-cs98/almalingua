@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using UnityEngine.Networking;
 using CandyCoded.env;
 using Newtonsoft.Json.Linq;
+using System;
 
 public class NPCDialogueManager : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class NPCDialogueManager : MonoBehaviour
         {
             string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
             string icon = "";
+            string newWord = cleanWord;
             if (Dictionary.wordIdMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
@@ -54,7 +56,12 @@ public class NPCDialogueManager : MonoBehaviour
                     print("icon! for word:" + word);
                 }
             }
-            currentTextWithIcons += icon + word + ' ';
+            if (cleanWord == "hacia")
+            {
+                newWord = "<link=\"" + cleanWord + "\"><color=green>" + cleanWord + "</color></link>";
+            }
+            currentTextWithIcons += icon + newWord + ' ';
+            print(newWord);
         }
         CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
     }
@@ -368,6 +375,7 @@ public class NPCDialogueManager : MonoBehaviour
         {
             // In case of multiple matches, return a random match.. 
             int matchIndex = rnd.Next(matches.Count);
+            print(matchIndex);
             currNode = matches[matchIndex];
             // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
@@ -379,6 +387,7 @@ public class NPCDialogueManager : MonoBehaviour
             }
             else
             {
+                print(currNode.Text);
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
                 //invoking the event associating with the node
