@@ -75,7 +75,7 @@ public class ClickableText : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
             startColors.ForEach(c => c[0] = c[1] = c[2] = c[3] = usedColor);
             usedLinks[linkIndex] = true;
             print(linkInfo.GetLinkID());
-            Dictionary.GetComponent<Dictionary>().UpdateSearchForSpeechBubble(linkInfo.GetLinkID());
+            // Dictionary.GetComponent<Dictionary>().UpdateSearchForSpeechBubble(linkInfo.GetLinkID());
         }
         pressedLinkIndex = -1;
     }
