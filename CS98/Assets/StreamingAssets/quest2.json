@@ -1,0 +1,187 @@
+{"wlist": [
+    {
+        "w":    "preguntar",
+        "ID":   0,
+        "definition": "to ask",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+        },
+    {
+        "w":  "atacar",
+        "ID":     0,
+        "definition": "to attack",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":  "matar",
+        "ID":     0,
+        "definition": "to kill",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":  "regresar",
+        "ID":     0,
+        "definition": "to return",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+        
+    },
+    {
+        "w":    "decidir",
+        "ID":   0,
+        "definition": "to decide",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "allá",
+        "ID":   0,
+        "definition": "over there",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "zanahoria",
+        "ID":   0,
+        "definition": "la, carrot",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "papa",
+        "ID":   0,
+        "definition": "la, potato",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "cerca",
+        "ID":   0,
+        "definition": "close to ",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 1
+    },
+    {
+        "w":    "elote",
+        "ID":   0,
+        "definition": "el, corn",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 1
+    },
+    {
+        "w":    "trigo",
+        "ID":   0,
+        "definition": "el, wheat",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 1
+    },
+    {
+        "w":    "por último",
+        "ID":   0,
+        "definition": "lastly",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 2
+    },
+    {
+        "w":    "quedar",
+        "ID":   0,
+        "definition": "to stay, to remain",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 2
+    },
+    {
+        "w":    "aguacate",
+        "ID":   0,
+        "definition": "el, avocado",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 2
+    },
+    {
+        "w":    "salvar",
+        "ID":   0,
+        "definition": "to save",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "cultivo",
+        "ID":   0,
+        "definition": "el, crop",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "destruir",
+        "ID":   0,
+        "definition": "to destroy",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "monstruo",
+        "ID":   0,
+        "definition": "el, monster",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "pedir",
+        "ID":   0,
+        "definition": "to ask for",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "agradecer",
+        "ID":   0,
+        "definition": "to appreciate",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "explorar",
+        "ID":   0,
+        "definition": "to explore",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "tal vez",
+        "ID":   0,
+        "definition": "maybe",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 3
+    },
+    {
+        "w":    "congelar",
+        "ID":   0,
+        "definition": "to freeze",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 4
+    } 
+]}
