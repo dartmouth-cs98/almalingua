@@ -16,7 +16,6 @@ public class Dictionary : MonoBehaviour
     public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
-    public GameObject ViewDict;
 
     //private WordCollection InputArray;
     private int length;
@@ -188,20 +187,6 @@ public class Dictionary : MonoBehaviour
             TargetID = id;
             refresh();
 
-        }
-    }
-
-    public void UpdateSearchForSpeechBubble(string word)
-    {
-        searchString = word;
-        ViewDict.GetComponent<viewDictionary>().Display();
-        if (wordIdMap.ContainsKey(searchString))
-        {
-            Word searched = (Word)wordIdMap[searchString];
-            int id = searched.ID;
-            startIndex = id - (id % 8);
-            TargetID = id;
-            refresh();
         }
     }
 
