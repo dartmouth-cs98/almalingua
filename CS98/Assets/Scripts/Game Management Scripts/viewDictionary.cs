@@ -8,16 +8,19 @@ public class viewDictionary : MonoBehaviour
 {
     public GameObject dictUI;
     public GameObject PopupButton;
+    public bool showDict = false;
     void Start()
     {
         /*dictionary starts as not shown*/
         dictUI.SetActive(false);
+        if (!showDict && PlayerPrefs.GetInt("Quest") < 2){
+            PopupButton.SetActive(false);
+        }
+
     }
     public void Display()
     {
         dictUI.SetActive(!dictUI.activeSelf);
-        print("she been called and current state is " + dictUI.activeSelf);
-
         if  (dictUI.activeSelf && Dictionary.playerDictionary){ 
             /* if dictionary is being shown , then call refresh*/
 
@@ -31,6 +34,12 @@ public class viewDictionary : MonoBehaviour
         }
 
 
+    }
+
+    public void ShowButton(){
+        showDict = true;
+        GameObject.Find("DictObj").transform.GetChild(0).gameObject.SetActive(true);
+        PopupButton.GetComponentInChildren<Text>().text = "Open";
     }
 
 

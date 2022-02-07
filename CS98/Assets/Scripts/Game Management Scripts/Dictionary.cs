@@ -12,7 +12,7 @@ public class Dictionary : MonoBehaviour
 {
 
     public static Dictionary playerDictionary;
-    public static Hashtable wordIdMap; //public static hashmap for words
+    public static Hashtable wordMap; //public static hashmap for words
     public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
@@ -49,7 +49,7 @@ public class Dictionary : MonoBehaviour
 
         length = masterList.wlist.Count;
         masterList.wlist = masterList.wlist.OrderBy(a => a.w).ToList();
-        wordIdMap = new Hashtable();
+        wordMap = new Hashtable();
 
         //give ID's to all the words and add them to the hashtable 
         for (int i = 0; i < length; i++)
@@ -57,7 +57,7 @@ public class Dictionary : MonoBehaviour
             masterList.wlist[i].ID = i;
             // masterList.wlist[i].encountered = true;
 
-            wordIdMap.Add(masterList.wlist[i].w, masterList.wlist[i]);  // key, value = "word", word object
+            wordMap.Add(masterList.wlist[i].w, masterList.wlist[i]);  // key, value = "word", word object
         }
         refresh();
 
@@ -164,9 +164,9 @@ public class Dictionary : MonoBehaviour
     {
         if (!searchBox) return;
         searchString = searchBox.text;
-        if (wordIdMap.ContainsKey(searchString))
+        if (wordMap.ContainsKey(searchString))
         {
-            Word searched = (Word)wordIdMap[searchString];
+            Word searched = (Word)wordMap[searchString];
             int id = searched.ID;
             startIndex = id - (id % 8);
             TargetID = id;
@@ -179,9 +179,9 @@ public class Dictionary : MonoBehaviour
     {
         searchString = word;
         ViewDict.GetComponent<viewDictionary>().Display();
-        if (wordIdMap.ContainsKey(searchString))
+        if (wordMap.ContainsKey(searchString))
         {
-            Word searched = (Word)wordIdMap[searchString];
+            Word searched = (Word)wordMap[searchString];
             int id = searched.ID;
             startIndex = id - (id % 8);
             TargetID = id;
@@ -201,9 +201,9 @@ public class Dictionary : MonoBehaviour
 
     public void discoveredWord(string newWord)
     {
-        if (wordIdMap.ContainsKey(newWord))
+        if (wordMap.ContainsKey(newWord))
         {
-            Word discovered = (Word)wordIdMap[newWord];
+            Word discovered = (Word)wordMap[newWord];
             discovered.encountered = true;
         }
     }
