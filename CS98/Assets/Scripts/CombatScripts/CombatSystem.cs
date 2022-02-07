@@ -38,13 +38,11 @@ public class CombatSystem : MonoBehaviour
         Debug.Log("There are " + QuestUI.questNPC.Count + " named objects.");
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
-            print("hi");
             string NPCName = questDetails[0];
             print("NPC Name: " + NPCName);
             NPC = Enemy.transform.Find(NPCName).gameObject;
             NPC.GetComponent<HideShowObjects>().Show();
             StartCoroutine(SetupCombat());
-
         }
         print("quest detail:" + questDetails);
     }
@@ -151,6 +149,9 @@ public class CombatSystem : MonoBehaviour
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You won the battle!";
             PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep")+1);
             SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
+            questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+            print("NPC being destroyed: " +  NPC);
+            NPC.GetComponent<HideShowObjects>().Hide();
         }
         else if (state == CombatState.LOST)
         {
