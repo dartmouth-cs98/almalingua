@@ -6,39 +6,32 @@ using UnityEngine.UI;
 
 public class viewDictionary : MonoBehaviour
 {
-    public GameObject DictUI;
+    public GameObject dictUI;
     public GameObject PopupButton;
     void Start()
     {
         /*dictionary starts as not shown*/
-        if (DictUI)
-        {
-            DictUI.SetActive(false);
-        }
+        dictUI.SetActive(false);
     }
     public void Display()
     {
-        if (DictUI)
+        dictUI.SetActive(!dictUI.activeSelf);
+        print("she been called and current state is " + dictUI.activeSelf);
+
+        if  (dictUI.activeSelf && Dictionary.playerDictionary){ 
+            /* if dictionary is being shown , then call refresh*/
+
+            Dictionary.playerDictionary.RevealWords();
+            PopupButton.GetComponentInChildren<Text>().text = "Close";
+        }
+        else
         {
-            DictUI.SetActive(!DictUI.activeSelf);
-
-            if (DictUI.activeSelf && Dictionary.playerDictionary)
-            { /* if dictionary is being shown , then call refresh*/
-                Dictionary.playerDictionary.refresh();
-                PopupButton.GetComponentInChildren<Text>().text = "Close";
-            }
-            else
-            {
-                PopupButton.GetComponentInChildren<Text>().text = "Open";
-
-            }
+            PopupButton.GetComponentInChildren<Text>().text = "Open";
 
         }
 
+
     }
 
-    public void ShowHighlightDictionary()
-    {
-        GameObject.Find("DictObj").transform.GetChild(0).gameObject.GetComponent<HideShowObjects>().Show();
-    }
+
 }

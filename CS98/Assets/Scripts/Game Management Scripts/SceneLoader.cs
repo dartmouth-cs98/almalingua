@@ -7,10 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public Animator Transition;      //our scene change animation
 
-    private void Start()
-    {
-        int currentQuest = PlayerPrefs.GetInt("Quest");
-    }
+
     public void LoadScene(string nextScene)
     {
         StartCoroutine(SceneAnimate(nextScene));

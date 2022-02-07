@@ -321,6 +321,8 @@ MonoBehaviour:
   - {fileID: 6509166029988121679}
   masterList:
     wlist: []
+  ViewDict: {fileID: 4245498057212777678}
+  searchString: 
 --- !u!114 &4245498056557719065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,7 +880,7 @@ GameObject:
   - component: {fileID: 4245498057109345808}
   - component: {fileID: 4245498057109345809}
   m_Layer: 5
-  m_Name: Dictionary View
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1209,7 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d742b44142d44e40993db2aac54c609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DictUI: {fileID: 4245498057109345811}
+  dictUI: {fileID: 4245498057109345811}
   PopupButton: {fileID: 4245498057129992930}
 --- !u!1 &4245498057709791856
 GameObject:

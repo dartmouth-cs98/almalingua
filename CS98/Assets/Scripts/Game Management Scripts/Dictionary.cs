@@ -16,23 +16,15 @@ public class Dictionary : MonoBehaviour
     public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
+    public GameObject ViewDict; //will revist
 
     //private WordCollection InputArray;
     private int length;
     private int startIndex = 0;
-    private string searchString;
+    public string searchString;
     private int TargetID = -1;
     // private int discoveredWords = 0;
 
-    private void OnEnable()
-    {
-        EventManager.onConversationStart += RevealWords;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.onConversationStart -= RevealWords;
-    }
     void Start()
     {
         string path = Application.streamingAssetsPath;
@@ -40,11 +32,12 @@ public class Dictionary : MonoBehaviour
 
         List<WordCollection> lists = new List<WordCollection>();
         lists.Add(readWordFiles(path + "/quest1.json"));
-        // lists.Add(readWordFiles(path + "verbs.json"));
-        // lists.Add(readWordFiles(path + "nouns.json"));
-        // lists.Add(readWordFiles(path + "pronouns.json"));
-        // lists.Add(readWordFiles(path + "prepositions.json"));
-        // lists.Add(readWordFiles(path + "adverbs.json"));
+        lists.Add(readWordFiles(path + "/quest2.json"));
+        lists.Add(readWordFiles(path + "/quest3.json"));
+        lists.Add(readWordFiles(path + "/quest4.json"));
+        lists.Add(readWordFiles(path + "/quest5.json"));
+        lists.Add(readWordFiles(path + "/quest6.json"));
+
 
         foreach (WordCollection l in lists)
         {
@@ -147,14 +140,6 @@ public class Dictionary : MonoBehaviour
 
     }
 
-    // public bool validPage(int idx){
-    //     for (int i = idx; i < idx + 8; i++){
-    //         if (masterList.wlist[idx].encountered){
-    //             return true;
-    //         }
-    //     }
-    //     return false;
-    // }
 
 
     public void TurnRight()
@@ -190,6 +175,20 @@ public class Dictionary : MonoBehaviour
         }
     }
 
+    public void UpdateSearchForSpeechBubble(string word)
+    {
+        searchString = word;
+        ViewDict.GetComponent<viewDictionary>().Display();
+        if (wordIdMap.ContainsKey(searchString))
+        {
+            Word searched = (Word)wordIdMap[searchString];
+            int id = searched.ID;
+            startIndex = id - (id % 8);
+            TargetID = id;
+            refresh();
+        }
+    }
+
     public void reset()
     {
         searchString = "";
@@ -209,9 +208,23 @@ public class Dictionary : MonoBehaviour
         }
     }
 
-    void RevealWords()
-    {
+    public void RevealWords()
+    {   
 
+        int q =  PlayerPrefs.GetInt("Quest");
+        int step = PlayerPrefs.GetInt("QuestStep");
+        print("she been called");
+        foreach (Word w in masterList.wlist)
+        {
+            //if we're ahead on quests then yes we have encountered
+            if (w.questN < q ){
+                w.encountered = true;
+            }
+            // all previous words in the quest
+            if (w.questN == q && w.stepN <= step){
+                w.encountered = true;
+            }
+        }
     }
 
 }
