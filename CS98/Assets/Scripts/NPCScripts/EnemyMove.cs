@@ -10,6 +10,12 @@ public class EnemyMove : MonoBehaviour
 	public Animator animator;
     private Vector2 direction;
 
+    string currentQuest;
+
+    string[] questDetails;
+
+
+    public GameObject sceneLoader;
     public float thrust = 8f;
 
     private const int RAND_RANGE = 50;
@@ -129,6 +135,13 @@ public class EnemyMove : MonoBehaviour
         animator.SetFloat("Horizontal", direction.x);
         animator.SetFloat("Vertical", direction.y);
         // animator.SetFloat("Speed", movementSpeed);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+      if (other.gameObject.tag == PLAYER_TAG){
+        sceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
+      }
     }
 
 }
