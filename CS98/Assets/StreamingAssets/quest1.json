@@ -4,145 +4,185 @@
         "ID":   0,
         "definition": "la, left",
         "encountered": true,
-        "icon": "<sprite name=\"izquierda\">"
+        "icon": "<sprite name=\"izquierda\">",
+        "questN": 1,
+        "stepN": 0
         },
     {
         "w":    "derecha",
         "ID":   0,
         "definition": "la, right",
         "encountered": true,
-        "icon": "<sprite name=\"derecha\">"
+        "icon": "<sprite name=\"derecha\">",
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":  "hospital",
         "ID":     0,
         "definition": "el, hospital",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":  "hacia",
         "ID":     0,
         "definition": "towards",
-        "encountered": true
+        "encountered": true,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":  "arriba",
         "ID":     0,
         "definition": "up",
-        "encountered": true
+        "encountered": true,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "sí",
         "ID":   0,
         "definition": "yes",
-        "encountered": true
+        "encountered": true,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "no",
         "ID":   0,
         "definition": "no",
-        "encountered": true
+        "encountered": true,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "manzana",
         "ID":   0,
         "definition": "la, apple",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "naranja",
         "ID":   0,
         "definition": "la, orange",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "perro",
         "ID":   0,
         "definition": "el, dog",
-        "encountered": false
-    },
-    {
-        "w":    "a",
-        "ID":   0,
-        "definition": "to",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "necesitar",
         "ID":   0,
         "definition": "to need",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "querer",
         "ID":   0,
         "definition": "to want",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "decir",
         "ID":   0,
         "definition": "to need",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "algo",
         "ID":   0,
         "definition": "something",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "dónde",
         "ID":   0,
         "definition": "where",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "yo",
         "ID":   0,
         "definition": "I",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "después",
         "ID":   0,
         "definition": "after",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "vez",
         "ID":   0,
         "definition": "time",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "lado",
         "ID":   0,
         "definition": "el, side",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "de",
         "ID":   0,
         "definition": "of",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "quemar",
         "ID":   0,
         "definition": "to burn",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "varita",
         "ID":   0,
         "definition": "la, wand",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "otro",
         "ID":   0,
         "definition": "other, (otra feminine)",
-        "encountered": false
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
     }  
 ]}
