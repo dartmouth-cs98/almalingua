@@ -27,10 +27,16 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("12", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("20", questDetails);
-            questDetails = new string[] { "Green_Slime", "Fight the Green Slime", "Using spells, kill the Green Slime" };
+            questDetails = new string[] { "Slime_Green", "Fight the Green Slime", "Farm" };
             questNPC.Add("21", questDetails);
-            questDetails = new string[] { "Orange_Slime", "Fight the Orange Slime", "Using spells, kill the Orange Slime" };
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
+            questNPC.Add("22", questDetails);
+            questDetails = new string[] { "Slime_Orange", "Fight the Orange Slime", "Farm" };
             questNPC.Add("23", questDetails);
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
+            questNPC.Add("24", questDetails);
+            questDetails = new string[] { "Slime_Black", "Fight the Black Slime", "Farm" };
+            questNPC.Add("25", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };

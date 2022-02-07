@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public enum CombatState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 public class CombatSystem : MonoBehaviour
 {
-    public GameObject playerPrefab;
+    public GameObject playerGO;
 
     public Transform  playerCombatStation;
     public Transform enemyCombatStation;
+    public GameObject Enemy;
     
     private GameObject NPC;
     Unit playerUnit;
@@ -26,34 +27,33 @@ public class CombatSystem : MonoBehaviour
 
     string currentQuest;
     string NPCName;
+    string[] questDetails;
 
 
     void OnEnable() {
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        string[] questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
-        Debug.Log(currentQuest);
+        questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+        Debug.Log("Current quest: " + currentQuest);
         Debug.Log("There are " + QuestUI.questNPC.Count + " named objects.");
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
-            print("hi");
             string NPCName = questDetails[0];
-            NPC = GameObject.Find(NPCName);
+            print("NPC Name: " + NPCName);
+            NPC = Enemy.transform.Find(NPCName).gameObject;
             NPC.GetComponent<HideShowObjects>().Show();
             StartCoroutine(SetupCombat());
-
         }
-        print(questDetails);
     }
     // Start is called before the first frame update
     void Start()
     {
-
+        OnEnable();
     }
 
     IEnumerator SetupCombat()
     {
-        GameObject playerGO = Instantiate(playerPrefab, playerCombatStation);
+        print("got into the setup combat");
         print(playerGO); 
         playerUnit = playerGO.GetComponent<Unit>();
 
@@ -146,12 +146,16 @@ public class CombatSystem : MonoBehaviour
         if (state == CombatState.WON)
         {
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You won the battle!";
+            PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep")+1);
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
+            questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
+            print("NPC being destroyed: " +  NPC);
+            NPC.GetComponent<HideShowObjects>().Hide();
         }
         else if (state == CombatState.LOST)
         {
-            // Return to the Witch's House
-            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated!";
-            SceneLoader.GetComponent<SceneLoader>().LoadScene("WitchHouse");
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated! Try again!";
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
         }
     }
 
