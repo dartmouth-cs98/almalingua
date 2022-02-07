@@ -44,7 +44,6 @@ public class CombatSystem : MonoBehaviour
             NPC.GetComponent<HideShowObjects>().Show();
             StartCoroutine(SetupCombat());
         }
-        print("quest detail:" + questDetails);
     }
     // Start is called before the first frame update
     void Start()
