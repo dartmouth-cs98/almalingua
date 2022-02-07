@@ -1,0 +1,102 @@
+{"wlist": [
+    {
+        "w":    "buenas",
+        "ID":   0,
+        "definition": "good ones, also used as a greeting",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 0
+        },
+    {
+        "w":    "maestra",
+        "ID":   0,
+        "definition": "la, teacher (meastro masculine)",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 0
+    },
+    {
+        "w":  "escondidos",
+        "ID":     0,
+        "definition": "hidden",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 0
+    },
+    {
+        "w":  "a las escondidas",
+        "ID":     0,
+        "definition": "hide and seek",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 0
+    },
+    {
+        "w":  "buscar",
+        "ID":     0,
+        "definition": "to look for",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 0
+    },
+    {
+        "w":    "río",
+        "ID":   0,
+        "definition": "el, river",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 1
+        
+    },
+    {
+        "w":    "bosque",
+        "ID":   0,
+        "definition": "el, forest",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 1
+        
+    },
+    {
+        "w":    "chinchero",
+        "ID":   0,
+        "definition": "over there",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 2
+    },
+    {
+        "w":    "sur",
+        "ID":   0,
+        "definition": "el, south",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 2
+    },
+    {
+        "w":    "próxima",
+        "ID":   0,
+        "definition": "next",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 4
+    },
+    {
+        "w":    "proteger",
+        "ID":   0,
+        "definition": "to protect",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 5
+    },
+    {
+        "w":    "cocinera",
+        "ID":   0,
+        "definition": "la, the chef (female)",
+        "encountered": false,
+        "questN": 3,
+        "stepN": 5
+    }
+
+
+]}
