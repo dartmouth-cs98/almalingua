@@ -140,10 +140,7 @@ public class EnemyMove : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
       if (other.gameObject.tag == PLAYER_TAG){
-        string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
-        questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
-        PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep")+1);
-        sceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
+        sceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
       }
     }
 
