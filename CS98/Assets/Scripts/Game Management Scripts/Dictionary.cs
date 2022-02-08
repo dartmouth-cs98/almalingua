@@ -12,27 +12,19 @@ public class Dictionary : MonoBehaviour
 {
 
     public static Dictionary playerDictionary;
-    public static Hashtable wordIdMap; //public static hashmap for words
+    public static Hashtable wordMap; //public static hashmap for words
     public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
+    public GameObject ViewDict; //will revist
 
     //private WordCollection InputArray;
     private int length;
     private int startIndex = 0;
-    private string searchString;
+    public string searchString;
     private int TargetID = -1;
     // private int discoveredWords = 0;
 
-    private void OnEnable()
-    {
-        EventManager.onConversationStart += RevealWords;
-    }
-
-    private void OnDisable()
-    {
-        EventManager.onConversationStart -= RevealWords;
-    }
     void Start()
     {
         string path = Application.streamingAssetsPath;
@@ -40,11 +32,12 @@ public class Dictionary : MonoBehaviour
 
         List<WordCollection> lists = new List<WordCollection>();
         lists.Add(readWordFiles(path + "/quest1.json"));
-        // lists.Add(readWordFiles(path + "verbs.json"));
-        // lists.Add(readWordFiles(path + "nouns.json"));
-        // lists.Add(readWordFiles(path + "pronouns.json"));
-        // lists.Add(readWordFiles(path + "prepositions.json"));
-        // lists.Add(readWordFiles(path + "adverbs.json"));
+        lists.Add(readWordFiles(path + "/quest2.json"));
+        lists.Add(readWordFiles(path + "/quest3.json"));
+        lists.Add(readWordFiles(path + "/quest4.json"));
+        lists.Add(readWordFiles(path + "/quest5.json"));
+        lists.Add(readWordFiles(path + "/quest6.json"));
+
 
         foreach (WordCollection l in lists)
         {
@@ -56,7 +49,7 @@ public class Dictionary : MonoBehaviour
 
         length = masterList.wlist.Count;
         masterList.wlist = masterList.wlist.OrderBy(a => a.w).ToList();
-        wordIdMap = new Hashtable();
+        wordMap = new Hashtable();
 
         //give ID's to all the words and add them to the hashtable 
         for (int i = 0; i < length; i++)
@@ -64,7 +57,7 @@ public class Dictionary : MonoBehaviour
             masterList.wlist[i].ID = i;
             // masterList.wlist[i].encountered = true;
 
-            wordIdMap.Add(masterList.wlist[i].w, masterList.wlist[i]);  // key, value = "word", word object
+            wordMap.Add(masterList.wlist[i].w, masterList.wlist[i]);  // key, value = "word", word object
         }
         refresh();
 
@@ -147,14 +140,6 @@ public class Dictionary : MonoBehaviour
 
     }
 
-    // public bool validPage(int idx){
-    //     for (int i = idx; i < idx + 8; i++){
-    //         if (masterList.wlist[idx].encountered){
-    //             return true;
-    //         }
-    //     }
-    //     return false;
-    // }
 
 
     public void TurnRight()
@@ -179,14 +164,28 @@ public class Dictionary : MonoBehaviour
     {
         if (!searchBox) return;
         searchString = searchBox.text;
-        if (wordIdMap.ContainsKey(searchString))
+        if (wordMap.ContainsKey(searchString))
         {
-            Word searched = (Word)wordIdMap[searchString];
+            Word searched = (Word)wordMap[searchString];
             int id = searched.ID;
             startIndex = id - (id % 8);
             TargetID = id;
             refresh();
 
+        }
+    }
+
+    public void UpdateSearchForSpeechBubble(string word)
+    {
+        searchString = word;
+        ViewDict.GetComponent<viewDictionary>().Display();
+        if (wordMap.ContainsKey(searchString))
+        {
+            Word searched = (Word)wordMap[searchString];
+            int id = searched.ID;
+            startIndex = id - (id % 8);
+            TargetID = id;
+            refresh();
         }
     }
 
@@ -202,16 +201,30 @@ public class Dictionary : MonoBehaviour
 
     public void discoveredWord(string newWord)
     {
-        if (wordIdMap.ContainsKey(newWord))
+        if (wordMap.ContainsKey(newWord))
         {
-            Word discovered = (Word)wordIdMap[newWord];
+            Word discovered = (Word)wordMap[newWord];
             discovered.encountered = true;
         }
     }
 
-    void RevealWords()
-    {
+    public void RevealWords()
+    {   
 
+        int q =  PlayerPrefs.GetInt("Quest");
+        int step = PlayerPrefs.GetInt("QuestStep");
+        print("she been called");
+        foreach (Word w in masterList.wlist)
+        {
+            //if we're ahead on quests then yes we have encountered
+            if (w.questN < q ){
+                w.encountered = true;
+            }
+            // all previous words in the quest
+            if (w.questN == q && w.stepN <= step){
+                w.encountered = true;
+            }
+        }
     }
 
 }
