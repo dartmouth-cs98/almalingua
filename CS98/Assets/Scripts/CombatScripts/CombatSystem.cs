@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum CombatState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
+
+public enum CombatState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 public class CombatSystem : MonoBehaviour
 {
     public GameObject playerGO;
 
-    public Transform  playerCombatStation;
+    public Transform playerCombatStation;
     public Transform enemyCombatStation;
     public GameObject Enemy;
-    
+
     private GameObject NPC;
     Unit playerUnit;
     Unit enemyUnit;
@@ -29,8 +30,10 @@ public class CombatSystem : MonoBehaviour
     string NPCName;
     string[] questDetails;
 
+    public static List<string> spells = new List<string>();
 
-    void OnEnable() {
+    void OnEnable()
+    {
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
@@ -54,10 +57,10 @@ public class CombatSystem : MonoBehaviour
     IEnumerator SetupCombat()
     {
         print("got into the setup combat");
-        print(playerGO); 
+        print(playerGO);
         playerUnit = playerGO.GetComponent<Unit>();
 
-        
+
         enemyUnit = NPC.GetComponent<Unit>();
 
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "A wild " + enemyUnit.unitName + " approaches...";
@@ -114,7 +117,7 @@ public class CombatSystem : MonoBehaviour
         state = CombatState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
     }
-    
+
 
     IEnumerator EnemyTurn()
     {
@@ -133,7 +136,7 @@ public class CombatSystem : MonoBehaviour
             state = CombatState.LOST;
             EndBattle();
         }
-        else 
+        else
         {
             state = CombatState.PLAYERTURN;
             PlayerTurn();
@@ -146,10 +149,10 @@ public class CombatSystem : MonoBehaviour
         if (state == CombatState.WON)
         {
             dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You won the battle!";
-            PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep")+1);
+            PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep") + 1);
             SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
             questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
-            print("NPC being destroyed: " +  NPC);
+            print("NPC being destroyed: " + NPC);
             NPC.GetComponent<HideShowObjects>().Hide();
         }
         else if (state == CombatState.LOST)
@@ -163,7 +166,7 @@ public class CombatSystem : MonoBehaviour
     {
         if (state != CombatState.PLAYERTURN)
             return;
-        
+
         StartCoroutine(PlayerAttack());
     }
 
@@ -171,8 +174,9 @@ public class CombatSystem : MonoBehaviour
     {
         if (state != CombatState.PLAYERTURN)
             return;
-        
+
         StartCoroutine(PlayerHeal());
     }
+
 
 }

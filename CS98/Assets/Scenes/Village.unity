@@ -718,6 +718,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4245498057084763760, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
   m_PrefabInstance: {fileID: 409427082}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &409427084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4245498056557719062, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
+  m_PrefabInstance: {fileID: 409427082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &508837298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333656, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: Quest
@@ -2735,6 +2740,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 861235493}
     m_Modifications:
+    - target: {fileID: 1308013772, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
+      propertyPath: Dictionary
+      value: 
+      objectReference: {fileID: 409427084}
     - target: {fileID: 1758299764150083406, guid: 5df4e6e2b5e1a4292a6fe47fa1852668, type: 3}
       propertyPath: m_SizeDelta.x
       value: -17.418
