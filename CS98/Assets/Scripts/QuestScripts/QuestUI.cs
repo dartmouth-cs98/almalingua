@@ -15,7 +15,7 @@ public class QuestUI : MonoBehaviour
     {
         int questLength = 3;
         PlayerPrefs.SetInt("QuestLength", questLength);
-        if (questNPC.Count < 21)
+        if (questNPC.Count == 0)
         {
             string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("00", questDetails);

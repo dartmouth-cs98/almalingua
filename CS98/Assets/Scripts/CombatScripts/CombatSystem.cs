@@ -32,8 +32,25 @@ public class CombatSystem : MonoBehaviour
 
     public static List<string> spells = new List<string>();
 
+    Dictionary<string, string[]> spellInfo = new Dictionary<string, string[]>();
     void OnEnable()
     {
+        if (spellInfo.Count == 0)
+        {
+            string[] spellDetails = new string[] { "70" };
+            spellInfo.Add("quema", spellDetails);
+            spellDetails = new string[] { "50" };
+            spellInfo.Add("congela", spellDetails);
+            spellDetails = new string[] { "30" };
+            spellInfo.Add("gritar", spellDetails);
+            spellDetails = new string[] { "35" };
+            spellInfo.Add("protegar", spellDetails);
+            spellDetails = new string[] { "60" };
+            spellInfo.Add("fortalecer", spellDetails);
+            spellDetails = new string[] { "40" };
+            spellInfo.Add("dormir", spellDetails);
+        }
+
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
@@ -51,7 +68,6 @@ public class CombatSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OnEnable();
     }
 
     IEnumerator SetupCombat()
