@@ -36,6 +36,7 @@ public class CombatSystem : MonoBehaviour
     string spellOne;
     string spellTwo;
     float playerSpellDamage;
+    bool increasedStrength = false;
     void OnEnable()
     {
         if (spellInfo.Count == 0)
@@ -58,25 +59,20 @@ public class CombatSystem : MonoBehaviour
             spellDetails = new string[] { "0.3" };
             spellInfo.Add("protege", spellDetails);
 
-            spellDetails = new string[] { "0.1" };
-            spellInfo.Add("fortalecer", spellDetails);
+            spellDetails = new string[] { "-2" };
+            spellInfo.Add("fortalece", spellDetails);
 
             spellDetails = new string[] { "0.6" };
             spellInfo.Add("relampaguea", spellDetails);
 
+            spellDetails = new string[] { "-1" };
+            spellInfo.Add("sana", spellDetails);
+
             spellDetails = new string[] { "0.6" };
             spellInfo.Add("detona", spellDetails);
         }
-        spells.Add("quema");
-        // spells.Add("congela");
-        // spells.Add("tempestad");
-        // spells.Add("gritar");
-        spells.Add("teme");
-        // spells.Add("proteger");
-        // spells.Add("fortalece");
-        // spells.Add("detona");
-        // spells.Add("relampaguea");
-
+        spells.Add("sana");
+        spells.Add("fortalece");
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
@@ -126,6 +122,13 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerAttack()
     {
+        if (increasedStrength)
+        {
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Attck Damage is increased 10%!";
+            yield return new WaitForSeconds(1f);
+            increasedStrength = false;
+
+        }
         // Damage the enemy
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
@@ -166,8 +169,6 @@ public class CombatSystem : MonoBehaviour
     {
         bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
         enemyHUD.SetHP(enemyUnit.currentHP);
-        CombatButtons.SetActive(!CombatButtons.activeSelf);
-        SpellButtons.SetActive(!SpellButtons.activeSelf);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "The attack is successful!";
 
         yield return new WaitForSeconds(2f);
@@ -187,8 +188,6 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerSkip()
     {
-        CombatButtons.SetActive(!CombatButtons.activeSelf);
-        SpellButtons.SetActive(!SpellButtons.activeSelf);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Enemy Skips his turn";
         yield return new WaitForSeconds(2f);
         PlayerTurn();
@@ -279,12 +278,25 @@ public class CombatSystem : MonoBehaviour
             spellName = spellTwo;
         }
         string[] spellDetails = new string[1];
+        CombatButtons.SetActive(!CombatButtons.activeSelf);
+        SpellButtons.SetActive(!SpellButtons.activeSelf);
         if (spellInfo.TryGetValue(spellName, out spellDetails))
         {
             playerSpellDamage = float.Parse(spellDetails[0]);
             if (playerSpellDamage == 0)
             {
                 StartCoroutine(PlayerSkip());
+            }
+            else if (playerSpellDamage == -1)
+            {
+                StartCoroutine(PlayerHeal());
+            }
+            else if (playerSpellDamage == -2)
+            {
+                playerUnit.damage = Mathf.FloorToInt((float)(playerUnit.damage * 1.1));
+                dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Your attack is more powerful now!";
+                increasedStrength = true;
+                StartCoroutine(PlayerAttack());
             }
             else
             {
