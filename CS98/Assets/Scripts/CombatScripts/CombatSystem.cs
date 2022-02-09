@@ -18,38 +18,64 @@ public class CombatSystem : MonoBehaviour
     Unit enemyUnit;
 
     public GameObject dialogueText;
+    public GameObject CombatButtons;
+    public GameObject SpellButtons;
 
     public GameObject SceneLoader;
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
-
     public CombatState state;
 
+    private System.Random rnd;
     string currentQuest;
     string NPCName;
     string[] questDetails;
-
     public static List<string> spells = new List<string>();
-
     Dictionary<string, string[]> spellInfo = new Dictionary<string, string[]>();
+    string spellOne;
+    string spellTwo;
+    float playerSpellDamage;
     void OnEnable()
     {
         if (spellInfo.Count == 0)
         {
-            string[] spellDetails = new string[] { "70" };
+            string[] spellDetails = new string[] { "0.2" };
             spellInfo.Add("quema", spellDetails);
-            spellDetails = new string[] { "50" };
+
+            spellDetails = new string[] { "0.2" };
             spellInfo.Add("congela", spellDetails);
-            spellDetails = new string[] { "30" };
-            spellInfo.Add("gritar", spellDetails);
-            spellDetails = new string[] { "35" };
-            spellInfo.Add("protegar", spellDetails);
-            spellDetails = new string[] { "60" };
+
+            spellDetails = new string[] { "0.4" };
+            spellInfo.Add("tempestad", spellDetails);
+
+            spellDetails = new string[] { "0" };
+            spellInfo.Add("teme", spellDetails);
+
+            spellDetails = new string[] { "0.25" };
+            spellInfo.Add("grita", spellDetails);
+
+            spellDetails = new string[] { "0.3" };
+            spellInfo.Add("protege", spellDetails);
+
+            spellDetails = new string[] { "0.1" };
             spellInfo.Add("fortalecer", spellDetails);
-            spellDetails = new string[] { "40" };
-            spellInfo.Add("dormir", spellDetails);
+
+            spellDetails = new string[] { "0.6" };
+            spellInfo.Add("relampaguea", spellDetails);
+
+            spellDetails = new string[] { "0.6" };
+            spellInfo.Add("detona", spellDetails);
         }
+        spells.Add("quema");
+        // spells.Add("congela");
+        // spells.Add("tempestad");
+        // spells.Add("gritar");
+        spells.Add("teme");
+        // spells.Add("proteger");
+        // spells.Add("fortalece");
+        // spells.Add("detona");
+        // spells.Add("relampaguea");
 
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
@@ -66,8 +92,10 @@ public class CombatSystem : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+        rnd = new System.Random();
+
     }
 
     IEnumerator SetupCombat()
@@ -134,7 +162,37 @@ public class CombatSystem : MonoBehaviour
         StartCoroutine(EnemyTurn());
     }
 
+    IEnumerator PlayerSpell()
+    {
+        bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
+        enemyHUD.SetHP(enemyUnit.currentHP);
+        CombatButtons.SetActive(!CombatButtons.activeSelf);
+        SpellButtons.SetActive(!SpellButtons.activeSelf);
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "The attack is successful!";
 
+        yield return new WaitForSeconds(2f);
+        if (isDead)
+        {
+            // End the battle
+            state = CombatState.WON;
+            EndBattle();
+        }
+        else
+        {
+            // Enemy's turn
+            state = CombatState.ENEMYTURN;
+            StartCoroutine(EnemyTurn());
+        }
+    }
+
+    IEnumerator PlayerSkip()
+    {
+        CombatButtons.SetActive(!CombatButtons.activeSelf);
+        SpellButtons.SetActive(!SpellButtons.activeSelf);
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Enemy Skips his turn";
+        yield return new WaitForSeconds(2f);
+        PlayerTurn();
+    }
     IEnumerator EnemyTurn()
     {
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = enemyUnit.unitName + " attacks!";
@@ -186,13 +244,54 @@ public class CombatSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
-    public void OnHealButton()
+    public void OnSpellButton()
     {
+
         if (state != CombatState.PLAYERTURN)
             return;
+        CombatButtons.SetActive(!CombatButtons.activeSelf);
+        SpellButtons.SetActive(!SpellButtons.activeSelf);
 
-        StartCoroutine(PlayerHeal());
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Your two spells are... ";
+        int randIndex = rnd.Next(spells.Count);
+        int nextIndex = rnd.Next(spells.Count);
+        while (nextIndex == randIndex)
+        {
+            nextIndex = rnd.Next(spells.Count);
+        }
+        spellOne = spells[randIndex];
+        spellTwo = spells[nextIndex];
+
+        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = spells[randIndex];
+        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = spells[nextIndex];
+
     }
 
+    public void ChooseSpell(int num)
+    {
+        string spellName;
+        if (num == 1)
+        {
+            spellName = spellOne;
+        }
+        else
+        {
+            spellName = spellTwo;
+        }
+        string[] spellDetails = new string[1];
+        if (spellInfo.TryGetValue(spellName, out spellDetails))
+        {
+            playerSpellDamage = float.Parse(spellDetails[0]);
+            if (playerSpellDamage == 0)
+            {
+                StartCoroutine(PlayerSkip());
+            }
+            else
+            {
+                StartCoroutine(PlayerSpell());
+
+            }
+        }
+    }
 
 }
