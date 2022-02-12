@@ -41,9 +41,9 @@ public class NPCDialogueManager : MonoBehaviour
         string currentTextWithIcons = "";
         foreach (string word in currentText.Split(' '))
         {
+            string newWord = word;
             string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
             string icon = "";
-            string newWord = cleanWord;
             if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
@@ -51,7 +51,7 @@ public class NPCDialogueManager : MonoBehaviour
                 {
                     //print(“icon! for word:” + word);
                 }
-                newWord = "<link=\"" + cleanWord + "\"><color=blue>" + cleanWord + "</color></link>";
+                newWord = "<link=\"" + cleanWord + "\"><color=blue>" + newWord + "</color></link>";
             }
             currentTextWithIcons += icon + newWord + ' ';
         }
