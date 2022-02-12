@@ -132,7 +132,6 @@ public class QuestUI : MonoBehaviour
 
     public void AddSpell(string newSpell)
     {
-        if (!CombatSystem.spells.Contains(newSpell))
-            CombatSystem.spells.Add(newSpell);
+        PlayerPrefs.SetString(newSpell, "true");
     }
 }

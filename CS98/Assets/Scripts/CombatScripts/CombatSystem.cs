@@ -71,8 +71,10 @@ public class CombatSystem : MonoBehaviour
             spellDetails = new string[] { "0.6" };
             spellInfo.Add("detona", spellDetails);
         }
-        spells.Add("sana");
-        spells.Add("fortalece");
+        foreach (KeyValuePair<string, string[]> values in spellInfo) {
+          if (PlayerPrefs.HasKey(values.Key) && PlayerPrefs.GetString(values.Key) == "true")
+            spells.Add(values.Key);
+        }
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
@@ -91,6 +93,8 @@ public class CombatSystem : MonoBehaviour
     private void Awake()
     {
         rnd = new System.Random();
+        print("Spells is " + spells.Count);
+        print(spells);
 
     }
 
@@ -254,6 +258,7 @@ public class CombatSystem : MonoBehaviour
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Your two spells are... ";
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
+
         while (nextIndex == randIndex)
         {
             nextIndex = rnd.Next(spells.Count);
