@@ -9,33 +9,30 @@ using Newtonsoft.Json.Linq;
 
 public class NPCDialogueManager : MonoBehaviour
 {
-    public NPCConversation MyNPCConversation;
+    
     public Dictionary<string, string> Entities;
-    public string CurrentText;
-    public bool IsLoading;
+    public string CurrentText;        // text of the current speech node
+    private ConversationNode currNode;
+    private string currIntent;
 
-
+    public NPCConversation MyNPCConversation; // conversation prefab, gets converted to -->
+    private Conversation conversation;        // deserialized conversation object
+    private GameObject Player;
     private System.Random rnd;
 
-    private Conversation conversation;
-    private ConversationNode currNode;
-
-    private string currIntent;
+    private const string LAST_INPUT_KEY = "last_input"; // store last input in Entities
 
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
-    private const string DEFAULT_INTENT = "hello";
-
-
     private const double MIN_ACCEPTABLE_SCORE = 0.2;
-    private const string ERR_INTENT = "none";
-    private GameObject Player;
+    private const string DEFAULT_INTENT = "hello";
+    private const string ERR_INTENT = "none"; 
+    private const string EXACT_INTENT = "exact";
 
     void Awake()
     {
         rnd = new System.Random();
         Entities = new Dictionary<string, string>();
-        IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
     }
 
@@ -51,7 +48,7 @@ public class NPCDialogueManager : MonoBehaviour
                 icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
                 if (icon != null)
                 {
-                    print("icon! for word:" + word);
+                    print("found icon for word:" + word);
                 }
             }
             currentTextWithIcons += icon + word + ' ';
@@ -93,6 +90,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void UpdateIntent(string input, System.Action callback, bool sendToLuis = false)
     {
+        Entities[LAST_INPUT_KEY] = input;            // Save, in case we have a node which is an exact match.
         if (sendToLuis == false)
         {
             currIntent = input;
@@ -106,7 +104,6 @@ public class NPCDialogueManager : MonoBehaviour
             env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
 
             string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
-            IsLoading = true;
             StartCoroutine(GetRequest(uri, callback));
         }
     }
@@ -197,7 +194,7 @@ public class NPCDialogueManager : MonoBehaviour
         }
 
         string optionIntent = optionText.Split(' ')[0];
-        if (optionIntent != intent)
+        if (optionIntent != intent && optionIntent != EXACT_INTENT)
         {
             return false;
         }
