@@ -20,7 +20,7 @@ public class NPCDialogueManager : MonoBehaviour
     private GameObject Player;
     private System.Random rnd;
 
-    private const string LAST_INPUT_KEY = "last_input"; // store last input in Entities
+    private const string LAST_INPUT_KEY = "input"; // store last input in Entities
 
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
@@ -43,15 +43,17 @@ public class NPCDialogueManager : MonoBehaviour
         {
             string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
             string icon = "";
-            if (Dictionary.wordIdMap.ContainsKey(cleanWord))
+            string newWord = cleanWord;
+            if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
-                icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
+                icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
                 if (icon != null)
                 {
-                    print("found icon for word:" + word);
+                    //print(“icon! for word:” + word);
                 }
+                newWord = "<link=\"" + cleanWord + "\"><color=blue>" + cleanWord + "</color></link>";
             }
-            currentTextWithIcons += icon + word + ' ';
+            currentTextWithIcons += icon + newWord + ' ';
         }
         CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
     }

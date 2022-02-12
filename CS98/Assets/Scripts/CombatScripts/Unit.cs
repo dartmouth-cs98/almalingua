@@ -15,7 +15,9 @@ public class Unit : MonoBehaviour
 
     public bool TakeDamage(int dmg)
     {
+
         currentHP -= dmg;
+        print("damage is " + dmg + " and current HP is " + currentHP);
 
         if (currentHP <= 0)
             return true;

@@ -6,39 +6,41 @@ using UnityEngine.UI;
 
 public class viewDictionary : MonoBehaviour
 {
-    public GameObject DictUI;
+    public GameObject dictUI;
     public GameObject PopupButton;
+    public bool showDict = false;
     void Start()
     {
         /*dictionary starts as not shown*/
-        if (DictUI)
-        {
-            DictUI.SetActive(false);
+        dictUI.SetActive(false);
+        if (!showDict && PlayerPrefs.GetInt("Quest") < 2){
+            PopupButton.SetActive(false);
         }
+
     }
     public void Display()
     {
-        if (DictUI)
+        dictUI.SetActive(!dictUI.activeSelf);
+        if  (dictUI.activeSelf && Dictionary.playerDictionary){ 
+            /* if dictionary is being shown , then call refresh*/
+
+            Dictionary.playerDictionary.RevealWords();
+            PopupButton.GetComponentInChildren<Text>().text = "Close";
+        }
+        else
         {
-            DictUI.SetActive(!DictUI.activeSelf);
-
-            if (DictUI.activeSelf && Dictionary.playerDictionary)
-            { /* if dictionary is being shown , then call refresh*/
-                Dictionary.playerDictionary.refresh();
-                PopupButton.GetComponentInChildren<Text>().text = "Close";
-            }
-            else
-            {
-                PopupButton.GetComponentInChildren<Text>().text = "Open";
-
-            }
+            PopupButton.GetComponentInChildren<Text>().text = "Open";
 
         }
 
+
     }
 
-    public void ShowHighlightDictionary()
-    {
-        GameObject.Find("DictObj").transform.GetChild(0).gameObject.GetComponent<HideShowObjects>().Show();
+    public void ShowButton(){
+        showDict = true;
+        GameObject.Find("DictObj").transform.GetChild(0).gameObject.SetActive(true);
+        PopupButton.GetComponentInChildren<Text>().text = "Open";
     }
+
+
 }

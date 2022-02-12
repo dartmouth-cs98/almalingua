@@ -10,6 +10,8 @@ public class Word{
     public string definition;
     public bool encountered;
     public string icon;
+    public int questN;
+    public int stepN;
 
 }
 
