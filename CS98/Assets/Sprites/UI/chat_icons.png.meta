@@ -1,0 +1,4182 @@
+fileFormatVersion: 2
+guid: 78b2ec6e407dd4a75bf803457fd37600
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2437031719742495961
+    second: bubble emotes july update_0
+  - first:
+      213: -7072279555941965246
+    second: bubble emotes july update_1
+  - first:
+      213: 8401637877751856281
+    second: bubble emotes july update_2
+  - first:
+      213: 623042661219316732
+    second: bubble emotes july update_3
+  - first:
+      213: -5274037403950085060
+    second: bubble emotes july update_4
+  - first:
+      213: -1246656971503637775
+    second: bubble emotes july update_5
+  - first:
+      213: -3759277895688923426
+    second: bubble emotes july update_6
+  - first:
+      213: -1490221186039758273
+    second: bubble emotes july update_7
+  - first:
+      213: 2350736112299439981
+    second: bubble emotes july update_8
+  - first:
+      213: -4707188459386293929
+    second: bubble emotes july update_9
+  - first:
+      213: -4810175781096252807
+    second: bubble emotes july update_10
+  - first:
+      213: 6139641901788236473
+    second: bubble emotes july update_11
+  - first:
+      213: 4731654330665605258
+    second: bubble emotes july update_12
+  - first:
+      213: 5723916683759687014
+    second: bubble emotes july update_13
+  - first:
+      213: -5711725671821999659
+    second: bubble emotes july update_14
+  - first:
+      213: 4759111234118647165
+    second: bubble emotes july update_15
+  - first:
+      213: -5801497912056464070
+    second: bubble emotes july update_16
+  - first:
+      213: 3367620057887287103
+    second: bubble emotes july update_17
+  - first:
+      213: -8718220592887175988
+    second: bubble emotes july update_18
+  - first:
+      213: 120365485679308239
+    second: bubble emotes july update_19
+  - first:
+      213: -4904028883002858214
+    second: bubble emotes july update_20
+  - first:
+      213: -3795944656041461143
+    second: bubble emotes july update_21
+  - first:
+      213: -4799424606741536093
+    second: bubble emotes july update_22
+  - first:
+      213: 8264307775820411716
+    second: bubble emotes july update_23
+  - first:
+      213: -851519236311385447
+    second: bubble emotes july update_24
+  - first:
+      213: 7563297359332718393
+    second: bubble emotes july update_25
+  - first:
+      213: -6897586687914276336
+    second: bubble emotes july update_26
+  - first:
+      213: 1505697053397224213
+    second: bubble emotes july update_27
+  - first:
+      213: 2247237973832913387
+    second: bubble emotes july update_28
+  - first:
+      213: -2468780082792479505
+    second: bubble emotes july update_29
+  - first:
+      213: -4019535776834472964
+    second: bubble emotes july update_30
+  - first:
+      213: -8973111903116440782
+    second: bubble emotes july update_31
+  - first:
+      213: -8215399718941861873
+    second: bubble emotes july update_32
+  - first:
+      213: -4335393498087382277
+    second: bubble emotes july update_33
+  - first:
+      213: -8830773382174707889
+    second: bubble emotes july update_34
+  - first:
+      213: -8800657247749664922
+    second: bubble emotes july update_35
+  - first:
+      213: -4305967430766339067
+    second: bubble emotes july update_36
+  - first:
+      213: 2371906249360235907
+    second: bubble emotes july update_37
+  - first:
+      213: 2680733338796626818
+    second: bubble emotes july update_38
+  - first:
+      213: 791928860918866783
+    second: bubble emotes july update_39
+  - first:
+      213: -8521432913810806982
+    second: bubble emotes july update_40
+  - first:
+      213: 2777637652974910003
+    second: bubble emotes july update_41
+  - first:
+      213: -4662761269147009888
+    second: bubble emotes july update_42
+  - first:
+      213: 199125826422485792
+    second: bubble emotes july update_43
+  - first:
+      213: -2192548941936457224
+    second: bubble emotes july update_44
+  - first:
+      213: -5230074350403681596
+    second: bubble emotes july update_45
+  - first:
+      213: -4192780729769349348
+    second: bubble emotes july update_46
+  - first:
+      213: 8809552047195786244
+    second: bubble emotes july update_47
+  - first:
+      213: 7798120554391698654
+    second: bubble emotes july update_48
+  - first:
+      213: 2192114923900049892
+    second: bubble emotes july update_49
+  - first:
+      213: -227550921408885086
+    second: bubble emotes july update_50
+  - first:
+      213: 8494959238671389771
+    second: bubble emotes july update_51
+  - first:
+      213: 8300032039496366229
+    second: bubble emotes july update_52
+  - first:
+      213: 330479487001381954
+    second: bubble emotes july update_53
+  - first:
+      213: -654286020493287959
+    second: bubble emotes july update_54
+  - first:
+      213: 6621233049637435924
+    second: bubble emotes july update_55
+  - first:
+      213: 199706529721041099
+    second: bubble emotes july update_56
+  - first:
+      213: 8250013887644484433
+    second: bubble emotes july update_57
+  - first:
+      213: 389222667070789618
+    second: bubble emotes july update_58
+  - first:
+      213: -4803837724758153005
+    second: bubble emotes july update_59
+  - first:
+      213: -4419417691372980941
+    second: bubble emotes july update_60
+  - first:
+      213: 5851872015806566771
+    second: bubble emotes july update_61
+  - first:
+      213: 8005407899738515313
+    second: bubble emotes july update_62
+  - first:
+      213: 6356444857008323089
+    second: bubble emotes july update_63
+  - first:
+      213: 8645033886845211813
+    second: bubble emotes july update_64
+  - first:
+      213: 2095750211545929321
+    second: bubble emotes july update_65
+  - first:
+      213: -9159436275633634557
+    second: bubble emotes july update_66
+  - first:
+      213: -7475961964418917923
+    second: bubble emotes july update_67
+  - first:
+      213: -924801683389551140
+    second: bubble emotes july update_68
+  - first:
+      213: -1234202918025936295
+    second: bubble emotes july update_69
+  - first:
+      213: 707156117051202553
+    second: bubble emotes july update_70
+  - first:
+      213: -4927250194976761970
+    second: bubble emotes july update_71
+  - first:
+      213: -3561708802142620751
+    second: bubble emotes july update_72
+  - first:
+      213: -1227105621827643105
+    second: bubble emotes july update_73
+  - first:
+      213: -2250596588475691281
+    second: bubble emotes july update_74
+  - first:
+      213: 9219258774970136754
+    second: bubble emotes july update_75
+  - first:
+      213: 3770330188985030069
+    second: bubble emotes july update_76
+  - first:
+      213: 3529272409326036716
+    second: bubble emotes july update_77
+  - first:
+      213: -5427162180384401316
+    second: bubble emotes july update_78
+  - first:
+      213: 6008714430846369675
+    second: bubble emotes july update_79
+  - first:
+      213: -7026761189880309867
+    second: bubble emotes july update_80
+  - first:
+      213: 5335442334147462180
+    second: bubble emotes july update_81
+  - first:
+      213: -1342979024232420212
+    second: bubble emotes july update_82
+  - first:
+      213: -516957517597523402
+    second: bubble emotes july update_83
+  - first:
+      213: -6957170281177610513
+    second: bubble emotes july update_84
+  - first:
+      213: 3974096412654520654
+    second: bubble emotes july update_85
+  - first:
+      213: -7740959297630918388
+    second: bubble emotes july update_86
+  - first:
+      213: -2606960243152465825
+    second: bubble emotes july update_87
+  - first:
+      213: -7602818711810573422
+    second: bubble emotes july update_88
+  - first:
+      213: 2141800902348756062
+    second: bubble emotes july update_89
+  - first:
+      213: 1207921595911434335
+    second: bubble emotes july update_90
+  - first:
+      213: -7213447755484889320
+    second: bubble emotes july update_91
+  - first:
+      213: 931369379953552040
+    second: bubble emotes july update_92
+  - first:
+      213: 2608748674303681055
+    second: bubble emotes july update_93
+  - first:
+      213: 7428310752463574342
+    second: bubble emotes july update_94
+  - first:
+      213: 2038295690126580181
+    second: bubble emotes july update_95
+  - first:
+      213: -5174710622880329637
+    second: bubble emotes july update_96
+  - first:
+      213: -180891196323833494
+    second: bubble emotes july update_97
+  - first:
+      213: -7969385970697677658
+    second: bubble emotes july update_98
+  - first:
+      213: -2277884474329389643
+    second: bubble emotes july update_99
+  - first:
+      213: -2569271464102708577
+    second: bubble emotes july update_100
+  - first:
+      213: -7651321109477709632
+    second: bubble emotes july update_101
+  - first:
+      213: -581598989533028192
+    second: bubble emotes july update_102
+  - first:
+      213: -7222555771620904349
+    second: bubble emotes july update_103
+  - first:
+      213: 5571831993962980334
+    second: bubble emotes july update_104
+  - first:
+      213: -1553367191487041721
+    second: bubble emotes july update_105
+  - first:
+      213: 3366064442550005555
+    second: bubble emotes july update_106
+  - first:
+      213: 2656242685623351417
+    second: bubble emotes july update_107
+  - first:
+      213: -5391483221630671166
+    second: bubble emotes july update_108
+  - first:
+      213: 4437135452736333354
+    second: bubble emotes july update_109
+  - first:
+      213: 2375105580277124291
+    second: bubble emotes july update_110
+  - first:
+      213: 527798330728346654
+    second: bubble emotes july update_111
+  - first:
+      213: -7100987897581253769
+    second: bubble emotes july update_112
+  - first:
+      213: 3681514338051234620
+    second: bubble emotes july update_113
+  - first:
+      213: -4429768836210039023
+    second: bubble emotes july update_114
+  - first:
+      213: 3911679013516558496
+    second: bubble emotes july update_115
+  - first:
+      213: 7082830240635931932
+    second: bubble emotes july update_116
+  - first:
+      213: -29581826925620454
+    second: bubble emotes july update_117
+  - first:
+      213: -8455088773195243886
+    second: bubble emotes july update_118
+  - first:
+      213: -618680944946751838
+    second: bubble emotes july update_119
+  - first:
+      213: 1602382424921654041
+    second: bubble emotes july update_120
+  - first:
+      213: -7406481879723537726
+    second: bubble emotes july update_121
+  - first:
+      213: -1599476403791241782
+    second: bubble emotes july update_122
+  - first:
+      213: -4149336547085041107
+    second: bubble emotes july update_123
+  - first:
+      213: -5245264346880107061
+    second: bubble emotes july update_124
+  - first:
+      213: 7225703342078179611
+    second: bubble emotes july update_125
+  - first:
+      213: 9048693850290698556
+    second: bubble emotes july update_126
+  - first:
+      213: -2619968013387920462
+    second: bubble emotes july update_127
+  - first:
+      213: 8837956230987637532
+    second: bubble emotes july update_128
+  - first:
+      213: 451633682110058608
+    second: bubble emotes july update_129
+  - first:
+      213: 6441398466212304453
+    second: bubble emotes july update_130
+  - first:
+      213: 328666058437376015
+    second: bubble emotes july update_131
+  - first:
+      213: -7273292465093324954
+    second: bubble emotes july update_132
+  - first:
+      213: -7166397742118540833
+    second: bubble emotes july update_133
+  - first:
+      213: 5979336507676106721
+    second: bubble emotes july update_134
+  - first:
+      213: -7020414194311300248
+    second: bubble emotes july update_135
+  - first:
+      213: -2811521691911418274
+    second: bubble emotes july update_136
+  - first:
+      213: 6846155695351599538
+    second: bubble emotes july update_137
+  - first:
+      213: 2002782776597907084
+    second: bubble emotes july update_138
+  - first:
+      213: 9184006422268369190
+    second: bubble emotes july update_139
+  - first:
+      213: -6000682772901647818
+    second: bubble emotes july update_140
+  - first:
+      213: 9149473022194344776
+    second: bubble emotes july update_141
+  - first:
+      213: -4531502155609690684
+    second: bubble emotes july update_142
+  - first:
+      213: -7032856590435872073
+    second: bubble emotes july update_143
+  - first:
+      213: 1030384364550024354
+    second: bubble emotes july update_144
+  - first:
+      213: 4014853264618891031
+    second: bubble emotes july update_145
+  - first:
+      213: -1399626502095207448
+    second: bubble emotes july update_146
+  - first:
+      213: 837306336399784043
+    second: bubble emotes july update_147
+  - first:
+      213: -1549505685218775217
+    second: bubble emotes july update_148
+  - first:
+      213: 11691148229013758
+    second: bubble emotes july update_149
+  - first:
+      213: -7399661463725126325
+    second: chat_icons_0
+  - first:
+      213: 3220389705037822275
+    second: chat_icons_1
+  - first:
+      213: 4830278871127168309
+    second: chat_icons_2
+  - first:
+      213: -2068346610809356214
+    second: chat_icons_3
+  - first:
+      213: 8330751508946511531
+    second: chat_icons_4
+  - first:
+      213: 9000491023226604540
+    second: chat_icons_5
+  - first:
+      213: 1961697988740246832
+    second: chat_icons_6
+  - first:
+      213: 478563502311037366
+    second: chat_icons_7
+  - first:
+      213: 8536366365144514195
+    second: chat_icons_8
+  - first:
+      213: -2244373008341348995
+    second: chat_icons_9
+  - first:
+      213: 4147021284162939381
+    second: chat_icons_10
+  - first:
+      213: -1208048627813974800
+    second: chat_icons_11
+  - first:
+      213: -674635766601541422
+    second: chat_icons_12
+  - first:
+      213: 6691455548157992303
+    second: chat_icons_13
+  - first:
+      213: -476382691761627111
+    second: chat_icons_14
+  - first:
+      213: -733801992407900979
+    second: chat_icons_15
+  - first:
+      213: 4451280446661232074
+    second: chat_icons_16
+  - first:
+      213: -440506856247583438
+    second: chat_icons_17
+  - first:
+      213: 7631805837510738685
+    second: chat_icons_18
+  - first:
+      213: 4869540546718624866
+    second: chat_icons_19
+  - first:
+      213: 5702022498845976404
+    second: chat_icons_20
+  - first:
+      213: 3231234005159092750
+    second: chat_icons_21
+  - first:
+      213: 8321698080410620584
+    second: chat_icons_22
+  - first:
+      213: 1161798857009911846
+    second: chat_icons_23
+  - first:
+      213: -6740442095514407026
+    second: chat_icons_24
+  - first:
+      213: 5874199986685835795
+    second: chat_icons_25
+  - first:
+      213: -3176658248031032501
+    second: chat_icons_26
+  - first:
+      213: -3643680646448074077
+    second: chat_icons_27
+  - first:
+      213: -5127955904616642019
+    second: chat_icons_28
+  - first:
+      213: -4332748143443215361
+    second: chat_icons_29
+  - first:
+      213: 5360442618992391495
+    second: chat_icons_30
+  - first:
+      213: 8406372699933248358
+    second: chat_icons_31
+  - first:
+      213: 1965074748696916831
+    second: chat_icons_32
+  - first:
+      213: -3281171574890346584
+    second: chat_icons_33
+  - first:
+      213: -7276443195546186645
+    second: chat_icons_34
+  - first:
+      213: -3476347443616230586
+    second: chat_icons_35
+  - first:
+      213: 6021086992146852153
+    second: chat_icons_36
+  - first:
+      213: -8436559968755275313
+    second: chat_icons_37
+  - first:
+      213: -6525926562892197435
+    second: chat_icons_38
+  - first:
+      213: 3507161618156409114
+    second: chat_icons_39
+  - first:
+      213: 3267525347464090033
+    second: chat_icons_40
+  - first:
+      213: 9149688249815188446
+    second: chat_icons_41
+  - first:
+      213: -2316269252071686831
+    second: chat_icons_42
+  - first:
+      213: 7637985336814099529
+    second: chat_icons_43
+  - first:
+      213: -5200137163322001142
+    second: chat_icons_44
+  - first:
+      213: -879326547839343658
+    second: chat_icons_45
+  - first:
+      213: -8481500537097775099
+    second: chat_icons_46
+  - first:
+      213: -8539668817632385483
+    second: chat_icons_47
+  - first:
+      213: 7103768548826993054
+    second: chat_icons_48
+  - first:
+      213: 1242622542496468797
+    second: chat_icons_49
+  - first:
+      213: 2441748367308516697
+    second: chat_icons_50
+  - first:
+      213: -5947570823910725574
+    second: chat_icons_51
+  - first:
+      213: 3119332592324350561
+    second: chat_icons_52
+  - first:
+      213: 844212126324649426
+    second: chat_icons_53
+  - first:
+      213: 3362254562822858178
+    second: chat_icons_54
+  - first:
+      213: 6402118629524683029
+    second: chat_icons_55
+  - first:
+      213: -1489494644222643997
+    second: chat_icons_56
+  - first:
+      213: 2899454589293019355
+    second: chat_icons_57
+  - first:
+      213: 691779086163371455
+    second: chat_icons_58
+  - first:
+      213: -6972718165078131624
+    second: chat_icons_59
+  - first:
+      213: 1847991632475592942
+    second: chat_icons_60
+  - first:
+      213: -3198813060691386168
+    second: chat_icons_61
+  - first:
+      213: -4511824716575411879
+    second: chat_icons_62
+  - first:
+      213: 4281834276913352620
+    second: chat_icons_63
+  - first:
+      213: -8705165253328712598
+    second: chat_icons_64
+  - first:
+      213: 8354837280906433909
+    second: chat_icons_65
+  - first:
+      213: -4572202232159741811
+    second: chat_icons_66
+  - first:
+      213: -6999503826952705797
+    second: chat_icons_67
+  - first:
+      213: 6741975253892921032
+    second: chat_icons_68
+  - first:
+      213: -3269430295667755365
+    second: chat_icons_69
+  - first:
+      213: -5540621134629241738
+    second: chat_icons_70
+  - first:
+      213: 570203513690635282
+    second: chat_icons_71
+  - first:
+      213: -8386349139747225236
+    second: chat_icons_72
+  - first:
+      213: 6843988483920897397
+    second: chat_icons_73
+  - first:
+      213: 7158106970874405089
+    second: chat_icons_74
+  - first:
+      213: 4307120031167299551
+    second: chat_icons_75
+  - first:
+      213: -1657859234773103011
+    second: chat_icons_76
+  - first:
+      213: -7016037412846342532
+    second: chat_icons_77
+  - first:
+      213: 3763242979760804030
+    second: chat_icons_78
+  - first:
+      213: -5822117551698884257
+    second: chat_icons_79
+  - first:
+      213: 593451128412658170
+    second: chat_icons_80
+  - first:
+      213: -2846509605893904211
+    second: chat_icons_81
+  - first:
+      213: 1876369016059769439
+    second: chat_icons_82
+  - first:
+      213: -1585971915464370634
+    second: chat_icons_83
+  - first:
+      213: 2796891467314516525
+    second: chat_icons_84
+  - first:
+      213: 7945705701877582939
+    second: chat_icons_85
+  - first:
+      213: 2456983157119058352
+    second: chat_icons_86
+  - first:
+      213: -8039605419798720475
+    second: chat_icons_87
+  - first:
+      213: 5782314749236766951
+    second: chat_icons_88
+  - first:
+      213: 5811316862546138208
+    second: chat_icons_89
+  - first:
+      213: 424905181724156951
+    second: chat_icons_90
+  - first:
+      213: 76985467273202388
+    second: chat_icons_91
+  - first:
+      213: -2334504883515904659
+    second: chat_icons_92
+  - first:
+      213: -7118211389538841743
+    second: chat_icons_93
+  - first:
+      213: 4576542403858615327
+    second: chat_icons_94
+  - first:
+      213: -9164807636427062770
+    second: chat_icons_95
+  - first:
+      213: -5346278027362303593
+    second: chat_icons_96
+  - first:
+      213: -3504705867001265662
+    second: chat_icons_97
+  - first:
+      213: -7651691664276391916
+    second: chat_icons_98
+  - first:
+      213: 4644398489220556604
+    second: chat_icons_99
+  - first:
+      213: -8537346791309775954
+    second: chat_icons_100
+  - first:
+      213: 7406455391922431378
+    second: chat_icons_101
+  - first:
+      213: 5393960465474975519
+    second: chat_icons_102
+  - first:
+      213: 2968087265978883820
+    second: chat_icons_103
+  - first:
+      213: 5405855819869621585
+    second: chat_icons_104
+  - first:
+      213: -74402529867931958
+    second: chat_icons_105
+  - first:
+      213: -1789619516371470165
+    second: chat_icons_106
+  - first:
+      213: 1247563031608862622
+    second: chat_icons_107
+  - first:
+      213: 9163523801750514543
+    second: chat_icons_108
+  - first:
+      213: 7398277871829426472
+    second: chat_icons_109
+  - first:
+      213: 7550447998699849456
+    second: chat_icons_110
+  - first:
+      213: -6274625548207490335
+    second: chat_icons_111
+  - first:
+      213: 4186587940646606399
+    second: chat_icons_112
+  - first:
+      213: 4226157736290217888
+    second: chat_icons_113
+  - first:
+      213: -277984064765508053
+    second: chat_icons_114
+  - first:
+      213: 5873767666890839395
+    second: chat_icons_115
+  - first:
+      213: 7606196075931772598
+    second: chat_icons_116
+  - first:
+      213: 5116419239804915436
+    second: chat_icons_117
+  - first:
+      213: 3849805850421966754
+    second: chat_icons_118
+  - first:
+      213: -4942399515410966550
+    second: chat_icons_119
+  - first:
+      213: -6412896987630206636
+    second: chat_icons_120
+  - first:
+      213: -5527393974343887511
+    second: chat_icons_121
+  - first:
+      213: 2080171808565162771
+    second: chat_icons_122
+  - first:
+      213: -1733905992159185512
+    second: chat_icons_123
+  - first:
+      213: 3724731486571735781
+    second: chat_icons_124
+  - first:
+      213: -2119295268759134384
+    second: chat_icons_125
+  - first:
+      213: -3760886245589582901
+    second: chat_icons_126
+  - first:
+      213: 2471206324815456974
+    second: chat_icons_127
+  - first:
+      213: 3397069699127172177
+    second: chat_icons_128
+  - first:
+      213: 8388376044770091566
+    second: chat_icons_129
+  - first:
+      213: 1790461747596864342
+    second: chat_icons_130
+  - first:
+      213: -4365273006530991846
+    second: chat_icons_131
+  - first:
+      213: -2427603814074363724
+    second: chat_icons_132
+  - first:
+      213: -5632672254658101724
+    second: chat_icons_133
+  - first:
+      213: -5806441156292659182
+    second: chat_icons_134
+  - first:
+      213: -3107110861195831009
+    second: chat_icons_135
+  - first:
+      213: 2491477532217174370
+    second: chat_icons_136
+  - first:
+      213: -2067616779425855885
+    second: chat_icons_137
+  - first:
+      213: 3721210442092194344
+    second: chat_icons_138
+  - first:
+      213: -4071905750900430025
+    second: chat_icons_139
+  - first:
+      213: -7184791942592332655
+    second: chat_icons_140
+  - first:
+      213: -7224839551041063987
+    second: chat_icons_141
+  - first:
+      213: -8835251956185929812
+    second: chat_icons_142
+  - first:
+      213: -4625406532290523885
+    second: chat_icons_143
+  - first:
+      213: -8157197516524383512
+    second: chat_icons_144
+  - first:
+      213: 1426299429140560026
+    second: chat_icons_145
+  - first:
+      213: -8819972563339294641
+    second: chat_icons_146
+  - first:
+      213: -1332256427705876892
+    second: chat_icons_147
+  - first:
+      213: 6703446682865043465
+    second: chat_icons_148
+  - first:
+      213: -3687752492813725095
+    second: chat_icons_149
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chat_icons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d44849a1f1f4990800000000000000
+      internalID: -7399661463725126325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349ba17df5f11bc20800000000000000
+      internalID: 3220389705037822275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5351c979a09980340800000000000000
+      internalID: 4830278871127168309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40435e47b1cb43e0800000000000000
+      internalID: -2068346610809356214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba66ec2fb56cc9370800000000000000
+      internalID: 8330751508946511531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb838326ea28ec70800000000000000
+      internalID: 9000491023226604540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03de57f5de9593b10800000000000000
+      internalID: 1961697988740246832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b957b548f234a600800000000000000
+      internalID: 478563502311037366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ef7034bf3477670800000000000000
+      internalID: 8536366365144514195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc65ed3a26ad0e0800000000000000
+      internalID: -2244373008341348995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f92486d2ed2d8930800000000000000
+      internalID: 4147021284162939381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcffbb6c262c3fe0800000000000000
+      internalID: -1208048627813974800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d811fa385633a6f0800000000000000
+      internalID: -674635766601541422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d16424e53dcdc50800000000000000
+      internalID: 6691455548157992303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9106760477c8369f0800000000000000
+      internalID: -476382691761627111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc9d0bc9f201d5f0800000000000000
+      internalID: -733801992407900979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac582ea7bff16cd30800000000000000
+      internalID: 4451280446661232074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d1d30295103e9f0800000000000000
+      internalID: -440506856247583438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2849369fe99e960800000000000000
+      internalID: 7631805837510738685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c668ac355149340800000000000000
+      internalID: 4869540546718624866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457eff88047a12f40800000000000000
+      internalID: 5702022498845976404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02aba73536a7dc20800000000000000
+      internalID: 3231234005159092750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2dcea505c9c7370800000000000000
+      internalID: 8321698080410620584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628d78ca7e98f1010800000000000000
+      internalID: 1161798857009911846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f26c360a32572a0800000000000000
+      internalID: -6740442095514407026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a730ad3c9558150800000000000000
+      internalID: 5874199986685835795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bab41772e3ae3d0800000000000000
+      internalID: -3176658248031032501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a23f71d1cb0f6dc0800000000000000
+      internalID: -3643680646448074077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a45791647d5d8b0800000000000000
+      internalID: -5127955904616642019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb75d8f48cfed3c0800000000000000
+      internalID: -4332748143443215361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745f7ef392e146a40800000000000000
+      internalID: 5360442618992391495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b00158e6f69a470800000000000000
+      internalID: 8406372699933248358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f537b219219554b10800000000000000
+      internalID: 1965074748696916831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a74d8746dfe672d0800000000000000
+      internalID: -3281171574890346584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c49254771e40b90800000000000000
+      internalID: -7276443195546186645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643da632b6881cfc0800000000000000
+      internalID: -3476347443616230586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93963a0e7b23f8350800000000000000
+      internalID: 6021086992146852153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9af0048615bea80800000000000000
+      internalID: -8436559968755275313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1568ced504f65a0800000000000000
+      internalID: -6525926562892197435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11d814f8e0fba030800000000000000
+      internalID: 3507161618156409114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b19e2ecdf4985d20800000000000000
+      internalID: 3267525347464090033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3cccf6cf83afe70800000000000000
+      internalID: 9149688249815188446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d7b1a2365fadfd0800000000000000
+      internalID: -2316269252071686831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c527032339ff960800000000000000
+      internalID: 7637985336814099529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0972ec2dc665d7b0800000000000000
+      internalID: -5200137163322001142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d32772e9210cc3f0800000000000000
+      internalID: -879326547839343658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508900cc238ab4a80800000000000000
+      internalID: -8481500537097775099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536aa8994700d7980800000000000000
+      internalID: -8539668817632385483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91dc679bd7a59260800000000000000
+      internalID: 7103768548826993054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f05636e9eae3110800000000000000
+      internalID: 1242622542496468797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d60500435d2e120800000000000000
+      internalID: 2441748367308516697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38e254e8dbf57da0800000000000000
+      internalID: -5947570823910725574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1629acd37781a4b20800000000000000
+      internalID: 3119332592324350561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd68a0c47e37bb00800000000000000
+      internalID: 844212126324649426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c52e7df5b029ae20800000000000000
+      internalID: 3362254562822858178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519bab249f4e8d850800000000000000
+      internalID: 6402118629524683029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e033444380445be0800000000000000
+      internalID: -1489494644222643997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0cf25469eec3820800000000000000
+      internalID: 2899454589293019355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5efc5e961b99900800000000000000
+      internalID: 691779086163371455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cba9b95cdeb3f90800000000000000
+      internalID: -6972718165078131624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee81a91499265a910800000000000000
+      internalID: 1847991632475592942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c02c9628788b93d0800000000000000
+      internalID: -3198813060691386168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951f1bf2357c261c0800000000000000
+      internalID: -4511824716575411879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf0386b6912c6b30800000000000000
+      internalID: 4281834276913352620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cc444f25a013780800000000000000
+      internalID: -8705165253328712598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5755e9cbd3852f370800000000000000
+      internalID: 8354837280906433909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88dede5b464c80c0800000000000000
+      internalID: -4572202232159741811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf82f76ba54ccde90800000000000000
+      internalID: -6999503826952705797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6f2ccd5ce409d50800000000000000
+      internalID: 6741975253892921032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96b2d0e776a0a2d0800000000000000
+      internalID: -3269430295667755365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cf66bfe62cb13b0800000000000000
+      internalID: -5540621134629241738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_71
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cb53b1315c9e700800000000000000
+      internalID: 570203513690635282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61c6f2e3e3bd9b80800000000000000
+      internalID: -8386349139747225236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_73
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57528fed34bbafe50800000000000000
+      internalID: 6843988483920897397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0673f5d54b65360800000000000000
+      internalID: 7158106970874405089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf32b629d6f5cb30800000000000000
+      internalID: 4307120031167299551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e8fb74fc91ef8e0800000000000000
+      internalID: -1657859234773103011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e6174452702ae90800000000000000
+      internalID: -7016037412846342532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb010243d89b93430800000000000000
+      internalID: 3763242979760804030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59cb620feea33fa0800000000000000
+      internalID: -5822117551698884257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9579438ac5c3800800000000000000
+      internalID: 593451128412658170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8e4fa489a2f78d0800000000000000
+      internalID: -2846509605893904211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52bacdbda33a0a10800000000000000
+      internalID: 1876369016059769439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636100b12fe7df9e0800000000000000
+      internalID: -1585971915464370634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d225a9098fd80d620800000000000000
+      internalID: 2796891467314516525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_85
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c853adc31d44e60800000000000000
+      internalID: 7945705701877582939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_86
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1033be925f81220800000000000000
+      internalID: 2456983157119058352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_87
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520979267759d6090800000000000000
+      internalID: -8039605419798720475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e862cfd0a8ee3050800000000000000
+      internalID: 5782314749236766951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_89
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064dc4595e1f5a050800000000000000
+      internalID: 5811316862546138208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71424e3f20195e500800000000000000
+      internalID: 424905181724156951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_91
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dacfa5efd1811100800000000000000
+      internalID: 76985467273202388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dae9b5d2c2a9fd0800000000000000
+      internalID: -2334504883515904659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bc5628478073d90800000000000000
+      internalID: -7118211389538841743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c41899115238f30800000000000000
+      internalID: 4576542403858615327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_95
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e024afb030010d080800000000000000
+      internalID: -9164807636427062770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791089cb5743ec5b0800000000000000
+      internalID: -5346278027362303593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_97
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202892b2598cc5fc0800000000000000
+      internalID: -3504705867001265662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418fcf3c8fabfc590800000000000000
+      internalID: -7651691664276391916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_99
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c372a51a1d7347040800000000000000
+      internalID: 4644398489220556604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabe8ab7350458980800000000000000
+      internalID: -8537346791309775954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_101
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295205810f309c660800000000000000
+      internalID: 7406455391922431378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17f22507723bda40800000000000000
+      internalID: 5393960465474975519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_103
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee180f84a3c03920800000000000000
+      internalID: 2968087265978883820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d8e4a0a35750b40800000000000000
+      internalID: 5405855819869621585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aced4d41b4ba7fef0800000000000000
+      internalID: -74402529867931958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_106
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8729b188ef927e0800000000000000
+      internalID: -1789619516371470165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97a4f5a7fb305110800000000000000
+      internalID: 1247563031608862622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2d26e8506b2f70800000000000000
+      internalID: 9163523801750514543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_109
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821a604d686fba660800000000000000
+      internalID: 7398277871829426472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f64099637498c860800000000000000
+      internalID: 7550447998699849456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_111
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea708cee4d0ce8a0800000000000000
+      internalID: -6274625548207490335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36dc2fec8fb91a30800000000000000
+      internalID: 4186587940646606399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_113
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afe85ce11456aa30800000000000000
+      internalID: 4226157736290217888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ce6647f6642cf0800000000000000
+      internalID: -277984064765508053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_115
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365143e8290d38150800000000000000
+      internalID: 5873767666890839395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b622ed1803ae8960800000000000000
+      internalID: 7606196075931772598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_117
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceecb8ec03c210740800000000000000
+      internalID: 5116419239804915436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a73f9816024d6530800000000000000
+      internalID: 3849805850421966754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7ddd1a3d1196bb0800000000000000
+      internalID: -4942399515410966550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451012faa20d007a0800000000000000
+      internalID: -6412896987630206636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_121
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96519993770ca43b0800000000000000
+      internalID: -5527393974343887511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313fe491d314edc10800000000000000
+      internalID: 2080171808565162771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_123
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8953e6fcfadefe7e0800000000000000
+      internalID: -1733905992159185512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea22d47d87e0b330800000000000000
+      internalID: 3724731486571735781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_125
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f127b7e20c692e0800000000000000
+      internalID: -2119295268759134384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcbfafab2e5aecbc0800000000000000
+      internalID: -3760886245589582901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_127
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecae2553f0d7b4220800000000000000
+      internalID: 2471206324815456974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd7b594e0d42f20800000000000000
+      internalID: 3397069699127172177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22eae6b19f796470800000000000000
+      internalID: 8388376044770091566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_130
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65baf61297ff8d810800000000000000
+      internalID: 1790461747596864342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_131
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a196e1a245f6b63c0800000000000000
+      internalID: -4365273006530991846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0d6be613b6f4ed0800000000000000
+      internalID: -2427603814074363724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_133
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42eb7e47d6ab4d1b0800000000000000
+      internalID: -5632672254658101724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_134
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218b7fd38806b6fa0800000000000000
+      internalID: -5806441156292659182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_135
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f191aa8422351e4d0800000000000000
+      internalID: -3107110861195831009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_136
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269eba97d91839220800000000000000
+      internalID: 2491477532217174370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_137
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3764faa6e795e43e0800000000000000
+      internalID: -2067616779425855885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_138
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a21676e2564a330800000000000000
+      internalID: 3721210442092194344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_139
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba5be1b4fad77c0800000000000000
+      internalID: -4071905750900430025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cf1bc7bcd7a4c90800000000000000
+      internalID: -7184791942592332655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_141
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3310905b63cbb90800000000000000
+      internalID: -7224839551041063987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_142
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca766723821e26580800000000000000
+      internalID: -8835251956185929812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_143
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d4d0de3414fcfb0800000000000000
+      internalID: -4625406532290523885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e29dd0d310dbce80800000000000000
+      internalID: -8157197516524383512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_145
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98f34126cb3bc310800000000000000
+      internalID: 1426299429140560026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4848711fa9299580800000000000000
+      internalID: -8819972563339294641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_147
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e3cdc66dfd28de0800000000000000
+      internalID: -1332256427705876892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90801fedd3d670d50800000000000000
+      internalID: 6703446682865043465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chat_icons_149
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952d64675a872dcc0800000000000000
+      internalID: -3687752492813725095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

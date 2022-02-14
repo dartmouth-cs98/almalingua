@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8122464157940644553}
   - component: {fileID: 8122464157940644551}
   - component: {fileID: 8122464157940644550}
-  - component: {fileID: 8122464157940644549}
   - component: {fileID: 2397678797273551839}
+  - component: {fileID: 7558313118622633433}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -99,8 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
-  MyQuest: 0
-  Player: {fileID: 0}
 --- !u!114 &8122464157940644550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,11 +111,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f1bf6be9ca042f6bc0b23440a116f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyNPCConversation: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
   CurrentText: 
-  IsLoading: 0
---- !u!60 &8122464157940644549
-PolygonCollider2D:
+  MyNPCConversation: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
+--- !u!114 &2397678797273551839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122464157940644554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459213264786a410bb108bee17e30e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &7558313118622633433
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,24 +148,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.125, y: 1.25}
-      - {x: -0.85003126, y: 0.90553474}
-      - {x: -0.6695274, y: -0.5111319}
-      - {x: -0.7916667, y: -1.25}
-      - {x: 1.0416667, y: -1.25}
-      - {x: 0.897264, y: 0.66330016}
-      - {x: 1.0416667, y: 1.25}
---- !u!114 &2397678797273551839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8122464157940644554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 459213264786a410bb108bee17e30e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 2.0833333, y: 2.5}
+  m_EdgeRadius: 0

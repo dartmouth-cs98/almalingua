@@ -7,6 +7,9 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
@@ -35,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/forest2.unity
     guid: 01d0836a77b344c3eb5f3839e5307c73
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: fd4c90d51c3e941928ded44fed9363b2
   m_configObjects: {}

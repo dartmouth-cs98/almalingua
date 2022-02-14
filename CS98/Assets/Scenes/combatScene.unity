@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_Green
       objectReference: {fileID: 0}
+    - target: {fileID: 6216210134104463103, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6216210134396844522, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
       propertyPath: m_Controller
       value: 
@@ -355,18 +359,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6216210134104463103, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
   m_PrefabInstance: {fileID: 262075560}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &262075563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262075562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &262075564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333656, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: Quest
@@ -462,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: QuestStep
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333658, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_RootOrder
@@ -749,7 +741,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.8018868, b: 0.11516661, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1162,7 +1154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Spell
+  m_text: Hechizo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
   m_sharedMaterial: {fileID: 6149013929262502789, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
@@ -1649,7 +1641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2047420305590869188, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2047420305590869191, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
       propertyPath: m_Enabled
@@ -1704,18 +1696,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2047420305590869188, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
   m_PrefabInstance: {fileID: 903159328}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &903159331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903159330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &903159332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1991,6 +1971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4896938478300919214, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2025,6 +2009,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4896938478300919215, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+    - {fileID: 4896938478300919214, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+    - {fileID: 4896938478300919212, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
 --- !u!4 &1186072222 stripped
 Transform:
@@ -2036,18 +2022,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
   m_PrefabInstance: {fileID: 1186072221}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1186072224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186072223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1186072225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,7 +2816,6 @@ GameObject:
   - component: {fileID: 1482758239}
   - component: {fileID: 1482758238}
   - component: {fileID: 1482758241}
-  - component: {fileID: 1482758242}
   m_Layer: 0
   m_Name: AttackButton
   m_TagString: Untagged
@@ -2891,7 +2864,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.1966002, g: 0.8867924, b: 0.39245033, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2945,10 +2918,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Attack
-
-
-'
+  m_text: Atacar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
   m_sharedMaterial: {fileID: 6149013929262502789, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
@@ -3040,57 +3010,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 20, y: 5}
   m_UseGraphicAlpha: 1
---- !u!212 &1482758242
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482758236}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0325b0374e9ebc458051a5756fdef31, type: 3}
-  m_Color: {r: 0, g: 0.8773585, b: 0.123933695, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 19.2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1001 &1700004260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3101,6 +3020,10 @@ PrefabInstance:
     - target: {fileID: 4503431357781129091, guid: 8eeafcf2a986b4d50b0431a47af471b1, type: 3}
       propertyPath: m_Name
       value: QuestUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503431357781129091, guid: 8eeafcf2a986b4d50b0431a47af471b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4503431357781129093, guid: 8eeafcf2a986b4d50b0431a47af471b1, type: 3}
       propertyPath: m_RootOrder

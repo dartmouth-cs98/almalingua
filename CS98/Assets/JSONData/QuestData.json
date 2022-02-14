@@ -1,12 +1,12 @@
 {
     "quests": [
         {
-            "questname": "intro",
+            "questname": "Tutorial",
             "questnum": 0,
             "prereq": -1,
-            "description": "a test quest placeholder",
-            "steps":  []
-  
+            "description": "Let's get started!",
+            "steps": []
+
         },
         {
             "questname": "Left or Right?",
@@ -14,9 +14,9 @@
             "prereq": 0,
             "description": "Complete this quest to get your first spell!",
             "steps": [
-                {"desc": "Talk to the witch"},
-                {"desc": "Find the 'map'" },
-                { "desc": "Follow the directions to find the wand!}"}
+                { "desc": "Talk to the witch" },
+                { "desc": "Find the 'map'" },
+                { "desc": "Follow the directions to find the wand!}" }
             ]
         }
     ]
