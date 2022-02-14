@@ -308,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6216210134104463103, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6216210134396844522, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
       propertyPath: m_Controller
@@ -359,18 +359,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6216210134104463103, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
   m_PrefabInstance: {fileID: 262075560}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &262075563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 262075562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &262075564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333656, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: Quest
@@ -1653,7 +1641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2047420305590869188, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2047420305590869191, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
       propertyPath: m_Enabled
@@ -1708,18 +1696,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2047420305590869188, guid: b4649034da73a49cf9d24f5678b2cf7d, type: 3}
   m_PrefabInstance: {fileID: 903159328}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &903159331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903159330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &903159332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,7 +1969,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
       propertyPath: m_Name
-      value: Slime_Orange1
+      value: Slime_Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4896938478300919214, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
       propertyPath: m_Enabled
@@ -2042,18 +2022,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
   m_PrefabInstance: {fileID: 1186072221}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1186072224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186072223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1186072225
 MonoBehaviour:
   m_ObjectHideFlags: 0

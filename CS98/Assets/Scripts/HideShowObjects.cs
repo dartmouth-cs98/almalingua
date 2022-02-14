@@ -22,7 +22,5 @@ public class HideShowObjects : MonoBehaviour
         gameObject.SetActive(true);
         if (gameObject.name == "UserInput")
             gameObject.SetActive(true);
-        if (gameObject.name == "Slime_Orange")
-            gameObject.SetActive(true);
     }
 }
