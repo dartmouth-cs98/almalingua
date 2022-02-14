@@ -801,11 +801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4245498057129992929, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 251
+      value: -354
       objectReference: {fileID: 0}
     - target: {fileID: 4245498057129992929, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59
+      value: -238
       objectReference: {fileID: 0}
     - target: {fileID: 4245498057212777676, guid: bba83b1bede714f9b90becef7ed972cb, type: 3}
       propertyPath: PopupButton

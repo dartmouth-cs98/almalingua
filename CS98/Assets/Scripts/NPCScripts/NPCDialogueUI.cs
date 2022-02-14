@@ -54,6 +54,10 @@ public class NPCDialogueUI : MonoBehaviour
     }
     public void NPCInteract(string NPCTouched)
     {
+        rootTalking = true;
+        userTalking = false;
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        UpdateQuest();
         NPCTouch = NPCTouched;
         if (NPCTouch != NPCName)
         {
@@ -142,10 +146,10 @@ public class NPCDialogueUI : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         DialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (string word in sentence.Split(' '))
         {
-            DialogueText.text += letter;
-            yield return null;
+            DialogueText.text += word+ ' ';
+            yield return new WaitForSeconds(0.01f);
         }
 
     }
@@ -198,7 +202,6 @@ public class NPCDialogueUI : MonoBehaviour
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
-        PicturePanelManager.HidePicturePanel();
     }
 }
 
