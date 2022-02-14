@@ -113,7 +113,7 @@ public class CombatSystem : MonoBehaviour
 
     void PlayerTurn()
     {
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Escoge una acción: ";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Elige una acción: ";
     }
 
 
