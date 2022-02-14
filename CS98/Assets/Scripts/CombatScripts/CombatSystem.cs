@@ -128,14 +128,16 @@ public class CombatSystem : MonoBehaviour
             increasedStrength = false;
 
         }
+        spellAnimation = SpellAnimationsParent.transform.Find("NormalAttackAnimation").gameObject;
+        spellAnimation.SetActive(true);
         // Damage the enemy
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "El ataque fue exitoso";
 
-        yield return new WaitForSeconds(2f);
-
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
         // Check if the enemy is dead
         if (isDead)
         {
