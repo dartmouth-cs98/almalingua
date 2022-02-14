@@ -37,6 +37,9 @@ public class PlayerSave : MonoBehaviour
 
     public static void SetUsername(string user)
     {
-        PlayerPrefs.SetString("User", user);
+        if (user != "")
+        {
+            PlayerPrefs.SetString("User", user);
+        }
     }
 }

@@ -11,7 +11,16 @@ public class QuestManager : MonoBehaviour
     public TextAsset QuestData;
 
     // Start is called before the first frame update
-
+    void Start()
+    {
+        // LoadJSON.load_JSON(QuestData, baseGame);
+        if (!PlayerPrefs.HasKey("Quest"))
+        {
+            PlayerPrefs.SetInt("Quest", 1);
+            PlayerPrefs.SetInt("QuestStep", 0);
+        }
+        // UpdateQuestDisplay();
+    }
 
     // getters and setters for quest and quest step
     public void SetQuest(int quest)
