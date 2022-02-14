@@ -6,37 +6,33 @@ using System.Text.RegularExpressions;
 using UnityEngine.Networking;
 using CandyCoded.env;
 using Newtonsoft.Json.Linq;
-using System;
 
 public class NPCDialogueManager : MonoBehaviour
 {
-    public NPCConversation MyNPCConversation;
+    
     public Dictionary<string, string> Entities;
-    public string CurrentText;
-    public bool IsLoading;
+    public string CurrentText;        // text of the current speech node
+    private ConversationNode currNode;
+    private string currIntent;
 
-
+    public NPCConversation MyNPCConversation; // conversation prefab, gets converted to -->
+    private Conversation conversation;        // deserialized conversation object
+    private GameObject Player;
     private System.Random rnd;
 
-    private Conversation conversation;
-    private ConversationNode currNode;
-
-    private string currIntent;
+    private const string LAST_INPUT_KEY = "input"; // store last input in Entities
 
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
-    private const string DEFAULT_INTENT = "hello";
-
-
     private const double MIN_ACCEPTABLE_SCORE = 0.2;
-    private const string ERR_INTENT = "none";
-    private GameObject Player;
+    private const string DEFAULT_INTENT = "hello";
+    private const string ERR_INTENT = "none"; 
+    private const string EXACT_INTENT = "exact";
 
     void Awake()
     {
         rnd = new System.Random();
         Entities = new Dictionary<string, string>();
-        IsLoading = false;
         Player = GameObject.Find("PlayerManager/init_Protagonist");
     }
 
@@ -48,20 +44,16 @@ public class NPCDialogueManager : MonoBehaviour
             string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
             string icon = "";
             string newWord = cleanWord;
-            if (Dictionary.wordIdMap.ContainsKey(cleanWord))
+            if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
-                icon = ((Word)Dictionary.wordIdMap[cleanWord]).icon;
+                icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
                 if (icon != null)
                 {
-                    print("icon! for word:" + word);
+                    //print(“icon! for word:” + word);
                 }
-            }
-            if (cleanWord == "hacia")
-            {
-                newWord = "<link=\"" + cleanWord + "\"><color=green>" + cleanWord + "</color></link>";
+                newWord = "<link=\"" + cleanWord + "\"><color=blue>" + cleanWord + "</color></link>";
             }
             currentTextWithIcons += icon + newWord + ' ';
-            print(newWord);
         }
         CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
     }
@@ -100,6 +92,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void UpdateIntent(string input, System.Action callback, bool sendToLuis = false)
     {
+        Entities[LAST_INPUT_KEY] = input;            // Save, in case we have a node which is an exact match.
         if (sendToLuis == false)
         {
             currIntent = input;
@@ -113,7 +106,6 @@ public class NPCDialogueManager : MonoBehaviour
             env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
 
             string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
-            IsLoading = true;
             StartCoroutine(GetRequest(uri, callback));
         }
     }
@@ -146,6 +138,18 @@ public class NPCDialogueManager : MonoBehaviour
                     {
                         Debug.Log("Score is too low; replacing with error intent");
                         currIntent = ERR_INTENT;
+                    } else {  
+                        foreach (JProperty entityType in luisResponse.prediction.entities) {
+                          if (entityType.Value is JArray) {
+                              List<string> entitiesOfType = entityType.Value.ToObject<List<string>>();
+                              entitiesOfType.Sort();
+                              Entities[entityType.Name] = string.Join(",", entitiesOfType);
+                          }     
+                        }
+                    }
+                    foreach (KeyValuePair<string, string> kvp in Entities)
+                    {
+                        Debug.Log(kvp.Key + ":" + kvp.Value);
                     }
                     Debug.Log(luisResponse);
                     callback();
@@ -175,87 +179,6 @@ public class NPCDialogueManager : MonoBehaviour
         return (currNode.Connections.Count == 0);
     }
 
-    /*************** ConnectionConditionsValid ********************/
-    /*
-     * PRIVATE FUNCTION!
-     * Dialogue Editor allows us to add conditions to dialogue connections,
-     * where the connection is only valid if the condition is met. This
-     * function parses the condition object, and returns whether or not it
-     * is met.
-     * 
-     * If a connection has no conditions, returns true.
-     *
-     * [We're actually not using connections right now; leaving in case we do later].
-     */
-    private bool ConnectionConditionsValid(Connection connection)
-    {
-        foreach (Condition condition in connection.Conditions)
-        {
-
-            // GetInt/GetBool updates this variable with OK/False. 
-            // I'm assuming it's always going to be OK.
-            eParamStatus paramStatus;
-
-            // See Dialogue Editor documentation for information about Condition types.
-            // 2 Types: IntCondition, BoolCondition.
-
-            // Check each condition.
-            if (condition.ConditionType == Condition.eConditionType.IntCondition)
-            {
-
-                IntCondition intCondition = (IntCondition)condition;
-                switch (intCondition.CheckType)
-                {
-                    case IntCondition.eCheckType.equal:
-                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
-                        == intCondition.RequiredValue))
-                        {
-                            return false;
-                        }
-                        break;
-
-                    case IntCondition.eCheckType.lessThan:
-                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
-                        < intCondition.RequiredValue))
-                        {
-                            return false;
-                        }
-                        break;
-
-                    default:
-                        if (!(conversation.GetInt(intCondition.ParameterName, out paramStatus)
-                        > intCondition.RequiredValue))
-                        {
-                            return false;
-                        }
-                        break;
-                }
-            }
-            else
-            {
-
-                BoolCondition boolCondition = (BoolCondition)condition;
-
-                if (boolCondition.CheckType == BoolCondition.eCheckType.equal)
-                {
-                    if (!(conversation.GetBool(boolCondition.ParameterName, out paramStatus)
-                    == boolCondition.RequiredValue))
-                    {
-                        return false;
-                    }
-                }
-                else
-                {
-                    if (conversation.GetBool(boolCondition.ParameterName, out paramStatus)
-                    == boolCondition.RequiredValue)
-                    {
-                        return false;
-                    }
-                }
-            }
-        }
-        return true;
-    }
 
     /*************** OptionMatchesIntent ********************/
     /*
@@ -273,7 +196,7 @@ public class NPCDialogueManager : MonoBehaviour
         }
 
         string optionIntent = optionText.Split(' ')[0];
-        if (optionIntent != intent)
+        if (optionIntent != intent && optionIntent != EXACT_INTENT)
         {
             return false;
         }
@@ -299,7 +222,7 @@ public class NPCDialogueManager : MonoBehaviour
      * This function returns true/false if there
      * is an OptionNode child of the root representing the appropriate quest/step combo.
      */
-    public bool checkQuest()
+    private bool checkQuest()
     {
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
@@ -318,6 +241,7 @@ public class NPCDialogueManager : MonoBehaviour
         }
         return false;
     }
+
 
     /**************  GetNextMessage() *****************/
     /*
@@ -338,33 +262,25 @@ public class NPCDialogueManager : MonoBehaviour
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
 
-        print("Current node is " + currNode.Text + "with connections " + currNode.Connections.Count);
-
         // Iterate over each connection, add all valid to list of matches.
         foreach (Connection connection in currNode.Connections)
         {
-            // ConnectionConditionsValid always true currently, as we do not use
-            if (ConnectionConditionsValid(connection))
+            // Each connected node is of type Option or Speech. 
+            // All connected nodes must be the same type.
+            if (connection.ConnectionType == Connection.eConnectionType.Option)
             {
-                // Each connected node is of type Option or Speech. 
-                // All connected nodes must be the same type.
-                if (connection.ConnectionType == Connection.eConnectionType.Option)
+                OptionNode option = ((OptionConnection)connection).OptionNode;
+                // Option only valid if its text matches currIntent.
+                if (OptionMatchesIntent(option.Text, currIntent))
                 {
-                    OptionNode option = ((OptionConnection)connection).OptionNode;
-                    // Option only valid if its text matches currIntent.
-                    if (OptionMatchesIntent(option.Text, currIntent))
-                    {
-                        matches.Add(option);
-                    }
-                    else if (option.Text == ERR_INTENT)
-                    {
-                        fallbackNode = option;
-                    }
+                    matches.Add(option);
+                } else if (option.Text == ERR_INTENT) {
+                  fallbackNode = option;
                 }
-                else
-                {
-                    matches.Add(((SpeechConnection)connection).SpeechNode);
-                }
+            }
+            else
+            {
+                matches.Add(((SpeechConnection)connection).SpeechNode);
             }
         }
         if (matches.Count == 0 && currNode.Connections.Count > 0 && fallbackNode != null)
@@ -375,7 +291,6 @@ public class NPCDialogueManager : MonoBehaviour
         {
             // In case of multiple matches, return a random match.. 
             int matchIndex = rnd.Next(matches.Count);
-            print(matchIndex);
             currNode = matches[matchIndex];
             // If we arrived at option node, advance 1x more in order so currNode points to speechNode.
             if (currNode.NodeType == ConversationNode.eNodeType.Option)
@@ -387,7 +302,6 @@ public class NPCDialogueManager : MonoBehaviour
             }
             else
             {
-                print(currNode.Text);
                 // We will return the text at current node.
                 setCurrentText(currNode.Text);
                 //invoking the event associating with the node
@@ -406,6 +320,5 @@ public class NPCDialogueManager : MonoBehaviour
                 }
             }
         }
-        print("Match count is " + matches.Count + " and new node is " + currNode.Text);
     }
 }

@@ -15,7 +15,7 @@ public class QuestUI : MonoBehaviour
     {
         int questLength = 3;
         PlayerPrefs.SetInt("QuestLength", questLength);
-        if (questNPC.Count < 21)
+        if (questNPC.Count == 0)
         {
             string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" };
             questNPC.Add("00", questDetails);
@@ -27,15 +27,21 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("12", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("20", questDetails);
-            questDetails = new string[] { "Green_Slime", "Fight the Green Slime", "Using spells, kill the Green Slime" };
+            questDetails = new string[] { "Slime_Green", "Fight the Green Slime", "Farm" };
             questNPC.Add("21", questDetails);
-            questDetails = new string[] { "Orange_Slime", "Fight the Orange Slime", "Using spells, kill the Orange Slime" };
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
+            questNPC.Add("22", questDetails);
+            questDetails = new string[] { "Slime_Orange", "Fight the Orange Slime", "Farm" };
             questNPC.Add("23", questDetails);
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
+            questNPC.Add("24", questDetails);
+            questDetails = new string[] { "Slime_Black", "Fight the Black Slime", "Farm" };
+            questNPC.Add("25", questDetails);
             questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer" };
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" };
             questNPC.Add("27", questDetails);
-            questDetails = new string[] { "Teacher", "Talk to Teacher", "Walk right to the Forest\n-Talk to the teacher" };
+            questDetails = new string[] { "Teacher", "Talk to Teacher", "Walk Up to go back to Village\n-Walk right to the Forest\n-Talk to the teacher" };
             questNPC.Add("30", questDetails);
             questDetails = new string[] { "Cesar", "Talk to Cesar", "Go back to the village\n-Talk to Cesar about children" };
             questNPC.Add("31", questDetails);
@@ -121,7 +127,11 @@ public class QuestUI : MonoBehaviour
         if (Children.Count == 2)
         {
             SetQuestStep(3);
-            print("here");
         }
+    }
+
+    public void AddSpell(string newSpell)
+    {
+        PlayerPrefs.SetString(newSpell, "true");
     }
 }

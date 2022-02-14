@@ -169,7 +169,7 @@ public class NPCDialogueUI : MonoBehaviour
         {
             if (userResponse != null)
             {
-                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), false);
+                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
             }
             else if (userResponse != null)
             {
