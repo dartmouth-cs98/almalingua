@@ -12,6 +12,7 @@ public class CombatSystem : MonoBehaviour
     public Transform playerCombatStation;
     public Transform enemyCombatStation;
     public GameObject Enemy;
+    public GameObject SpellAnimationsParent;
 
     private GameObject NPC;
     Unit playerUnit;
@@ -37,40 +38,41 @@ public class CombatSystem : MonoBehaviour
     string spellTwo;
     float playerSpellDamage;
     bool increasedStrength = false;
+    GameObject spellAnimation;
     void OnEnable()
     {
         rnd = new System.Random();
 
         if (spellInfo.Count == 0)
         {
-            string[] spellDetails = new string[] { "0.2" };
+            string[] spellDetails = new string[] { "0.2", "FireSpellAnimation" };
             spellInfo.Add("quema", spellDetails);
 
-            spellDetails = new string[] { "0.2" };
+            spellDetails = new string[] { "0.2", "IceSpellAnimation" };
             spellInfo.Add("congela", spellDetails);
 
-            spellDetails = new string[] { "0.4" };
+            spellDetails = new string[] { "0.4", "StormSpellAnimation"};
             spellInfo.Add("tempestad", spellDetails);
 
-            spellDetails = new string[] { "0" };
+            spellDetails = new string[] { "0" , "PumpkinAnimation"};
             spellInfo.Add("teme", spellDetails);
 
-            spellDetails = new string[] { "0.25" };
+            spellDetails = new string[] { "0.25", "ScreamSpellAnimation" };
             spellInfo.Add("grita", spellDetails);
 
-            spellDetails = new string[] { "0.3" };
+            spellDetails = new string[] { "0.3", "ProtectSpellAnimation"};
             spellInfo.Add("protege", spellDetails);
 
-            spellDetails = new string[] { "-2" };
+            spellDetails = new string[] { "-2", "StrengthenSpellAnimation"};
             spellInfo.Add("fortalece", spellDetails);
 
-            spellDetails = new string[] { "0.6" };
+            spellDetails = new string[] { "0.6", "ThunderSpellAnimation" };
             spellInfo.Add("relampaguea", spellDetails);
 
-            spellDetails = new string[] { "-1" };
+            spellDetails = new string[] { "-1", "HealingSpellAnimation"};
             spellInfo.Add("sana", spellDetails);
 
-            spellDetails = new string[] { "0.6" };
+            spellDetails = new string[] { "0.6" , "DetonateSpellAnimation"};
             spellInfo.Add("detona", spellDetails);
         }
         foreach (KeyValuePair<string, string[]> values in spellInfo) {
@@ -126,14 +128,16 @@ public class CombatSystem : MonoBehaviour
             increasedStrength = false;
 
         }
+        spellAnimation = SpellAnimationsParent.transform.Find("NormalAttackAnimation").gameObject;
+        spellAnimation.SetActive(true);
         // Damage the enemy
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "El ataque fue exitoso";
 
-        yield return new WaitForSeconds(2f);
-
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
         // Check if the enemy is dead
         if (isDead)
         {
@@ -155,20 +159,24 @@ public class CombatSystem : MonoBehaviour
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Te sientes mas fuerte!";
+        spellAnimation = SpellAnimationsParent.transform.Find(spellInfo["sana"][1]).gameObject;
+        spellAnimation.SetActive(true);
 
-        yield return new WaitForSeconds(2f);
-
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
         state = CombatState.ENEMYTURN;
         StartCoroutine(EnemyTurn());
     }
 
-    IEnumerator PlayerSpell()
+    IEnumerator PlayerSpell(string spellName)
     {
         bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El ataque fue exitoso!";
-
-        yield return new WaitForSeconds(2f);
+        spellAnimation = SpellAnimationsParent.transform.Find(spellInfo[spellName][1]).gameObject;
+        spellAnimation.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
         if (isDead)
         {
             // End the battle
@@ -186,7 +194,10 @@ public class CombatSystem : MonoBehaviour
     IEnumerator PlayerSkip()
     {
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "El enemigo pierde su turno";
-        yield return new WaitForSeconds(2f);
+        spellAnimation = SpellAnimationsParent.transform.Find(spellInfo["teme"][1]).gameObject;
+        spellAnimation.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
         PlayerTurn();
     }
     IEnumerator EnemyTurn()
@@ -294,11 +305,14 @@ public class CombatSystem : MonoBehaviour
                 playerUnit.damage = Mathf.FloorToInt((float)(playerUnit.damage * 1.1));
                 dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Tu ataque es más poderoso ahora!";
                 increasedStrength = true;
+                spellAnimation = SpellAnimationsParent.transform.Find(spellInfo["fortelance"][1]).gameObject;
+                spellAnimation.SetActive(true);
                 StartCoroutine(PlayerAttack());
+                spellAnimation.SetActive(false);
             }
             else
             {
-                StartCoroutine(PlayerSpell());
+                StartCoroutine(PlayerSpell(spellName));
 
             }
         }
