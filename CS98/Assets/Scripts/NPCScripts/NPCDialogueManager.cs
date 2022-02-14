@@ -22,8 +22,8 @@ public class NPCDialogueManager : MonoBehaviour
 
     private const string LAST_INPUT_KEY = "input"; // store last input in Entities
 
-    private const string QUEST = "quest";
-    private const string QUEST_STEP = "questStep";
+    private const string QUEST = "quest";  // key in entities
+    private const string QUEST_STEP = "queststep";  // key in entities
     private const double MIN_ACCEPTABLE_SCORE = 0.2;
     private const string DEFAULT_INTENT = "hello";
     private const string ERR_INTENT = "none"; 
@@ -143,7 +143,8 @@ public class NPCDialogueManager : MonoBehaviour
                           if (entityType.Value is JArray) {
                               List<string> entitiesOfType = entityType.Value.ToObject<List<string>>();
                               entitiesOfType.Sort();
-                              Entities[entityType.Name] = string.Join(",", entitiesOfType);
+                              Entities[entityType.Name.ToLower()] = string.Join(",", entitiesOfType);
+                              print("ADDED: " + entityType.Name.ToLower() + ":" + string.Join(",", entitiesOfType));
                           }     
                         }
                     }
@@ -189,15 +190,16 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool OptionMatchesIntent(string optionText, string intent)
     {
+        print(optionText.ToLower() + " being compared to " + intent.ToLower());
         optionText = optionText.Trim();
         if (optionText == null || optionText == "")
         {
             return false;
         }
-
         string optionIntent = optionText.Split(' ')[0];
-        if (optionIntent != intent && optionIntent != EXACT_INTENT)
+        if (optionIntent.ToLower() != intent.ToLower() && optionIntent.ToLower() != EXACT_INTENT.ToLower())
         {
+            print(optionIntent.ToLower() + " =/= " + intent.ToLower());
             return false;
         }
 
@@ -209,8 +211,9 @@ public class NPCDialogueManager : MonoBehaviour
             string entityVal = match.Groups[2].Value;
 
             string dictVal = "";
-            if (!Entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
+            if (!Entities.TryGetValue(entityKey.ToLower(), out dictVal) || dictVal != entityVal)
             {
+                print("No match! On " + entityKey);
                 return false;
             }
         }
@@ -227,6 +230,8 @@ public class NPCDialogueManager : MonoBehaviour
 
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
+
+        print(Entities[QUEST] + ":" + Entities[QUEST_STEP]);
 
         foreach (Connection connection in conversation.Root.Connections)
         {
