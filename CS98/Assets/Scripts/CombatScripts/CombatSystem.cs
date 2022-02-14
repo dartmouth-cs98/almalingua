@@ -39,6 +39,8 @@ public class CombatSystem : MonoBehaviour
     bool increasedStrength = false;
     void OnEnable()
     {
+        rnd = new System.Random();
+
         if (spellInfo.Count == 0)
         {
             string[] spellDetails = new string[] { "0.2" };
@@ -85,29 +87,20 @@ public class CombatSystem : MonoBehaviour
             string NPCName = questDetails[0];
             print("NPC Name: " + NPCName);
             NPC = Enemy.transform.Find(NPCName).gameObject;
-            NPC.GetComponent<HideShowObjects>().Show();
+            NPC.SetActive(true);
             StartCoroutine(SetupCombat());
         }
-    }
-    // Start is called before the first frame update
-    private void Awake()
-    {
-        rnd = new System.Random();
-        print("Spells is " + spells.Count);
-        print(spells);
-
     }
 
     IEnumerator SetupCombat()
     {
-        print("got into the setup combat");
-        print(playerGO);
+
         playerUnit = playerGO.GetComponent<Unit>();
 
 
         enemyUnit = NPC.GetComponent<Unit>();
 
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "A wild " + enemyUnit.unitName + " approaches...";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Un salvaje " + enemyUnit.unitName + " se acrerca...";
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
@@ -120,7 +113,7 @@ public class CombatSystem : MonoBehaviour
 
     void PlayerTurn()
     {
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Choose an action: ";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Escoge una acción: ";
     }
 
 
@@ -128,7 +121,7 @@ public class CombatSystem : MonoBehaviour
     {
         if (increasedStrength)
         {
-            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Attck Damage is increased 10%!";
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El daño de ataque subió por 10%!";
             yield return new WaitForSeconds(1f);
             increasedStrength = false;
 
@@ -137,7 +130,7 @@ public class CombatSystem : MonoBehaviour
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "The attack is successful!";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "El ataque fue exitoso";
 
         yield return new WaitForSeconds(2f);
 
@@ -161,7 +154,7 @@ public class CombatSystem : MonoBehaviour
         playerUnit.Heal(10);
 
         playerHUD.SetHP(playerUnit.currentHP);
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You feel renewed strength!";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Te sientes mas fuerte!";
 
         yield return new WaitForSeconds(2f);
 
@@ -173,7 +166,7 @@ public class CombatSystem : MonoBehaviour
     {
         bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
         enemyHUD.SetHP(enemyUnit.currentHP);
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "The attack is successful!";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El ataque fue exitoso!";
 
         yield return new WaitForSeconds(2f);
         if (isDead)
@@ -192,13 +185,13 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerSkip()
     {
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Enemy Skips his turn";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "El enemigo pierde su turno";
         yield return new WaitForSeconds(2f);
         PlayerTurn();
     }
     IEnumerator EnemyTurn()
     {
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = enemyUnit.unitName + " attacks!";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El " + enemyUnit.unitName + " te ataca!";
 
         yield return new WaitForSeconds(1f);
 
@@ -225,17 +218,17 @@ public class CombatSystem : MonoBehaviour
     {
         if (state == CombatState.WON)
         {
-            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You won the battle!";
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Ganaste la batalla!";
             PlayerPrefs.SetInt("QuestStep", PlayerPrefs.GetInt("QuestStep") + 1);
-            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[3]);
             questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
             print("NPC being destroyed: " + NPC);
             NPC.GetComponent<HideShowObjects>().Hide();
         }
         else if (state == CombatState.LOST)
         {
-            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "You were defeated! Try again!";
-            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[2]);
+            dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Fuiste derrotado! ¡Volver a intentar!";
+            SceneLoader.GetComponent<SceneLoader>().LoadScene(questDetails[3]);
         }
     }
 
@@ -255,7 +248,7 @@ public class CombatSystem : MonoBehaviour
         CombatButtons.SetActive(!CombatButtons.activeSelf);
         SpellButtons.SetActive(!SpellButtons.activeSelf);
 
-        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Your two spells are... ";
+        dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Tus dos hechizos son... ";
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
 
@@ -299,7 +292,7 @@ public class CombatSystem : MonoBehaviour
             else if (playerSpellDamage == -2)
             {
                 playerUnit.damage = Mathf.FloorToInt((float)(playerUnit.damage * 1.1));
-                dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Your attack is more powerful now!";
+                dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Tu ataque es más poderoso ahora!";
                 increasedStrength = true;
                 StartCoroutine(PlayerAttack());
             }
