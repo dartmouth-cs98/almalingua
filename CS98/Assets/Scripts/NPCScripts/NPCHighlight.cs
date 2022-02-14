@@ -52,7 +52,7 @@ public class NPCHighlight : MonoBehaviour
                 clickedSquarePrefab = Resources.Load("Prefabs/NPCs/ClickedSquare") as GameObject;
                 clickedSquare = GameObject.Instantiate(clickedSquarePrefab, gameObject.transform);
                 clickedSquare.transform.position = new Vector3(gameObject.transform.position.x,
-                                                            gameObject.transform.position.y + (gameObject.GetComponent<PolygonCollider2D>().bounds.size.y) / 2 + clickedSquare.GetComponent<SpriteRenderer>().bounds.size.y
+                                                            gameObject.transform.position.y + (gameObject.GetComponent<BoxCollider2D>().bounds.size.y) / 2 + clickedSquare.GetComponent<SpriteRenderer>().bounds.size.y
                                                             , 0);
                 firstTime = false;
             }
