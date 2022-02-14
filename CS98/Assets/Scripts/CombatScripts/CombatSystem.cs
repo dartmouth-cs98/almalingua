@@ -87,7 +87,8 @@ public class CombatSystem : MonoBehaviour
             string NPCName = questDetails[0];
             print("NPC Name: " + NPCName);
             NPC = Enemy.transform.Find(NPCName).gameObject;
-            NPC.SetActive(true);
+            NPC.GetComponent<HideShowObjects>().Show();
+            print(NPC.activeSelf);
             StartCoroutine(SetupCombat());
         }
     }

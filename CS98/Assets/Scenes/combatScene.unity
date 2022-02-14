@@ -306,6 +306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slime_Green
       objectReference: {fileID: 0}
+    - target: {fileID: 6216210134104463103, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6216210134396844522, guid: 1e7f4c96a0d2c4b0b8ecc97e5c693d87, type: 3}
       propertyPath: m_Controller
       value: 
@@ -454,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333656, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: Quest
@@ -462,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333657, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: QuestStep
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2508650781621333658, guid: b98d29f845ed14b0e8b83c47fc4e28b9, type: 3}
       propertyPath: m_RootOrder
@@ -1989,7 +1993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896938478300919213, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
       propertyPath: m_Name
-      value: Slime_Orange
+      value: Slime_Orange1
       objectReference: {fileID: 0}
     - target: {fileID: 4896938478300919214, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
       propertyPath: m_Enabled
@@ -2025,6 +2029,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4896938478300919215, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+    - {fileID: 4896938478300919214, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
+    - {fileID: 4896938478300919212, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a5c1b45d985b343eea108e820d5088b1, type: 3}
 --- !u!4 &1186072222 stripped
 Transform:
