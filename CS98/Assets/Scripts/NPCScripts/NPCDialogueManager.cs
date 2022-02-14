@@ -130,7 +130,6 @@ public class NPCDialogueManager : MonoBehaviour
                     Debug.LogError("HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
-                    Debug.Log("Received: " + webRequest.downloadHandler.text);
                     dynamic luisResponse = JObject.Parse(webRequest.downloadHandler.text);
                     currIntent = luisResponse.prediction.topIntent;
                     float iScore = luisResponse.prediction.intents[currIntent].score;
@@ -146,10 +145,6 @@ public class NPCDialogueManager : MonoBehaviour
                               Entities[entityType.Name] = string.Join(",", entitiesOfType);
                           }     
                         }
-                    }
-                    foreach (KeyValuePair<string, string> kvp in Entities)
-                    {
-                        Debug.Log(kvp.Key + ":" + kvp.Value);
                     }
                     Debug.Log(luisResponse);
                     callback();

@@ -95,14 +95,27 @@ public class QuestUI : MonoBehaviour
     public void SetQuest(int quest)
     {
         PlayerPrefs.SetInt("Quest", quest);
+        Debug.Log("Quest " + GetQuest() + " Step " + GetQuestStep());
     }
 
     public void SetQuestStep(int step)
     {
         PlayerPrefs.SetInt("QuestStep", step);
         EventManager.RaiseOnQuestChange();
-
+        Debug.Log("Quest " + GetQuest() + " Step " + GetQuestStep());
     }
+
+    public static int GetQuest()
+    {
+        return PlayerPrefs.GetInt("Quest");
+    }
+
+    public static int GetQuestStep()
+    {
+        return PlayerPrefs.GetInt("QuestStep");
+    }
+
+
     void UpdateText(string title, string descrip)
     {
         gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
