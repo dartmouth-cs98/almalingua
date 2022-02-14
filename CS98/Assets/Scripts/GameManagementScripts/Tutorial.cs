@@ -23,7 +23,7 @@ public class Tutorial : MonoBehaviour
 
     private static string message3 = "Well done mysterious traveler. What is your name?";
     private static string message4 = "I may know someone who can help you. " +
-        "Try taking this path towards the town.";
+        "Try taking this path to your left through the grass towards the town.";
     private string[] messages = { message1, message2, message3, message4 };
     private int currentMessage = 0;
     private string username = "";
