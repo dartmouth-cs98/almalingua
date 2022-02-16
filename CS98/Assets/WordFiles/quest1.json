@@ -26,10 +26,11 @@
         "encountered": true
     },
     {
-        "w":  "arriba",
-        "ID":     0,
+        "w": "arriba",
+        "ID": 0,
         "definition": "up",
-        "encountered": true
+        "encountered": true,
+        "icon": "<sprite name=\"arriba\">"
     },
     {
         "w":    "sí",
