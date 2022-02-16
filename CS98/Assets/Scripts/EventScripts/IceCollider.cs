@@ -32,7 +32,7 @@ public class IceCollider : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (canMelt)
+        if (canMelt )
         {
             PlayerManager.GetComponent<showProtagonist>().Switch();
             EventManager.RaiseOnProtagonistChange();
