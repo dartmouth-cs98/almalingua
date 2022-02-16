@@ -98,7 +98,7 @@ public class QuestUI : MonoBehaviour
         Debug.Log("Quest " + GetQuest() + " Step " + GetQuestStep());
     }
 
-    public void SetQuestStep(int step)
+    public static void SetQuestStep(int step)
     {
         PlayerPrefs.SetInt("QuestStep", step);
         EventManager.RaiseOnQuestChange();
@@ -123,7 +123,7 @@ public class QuestUI : MonoBehaviour
     }
     public void WitchSpeak()
     {
-        SetQuestStep(3);
+        SetQuestStep(4);
         GameObject.Find("Witch").GetComponent<NPCInteraction>().StartDialogue();
     }
 
