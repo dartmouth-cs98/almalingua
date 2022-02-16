@@ -42,7 +42,7 @@ public class Tutorial : MonoBehaviour
         {
             NextMessage();
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
 
