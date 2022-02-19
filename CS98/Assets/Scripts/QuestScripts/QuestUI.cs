@@ -25,7 +25,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("11", questDetails);
             questDetails = new string[] { "Witch", "Find Wand", "Yo te digo dónde está\n-Ve a la izquierda\n-después hacia arriba\n-y finalmente a la izquierda otra vez.  Está al lado del hospital.",null };
             questNPC.Add("12", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer\n-Keep walking down and enter the Farm\n-He will be to your right",null };
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer\n-Keep walking straight down and enter the Farm\n-He will be to your right",null };
             questNPC.Add("20", questDetails);
             questDetails = new string[] { "Slime_Green", "Fight the Green Slime", "The slime is next to potatos and carrots", "Farm" };
             questNPC.Add("21", questDetails);
