@@ -11,12 +11,16 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
+    float fasterSpeed;
+    float slowerSpeed;
 
 
     // Use this for initialization
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        fasterSpeed = (float)(thrust*3);
+        slowerSpeed = thrust;
     }
 
     void Update()
@@ -37,10 +41,16 @@ public class PlayerMove : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             playerDirection = Vector2.down;
-        }
+        } 
         else
         {
             playerDirection = Vector2.zero;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && playerDirection != Vector2.zero) {
+            thrust = fasterSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift)) {
+            thrust = slowerSpeed;
         }
 
     }

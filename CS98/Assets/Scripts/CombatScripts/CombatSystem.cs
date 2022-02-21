@@ -78,7 +78,9 @@ public class CombatSystem : MonoBehaviour
         foreach (KeyValuePair<string, string[]> values in spellInfo) {
           if (PlayerPrefs.HasKey(values.Key) && PlayerPrefs.GetString(values.Key) == "true")
             spells.Add(values.Key);
+            print("Spell "+ values.Key);
         }
+        
         state = CombatState.START;
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];

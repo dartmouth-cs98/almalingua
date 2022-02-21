@@ -25,7 +25,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("11", questDetails);
             questDetails = new string[] { "Witch", "Find Wand", "Yo te digo dónde está\n-Ve a la izquierda\n-después hacia arriba\n-y finalmente a la izquierda otra vez.  Está al lado del hospital.",null };
             questNPC.Add("12", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer\n-Keep walking down and enter the Farm\n-He will be to your right",null };
+            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer\n-Keep walking straight down and enter the Farm\n-He will be to your right",null };
             questNPC.Add("20", questDetails);
             questDetails = new string[] { "Slime_Green", "Fight the Green Slime", "The slime is next to potatos and carrots", "Farm" };
             questNPC.Add("21", questDetails);
@@ -47,6 +47,8 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("31", questDetails);
             questDetails = new string[] { "Child", "Find children", "Uno está por el río\n-el otro al lado del bosque",null };
             questNPC.Add("32", questDetails);
+            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"forest2"};
+            questNPC.Add("33", questDetails);
             questDetails = new string[] { "Teacher", "Talk to Teacher", "" ,null};
             questNPC.Add("34", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" ,null};
@@ -98,7 +100,7 @@ public class QuestUI : MonoBehaviour
         Debug.Log("Quest " + GetQuest() + " Step " + GetQuestStep());
     }
 
-    public void SetQuestStep(int step)
+    public static void SetQuestStep(int step)
     {
         PlayerPrefs.SetInt("QuestStep", step);
         EventManager.RaiseOnQuestChange();
@@ -123,7 +125,7 @@ public class QuestUI : MonoBehaviour
     }
     public void WitchSpeak()
     {
-        SetQuestStep(3);
+        SetQuestStep(4);
         GameObject.Find("Witch").GetComponent<NPCInteraction>().StartDialogue();
     }
 
@@ -145,6 +147,7 @@ public class QuestUI : MonoBehaviour
 
     public void AddSpell(string newSpell)
     {
-        PlayerPrefs.SetString(newSpell, "true");
+        if (!PlayerPrefs.HasKey(newSpell)) 
+            PlayerPrefs.SetString(newSpell, "true");
     }
 }
