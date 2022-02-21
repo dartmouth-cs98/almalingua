@@ -1,0 +1,148 @@
+{"wlist": [
+    {
+        "w":    "izquierda",
+        "ID":   0,
+        "definition": "la, left",
+        "encountered": true,
+        "icon": "<sprite name=\"izquierda\">"
+        },
+    {
+        "w":    "derecha",
+        "ID":   0,
+        "definition": "la, right",
+        "encountered": true,
+        "icon": "<sprite name=\"derecha\">"
+    },
+    {
+        "w":  "hospital",
+        "ID":     0,
+        "definition": "el, hospital",
+        "encountered": false
+    },
+    {
+        "w":  "hacia",
+        "ID":     0,
+        "definition": "towards",
+        "encountered": true
+    },
+    {
+        "w":  "arriba",
+        "ID":     0,
+        "definition": "up",
+        "encountered": true
+    },
+    {
+        "w":    "sí",
+        "ID":   0,
+        "definition": "yes",
+        "encountered": true
+    },
+    {
+        "w":    "no",
+        "ID":   0,
+        "definition": "no",
+        "encountered": true
+    },
+    {
+        "w":    "manzana",
+        "ID":   0,
+        "definition": "la, apple",
+        "encountered": false
+    },
+    {
+        "w":    "naranja",
+        "ID":   0,
+        "definition": "la, orange",
+        "encountered": false
+    },
+    {
+        "w":    "perro",
+        "ID":   0,
+        "definition": "el, dog",
+        "encountered": false
+    },
+    {
+        "w":    "a",
+        "ID":   0,
+        "definition": "to",
+        "encountered": false
+    },
+    {
+        "w":    "necesitar",
+        "ID":   0,
+        "definition": "to need",
+        "encountered": false
+    },
+    {
+        "w":    "querer",
+        "ID":   0,
+        "definition": "to want",
+        "encountered": false
+    },
+    {
+        "w":    "decir",
+        "ID":   0,
+        "definition": "to need",
+        "encountered": false
+    },
+    {
+        "w":    "algo",
+        "ID":   0,
+        "definition": "something",
+        "encountered": false
+    },
+    {
+        "w":    "dónde",
+        "ID":   0,
+        "definition": "where",
+        "encountered": false
+    },
+    {
+        "w":    "yo",
+        "ID":   0,
+        "definition": "I",
+        "encountered": false
+    },
+    {
+        "w":    "después",
+        "ID":   0,
+        "definition": "after",
+        "encountered": false
+    },
+    {
+        "w":    "vez",
+        "ID":   0,
+        "definition": "time",
+        "encountered": false
+    },
+    {
+        "w":    "lado",
+        "ID":   0,
+        "definition": "el, side",
+        "encountered": false
+    },
+    {
+        "w":    "de",
+        "ID":   0,
+        "definition": "of",
+        "encountered": false
+    },
+    {
+        "w":    "quemar",
+        "ID":   0,
+        "definition": "to burn",
+        "encountered": false
+    },
+    {
+        "w":    "varita",
+        "ID":   0,
+        "definition": "la, wand",
+        "encountered": false
+    },
+    {
+        "w":    "otro",
+        "ID":   0,
+        "definition": "other, (otra feminine)",
+        "encountered": false
+    }  
+]}

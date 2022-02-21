@@ -1,0 +1,75 @@
+{"wlist": [
+    {
+        "w":    "faltar",
+        "ID":   0,
+        "definition": "to be missing",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":  "hacer falta ",
+        "ID":     0,
+        "definition": "to need",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":  "azúcar",
+        "ID":     0,
+        "definition": "el, sugar",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":  "canela",
+        "ID":     0,
+        "definition": "la, cinnamon",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "leche",
+        "ID":   0,
+        "definition": "la, milk",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "arroz",
+        "ID":   0,
+        "definition": "el, rice",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "génial",
+        "ID":   0,
+        "definition": "el, south",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 2
+    },
+    {
+        "w":    "preparar",
+        "ID":   0,
+        "definition": "to prepare",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 2
+    }
+    {
+        "w":    "arquéologo",
+        "ID":   0,
+        "definition": "el, archeologist",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 2
+    }
+
+]}
