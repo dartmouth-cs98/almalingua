@@ -281,6 +281,7 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void GetNextMessage()
     {
+        print("qs: " + PlayerPrefs.GetInt("QuestStep"));
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
 
