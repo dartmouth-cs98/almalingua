@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: Collider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6562078571341395010, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
+      propertyPath: MiddleObject
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6562078571341395014, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -132,6 +136,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1953361812, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
       propertyPath: Collider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953361812, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}
+      propertyPath: MiddleObject
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6579106556845355927, guid: fdaf366797b084152ac9d1e9f1f0d57b, type: 3}

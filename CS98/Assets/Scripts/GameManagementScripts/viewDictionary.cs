@@ -25,12 +25,6 @@ public class viewDictionary : MonoBehaviour
             /* if dictionary is being shown , then call refresh*/
 
             Dictionary.playerDictionary.RevealWords();
-            PopupButton.GetComponentInChildren<Text>().text = "Close";
-        }
-        else
-        {
-            PopupButton.GetComponentInChildren<Text>().text = "Open";
-
         }
 
 
