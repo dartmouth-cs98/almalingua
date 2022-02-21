@@ -28,8 +28,9 @@ public class BoundaryManager : MonoBehaviour
     void Update()
     {
         Vector3 viewPos = transform.position; //our current gameobject's position
-        viewPos.x = Mathf.Clamp(viewPos.x, worldPos.x - (s.x / 2f), worldPos.x + (s.x / 2f) - objectWidth);
-        viewPos.y = Mathf.Clamp(viewPos.y, worldPos.y - (s.y / 2f) + objectHeight + 0.5f, worldPos.y + (s.y / 2f));
+
+        viewPos.x = Mathf.Clamp(viewPos.x, -(Mathf.Abs(s.x / 2f)) - objectWidth, (Mathf.Abs(s.x / 2f)));
+        viewPos.y = Mathf.Clamp(viewPos.y, -(Mathf.Abs(s.y / 2f)), (Mathf.Abs(s.y / 2f))-objectHeight);
         transform.position = viewPos;
     }
 
