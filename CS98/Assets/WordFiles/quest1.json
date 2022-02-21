@@ -7,8 +7,8 @@
         "icon": "<sprite name=\"izquierda\">"
         },
     {
-        "w":    "derecha",
-        "ID":   0,
+        "w": "derecha",
+        "ID": 0,
         "definition": "la, right",
         "encountered": true,
         "icon": "<sprite name=\"derecha\">"
@@ -26,10 +26,11 @@
         "encountered": true
     },
     {
-        "w":  "arriba",
-        "ID":     0,
+        "w": "arriba",
+        "ID": 0,
         "definition": "up",
-        "encountered": true
+        "encountered": true,
+        "icon": "<sprite name=\"arriba\">"
     },
     {
         "w":    "sí",

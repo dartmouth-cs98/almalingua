@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 641aaffbb17964fe3a112e7786b81b86
@@ -32,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/combatScene.unity
     guid: fb9e57e2981a247498a0f4ffa7d0df62
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: fd4c90d51c3e941928ded44fed9363b2
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 9201b4ebe9d8541c6aa3517fc5b4d72c
   m_configObjects: {}

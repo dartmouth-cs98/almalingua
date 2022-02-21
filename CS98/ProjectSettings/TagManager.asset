@@ -14,7 +14,7 @@ TagManager:
   - Obstacle
   - Water
   - UI
-  - 
+  - Environment
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: WordsTop
+    uniqueID: 3913561905
     locked: 0

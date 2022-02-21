@@ -54,6 +54,10 @@ public class NPCDialogueUI : MonoBehaviour
     }
     public void NPCInteract(string NPCTouched)
     {
+        rootTalking = true;
+        userTalking = false;
+        RespondButton.GetComponent<HideShowObjects>().Show();
+        UpdateQuest();
         NPCTouch = NPCTouched;
         if (NPCTouch != NPCName)
         {
@@ -90,6 +94,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
+
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
@@ -101,8 +106,8 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
+            print("Getting next message!");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
-
         }
         dialogueText = NPC.GetComponent<NPCDialogueManager>().CurrentText;
         if (dialogueText != null)
@@ -110,6 +115,9 @@ public class NPCDialogueUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         }
+
+        print(NPC.GetComponent<NPCDialogueManager>().currIntent);
+        print(NPC.GetComponent<NPCDialogueManager>().CurrentText);
 
         //if we are at our last message, hide the button
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
@@ -142,10 +150,10 @@ public class NPCDialogueUI : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         DialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (string word in sentence.Split(' '))
         {
-            DialogueText.text += letter;
-            yield return null;
+            DialogueText.text += word+ ' ';
+            yield return new WaitForSeconds(0.01f);
         }
 
     }
@@ -168,10 +176,6 @@ public class NPCDialogueUI : MonoBehaviour
         else
         {
             if (userResponse != null)
-            {
-                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), false);
-            }
-            else if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
             }
@@ -198,7 +202,6 @@ public class NPCDialogueUI : MonoBehaviour
     {
         gameObject.GetComponent<HideShowObjects>().Hide();
         RespondButton.GetComponent<HideShowObjects>().Hide();
-        PicturePanelManager.HidePicturePanel();
     }
 }
 
