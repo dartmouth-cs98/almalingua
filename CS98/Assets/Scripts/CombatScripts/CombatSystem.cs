@@ -272,8 +272,8 @@ public class CombatSystem : MonoBehaviour
         spellOne = spells[randIndex];
         spellTwo = spells[nextIndex];
 
-        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = spells[randIndex];
-        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = spells[nextIndex];
+        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[randIndex]+"</u>";
+        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[nextIndex] + "</u>";
 
     }
 
