@@ -19,11 +19,6 @@ public class IceCollider : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-<<<<<<< HEAD
-        if (canMelt )
-        {
-=======
->>>>>>> 96130c9ca206f116bd58dffe1ef9b53d5020aa8c
             PlayerManager.GetComponent<showProtagonist>().Switch();
             EventManager.RaiseOnProtagonistChange();
             gameObject.SetActive(false);

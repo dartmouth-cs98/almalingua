@@ -116,20 +116,23 @@ public class EnemyMove : MonoBehaviour
       	//
 
         direction = new Vector2(horizontal, vertical); //TY: added int to cut it into ints
+        // print("Direction" + direction);
       }
     }
 
     // TY Code: animate based on direction
     void animate(Vector2 playerDirection)
     {
+      // print("Direction x" + direction.x);
+      // print("Direction y" + direction.y);
     	if (direction.x >= 0 && direction.y >= 0){ //1st quadrant
     		direction = new Vector2(1, 1);
-    	} else if (direction.x >= 0 && direction.y < 0){
+    	} else if (direction.x >= 0 && direction.y < 0){ //2nd quadrant
     		direction = new Vector2(1, -1);
-    	} else if (direction.x < 0 && direction.y >= 0){
+    	} else if (direction.x < 0 && direction.y >= 0){ //4th quadrant
     		direction = new Vector2(-1, 1);
     	} else {
-    		direction = new Vector2(-1, -1);
+    		direction = new Vector2(-1, -1); //3rd quadrant
     	}
 
         animator.SetFloat("Horizontal", direction.x);
