@@ -94,6 +94,7 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
+
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
@@ -105,8 +106,8 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
+            print("Getting next message!");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
-
         }
         dialogueText = NPC.GetComponent<NPCDialogueManager>().CurrentText;
         if (dialogueText != null)
@@ -114,6 +115,9 @@ public class NPCDialogueUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         }
+
+        print(NPC.GetComponent<NPCDialogueManager>().currIntent);
+        print(NPC.GetComponent<NPCDialogueManager>().CurrentText);
 
         //if we are at our last message, hide the button
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
@@ -172,10 +176,6 @@ public class NPCDialogueUI : MonoBehaviour
         else
         {
             if (userResponse != null)
-            {
-                NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
-            }
-            else if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
             }
