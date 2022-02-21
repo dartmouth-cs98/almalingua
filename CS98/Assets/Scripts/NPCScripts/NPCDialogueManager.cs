@@ -13,7 +13,7 @@ public class NPCDialogueManager : MonoBehaviour
     public Dictionary<string, string> Entities;
     public string CurrentText;        // text of the current speech node
     private ConversationNode currNode;
-    private string currIntent;
+    public string currIntent;
 
     public NPCConversation MyNPCConversation; // conversation prefab, gets converted to -->
     private Conversation conversation;        // deserialized conversation object
@@ -21,6 +21,7 @@ public class NPCDialogueManager : MonoBehaviour
     private System.Random rnd;
 
     private const string LAST_INPUT_KEY = "input"; // store last input in Entities
+    private const string CONTAINS_KEY = "contains";
 
     private const string QUEST = "quest";
     private const string QUEST_STEP = "questStep";
@@ -29,13 +30,24 @@ public class NPCDialogueManager : MonoBehaviour
     private const string ERR_INTENT = "none"; 
     private const string EXACT_INTENT = "exact";
 
+    private const string LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps";
+
     void Awake()
     {
-        rnd = new System.Random();
+        rnd = new System.Random();      // Save reference to system's random # generator 
         Entities = new Dictionary<string, string>();
         Player = GameObject.Find("PlayerManager/init_Protagonist");
     }
 
+    /******************   setCurrentText  ************************/
+    /* 
+     * Given the text of the given node which we've landed at, 
+     * generate a copy of the text where all words with icons have
+     * icons inserted, and all words with entries have links
+     * embedded.
+     * 
+     * Icons stored as property in our word.JSON files. Icons imported as TextMeshPro assets.
+     */
     private void setCurrentText(string currentText)
     {
         string currentTextWithIcons = "";
@@ -47,10 +59,6 @@ public class NPCDialogueManager : MonoBehaviour
             if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
-                if (icon != null)
-                {
-                    //print(“icon! for word:” + word);
-                }
                 newWord = "<link=\"" + cleanWord + "\"><color=blue>" + newWord + "</color></link>";
             }
             currentTextWithIcons += icon + newWord + ' ';
@@ -79,8 +87,6 @@ public class NPCDialogueManager : MonoBehaviour
         GetNextMessage();
     }
 
-    private const string LUIS_ENDPOINT = "https://westus.api.cognitive.microsoft.com/luis/prediction/v3.0/apps";
-
     /******************   UpdateIntent  ************************/
     /*
      * Used to update the intent. If Luis enabled, turns the 'input'
@@ -92,26 +98,31 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void UpdateIntent(string input, System.Action callback, bool sendToLuis = false)
     {
-        Entities[LAST_INPUT_KEY] = input;            // Save, in case we have a node which is an exact match.
-        if (sendToLuis == false)
-        {
-            currIntent = input;
-            callback();
-        }
-        else
-        {
-            string my_LUIS_APP;
-            string my_LUIS_SUB_KEY;
-            env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
-            env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
+        // We save both the last input, unfiltered, and the input-words as CSV, in Entities
+        // allowing us to later check for specific words, and full exact matches.
+        Entities[LAST_INPUT_KEY] = input;
+        string cleanInput = Regex.Replace(input, "[^0-9a-zA-Z ]+", "");
+        Entities[CONTAINS_KEY] = cleanInput.Replace(' ', ',');
 
-            string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
-            StartCoroutine(GetRequest(uri, callback));
-        }
+        string my_LUIS_APP;
+        string my_LUIS_SUB_KEY;
+        env.TryParseEnvironmentVariable("LUIS_APP", out my_LUIS_APP);
+        env.TryParseEnvironmentVariable("LUIS_SUB_KEY", out my_LUIS_SUB_KEY);
+
+        string uri = $"{LUIS_ENDPOINT}/{my_LUIS_APP}/slots/production/predict?subscription-key={my_LUIS_SUB_KEY}&verbose=true&show-all-intents=true&log=true&query={input}";
+        StartCoroutine(GetRequest(uri, callback));
+
     }
 
-    // COPIED/MODIFIED FROM HERE:
-    // https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
+
+    /************* GetRequest(string uri, System.Action callback) *************/
+    /*
+     * Request template code found here:
+     * https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html
+     *
+     * Returned entities are added to the Entities dictionary as string of comma-seperated values.
+     * Added entities stay in dictionary until LUIS returns another entit(ies) of that type.
+     */
     IEnumerator GetRequest(string uri, System.Action callback)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
@@ -135,13 +146,13 @@ public class NPCDialogueManager : MonoBehaviour
                     float iScore = luisResponse.prediction.intents[currIntent].score;
                     if (iScore < MIN_ACCEPTABLE_SCORE)
                     {
-                        Debug.Log("Score is too low; replacing with error intent");
-                        currIntent = ERR_INTENT;
+                        currIntent = ERR_INTENT; // Score is too low; replace w/ error intent
                     } else {  
+                        // Add each returned entity as a part of our entities dictionaries as a list.
                         foreach (JProperty entityType in luisResponse.prediction.entities) {
                           if (entityType.Value is JArray) {
                               List<string> entitiesOfType = entityType.Value.ToObject<List<string>>();
-                              entitiesOfType.Sort();
+                              entitiesOfType.Sort(); // make alphabetical order!
                               Entities[entityType.Name] = string.Join(",", entitiesOfType);
                           }     
                         }
@@ -165,8 +176,8 @@ public class NPCDialogueManager : MonoBehaviour
 
     /***************** OnLastMessage**************/
     /*
-    Returns true if curr node is our last message in this sequence
-    */
+     * Returns true if curr node is our last message in this sequence
+     */
     public bool OnLastMessage()
     {
         if (currNode.Connections.Count == 0)
@@ -196,17 +207,34 @@ public class NPCDialogueManager : MonoBehaviour
             return false;
         }
 
-        Regex regex = new Regex(@"(\w+)=(\w+)");
-        MatchCollection matches = regex.Matches(optionText);
-        foreach (Match match in matches)
-        {
-            string entityKey = match.Groups[1].Value;
-            string entityVal = match.Groups[2].Value;
+        Regex regex = new Regex(@"(\w+)=([^ ]+)");
+        MatchCollection keyValPairs = regex.Matches(optionText);
 
-            string dictVal = "";
-            if (!Entities.TryGetValue(entityKey, out dictVal) || dictVal != entityVal)
+        // For each entity specified in option node condition text, 
+        // check if they match what's in Entities dict.
+        foreach (Match keyValPair in keyValPairs)
+        {
+            string entityKey = keyValPair.Groups[1].Value;
+            string entityVal = keyValPair.Groups[2].Value;
+            
+            string dictVal;
+            if (!Entities.TryGetValue(entityKey, out dictVal))
             {
                 return false;
+            } 
+            else if (entityKey == CONTAINS_KEY)  
+            {
+                // then dictVal should be CSV of input words, entityVal should be CSV of req. words.
+                if (!FuzzyMatch.CheckContains(entityVal, dictVal, 0.8f)) 
+                {
+                  return false;
+                }
+            } 
+            else 
+            {
+                if (dictVal != entityVal) {
+                  return false;
+                }
             }
         }
         return true;
@@ -219,7 +247,6 @@ public class NPCDialogueManager : MonoBehaviour
      */
     private bool checkQuest()
     {
-
         Entities[QUEST] = PlayerPrefs.GetInt("Quest").ToString();
         Entities[QUEST_STEP] = PlayerPrefs.GetInt("QuestStep").ToString();
 
@@ -247,13 +274,14 @@ public class NPCDialogueManager : MonoBehaviour
      * If current node's children are SpeechNode(s), advance to (last) SpeechNode
      * whose condition resolves to true.
      *
-     * Returns null. Use CurrentText to access current text. 
+     * Returns null. Use the public property "CurrentText" to access current text. 
      *
      * Assumes only 1 error intent.
      * 
      */
     public void GetNextMessage()
     {
+        print("qs: " + PlayerPrefs.GetInt("QuestStep"));
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
 
@@ -268,9 +296,12 @@ public class NPCDialogueManager : MonoBehaviour
                 // Option only valid if its text matches currIntent.
                 if (OptionMatchesIntent(option.Text, currIntent))
                 {
+                    print("Match: " + option.Text + ", " + currIntent);
                     matches.Add(option);
-                } else if (option.Text == ERR_INTENT) {
+                } else if (option.Text.ToLower() == ERR_INTENT) {
                   fallbackNode = option;
+                } else {
+                  print("No match, not fallback: " + option.Text + " " + currIntent);
                 }
             }
             else
