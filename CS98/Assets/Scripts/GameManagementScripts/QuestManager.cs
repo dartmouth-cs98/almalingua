@@ -36,6 +36,7 @@ public class QuestManager : MonoBehaviour
 
     public void SetQuestStep(int step)
     {
+        print(GetQuest() + " " + GetQuestStep());
         PlayerPrefs.SetInt("QuestStep", step);
     }
 
