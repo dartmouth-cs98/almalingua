@@ -14,9 +14,10 @@ public class ChildQuest : MonoBehaviour
     {
         string currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
         if (currentQuest == "32") {
+            QuestUI.GetComponent<QuestUI>().ChildPoints(gameObject.GetInstanceID());
+
              Panel.GetComponent<HideShowObjects>().Show();
             Panel.GetComponent<NPCDialogueUI>().DisplayNextSentence();
-            QuestUI.GetComponent<QuestUI>().ChildPoints(gameObject.GetInstanceID());
             ConvoOn = true;
             }
        

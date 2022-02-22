@@ -7,8 +7,9 @@ public class QuestUI : MonoBehaviour
     public static Dictionary<string, string[]> questNPC = new Dictionary<string, string[]>(); //our dictionary mapping questIDS to the NPC associated with it
     string questTask;
     string currentQuest;
-    HashSet<int> Children = new HashSet<int>();
+    private static HashSet<int> Children = new HashSet<int>();
     GameObject Witch;
+    public GameObject SceneLoader;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -47,7 +48,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("31", questDetails);
             questDetails = new string[] { "Child", "Find children", "Uno está por el río\n-el otro al lado del bosque",null };
             questNPC.Add("32", questDetails);
-            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"forest2"};
+            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"Forest"};
             questNPC.Add("33", questDetails);
             questDetails = new string[] { "Teacher", "Talk to Teacher", "" ,null};
             questNPC.Add("34", questDetails);
@@ -139,10 +140,14 @@ public class QuestUI : MonoBehaviour
     public void ChildPoints(int id)
     {
         Children.Add(id);
-        // if (Children.Count == 2)
-        // {
-        //     SetQuestStep(3);
-        // }
+        
+    }
+
+    public void SpawnCombatSystem() {
+        if (Children.Count == 2) {
+            SetQuestStep(3);
+            SceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
+        }
     }
 
     public void AddSpell(string newSpell)
