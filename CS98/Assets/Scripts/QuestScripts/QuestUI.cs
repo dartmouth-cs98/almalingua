@@ -139,10 +139,10 @@ public class QuestUI : MonoBehaviour
     public void ChildPoints(int id)
     {
         Children.Add(id);
-        if (Children.Count == 2)
-        {
-            SetQuestStep(3);
-        }
+        // if (Children.Count == 2)
+        // {
+        //     SetQuestStep(3);
+        // }
     }
 
     public void AddSpell(string newSpell)
