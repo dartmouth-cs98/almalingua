@@ -113,13 +113,16 @@ GameObject:
   m_Component:
   - component: {fileID: 643084567392739169}
   - component: {fileID: 643084567392739168}
+  - component: {fileID: 891705410837682379}
+  - component: {fileID: 5436275319186561439}
+  - component: {fileID: 7905792905383799856}
   m_Layer: 0
   m_Name: sheep animation copy_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &643084567392739169
 Transform:
   m_ObjectHideFlags: 0
@@ -185,3 +188,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &891705410837682379
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643084567392739170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.0625}
+    newSize: {x: 1.0625, y: 1.0625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0625, y: 1.0625}
+  m_EdgeRadius: 0
+--- !u!114 &5436275319186561439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643084567392739170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f1bf6be9ca042f6bc0b23440a116f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentText: 
+  currIntent: 
+  MyNPCConversation: {fileID: 5681224249838584019, guid: 072ec55ac72134e2a84e927cf6af8f7a, type: 3}
+--- !u!114 &7905792905383799856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643084567392739170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d9aad4f5eac43e0a24b67c711a8431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 0}
+  QuestUI: {fileID: 2431676894048351339, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
