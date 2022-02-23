@@ -18,27 +18,27 @@ public class QuestUI : MonoBehaviour
         PlayerPrefs.SetInt("QuestLength", questLength);
         if (questNPC.Count == 0)
         {
-            string[] questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch" , null};
+            string[] questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja" , null};
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Witch Talk", "Talk to the witch",null };
+            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja",null };
             questNPC.Add("10", questDetails);
-            questDetails = new string[] { "Cesar", "Reindeer", "Go Talk to Reindeer",null };
+            questDetails = new string[] { "Cesar", "Preguntar por direcciones", "Hable con el reno",null };
             questNPC.Add("11", questDetails);
-            questDetails = new string[] { "Witch", "Find Wand", "Yo te digo dónde está\n-Ve a la izquierda\n-después hacia arriba\n-y finalmente a la izquierda otra vez.  Está al lado del hospital.",null };
+            questDetails = new string[] { "Witch", "Encuentra tu varita.", "Ve a la izquierda, arriba, luego a la izquierda.  Está al lado del hospital.",null };
             questNPC.Add("12", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer\n-Keep walking straight down and enter the Farm\n-He will be to your right",null };
+            questDetails = new string[] { "Farmer", "Hable con el granjero", "La granja está debajo del pueblo. El granjero está en medio de la granja.",null };
             questNPC.Add("20", questDetails);
-            questDetails = new string[] { "Slime_Green", "Fight the Green Slime", "The slime is next to potatos and carrots", "Farm" };
+            questDetails = new string[] { "Slime_Green", "Luche contra el limo verde", "El limo está al lado de las papas y las zanahorias.", "Farm" };
             questNPC.Add("21", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer about next quest" , null};
+            questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación." , null};
             questNPC.Add("22", questDetails);
-            questDetails = new string[] { "Slime_Orange", "Fight the Orange Slime", "Slime is next to corn and wheat" ,"Farm" };
+            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "Slime is next to corn and wheat" ,"Farm" };
             questNPC.Add("23", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer about next quest", null};
+            questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.", null};
             questNPC.Add("24", questDetails);
-            questDetails = new string[] { "Slime_Black", "Fight the Black Slime","Slime is next to avocados and oranges", "Farm" };
+            questDetails = new string[] { "Slime_Black", "Fight the Black Slime","El limo está al lado de los aguacates y las naranjas.", "Farm" };
             questNPC.Add("25", questDetails);
-            questDetails = new string[] { "Farmer", "Talk to Farmer", "Talk to Farmer",null };
+            questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.",null };
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps",null };
             questNPC.Add("27", questDetails);
@@ -121,8 +121,8 @@ public class QuestUI : MonoBehaviour
 
     void UpdateText(string title, string descrip)
     {
-        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
-        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
+        gameObject.transform.Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
+        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
     }
     public void WitchSpeak()
     {

@@ -329,7 +329,7 @@ public class NPCDialogueManager : MonoBehaviour
             else
             {
                 // We will return the text at current node.
-                setCurrentText(currNode.Text);
+                CurrentText = IconsInText.GetTextWithIcons(currNode.Text);
                 //invoking the event associating with the node
                 SpeechNode x = (SpeechNode)currNode;
                 x.Event.Invoke();
