@@ -33,7 +33,6 @@ public class viewDictionary : MonoBehaviour
     public void ShowButton(){
         showDict = true;
         GameObject.Find("DictObj").transform.GetChild(0).gameObject.SetActive(true);
-        PopupButton.GetComponentInChildren<Text>().text = "Open";
     }
 
 
