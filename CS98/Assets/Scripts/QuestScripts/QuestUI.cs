@@ -121,8 +121,8 @@ public class QuestUI : MonoBehaviour
 
     void UpdateText(string title, string descrip)
     {
-        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
-        gameObject.transform.Find("ScrollArea").Find("Content").Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
+        gameObject.transform.Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
+        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
     }
     public void WitchSpeak()
     {
