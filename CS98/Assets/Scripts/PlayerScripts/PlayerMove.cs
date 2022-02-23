@@ -16,7 +16,8 @@ public class PlayerMove : MonoBehaviour
     float slowerSpeed;
     Vector2[] playerPositions = new Vector2[] {new Vector2((float)0.5, (float)1.2), 
     new Vector2((float)-9.3, (float)-20), new Vector2((float)48, (float)-1.4), 
-    new Vector2((float)-3.5, (float)16.2), new Vector2((float)-43.7, (float)-3.6), new Vector2((float) -9.5, (float)18.2)};
+    new Vector2((float)-3.5, (float)16.2), new Vector2((float)-58.5, (float)-2.97), new Vector2((float) -9.5, (float)18.2),
+    new Vector2((float)-5.04, (float)-38.83)};
 
     // Use this for initialization
     void Start()
@@ -49,8 +50,11 @@ public class PlayerMove : MonoBehaviour
             } else if (currentScene == "Forest") {
                 if (prevScene == "Village") {
                     transform.position = playerPositions[4];
-
                 }
+            } else if (currentScene == "Ruins") {
+                if (prevScene == "Village") {
+                    transform.position = playerPositions[6];
+                } 
             }
         }
     }
