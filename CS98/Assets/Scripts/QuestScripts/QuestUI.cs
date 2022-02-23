@@ -62,8 +62,24 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("42", questDetails);
             questDetails = new string[] { "Archeologist", "Go Talk to Archeologist", "Go talk to archeologist for next quest" ,null};
             questNPC.Add("50", questDetails);
-            questDetails = new string[] { "Archeologist", "List Objects", "List the objects that you found in the quest",null };
+            questDetails = new string[] { "", "Find the Pan", "Walk around and find the pan\n-It is near the top right" ,null};
+            questNPC.Add("51", questDetails);
+            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
             questNPC.Add("52", questDetails);
+
+            questDetails = new string[] { "", "Find the Bowl", "Walk around and find the bowl\n-It is near the middle left" ,null};
+            questNPC.Add("53", questDetails);
+            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
+            questNPC.Add("54", questDetails);
+
+            questDetails = new string[] { "", "Find the Scissors", "Walk around and find the scissors\n-It is near the middle right" ,null};
+            questNPC.Add("55", questDetails);
+            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
+            questNPC.Add("56", questDetails);
+
+            questDetails = new string[] { "Archeologist", "List Objects", "Go back to the archeologist in the village\n-List the objects that you found in the quest",null };
+            questNPC.Add("57", questDetails);
+
             questDetails = new string[] { "Mayor", "Talk to Mayor", "Talk to the mayor about the next quest",null };
             questNPC.Add("60", questDetails);
 
