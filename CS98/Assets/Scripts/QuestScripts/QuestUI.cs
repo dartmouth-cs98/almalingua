@@ -82,6 +82,23 @@ public class QuestUI : MonoBehaviour
 
             questDetails = new string[] { "Mayor", "Talk to Mayor", "Talk to the mayor about the next quest",null };
             questNPC.Add("60", questDetails);
+            questDetails = new string[] { "Doctor", "Talk to Doctor", "Talk to the Doctor to ask about potion",null };
+            questNPC.Add("61", questDetails);
+
+            questDetails = new string[] { "", "Find flowers", "Find flowers in the forest",null };
+            questNPC.Add("62", questDetails);
+            questDetails = new string[] { "Devil", "Fight Devil", "Fight devils","Forest" };
+            questNPC.Add("63", questDetails);
+
+            questDetails = new string[] { "Doctor", "Talk to Doctor", "Give doctor the flowers",null };
+            questNPC.Add("64", questDetails);
+            questDetails = new string[] { "Witch", "Talk to the witch", "Talk to the witch for help",null };
+            questNPC.Add("65", questDetails);
+
+            questDetails = new string[] { "Farmer", "Talk to the Farmer", "Talk to the farmer to get apple",null };
+            questNPC.Add("66", questDetails);
+            questDetails = new string[] { "Mayor", "Talk to the Mayor", "Go back to mayor to return items",null };
+            questNPC.Add("67", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;
