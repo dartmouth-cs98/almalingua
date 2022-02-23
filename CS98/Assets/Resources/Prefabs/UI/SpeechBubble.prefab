@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 2546981431078921864}
   - component: {fileID: 2546981431078921865}
   - component: {fileID: 2546981431078921866}
+  - component: {fileID: 1688430333}
   m_Layer: 5
   m_Name: UserInput
   m_TagString: Untagged
@@ -211,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23149909, y: 0.15264732}
   m_AnchorMax: {x: 0.9662603, y: 0.7914316}
-  m_AnchoredPosition: {x: 19.059937, y: -8.8497}
+  m_AnchoredPosition: {x: -3.1592407, y: 1.9956055}
   m_SizeDelta: {x: 6.3175, y: 16.115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2546981431078921864
@@ -306,8 +307,8 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NPCDialogueManager, Assembly-CSharp
+      - m_Target: {fileID: 4971393465717085824}
+        m_TargetAssemblyTypeName: NPCDialogueUI, Assembly-CSharp
         m_MethodName: UserResponse
         m_Mode: 0
         m_Arguments:
@@ -329,6 +330,18 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_ShouldActivateOnSelect: 1
+--- !u!114 &1688430333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546981431078921908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2546981431107690050
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,14 +406,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9254902, g: 0.9098039, b: 0.5529412, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 85d876cbb86c749abad3ff1564a2c1d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -472,7 +485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23149909, y: 0.15264732}
   m_AnchorMax: {x: 0.9662603, y: 0.7577843}
-  m_AnchoredPosition: {x: -3.5340567, y: 4.5511603}
+  m_AnchoredPosition: {x: -3.5339966, y: 4.5511627}
   m_SizeDelta: {x: 6.640217, y: 3.0597668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5798854362082677518
@@ -635,7 +648,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.052180737, y: 0.15264732}
   m_AnchorMax: {x: 0.21769787, y: 0.7914316}
-  m_AnchoredPosition: {x: 3.4854736, y: -1.4843063}
+  m_AnchoredPosition: {x: 3.4853516, y: -0.26919556}
   m_SizeDelta: {x: -32.194572, y: -3.1001873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8114561307773892871
@@ -745,11 +758,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -68.89868
+      value: -17.418
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30.73005
+      value: 44.3035
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -781,11 +794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5479126
+      value: -57.199
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -853.2553
+      value: -811
       objectReference: {fileID: 0}
     - target: {fileID: 6478237103383150963, guid: 744b9224608ff4928907a26899a3cd1a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
