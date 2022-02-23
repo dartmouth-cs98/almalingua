@@ -7,8 +7,9 @@ public class QuestUI : MonoBehaviour
     public static Dictionary<string, string[]> questNPC = new Dictionary<string, string[]>(); //our dictionary mapping questIDS to the NPC associated with it
     string questTask;
     string currentQuest;
-    HashSet<int> Children = new HashSet<int>();
+    private static HashSet<int> Children = new HashSet<int>();
     GameObject Witch;
+    public GameObject SceneLoader;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -47,13 +48,13 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("31", questDetails);
             questDetails = new string[] { "Child", "Find children", "Uno está por el río\n-el otro al lado del bosque",null };
             questNPC.Add("32", questDetails);
-            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"forest2"};
+            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"Forest"};
             questNPC.Add("33", questDetails);
-            questDetails = new string[] { "Teacher", "Talk to Teacher", "" ,null};
+            questDetails = new string[] { "Teacher", "Talk to Teacher", "Talk to the Teacher again" ,null};
             questNPC.Add("34", questDetails);
             questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" ,null};
             questNPC.Add("35", questDetails);
-            questDetails = new string[] { "Chef", "Talk to Chef", "Help the Chef",null };
+            questDetails = new string[] { "Chef", "Talk to Chef", "Help the Chef\n-Go Right back to the village",null };
             questNPC.Add("40", questDetails);
             questDetails = new string[] { "Farmer", "Ask for Ingredients", "Talk to Farmer\n-pedirle arroz, leche, azúcar y canela" ,null};
             questNPC.Add("41", questDetails);
@@ -139,9 +140,13 @@ public class QuestUI : MonoBehaviour
     public void ChildPoints(int id)
     {
         Children.Add(id);
-        if (Children.Count == 2)
-        {
+        
+    }
+
+    public void SpawnCombatSystem() {
+        if (Children.Count == 2) {
             SetQuestStep(3);
+            SceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
         }
     }
 
