@@ -73,9 +73,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7564046453656301268, guid: d8234e4edef0740c68822cde68207d27, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
+    - target: {fileID: 158022673260671119, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 273425839983486679, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: Dictionary
+      value: 
+      objectReference: {fileID: 7089191863029644945}
+    - target: {fileID: 2347454335600217177, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2347454335600217178, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787746131846808567, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787746131846808567, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787746131846808567, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131455257155830939, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: RespondButton
+      value: 
+      objectReference: {fileID: 5107265521248515891}
+    - target: {fileID: 6510688226712241896, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7564046453656301269, guid: d8234e4edef0740c68822cde68207d27, type: 3}
       propertyPath: m_Pivot.x
@@ -163,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7564046453656301273, guid: d8234e4edef0740c68822cde68207d27, type: 3}
       propertyPath: m_Name
-      value: MainUI
+      value: UI with Joystick
       objectReference: {fileID: 0}
     - target: {fileID: 7564046453656301275, guid: d8234e4edef0740c68822cde68207d27, type: 3}
       propertyPath: m_MatchWidthOrHeight
@@ -182,5 +214,15 @@ PrefabInstance:
 --- !u!224 &623839347381131792 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7564046453656301269, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+  m_PrefabInstance: {fileID: 6940247929972913349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5107265521248515891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2787746131846808566, guid: d8234e4edef0740c68822cde68207d27, type: 3}
+  m_PrefabInstance: {fileID: 6940247929972913349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7089191863029644945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 158022673682942548, guid: d8234e4edef0740c68822cde68207d27, type: 3}
   m_PrefabInstance: {fileID: 6940247929972913349}
   m_PrefabAsset: {fileID: 0}

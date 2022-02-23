@@ -249,7 +249,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+        m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
+        m_MethodName: SetQuestStep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 45
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -287,7 +299,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+        m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
+        m_MethodName: SetQuestStep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 48
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -375,17 +399,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 51
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":644.5,\"yPos\":-109},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=6 questStep=1\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1443.5,\"yPos\":-108},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hello\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":641.5,\"yPos\":248},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":296,\"yPos\":156},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"describe
-    contains=poci\xF3n\\n\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":959,\"yPos\":-435},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
-    quest=6 questStep=2\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":513.5,\"yPos\":157},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"describe
-    contains=pocion\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":946.5,\"yPos\":-272},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[root]\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642.5,\"yPos\":27},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFC\xF3mo
-    te puedo ayudar? \",\"parentUIDs\":[16,13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":793.5,\"yPos\":140},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
-    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1192.5,\"yPos\":32},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola
-    mi amigo. Soy el doctor. Ven a m\xED si tienes alguna dolencia.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1419.5,\"yPos\":34},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
-    clima es tan agradable en este momento. Espero que no llueva.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":437,\"yPos\":345},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED,
-    pero primero tienes que traerme unas flores del bosque para terminar la poci\xF3n.\",\"parentUIDs\":[44,49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":965,\"yPos\":-584},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    Ahora, aqu\xED est\xE1 la poci\xF3n terminada.\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1658.5,\"yPos\":40},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-133,\"yPos\":600},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=6 questStep=1\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":666,\"yPos\":601},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"hello\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-136,\"yPos\":957},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"none\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-481.5,\"yPos\":865},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"describe
+    contains=poci\xF3n\\n\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.5,\"yPos\":274},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"quest
+    quest=6 questStep=4\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-264,\"yPos\":866},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"describe
+    contains=pocion\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":169,\"yPos\":437},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"[root]\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-135,\"yPos\":736},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFC\xF3mo
+    te puedo ayudar? \",\"parentUIDs\":[16,13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":16,\"yPos\":849},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lo
+    siento, no entend\xED. Rep\xEDtelo.\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":415,\"yPos\":741},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola
+    mi amigo. Soy el doctor. Ven a m\xED si tienes alguna dolencia.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642,\"yPos\":743},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"El
+    clima es tan agradable en este momento. Espero que no llueva.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-341.5,\"yPos\":1055},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"S\xED,
+    pero primero tienes que traerme unas flores del bosque para terminar la poci\xF3n.\",\"parentUIDs\":[44,49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.5,\"yPos\":125},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    Ahora, aqu\xED est\xE1 la poci\xF3n terminada.\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":881,\"yPos\":749},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
     dif\xEDcil ser m\xE9dico en esta ciudad porque mis habilidades no son rival para
     la magia.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -412,4 +436,16 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9061742999404807721, guid: 3aee81875bd3d4cf28c98beb90ef1363, type: 3}
+        m_TargetAssemblyTypeName: QuestUI, Assembly-CSharp
+        m_MethodName: SetQuestStep
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -142,7 +142,9 @@ public class EnemyMove : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+      print(other.gameObject.name);
       if (other.gameObject.tag == PLAYER_TAG){
+        print("right tag");
         sceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
       }
     }
