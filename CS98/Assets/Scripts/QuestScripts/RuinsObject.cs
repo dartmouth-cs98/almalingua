@@ -8,7 +8,8 @@ public class RuinsObject : MonoBehaviour
     private GameObject enemyPrefab;           //the prefab square that shows up above a npc
     private GameObject enemy; 
     private void OnCollisionEnter2D(Collision2D other) {
-        QuestUI.SetQuestStep(2);
+        int currentQuest = PlayerPrefs.GetInt("QuestStep");
+        QuestUI.SetQuestStep(currentQuest+1);
         enemy = GameObject.Find("Devil Variant");
         enemy.transform.position = new Vector3(gameObject.transform.position.x,
                                                             gameObject.transform.position.y + (gameObject.GetComponent<BoxCollider2D>().bounds.size.y) / 2 + enemy.transform.GetChild(0).GetComponent<SpriteRenderer>().bounds.size.y
