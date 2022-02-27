@@ -172,7 +172,7 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerSpell(string spellName)
     {
-        bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
+        bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage));
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El ataque fue exitoso!";
         spellAnimation = SpellAnimationsParent.transform.Find(spellInfo[spellName][1]).gameObject;
@@ -293,7 +293,7 @@ public class CombatSystem : MonoBehaviour
         SpellButtons.SetActive(!SpellButtons.activeSelf);
         if (spellInfo.TryGetValue(spellName, out spellDetails))
         {
-            playerSpellDamage = float.Parse(spellDetails[0]);
+            playerSpellDamage = float.Parse(spellDetails[0]) *enemyUnit.currentHP;
             if (playerSpellDamage == 0)
             {
                 StartCoroutine(PlayerSkip());
