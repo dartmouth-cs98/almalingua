@@ -159,7 +159,6 @@ public class QuestUI : MonoBehaviour
     }
     public void WitchSpeak()
     {
-        SetQuestStep(4);
         GameObject.Find("Witch").GetComponent<NPCInteraction>().StartDialogue();
     }
 
