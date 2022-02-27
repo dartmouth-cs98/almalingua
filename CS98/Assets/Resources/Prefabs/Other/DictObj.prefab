@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dictUI: {fileID: 4245498057109345811}
   PopupButton: {fileID: 4245498057129992930}
-  showDict: 0
+  showDict: 1
 --- !u!1 &4245498057709791856
 GameObject:
   m_ObjectHideFlags: 0
