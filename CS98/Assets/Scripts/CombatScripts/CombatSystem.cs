@@ -204,9 +204,12 @@ public class CombatSystem : MonoBehaviour
     }
     IEnumerator EnemyTurn()
     {
+        
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El " + enemyUnit.unitName + " te ataca!";
-
-        yield return new WaitForSeconds(1f);
+        spellAnimation = SpellAnimationsParent.transform.Find("MonsterAttackAnimation").gameObject;
+        spellAnimation.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        spellAnimation.SetActive(false);
 
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
 
