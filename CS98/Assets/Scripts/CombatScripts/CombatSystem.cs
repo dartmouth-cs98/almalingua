@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 
 public enum CombatState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
+[RequireComponent(typeof(Image))]
 public class CombatSystem : MonoBehaviour
 {
     public GameObject playerGO;
@@ -23,6 +24,7 @@ public class CombatSystem : MonoBehaviour
     public GameObject SpellButtons;
 
     public GameObject SceneLoader;
+    public GameObject Flashing;
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
@@ -39,10 +41,10 @@ public class CombatSystem : MonoBehaviour
     float playerSpellDamage;
     bool increasedStrength = false;
     GameObject spellAnimation;
+    
     void OnEnable()
     {
         rnd = new System.Random();
-
         if (spellInfo.Count == 0)
         {
             string[] spellDetails = new string[] { "0.2", "FireSpellAnimation" };
@@ -205,8 +207,11 @@ public class CombatSystem : MonoBehaviour
     {
         
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El " + enemyUnit.unitName + " te ataca!";
+        yield return new WaitForSeconds(1f);
+        Flashing.GetComponent<Flashing>().StartFlash(0.5f, 0.5f, Color.red);
         spellAnimation = SpellAnimationsParent.transform.Find("MonsterAttackAnimation").gameObject;
         spellAnimation.SetActive(true);
+
         yield return new WaitForSeconds(3f);
         spellAnimation.SetActive(false);
 
