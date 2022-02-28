@@ -48,31 +48,31 @@ public class CombatSystem : MonoBehaviour
             string[] spellDetails = new string[] { "0.2", "FireSpellAnimation" };
             spellInfo.Add("quema", spellDetails);
 
-            spellDetails = new string[] { "0.2", "IceSpellAnimation" };
+            spellDetails = new string[] { "0.3", "IceSpellAnimation" };
             spellInfo.Add("congela", spellDetails);
 
-            spellDetails = new string[] { "0.4", "StormSpellAnimation"};
+            spellDetails = new string[] { "0.5", "StormSpellAnimation"};
             spellInfo.Add("tempestad", spellDetails);
 
             spellDetails = new string[] { "0" , "PumpkinAnimation"};
             spellInfo.Add("teme", spellDetails);
 
-            spellDetails = new string[] { "0.25", "ScreamSpellAnimation" };
+            spellDetails = new string[] { "0.35", "ScreamSpellAnimation" };
             spellInfo.Add("grita", spellDetails);
 
-            spellDetails = new string[] { "0.3", "ProtectSpellAnimation"};
+            spellDetails = new string[] { "0.4", "ProtectSpellAnimation"};
             spellInfo.Add("protege", spellDetails);
 
             spellDetails = new string[] { "-2", "StrengthenSpellAnimation"};
             spellInfo.Add("fortalece", spellDetails);
 
-            spellDetails = new string[] { "0.6", "ThunderSpellAnimation" };
+            spellDetails = new string[] { "0.7", "ThunderSpellAnimation" };
             spellInfo.Add("relampaguea", spellDetails);
 
             spellDetails = new string[] { "-1", "HealingSpellAnimation"};
             spellInfo.Add("sana", spellDetails);
 
-            spellDetails = new string[] { "0.6" , "DetonateSpellAnimation"};
+            spellDetails = new string[] { "0.7" , "DetonateSpellAnimation"};
             spellInfo.Add("detona", spellDetails);
         }
         foreach (KeyValuePair<string, string[]> values in spellInfo) {
@@ -172,7 +172,7 @@ public class CombatSystem : MonoBehaviour
 
     IEnumerator PlayerSpell(string spellName)
     {
-        bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage * enemyUnit.currentHP));
+        bool isDead = enemyUnit.TakeDamage(Mathf.FloorToInt(playerSpellDamage));
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡El ataque fue exitoso!";
         spellAnimation = SpellAnimationsParent.transform.Find(spellInfo[spellName][1]).gameObject;
@@ -188,7 +188,6 @@ public class CombatSystem : MonoBehaviour
         else
         {
             // Enemy's turn
-            state = CombatState.ENEMYTURN;
             StartCoroutine(EnemyTurn());
         }
     }
@@ -247,9 +246,12 @@ public class CombatSystem : MonoBehaviour
 
     public void OnAttackButton()
     {
-        if (state != CombatState.PLAYERTURN)
+        if (state != CombatState.PLAYERTURN){
+            print("HELLLLLLL");
             return;
-
+        }
+           
+        state = CombatState.ENEMYTURN;
         StartCoroutine(PlayerAttack());
     }
 
@@ -258,6 +260,8 @@ public class CombatSystem : MonoBehaviour
 
         if (state != CombatState.PLAYERTURN)
             return;
+        state = CombatState.ENEMYTURN;
+
         CombatButtons.SetActive(!CombatButtons.activeSelf);
         SpellButtons.SetActive(!SpellButtons.activeSelf);
 
@@ -272,8 +276,8 @@ public class CombatSystem : MonoBehaviour
         spellOne = spells[randIndex];
         spellTwo = spells[nextIndex];
 
-        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = spells[randIndex];
-        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = spells[nextIndex];
+        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[randIndex]+"</u>";
+        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[nextIndex] + "</u>";
 
     }
 
@@ -293,7 +297,7 @@ public class CombatSystem : MonoBehaviour
         SpellButtons.SetActive(!SpellButtons.activeSelf);
         if (spellInfo.TryGetValue(spellName, out spellDetails))
         {
-            playerSpellDamage = float.Parse(spellDetails[0]);
+            playerSpellDamage = float.Parse(spellDetails[0]) * enemyUnit.currentHP;
             if (playerSpellDamage == 0)
             {
                 StartCoroutine(PlayerSkip());

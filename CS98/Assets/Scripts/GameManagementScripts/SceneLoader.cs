@@ -7,9 +7,14 @@ public class SceneLoader : MonoBehaviour
 {
     public Animator Transition;      //our scene change animation
 
+    string currScene;
+    private void Awake() {
+        currScene = SceneManager.GetActiveScene().name;
+    }
 
     public void LoadScene(string nextScene)
     {
+        PlayerPrefs.SetString("PrevScene", currScene);
         StartCoroutine(SceneAnimate(nextScene));
     }
 

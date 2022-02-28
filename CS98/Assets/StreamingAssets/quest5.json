@@ -52,6 +52,7 @@
         "ID":   0,
         "definition": "el, tome",
         "encountered": false,
+        "icon": "<sprite=\"Book_Col45\" name=\"Book_Col45\">",
         "questN": 5,
         "stepN": 0
     },
@@ -83,7 +84,7 @@
     {
         "w":    "hechizo",
         "ID":   0,
-        "definition": "el, hechizo",
+        "definition": "el, spell",
         "encountered": false,
         "questN": 5,
         "stepN": 0
@@ -107,6 +108,7 @@
         "ID":   0,
         "definition": "el, journal",
         "encountered": false,
+        "icon": "<sprite=\"Book_Col4\" name=\"Book_Col4\">",
         "questN": 5,
         "stepN": 1
     },
@@ -115,6 +117,7 @@
         "ID":   0,
         "definition": "los, glasses",
         "encountered": false,
+        "icon": "<sprite=\"Glasses1\" name=\"Glasses1\">",
         "questN": 5,
         "stepN": 1
     },

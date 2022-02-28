@@ -15,8 +15,6 @@ public class QuestVisible : MonoBehaviour
 
     void CheckVisibility()
     {
-        Debug.Log("This object is checking quest");
-        Debug.Log(gameObject.name);
         foreach (Transform child in transform) {
             child.gameObject.SetActive(false);
         }
@@ -28,13 +26,7 @@ public class QuestVisible : MonoBehaviour
               foreach (Transform child in transform) {
                   child.gameObject.SetActive(true);
               }
-              Debug.Log("Matching quest, questStep!");
-            } else {
-              Debug.Log("Matching quest, not matching questStep!");
             }
-        }
-        else {
-          Debug.Log("No matching quest.");
         }
     }
 

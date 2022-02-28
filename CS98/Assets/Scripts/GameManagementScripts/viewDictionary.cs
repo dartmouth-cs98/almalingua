@@ -25,21 +25,15 @@ public class viewDictionary : MonoBehaviour
             /* if dictionary is being shown , then call refresh*/
 
             Dictionary.playerDictionary.RevealWords();
-            PopupButton.GetComponentInChildren<Text>().text = "Close";
-        }
-        else
-        {
-            PopupButton.GetComponentInChildren<Text>().text = "Open";
-
         }
 
 
     }
 
     public void ShowButton(){
+        print("here");
         showDict = true;
-        GameObject.Find("DictObj").transform.GetChild(0).gameObject.SetActive(true);
-        PopupButton.GetComponentInChildren<Text>().text = "Open";
+        gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
 

@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -35,10 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/combatScene.unity
     guid: fb9e57e2981a247498a0f4ffa7d0df62
-  - enabled: 1
-    path: Assets/Scenes/forest2.unity
-    guid: 01d0836a77b344c3eb5f3839e5307c73
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: fd4c90d51c3e941928ded44fed9363b2
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 9201b4ebe9d8541c6aa3517fc5b4d72c
+  - enabled: 1
+    path: Assets/Scenes/Ruins.unity
+    guid: b9385818a894b40eba9b4917a1a69695
   m_configObjects: {}

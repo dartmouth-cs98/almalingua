@@ -151,8 +151,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 12
     m_Scale: 1
-    m_Name: icons-pack_13
-    m_HashCode: 84206641
+    m_Name: enfermo
+    m_HashCode: 1249238968
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 13
@@ -205,8 +205,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 21
     m_Scale: 1
-    m_Name: icons-pack_21
-    m_HashCode: 84206544
+    m_Name: genial
+    m_HashCode: -310891512
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 22
@@ -223,8 +223,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 24
     m_Scale: 1
-    m_Name: icons-pack_31
-    m_HashCode: 84206577
+    m_Name: regresar
+    m_HashCode: -1940330009
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 25
@@ -235,20 +235,20 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 26
     m_Scale: 1
-    m_Name: icons-pack_25
-    m_HashCode: 84206548
+    m_Name: no
+    m_HashCode: 3649
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 27
     m_Scale: 1
-    m_Name: icons-pack_26
-    m_HashCode: 84206551
+    m_Name: si
+    m_HashCode: 3770
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 28
     m_Scale: 1
-    m_Name: icons-pack_27
-    m_HashCode: 84206550
+    m_Name: preguntar
+    m_HashCode: 505852284
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 29
@@ -265,8 +265,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 31
     m_Scale: 1
-    m_Name: icons-pack_30
-    m_HashCode: 84206576
+    m_Name: sur
+    m_HashCode: 123668
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 32
@@ -283,8 +283,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 34
     m_Scale: 1
-    m_Name: icons-pack_34
-    m_HashCode: 84206580
+    m_Name: proxima
+    m_HashCode: -1420194928
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 35

@@ -70,6 +70,7 @@
         "ID":   0,
         "definition": "el, south",
         "encountered": false,
+        "icon": "<sprite name=\"sur\">",
         "questN": 3,
         "stepN": 2
     },
@@ -78,6 +79,7 @@
         "ID":   0,
         "definition": "next",
         "encountered": false,
+        "icon": "<sprite name=\"proxima\">",
         "questN": 3,
         "stepN": 4
     },
