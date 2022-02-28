@@ -50,8 +50,9 @@
     {
         "w":    "génial",
         "ID":   0,
-        "definition": "el, south",
+        "definition": "el, cool",
         "encountered": false,
+        "icon": "<sprite name=\"genial\">",
         "questN": 4,
         "stepN": 2
     },
