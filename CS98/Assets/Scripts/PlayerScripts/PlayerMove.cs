@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     Vector2[] playerPositions = new Vector2[] {new Vector2((float)0.5, (float)-1), 
     new Vector2((float)-9.3, (float)-20), new Vector2((float)48, (float)-1.4), 
     new Vector2((float)-3.5, (float)16.2), new Vector2((float)-57, (float)-2.97), new Vector2((float) -9.5, (float)17.8),
-    new Vector2((float)-5.04, (float)-19)};
+    new Vector2((float)-5.04, (float)-19), new Vector2((float)-54, (float)-10)};
 
     // Use this for initialization
     void Start()
@@ -42,6 +42,8 @@ public class PlayerMove : MonoBehaviour
                     transform.position = playerPositions[2];
                 } else if (prevScene == "Ruins") {
                     transform.position = playerPositions[5];
+                } else if (prevScene == "Tutorial") {
+                    transform.position = playerPositions[7];
                 }
             } else if (currentScene == "Farm") {
                 if (prevScene == "Village") {
