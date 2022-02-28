@@ -297,7 +297,7 @@ public class CombatSystem : MonoBehaviour
         SpellButtons.SetActive(!SpellButtons.activeSelf);
         if (spellInfo.TryGetValue(spellName, out spellDetails))
         {
-            playerSpellDamage = float.Parse(spellDetails[0]) *enemyUnit.currentHP;
+            playerSpellDamage = float.Parse(spellDetails[0]) * enemyUnit.currentHP;
             if (playerSpellDamage == 0)
             {
                 StartCoroutine(PlayerSkip());
