@@ -14,10 +14,11 @@
         "icon": "<sprite name=\"derecha\">"
     },
     {
-        "w":  "hospital",
-        "ID":     0,
+        "w": "hospital",
+        "ID": 0,
         "definition": "el, hospital",
-        "encountered": false
+        "encountered": false,
+        "icon": "<sprite name=\"Hospital2\">"
     },
     {
         "w":  "hacia",
@@ -51,16 +52,18 @@
         "encountered": false
     },
     {
-        "w":    "naranja",
-        "ID":   0,
+        "w": "naranja",
+        "ID": 0,
         "definition": "la, orange",
-        "encountered": false
+        "encountered": false,
+        "icon": "<sprite name=\"Orange1\">"
     },
     {
-        "w":    "perro",
-        "ID":   0,
+        "w": "perro",
+        "ID": 0,
         "definition": "el, dog",
-        "encountered": false
+        "encountered": false,
+        "icon": "<sprite name=\"Dog5\">"
     },
     {
         "w":    "a",
