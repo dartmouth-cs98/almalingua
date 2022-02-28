@@ -4,6 +4,7 @@
         "ID":   0,
         "definition": "to ask",
         "encountered": false,
+        "icon": "<sprite name=\"preguntar\">",
         "questN": 2,
         "stepN": 0
         },
@@ -12,6 +13,7 @@
         "ID":     0,
         "definition": "to attack",
         "encountered": false,
+        "icon": "<sprite=\"Sword\" name=\"Sword\">",
         "questN": 2,
         "stepN": 0
     },
@@ -20,6 +22,7 @@
         "ID":     0,
         "definition": "to kill",
         "encountered": false,
+        "icon": "<sprite=\"Skull\" name=\"Skull\">",
         "questN": 2,
         "stepN": 0
     },
@@ -28,6 +31,7 @@
         "ID":     0,
         "definition": "to return",
         "encountered": false,
+        "icon": "<sprite name=\"regresar\">",
         "questN": 2,
         "stepN": 0
         
@@ -61,6 +65,7 @@
         "ID":   0,
         "definition": "la, potato",
         "encountered": false,
+        "icon": "<sprite=\"Potato_Col2\" name=\"Potato_Col2\">",
         "questN": 2,
         "stepN": 0
     },
@@ -77,6 +82,7 @@
         "ID":   0,
         "definition": "el, corn",
         "encountered": false,
+        "icon": "<sprite=\"Corn_Col2\" name=\"Corn_Col2\">",
         "questN": 2,
         "stepN": 1
     },
@@ -141,6 +147,7 @@
         "ID":   0,
         "definition": "el, monster",
         "encountered": false,
+        "icon": "<sprite=\"Standing_left\" name=\"Standing_left\">",
         "questN": 2,
         "stepN": 3
     },
@@ -181,6 +188,7 @@
         "ID":   0,
         "definition": "to freeze",
         "encountered": false,
+        "icon": "<sprite=\"SnowCrystal1\" name=\"SnowCrystal1\">",
         "questN": 2,
         "stepN": 4
     } 

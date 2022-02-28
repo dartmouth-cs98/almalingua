@@ -28,6 +28,7 @@
         "ID":     0,
         "definition": "el, sick one(male)",
         "encountered": false,
+        "icon": "<sprite name=\"enfermo\">",
         "questN": 6,
         "stepN": 0
     },
@@ -74,8 +75,9 @@
     {
         "w":    "flores",
         "ID":   0,
-        "definition": "to begin",
+        "definition": "flowers",
         "encountered": false,
+        "icon": "<sprite=\"Flower-1\" name=\"Flower-1\">",
         "questN": 6,
         "stepN": 1
     }
