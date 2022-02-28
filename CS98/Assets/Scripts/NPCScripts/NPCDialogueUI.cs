@@ -196,7 +196,7 @@ public class NPCDialogueUI : MonoBehaviour
         userResponse = UserInput;
     }
 
-    /** Closing our speechbubblel and button
+    /** Closing our speechbubble and button
     */
     public void CloseButton()
     {
