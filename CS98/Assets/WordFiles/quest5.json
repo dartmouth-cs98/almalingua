@@ -1,0 +1,138 @@
+{"wlist": [
+    {
+        "w":    "antiguo",
+        "ID":   0,
+        "definition": "ancient",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":  "portal ",
+        "ID":     0,
+        "definition": "el, portal",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":  "accidente",
+        "ID":     0,
+        "definition": "el, accident",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":  "a propósito",
+        "ID":     0,
+        "definition": "on purpose",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "supuestamente",
+        "ID":   0,
+        "definition": "supposedly",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "ruinas",
+        "ID":   0,
+        "definition": "las, ruins",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "tomo",
+        "ID":   0,
+        "definition": "el, tome",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "cuentos",
+        "ID":   0,
+        "definition": "los, stories",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "recuperar",
+        "ID":   0,
+        "definition": "to recover ",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "objetos",
+        "ID":   0,
+        "definition": "los, objects ",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+
+    },
+    {
+        "w":    "hechizo",
+        "ID":   0,
+        "definition": "el, hechizo",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "vaya",
+        "ID":   0,
+        "definition": "go, also can express surprise",
+        "encountered": false
+    },
+    {
+        "w":    "lápiz",
+        "ID":   0,
+        "definition": "el, pencil",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+    },
+    {
+        "w":    "cuaderno",
+        "ID":   0,
+        "definition": "el, journal",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+    },
+    {
+        "w":    "lentes",
+        "ID":   0,
+        "definition": "los, glasses",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+    },
+    {
+        "w":    "extraño",
+        "ID":   0,
+        "definition": "strange, extraña",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+    },
+    {
+        "w":    "de vuelta",
+        "ID":   0,
+        "definition": "go back, back to",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1
+    }
+
+]}

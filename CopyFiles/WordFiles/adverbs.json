@@ -1,0 +1,346 @@
+{"wlist": [
+    {
+        "w":    "antes",
+        "ID":   0,
+        "definition": "before",
+        "encountered": false
+        },
+    {
+        "w":    "después",
+        "ID":   0,
+        "definition": "after",
+        "encountered": false
+    },
+    {
+        "w": "mañana",
+        "ID":     0,
+        "definition": "tomorrow",
+        "encountered": false
+    },
+    {
+        "w":    "anoche",
+        "ID":   0,
+        "definition": "last night",
+        "encountered": false
+    },
+    {
+        "w":    "antenoche",
+        "ID":   0,
+        "definition": "night before yesterday",
+        "encountered": false
+    },
+    {
+        "w":    "ayer",
+        "ID":   0,
+        "definition": "yesterday",
+        "encountered": false
+    },
+    {
+        "w":    "hoy",
+        "ID":   0,
+        "definition": "today",
+        "encountered": false
+    },
+    {
+        "w":    "anteayer",
+        "ID":   0,
+        "definition": "day before yesterday",
+        "encountered": false
+    },
+    {
+        "w":    "ya",
+        "ID":   0,
+        "definition": "already",
+        "encountered": false
+    },
+    {
+        "w":    "siempre",
+        "ID":   0,
+        "definition": "always",
+        "encountered": false
+    },
+    {
+        "w":    "todavía",
+        "ID":   0,
+        "definition": "towards",
+        "encountered": false
+    },
+    {
+        "w":    "tarde",
+        "ID":   0,
+        "definition": "late",
+        "encountered": false
+    },
+    {
+        "w":    "luego",
+        "ID":   0,
+        "definition": "later",
+        "encountered": false
+    }
+    ,
+    {
+        "w":    "mientras",
+        "ID":   0,
+        "definition": "while",
+        "encountered": false
+    },
+    {
+        "w":    "semanalmente",
+        "ID":   0,
+        "definition": "weekly",
+        "encountered": false
+    },
+    {
+        "w":    "mucho",
+        "ID":   0,
+        "definition": "a lot",
+        "encountered": false
+    },
+    {
+        "w":    "actualmente",
+        "ID":   0,
+        "definition": "currently",
+        "encountered": false
+    },
+    {
+        "w":    "nunca",
+        "ID":   0,
+        "definition": "never",
+        "encountered": false
+    },
+    {
+        "w":    "recientemente",
+        "ID":   0,
+        "definition": "recently",
+        "encountered": false
+    },
+    {
+        "w":    "usualmente",
+        "ID":   0,
+        "definition": "before",
+        "encountered": false
+    },
+    {
+        "w":    "a veces",
+        "ID":   0,
+        "definition": "sometimes",
+        "encountered": false
+    },
+    {
+        "w":    "apenas",
+        "ID":   0,
+        "definition": "hardly, just",
+        "encountered": false
+    },
+    {
+        "w":    "jamás",
+        "ID":   0,
+        "definition": "never",
+        "encountered": false
+    },
+    {
+        "w":    "aquí",
+        "ID":   0,
+        "definition": "here",
+        "encountered": false
+    },
+    {
+        "w":    "allí",
+        "ID":   0,
+        "definition": "there (close to listener)",
+        "encountered": false
+    },
+    {
+        "w":    "cerca",
+        "ID":   0,
+        "definition": "near",
+        "encountered": false
+    },
+    {
+        "w":    "acá",
+        "ID":   0,
+        "definition": "here",
+        "encountered": false
+    },
+    {
+        "w":    "allá",
+        "ID":   0,
+        "definition": "over there",
+        "encountered": false
+    },
+    {
+        "w":    "lejos",
+        "ID":   0,
+        "definition": "far",
+        "encountered": false
+    },
+    {
+        "w":    "detrás",
+        "ID":   0,
+        "definition": "behind",
+        "encountered": false
+    },
+    {
+        "w":    "encima",
+        "ID":   0,
+        "definition": "above",
+        "encountered": false
+    },
+    {
+        "w":    "dentro",
+        "ID":   0,
+        "definition": "inside",
+        "encountered": false
+    },
+    {
+        "w":    "arriba",
+        "ID":   0,
+        "definition": "up, upstaris",
+        "encountered": false
+    },
+    {
+        "w":    "fuera",
+        "ID":   0,
+        "definition": "outside of",
+        "encountered": false
+    },
+    {
+        "w":    "bien",
+        "ID":   0,
+        "definition": "well",
+        "encountered": false
+    },
+    {
+        "w":    "mejor",
+        "ID":   0,
+        "definition": "better",
+        "encountered": false
+    },
+    {
+        "w":    "rápido",
+        "ID":   0,
+        "definition": "quickly",
+        "encountered": false
+    },
+    {
+        "w":    "mal",
+        "ID":   0,
+        "definition": "bad",
+        "encountered": false
+    },
+    {
+        "w":    "peor",
+        "ID":   0,
+        "definition": "wrose",
+        "encountered": false
+    },
+    {
+        "w":    "despacio",
+        "ID":   0,
+        "definition": "slowly",
+        "encountered": false
+    },
+    {
+        "w":    "muy",
+        "ID":   0,
+        "definition": "very",
+        "encountered": false
+    },
+    {
+        "w":    "demasiado",
+        "ID":   0,
+        "definition": "too much",
+        "encountered": false
+    },
+    {
+        "w":    "nada",
+        "ID":   0,
+        "definition": "nothing, at all",
+        "encountered": false
+    },
+    {
+        "w":    "menos",
+        "ID":   0,
+        "definition": "less, except",
+        "encountered": false
+    },
+    {
+        "w":    "más",
+        "ID":   0,
+        "definition": "more",
+        "encountered": false
+    },
+    {
+        "w":    "tanto",
+        "ID":   0,
+        "definition": "so long, so much",
+        "encountered": false
+    },
+    {
+        "w":    "cuándo",
+        "ID":   0,
+        "definition": "when",
+        "encountered": false
+    },
+    {
+        "w":    "dónde",
+        "ID":   0,
+        "definition": "where",
+        "encountered": false
+    },
+    {
+        "w":    "cómo",
+        "ID":   0,
+        "definition": "how",
+        "encountered": false
+    },
+    {
+        "w":    "por qué",
+        "ID":   0,
+        "definition": "why",
+        "encountered": false
+    },
+    {
+        "w":    "cuánto",
+        "ID":   0,
+        "definition": "how much, how many",
+        "encountered": false
+    },
+    {
+        "w":    "sí",
+        "ID":   0,
+        "definition": "yes",
+        "encountered": false
+    },
+    {
+        "w":    "no",
+        "ID":   0,
+        "definition": "no",
+        "encountered": false
+    },
+    {
+        "w":    "tampoco",
+        "ID":   0,
+        "definition": "either, neither",
+        "encountered": false
+    },
+    {
+        "w":    "a lo mejor",
+        "ID":   0,
+        "definition": "maybe",
+        "encountered": false
+    },
+    {
+        "w":    "quizá",
+        "ID":   0,
+        "definition": "maybe",
+        "encountered": false
+    },
+    {
+        "w":    "tal vez",
+        "ID":   0,
+        "definition": "maybe",
+        "encountered": false
+    }
+    
+]}
