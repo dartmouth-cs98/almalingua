@@ -20,11 +20,11 @@ public class QuestUI : MonoBehaviour
         {
             string[] questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja" , null};
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja",null };
+            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja.",null };
             questNPC.Add("10", questDetails);
-            questDetails = new string[] { "Cesar", "Preguntar por direcciones", "Hable con el reno",null };
+            questDetails = new string[] { "Cesar", "Pídele direcciones a César", "Cesar es el reno en medio del pueblo.",null };
             questNPC.Add("11", questDetails);
-            questDetails = new string[] { "Witch", "Encuentra tu varita.", "Ve a la izquierda, arriba, luego a la izquierda.  Está al lado del hospital.",null };
+            questDetails = new string[] { "Witch", "Encuentra tu varita", "Ve a la izquierda, arriba, luego a la izquierda.  Está al lado del hospital.",null };
             questNPC.Add("12", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "La granja está debajo del pueblo. El granjero está en medio de la granja.",null };
             questNPC.Add("20", questDetails);
@@ -36,68 +36,68 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("23", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.", null};
             questNPC.Add("24", questDetails);
-            questDetails = new string[] { "Slime_Black", "Fight the Black Slime","El limo está al lado de los aguacates y las naranjas.", "Farm" };
+            questDetails = new string[] { "Slime_Black", "Lucha contra el limo negro","El limo está al lado de los aguacates y las naranjas.", "Farm" };
             questNPC.Add("25", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.",null };
             questNPC.Add("26", questDetails);
-            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps",null };
+            questDetails = new string[] { "Witch", "Hable con la bruja", "",null };
             questNPC.Add("27", questDetails);
-            questDetails = new string[] { "Teacher", "Talk to Teacher", "Walk Up to go back to Village\n-Walk right to the Forest\n-Talk to the teacher" ,null};
+            questDetails = new string[] { "Teacher", "Hable con el maestro", "El maestro está en el bosque, a la derecha del pueblo." ,null};
             questNPC.Add("30", questDetails);
-            questDetails = new string[] { "Cesar", "Talk to Cesar", "Go back to the village\n-Talk to Cesar about children" ,null};
+            questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale a César (el reno) dónde están los niños." ,null};
             questNPC.Add("31", questDetails);
-            questDetails = new string[] { "Child", "Find children", "Uno está por el río\n-el otro al lado del bosque",null };
+            questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del bosque.",null };
             questNPC.Add("32", questDetails);
-            questDetails = new string[] { "Devil", "Fight the Devil", "Walk around the forest and find the devil" ,"Forest"};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque." ,"Forest"};
             questNPC.Add("33", questDetails);
-            questDetails = new string[] { "Teacher", "Talk to Teacher", "Talk to the Teacher again" ,null};
+            questDetails = new string[] { "Teacher", "Hable con el maestro", "Dile al maestro dónde estaban los niños." ,null};
             questNPC.Add("34", questDetails);
-            questDetails = new string[] { "Witch", "", "Talk to Witch Again for Next Steps" ,null};
+            questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
             questNPC.Add("35", questDetails);
-            questDetails = new string[] { "Chef", "Talk to Chef", "Help the Chef\n-Go Right back to the village",null };
+            questDetails = new string[] { "Chef", "Hable con el chef", "El chef es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
-            questDetails = new string[] { "Farmer", "Ask for Ingredients", "Talk to Farmer\n-pedirle arroz, leche, azúcar y canela" ,null};
+            questDetails = new string[] { "Farmer", "Pregunta los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
             questNPC.Add("41", questDetails);
-            questDetails = new string[] { "Chef", "Go back to Chef", "Go back to the Chef and give him the ingredients" ,null};
+            questDetails = new string[] { "Chef", "Hable con el chef", "Dale al chef los ingredientes." ,null};
             questNPC.Add("42", questDetails);
-            questDetails = new string[] { "Archeologist", "Go Talk to Archeologist", "Go talk to archeologist for next quest" ,null};
+            questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "El arqueólogo está en el pueblo." ,null};
             questNPC.Add("50", questDetails);
-            questDetails = new string[] { "", "Find the Pan", "Walk around and find the pan\n-It is near the top right" ,null};
+            questDetails = new string[] { "", "Encuentra la sartén", "La sartén está en la esquina superior derecha de las ruinas." ,null};
             questNPC.Add("51", questDetails);
-            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("52", questDetails);
 
-            questDetails = new string[] { "", "Find the Bowl", "Walk around and find the bowl\n-It is near the middle left" ,null};
+            questDetails = new string[] { "", "Encuentre el cuenco.", "El cuenco está en el área central izquierda de las ruinas." ,null};
             questNPC.Add("53", questDetails);
-            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("54", questDetails);
 
-            questDetails = new string[] { "", "Find the Scissors", "Walk around and find the scissors\n-It is near the middle right" ,null};
+            questDetails = new string[] { "", "Encuentra las tijeras", "Las tijeras están en el área central y derecha de las ruinas." ,null};
             questNPC.Add("55", questDetails);
-            questDetails = new string[] { "Devil", "Fight the devil", "Fight the devil" ,"Ruins"};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("56", questDetails);
 
-            questDetails = new string[] { "Archeologist", "List Objects", "Go back to the archeologist in the village\n-List the objects that you found in the quest",null };
+            questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "Dile al arqueólogo lo que encontraste.",null };
             questNPC.Add("57", questDetails);
 
-            questDetails = new string[] { "Mayor", "Talk to Mayor", "Talk to the mayor about the next quest",null };
+            questDetails = new string[] { "Mayor", "Hable con el alcalde", "El alcalde está en el pueblo.",null };
             questNPC.Add("60", questDetails);
-            questDetails = new string[] { "Doctor", "Talk to Doctor", "Talk to the Doctor to ask about potion",null };
+            questDetails = new string[] { "Doctor", "Hable con el doctor", "Pregunta por la poción.",null };
             questNPC.Add("61", questDetails);
 
-            questDetails = new string[] { "", "Find flowers", "Find flowers in the forest",null };
+            questDetails = new string[] { "", "Busca flores", "Las flores están en el bosque.",null };
             questNPC.Add("62", questDetails);
-            questDetails = new string[] { "Devil", "Fight Devil", "Fight devils","Forest" };
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque.","Forest" };
             questNPC.Add("63", questDetails);
 
-            questDetails = new string[] { "Doctor", "Talk to Doctor", "Give doctor the flowers",null };
+            questDetails = new string[] { "Doctor", "Hable con el doctor", "Dale al doctor las flores.",null };
             questNPC.Add("64", questDetails);
-            questDetails = new string[] { "Witch", "Talk to the witch", "Talk to the witch for help",null };
+            questDetails = new string[] { "Witch", "Habla con la bruja", "Habla con la bruja para que te ayude.",null };
             questNPC.Add("65", questDetails);
 
-            questDetails = new string[] { "Farmer", "Talk to the Farmer", "Talk to the farmer to get apple",null };
+            questDetails = new string[] { "Farmer",  "Hable con el granjero", "Habla con el granjero para conseguir manzana.",null };
             questNPC.Add("66", questDetails);
-            questDetails = new string[] { "Mayor", "Talk to the Mayor", "Go back to mayor to return items",null };
+            questDetails = new string[] { "Mayor", "Hable con el alcalde", "Devolver los artículos al alcalde.",null };
             questNPC.Add("67", questDetails);
 
         }
@@ -123,7 +123,7 @@ public class QuestUI : MonoBehaviour
         string[] questDetails = new string[3];
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
-            UpdateText(questDetails[1], questDetails[2]);
+            UpdateText(IconsInText.GetTextWithIcons(questDetails[1]), IconsInText.GetTextWithIcons(questDetails[2]));
         }
 
     }
@@ -155,7 +155,7 @@ public class QuestUI : MonoBehaviour
     void UpdateText(string title, string descrip)
     {
         gameObject.transform.Find("QuestTitle").GetComponent<TMPro.TextMeshProUGUI>().text = title;
-        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = "-" + descrip;
+        gameObject.transform.Find("QuestDetails").GetComponent<TMPro.TextMeshProUGUI>().text = descrip;
     }
     public void WitchSpeak()
     {
