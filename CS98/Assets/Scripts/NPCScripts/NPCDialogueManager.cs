@@ -225,8 +225,9 @@ public class NPCDialogueManager : MonoBehaviour
             else if (entityKey == CONTAINS_KEY)  
             {
                 // then dictVal should be CSV of input words, entityVal should be CSV of req. words.
-                if (!FuzzyMatch.CheckContains(entityVal, dictVal, 0.8f)) 
+                if (!FuzzyMatch.CheckContains(entityVal, dictVal, 0.7f)) 
                 {
+                  print("No match:" + entityVal + " " + dictVal);
                   return false;
                 }
             } 
