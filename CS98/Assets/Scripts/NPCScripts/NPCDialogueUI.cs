@@ -42,6 +42,12 @@ public class NPCDialogueUI : MonoBehaviour
         RespondButton.GetComponent<HideShowObjects>().Hide();
     }
 
+    private void Update() {
+        if (Input.GetKey(KeyCode.Return) && userResponse != null) {
+            ResponseManager();
+        }
+    }
+
     private void UpdateQuest()
     {
         currentQuest = PlayerPrefs.GetInt("Quest").ToString() + PlayerPrefs.GetInt("QuestStep").ToString();
@@ -106,7 +112,6 @@ public class NPCDialogueUI : MonoBehaviour
         }
         else
         {
-            print("Getting next message!");
             NPC.GetComponent<NPCDialogueManager>().GetNextMessage();
         }
         dialogueText = NPC.GetComponent<NPCDialogueManager>().CurrentText;
@@ -178,6 +183,8 @@ public class NPCDialogueUI : MonoBehaviour
             if (userResponse != null)
             {
                 NPC.GetComponent<NPCDialogueManager>().UpdateIntent(userResponse, () => DisplayNextSentence(), true);
+                userResponse = null;
+
             }
             else
             {
@@ -186,6 +193,7 @@ public class NPCDialogueUI : MonoBehaviour
         }
 
     }
+
 
     /********** UserResponse *********************/
     /* 
