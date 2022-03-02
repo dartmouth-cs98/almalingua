@@ -227,7 +227,6 @@ public class NPCDialogueManager : MonoBehaviour
                 // then dictVal should be CSV of input words, entityVal should be CSV of req. words.
                 if (!FuzzyMatch.CheckContains(entityVal, dictVal, 0.7f)) 
                 {
-                  print("No match:" + entityVal + " " + dictVal);
                   return false;
                 }
             } 
@@ -282,7 +281,6 @@ public class NPCDialogueManager : MonoBehaviour
      */
     public void GetNextMessage()
     {
-        print("qs: " + PlayerPrefs.GetInt("QuestStep"));
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
 
