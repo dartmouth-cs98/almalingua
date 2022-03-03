@@ -71,7 +71,7 @@
         "stepN": 0
     },
     {
-        "w":    "naranja",
+        "w":    "naranjas",
         "ID":   0,
         "definition": "la, orange",
         "encountered": false,
@@ -193,5 +193,21 @@
         "encountered": false,
         "questN": 1,
         "stepN": 0
-    }  
+    },
+    {
+        "w":    "estar",
+        "ID":   0,
+        "definition": "to be temporary)",
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
+    },
+    {
+        "w":    "perder",
+        "ID":   0,
+        "definition": "to lose",
+        "encountered": false,
+        "questN": 1,
+        "stepN": 0
+    } 
 ]}

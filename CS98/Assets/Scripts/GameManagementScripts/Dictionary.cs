@@ -13,6 +13,7 @@ public class Dictionary : MonoBehaviour
 
     public static Dictionary playerDictionary;
     public static Hashtable wordMap; //public static hashmap for words
+    public static Hashtable verbMapping;
     public InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
@@ -23,11 +24,11 @@ public class Dictionary : MonoBehaviour
     private int startIndex = 0;
     public string searchString;
     private int TargetID = -1;
+    private string path = Application.streamingAssetsPath;
     // private int discoveredWords = 0;
 
     void Start()
     {
-        string path = Application.streamingAssetsPath;
         playerDictionary = this;
 
         List<WordCollection> lists = new List<WordCollection>();
@@ -37,6 +38,9 @@ public class Dictionary : MonoBehaviour
         lists.Add(readWordFiles(path + "/quest4.json"));
         lists.Add(readWordFiles(path + "/quest5.json"));
         lists.Add(readWordFiles(path + "/quest6.json"));
+
+
+        createVerbMappings();
 
 
         foreach (WordCollection l in lists)
@@ -213,7 +217,6 @@ public class Dictionary : MonoBehaviour
 
         int q =  PlayerPrefs.GetInt("Quest");
         int step = PlayerPrefs.GetInt("QuestStep");
-        print("she been called");
         foreach (Word w in masterList.wlist)
         {
             //if we're ahead on quests then yes we have encountered
@@ -225,6 +228,23 @@ public class Dictionary : MonoBehaviour
                 w.encountered = true;
             }
         }
+    }
+
+    public void createVerbMappings(){
+        verbMapping = new Hashtable();
+        WordCollection verbs = readWordFiles(path + "/verbMaps.json");
+
+
+        foreach (Word word in verbs.wlist){
+            string[] conjugations = word.w.Split(' ');
+            for (int i = 0; i < conjugations.Length; i++){
+                verbMapping.Add(conjugations[i], word.definition);
+            }
+
+        }
+
+
+
     }
 
 }

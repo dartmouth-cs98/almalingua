@@ -21,7 +21,7 @@ public class MiniMap : MonoBehaviour
         float x = player.transform.position.x;
         float y = player.transform.position.y;
 
-        playerIcon.transform.position = new Vector2(x, y-1);
+         playerIcon.transform.position = new Vector3(x, y-1, player.transform.position.z);
 
 
         

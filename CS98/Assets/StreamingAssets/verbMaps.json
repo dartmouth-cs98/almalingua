@@ -1,0 +1,245 @@
+{"wlist": [
+    {
+        "w":    "buscas buscando",
+        "definition": "buscar"
+    },
+
+    {
+        "w":    "estás estés estoy está estábamos están estabas",
+        "definition": "estar"
+    },
+
+    {
+        "w":    "perdiendo",
+        "definition": "perder"
+    },
+
+    {
+        "w":    "entendí entiendo",
+        "definition": "entender"
+    },
+    
+    {
+        "w":    "repite",
+        "definition": "repetir"
+    },
+
+    {
+        "w":    "necesito necesita necesitaba necesitas",
+        "definition": "necesitar"
+    },
+
+
+    {
+        "w":    "quieres quiero quería",
+        "definition": "querer"
+    },
+
+
+    {
+        "w":    "puedes pueden podrías puede podré podemos",
+        "definition": "poder"
+    },
+
+
+    {
+        "w":    "deja",
+        "definition": "dejar"
+    },
+
+
+    {
+        "w":    "es soy son fueron fue sea",
+        "definition": "ser"
+    },
+
+    {
+        "w":    "aparecieron",
+        "definition": "aparecer"
+    },
+
+
+    {
+        "w":    "quedan queda",
+        "definition": "quedar"
+    },
+
+
+    {
+        "w":    "agradezco agradecemos",
+        "definition": "agradecer"
+    },
+
+
+    {
+        "w":    "pregunta pregunto",
+        "definition": "preguntar"
+    },
+
+    {
+        "w":    "escondieron",
+        "definition": "esconder"
+    },
+
+    {
+        "w":    "asustan",
+        "definition": "asustar"
+    },
+
+    {
+        "w":    "apuesto",
+        "definition": "apostar"
+    },
+
+    {
+        "w":    "comiendo",
+        "definition": "comer"
+    },
+    {
+        "w":    "atacando",
+        "definition": "atacar"
+    },
+    {
+        "w":    "deberían debe debo",
+        "definition": "deber"
+    },
+    {
+        "w":    "labrando",
+        "definition": "labrar"
+    },
+
+    {
+        "w":    "aprendemos",
+        "definition": "aprender"
+    },
+
+    {
+        "w":    "llamo llama",
+        "definition": "llamar"
+    },
+    {
+        "w":    "jugando",
+        "definition": "jugar"
+    },
+    {
+        "w":    "vieron vemos",
+        "definition": "ver"
+    },
+
+    {
+        "w":    "encontraré encuentras encontraste",
+        "definition": "encontrar"
+    },
+    {
+        "w":    "vuelve",
+        "definition": "volver"
+    },
+    {
+        "w":    "sabe",
+        "definition": "saber"
+    },
+
+    {
+        "w":    "tienes ten tiene tengo tengas",
+        "definition": "tener"
+    },
+    {
+        "w":    "creo crees",
+        "definition": "creer"
+    },
+    {
+        "w":    "dices dijo dicen digo",
+        "definition": "decir"
+    },
+    {
+        "w":    "disfrutando",
+        "definition": "disfrutar"
+    },
+    {
+        "w":    "aman",
+        "definition": "amar"
+    },
+
+    {
+        "w":    "quema",
+        "definition": "quemar"
+    },
+
+    {
+        "w":    "gusta",
+        "definition": "like"
+    },
+
+    {
+        "w":    "llegaste",
+        "definition": "llegar"
+    },
+    
+
+    {
+        "w":    "viajando",
+        "definition": "viajar"
+    },
+
+
+    {
+        "w":    "solían",
+        "definition": "soler"
+    },
+
+
+    {
+        "w":    "recupera",
+        "definition": "recuperar"
+    },
+    {
+        "w":    "trae trajeron",
+        "definition": "traer"
+    },
+
+    {
+        "w":    "encanta encantaría",
+        "definition": "encantar"
+    },
+
+
+    {
+        "w":    "sigue",
+        "definition": "seguir"
+    },
+
+    {
+        "w":    "cavando",
+        "definition": "cavar"
+    },
+
+
+    {
+        "w":    "iría",
+        "definition": "ir"
+    },
+
+
+    {
+        "w":    "lanzando",
+        "definition": "lanzar"
+    },
+
+
+    {
+        "w":    "espero",
+        "definition": "esperar"
+    },
+
+
+    {
+        "w":    "destruimos",
+        "definition": "destruir"
+    },
+
+    {
+        "w":    "abriste",
+        "definition": "abrir"
+    }
+]
+}
