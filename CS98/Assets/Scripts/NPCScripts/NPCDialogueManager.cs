@@ -39,32 +39,6 @@ public class NPCDialogueManager : MonoBehaviour
         Player = GameObject.Find("PlayerManager/init_Protagonist");
     }
 
-    /******************   setCurrentText  ************************/
-    /* 
-     * Given the text of the given node which we've landed at, 
-     * generate a copy of the text where all words with icons have
-     * icons inserted, and all words with entries have links
-     * embedded.
-     * 
-     * Icons stored as property in our word.JSON files. Icons imported as TextMeshPro assets.
-     */
-    private void setCurrentText(string currentText)
-    {
-        string currentTextWithIcons = "";
-        foreach (string word in currentText.Split(' '))
-        {
-            string newWord = word;
-            string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
-            string icon = "";
-            if (Dictionary.wordMap.ContainsKey(cleanWord))
-            {
-                icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
-                newWord = "<link=\"" + cleanWord + "\"><color=blue>" + newWord + "</color></link>";
-            }
-            currentTextWithIcons += icon + newWord + ' ';
-        }
-        CurrentText = currentTextWithIcons.Substring(0, currentTextWithIcons.Length - 1);
-    }
 
     /******************   StartConversation  ************************/
     /* 

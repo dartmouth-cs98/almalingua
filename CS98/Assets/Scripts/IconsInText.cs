@@ -20,8 +20,16 @@ public class IconsInText : MonoBehaviour
         foreach (string word in text.Split(' '))
         {
             string newWord = word;
-            string cleanWord = Regex.Replace(word, "[^0-9a-zA-Z ]+", "").ToLower();
+            string cleanWord = Regex.Replace(word, "[\".,/!¡?¿;:*']", "").ToLower();
+            print(cleanWord);
             string icon = "";
+
+            //if word is a conjugated form of verb
+            if (Dictionary.verbMapping.ContainsKey(cleanWord)){
+                cleanWord = ((string)Dictionary.verbMapping[cleanWord]);
+            }
+
+            print("remapped word " + cleanWord);
             if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
