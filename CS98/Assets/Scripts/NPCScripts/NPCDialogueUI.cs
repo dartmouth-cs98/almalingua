@@ -22,6 +22,7 @@ public class NPCDialogueUI : MonoBehaviour
     private bool nextMessageRequiresInput;  //does the next message require user input
     private string currentQuest = "";        //the current quest we are on
     private GameObject NPC;             //our NPC connected to the speechbubble
+    private string oldNPCname;
     private string NPCTouch;          //the NPC the user clicked on;
 
     /***************** OnEnable***********/
@@ -78,17 +79,9 @@ public class NPCDialogueUI : MonoBehaviour
     }
     void DefaultConversation(string npcname)
     {
-        GameObject NPC_x = GameObject.Find(npcname);
-        NameText.text = npcname;
-        NPC_x.GetComponent<NPCDialogueManager>().StartConversation();
-        dialogueText = NPC_x.GetComponent<NPCDialogueManager>().CurrentText;
-        if (dialogueText != null)
-        {
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(dialogueText));
-        }
-        RespondButton.GetComponent<HideShowObjects>().Hide();
-        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+        NPC = GameObject.Find(npcname);
+        NPCName = npcname;
+        DisplayNextSentence();
 
     }
     /***** DisplayNextSentence **********/
@@ -100,7 +93,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
@@ -120,9 +112,6 @@ public class NPCDialogueUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         }
-
-        print(NPC.GetComponent<NPCDialogueManager>().currIntent);
-        print(NPC.GetComponent<NPCDialogueManager>().CurrentText);
 
         //if we are at our last message, hide the button
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
