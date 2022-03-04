@@ -87,7 +87,7 @@ public class NPCDialogueUI : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(dialogueText));
         }
-        RespondButton.GetComponent<HideShowObjects>().Hide();
+        // RespondButton.GetComponent<HideShowObjects>().Hide();
         gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
 
     }
@@ -128,7 +128,7 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-            gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+            // gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         }
         else
         {
@@ -137,12 +137,12 @@ public class NPCDialogueUI : MonoBehaviour
             if (nextMessageRequiresInput)
             {
                 userTalking = true;
-                RespondButton.GetComponentInChildren<Text>().text = "Respond";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Respond";
             }
             else
             {
                 userTalking = false;
-                RespondButton.GetComponentInChildren<Text>().text = "Next";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Next";
             }
         }
 

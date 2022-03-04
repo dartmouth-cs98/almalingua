@@ -21,7 +21,6 @@ public class IconsInText : MonoBehaviour
         {
             string newWord = word;
             string cleanWord = Regex.Replace(word, "[\".,/!¡?¿;:*']", "").ToLower();
-            print(cleanWord);
             string icon = "";
 
             //if word is a conjugated form of verb
@@ -29,7 +28,6 @@ public class IconsInText : MonoBehaviour
                 cleanWord = ((string)Dictionary.verbMapping[cleanWord]);
             }
 
-            print("remapped word " + cleanWord);
             if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
