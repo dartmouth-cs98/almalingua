@@ -32,7 +32,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("21", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación." , null};
             questNPC.Add("22", questDetails);
-            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "Slime is next to corn and wheat" ,"Farm" };
+            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "El limo está al lado de las elotes y el trigo." ,"Farm" };
             questNPC.Add("23", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.", null};
             questNPC.Add("24", questDetails);
@@ -54,7 +54,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("34", questDetails);
             questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
             questNPC.Add("35", questDetails);
-            questDetails = new string[] { "Chef", "Hable con el chef", "El chef es una araña en el pueblo.",null };
+            questDetails = new string[] { "Chef", "Hable con la cocinera", "La cocinera es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
             questDetails = new string[] { "Farmer", "Pregunta los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
             questNPC.Add("41", questDetails);

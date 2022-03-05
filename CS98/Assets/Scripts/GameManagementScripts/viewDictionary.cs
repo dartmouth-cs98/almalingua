@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 /* Author: Brandon Guzman*/
 
-public class viewDictionary : MonoBehaviour
-{
+public class viewDictionary : MonoBehaviour{
     public GameObject dictUI;
     public GameObject PopupButton;
     public bool showDict = false;
@@ -18,20 +17,22 @@ public class viewDictionary : MonoBehaviour
         }
 
     }
-    public void Display()
-    {
+    public void Display() {
+        Dictionary d = Dictionary.playerDictionary;
         dictUI.SetActive(!dictUI.activeSelf);
-        if  (dictUI.activeSelf && Dictionary.playerDictionary){ 
+        if  (dictUI.activeSelf){ 
             /* if dictionary is being shown , then call refresh*/
 
-            Dictionary.playerDictionary.RevealWords();
+            d.RevealWords();
+        }
+        else{
+            d.reset();
         }
 
 
     }
 
     public void ShowButton(){
-        print("here");
         showDict = true;
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }

@@ -14,6 +14,9 @@ public class IconsInText : MonoBehaviour
      * 
      * Icons stored as property in our word.JSON files. Icons imported as TextMeshPro assets.
      */
+
+
+
     public static string GetTextWithIcons(string text)
     {
         string textWithIcons = "";
@@ -25,12 +28,13 @@ public class IconsInText : MonoBehaviour
             string icon = "";
 
             //if word is a conjugated form of verb
-            if (Dictionary.verbMapping.ContainsKey(cleanWord)){
+
+            if (Dictionary.playerDictionary && Dictionary.verbMapping.ContainsKey(cleanWord)){
                 cleanWord = ((string)Dictionary.verbMapping[cleanWord]);
             }
 
             print("remapped word " + cleanWord);
-            if (Dictionary.wordMap.ContainsKey(cleanWord))
+            if (Dictionary.playerDictionary && Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
                 newWord = "<link=\"" + cleanWord + "\"><color=blue>" + newWord + "</color></link>";
