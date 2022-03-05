@@ -34,6 +34,7 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         UpdateQuest();
     }
 
@@ -41,6 +42,7 @@ public class NPCDialogueUI : MonoBehaviour
     private void OnDisable()
     {
         RespondButton.GetComponent<HideShowObjects>().Hide();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
     }
 
     private void Update() {
@@ -64,6 +66,7 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         UpdateQuest();
         NPCTouch = NPCTouched;
         if (NPCTouch != NPCName)
@@ -117,7 +120,6 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-            // gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         }
         else
         {
@@ -164,7 +166,7 @@ public class NPCDialogueUI : MonoBehaviour
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
-            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Done";
+            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "HECHO";
             userTalking = false;
         }
         else
