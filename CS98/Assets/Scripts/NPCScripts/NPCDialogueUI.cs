@@ -137,12 +137,12 @@ public class NPCDialogueUI : MonoBehaviour
             if (nextMessageRequiresInput)
             {
                 userTalking = true;
-                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Respond";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "RESPONDER";
             }
             else
             {
                 userTalking = false;
-                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Next";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "<sprite name=\"derecha\"> PRÓXIMA";
             }
         }
 
@@ -175,7 +175,7 @@ public class NPCDialogueUI : MonoBehaviour
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
-            RespondButton.GetComponentInChildren<Text>().text = "Done";
+            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "Done";
             userTalking = false;
         }
         else
