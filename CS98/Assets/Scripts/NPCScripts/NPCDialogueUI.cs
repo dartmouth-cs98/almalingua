@@ -42,7 +42,7 @@ public class NPCDialogueUI : MonoBehaviour
     private void OnDisable()
     {
         RespondButton.GetComponent<HideShowObjects>().Hide();
-        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
+        // gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
     }
 
     private void Update() {
@@ -96,7 +96,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-        gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
