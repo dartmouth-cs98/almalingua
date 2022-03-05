@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Linq;
+using TMPro;
 
 
 /* Author: Brandon Guzman*/
 
-public class Dictionary : MonoBehaviour
-{
+public class Dictionary : MonoBehaviour{
 
     public static Dictionary playerDictionary;
     public static Hashtable wordMap; //public static hashmap for words
     public static Hashtable verbMapping;
-    public InputField searchBox;
+    public TMP_InputField searchBox;
     public Slot[] slots;
     public WordCollection masterList;
     public GameObject ViewDict; //will revist
@@ -27,8 +27,7 @@ public class Dictionary : MonoBehaviour
     private string path = Application.streamingAssetsPath;
     // private int discoveredWords = 0;
 
-    void Start()
-    {
+    void Start(){
         playerDictionary = this;
 
         List<WordCollection> lists = new List<WordCollection>();
@@ -43,10 +42,8 @@ public class Dictionary : MonoBehaviour
         createVerbMappings();
 
 
-        foreach (WordCollection l in lists)
-        {
-            foreach (Word word in l.wlist)
-            {
+        foreach (WordCollection l in lists){
+            foreach (Word word in l.wlist){
                 masterList.Add(word);
             }
         }
@@ -56,8 +53,7 @@ public class Dictionary : MonoBehaviour
         wordMap = new Hashtable();
 
         //give ID's to all the words and add them to the hashtable 
-        for (int i = 0; i < length; i++)
-        {
+        for (int i = 0; i < length; i++) {
             masterList.wlist[i].ID = i;
             // masterList.wlist[i].encountered = true;
 
@@ -67,8 +63,7 @@ public class Dictionary : MonoBehaviour
 
     }
 
-    private WordCollection readWordFiles(string filename)
-    {
+    private WordCollection readWordFiles(string filename){
         WordCollection words;
         /*read into a  List<Word> from the json file provided */
         Queue<string> sentences = new Queue<string>();
@@ -84,43 +79,25 @@ public class Dictionary : MonoBehaviour
 
     // refresh is called everytime user opens dictionary & also when they turn a page
     //sliding window of seeing 8 slots at a time
-    public void refresh()
-    {
+    public void refresh(){
         int currIdx = startIndex;
-
-
-        // //start dictionary from first learned word if we are not searching for a specific word
-        // if (discoveredWords > 0 && TargetID == -1 && !masterList.wlist[currIdx].encountered){
-        //     while (!masterList.wlist[currIdx].encountered){
-        //         currIdx++;
-        //     }
-        // }
-
 
         if (length < 1) return; /*edge case check on startup*/
         int i = 0;
-        while (i < 8 && currIdx < length)
-        {
-            Text t = slots[i].txtbox.GetComponent<UnityEngine.UI.Text>();
+        while (i < 8 && currIdx < length){
+            TextMeshProUGUI t = slots[i].txtbox.GetComponent<TextMeshProUGUI>();
             Image img = slots[i].imgbox.GetComponent<UnityEngine.UI.Image>();
             Word current = masterList.wlist[currIdx];
 
-            if (current.encountered)
-            {
+            if (current.encountered){
                 t.text = current.w + "\n -" + current.definition; //update slot with word definition
 
                 //if user searched for specific word, then highlight word in red
-                if (currIdx == TargetID)
-                {
-                    img.color = Color.red;
-                }
-                else
-                {
-                    img.color = Color.white;
-                }
+                if (currIdx == TargetID) img.color = Color.red;
+                else {img.color = Color.white; }
             }
-            else
-            { //unknown words will be in black
+
+            else { //unknown words will be in black
                 img.color = Color.black;
                 t.text = "Undiscovered";
             }
@@ -129,13 +106,11 @@ public class Dictionary : MonoBehaviour
 
         }
         //empty slots because we have reached the end of our word list
-        if (i < 8 && currIdx >= length)
-        {
-            for (int j = i + 1; j < 8; j++)
-            {
+        if (i < 8 && currIdx >= length){
+            for (int j = i + 1; j < 8; j++){
                 Image img = slots[j].imgbox.GetComponent<UnityEngine.UI.Image>();
                 img.color = Color.black;
-                Text t = slots[j].txtbox.GetComponent<UnityEngine.UI.Text>();
+                TextMeshProUGUI t = slots[i].txtbox.GetComponent<TextMeshProUGUI>();
                 t.text = "";
 
             }
@@ -146,30 +121,24 @@ public class Dictionary : MonoBehaviour
 
 
 
-    public void TurnRight()
-    {
-        if (startIndex < length)
-        {
+    public void TurnRight(){
+        if (startIndex < length){
             startIndex += 8;
+            refresh();
         }
-        refresh();
 
     }
 
-    public void TurnLeft()
-    {
-        if (startIndex > 0)
-        {
+    public void TurnLeft(){
+        if (startIndex > 0){
             startIndex -= 8;
+            refresh();
         }
-        refresh();
     }
-    public void UpdateSearch()
-    {
+    public void UpdateSearch(){
         if (!searchBox) return;
         searchString = searchBox.text;
-        if (wordMap.ContainsKey(searchString))
-        {
+        if (wordMap.ContainsKey(searchString)){
             Word searched = (Word)wordMap[searchString];
             int id = searched.ID;
             startIndex = id - (id % 8);
@@ -179,12 +148,10 @@ public class Dictionary : MonoBehaviour
         }
     }
 
-    public void UpdateSearchForSpeechBubble(string word)
-    {
+    public void UpdateSearchForSpeechBubble(string word){
         searchString = word;
         ViewDict.GetComponent<viewDictionary>().Display();
-        if (wordMap.ContainsKey(searchString))
-        {
+        if (wordMap.ContainsKey(searchString)){
             Word searched = (Word)wordMap[searchString];
             int id = searched.ID;
             startIndex = id - (id % 8);
@@ -193,32 +160,29 @@ public class Dictionary : MonoBehaviour
         }
     }
 
-    public void reset()
-    {
+    public void reset(){
         searchString = "";
         TargetID = -1;
         searchBox.text = "";
+        startIndex = 0;
+        refresh();
 
     }
 
 
 
-    public void discoveredWord(string newWord)
-    {
-        if (wordMap.ContainsKey(newWord))
-        {
-            Word discovered = (Word)wordMap[newWord];
-            discovered.encountered = true;
-        }
-    }
+    // public void discoveredWord(string newWord){
+    //     if (wordMap.ContainsKey(newWord)){
+    //         Word discovered = (Word)wordMap[newWord];
+    //         discovered.encountered = true;
+    //     }
+    // }
 
-    public void RevealWords()
-    {   
+    public void RevealWords(){   
 
         int q =  PlayerPrefs.GetInt("Quest");
         int step = PlayerPrefs.GetInt("QuestStep");
-        foreach (Word w in masterList.wlist)
-        {
+        foreach (Word w in masterList.wlist){
             //if we're ahead on quests then yes we have encountered
             if (w.questN < q ){
                 w.encountered = true;
