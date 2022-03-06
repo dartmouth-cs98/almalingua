@@ -8,9 +8,9 @@
         "stepN": 0
     },
     {
-        "w":  "hacer falta ",
+        "w":  "hacer falta",
         "ID":     0,
-        "definition": "to need",
+        "definition": "to be needed",
         "encountered": false,
         "questN": 4,
         "stepN": 0
@@ -65,9 +65,57 @@
         "stepN": 2
     },
     {
-        "w":    "arquéologo",
+        "w":    "arqueólogo",
         "ID":   0,
         "definition": "el, archeologist",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 2
+    },
+    {
+        "w":    "araña",
+        "ID":   0,
+        "definition": "la, spidert",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "extraño",
+        "ID":   0,
+        "definition": "stranger, strange",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "útil",
+        "ID":   0,
+        "definition": "useful",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 0
+    },
+    {
+        "w":    "acordar",
+        "ID":   0,
+        "definition": "to remember",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 1
+    },
+    {
+        "w":    "aparentemente",
+        "ID":   0,
+        "definition": "apparently",
+        "encountered": false,
+        "questN": 4,
+        "stepN": 2
+    },
+    {
+        "w":    "sanar",
+        "ID":   0,
+        "definition": "to heal",
         "encountered": false,
         "questN": 4,
         "stepN": 2

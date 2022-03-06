@@ -20,11 +20,10 @@ public class IconsInText : MonoBehaviour
     public static string GetTextWithIcons(string text)
     {
         string textWithIcons = "";
-        foreach (string word in text.Split(' '))
-        {
+        foreach (string word in text.Split(' ')){
             string newWord = word;
             string cleanWord = Regex.Replace(word, "[\".,/!¡?¿;:*']", "").ToLower();
-            print(cleanWord);
+            //print(cleanWord);
             string icon = "";
 
             //if word is a conjugated form of verb

@@ -8,27 +8,32 @@ public class viewDictionary : MonoBehaviour{
     public GameObject dictUI;
     public GameObject PopupButton;
     public bool showDict = false;
+    public Dictionary d = Dictionary.playerDictionary;
     void Start()
     {
         /*dictionary starts as not shown*/
         dictUI.SetActive(false);
-        if (!showDict && PlayerPrefs.GetInt("Quest") < 2){
+        if (!showDict && PlayerPrefs.GetInt("Quest") < 1){
             PopupButton.SetActive(false);
         }
 
     }
     public void Display() {
-        Dictionary d = Dictionary.playerDictionary;
         dictUI.SetActive(!dictUI.activeSelf);
         if  (dictUI.activeSelf){ 
             /* if dictionary is being shown , then call refresh*/
-
             d.RevealWords();
         }
         else{
             d.reset();
         }
 
+
+    }
+    public void UpdateSearchForSpeechBubble(string word){
+        d.searchBox.text = word;
+        Display();
+        d.UpdateSearch();
 
     }
 
