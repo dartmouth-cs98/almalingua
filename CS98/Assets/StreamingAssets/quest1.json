@@ -197,7 +197,7 @@
     {
         "w":    "estar",
         "ID":   0,
-        "definition": "to be temporary)",
+        "definition": "to be (temporary)",
         "encountered": false,
         "questN": 1,
         "stepN": 0
@@ -209,5 +209,13 @@
         "encountered": false,
         "questN": 1,
         "stepN": 0
-    } 
+    },
+    {
+        "w":  "buscar",
+        "ID":     0,
+        "definition": "to look for",
+        "encountered": false,
+        "questN": 1,
+        "stepN": 1
+    }
 ]}

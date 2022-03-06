@@ -53,17 +53,17 @@
         "stepN": 0
     },
     {
-        "w":    "zanahoria",
+        "w":    "zanahorias",
         "ID":   0,
-        "definition": "la, carrot",
+        "definition": "las, carrots",
         "encountered": false,
         "questN": 2,
         "stepN": 0
     },
     {
-        "w":    "papa",
+        "w":    "papas",
         "ID":   0,
-        "definition": "la, potato",
+        "definition": "las, potatos",
         "encountered": false,
         "icon": "<sprite=\"Potato_Col2\" name=\"Potato_Col2\">",
         "questN": 2,
@@ -78,7 +78,7 @@
         "stepN": 1
     },
     {
-        "w":    "elote",
+        "w":    "elotes",
         "ID":   0,
         "definition": "el, corn",
         "encountered": false,
@@ -127,9 +127,9 @@
         "stepN": 3
     },
     {
-        "w":    "cultivo",
+        "w":    "cultivos",
         "ID":   0,
-        "definition": "el, crop",
+        "definition": "los, cultivos",
         "encountered": false,
         "questN": 2,
         "stepN": 3
@@ -143,9 +143,9 @@
         "stepN": 3
     },
     {
-        "w":    "monstruo",
+        "w":    "monstruos",
         "ID":   0,
-        "definition": "el, monster",
+        "definition": "los, monsters",
         "encountered": false,
         "icon": "<sprite=\"Standing_left\" name=\"Standing_left\">",
         "questN": 2,
@@ -191,5 +191,101 @@
         "icon": "<sprite=\"SnowCrystal1\" name=\"SnowCrystal1\">",
         "questN": 2,
         "stepN": 4
-    } 
+    },
+    {
+        "w":    "granja",
+        "ID":   0,
+        "definition": "la, farm",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "pueblo",
+        "ID":   0,
+        "definition": "el, town",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "granjero",
+        "ID":   0,
+        "definition": "el, farmer",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "ayudar",
+        "ID":   0,
+        "definition": "to help",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "poder",
+        "ID":   0,
+        "definition": "can",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "lástima",
+        "ID":   0,
+        "definition": "la, pity",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "parecer",
+        "ID":   0,
+        "definition": "to seem, opinion",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "aparecer",
+        "ID":   0,
+        "definition": "to appear",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "destello",
+        "ID":   0,
+        "definition": "el, flash",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "cielo",
+        "ID":   0,
+        "definition": "el, sky",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "ver",
+        "ID":   0,
+        "definition": "to see",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    },
+    {
+        "w":    "letrero",
+        "ID":   0,
+        "definition": "el, signpost",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 0
+    }
 ]}

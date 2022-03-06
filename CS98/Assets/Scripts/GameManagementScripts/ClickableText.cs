@@ -24,7 +24,7 @@ public class ClickableText : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     private Color32 usedPressedColor = new Color32(0xCF, 0x00, 0xCF, 0xFF);
 
 
-    public GameObject Dictionary;
+    public GameObject DictView;
     private List<Color32[]> startColors = new List<Color32[]>();
     private TextMeshProUGUI textMeshPro;
     private Dictionary<int, bool> usedLinks = new Dictionary<int, bool>();
@@ -74,7 +74,7 @@ public class ClickableText : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
             SetLinkColor(linkIndex, usedHoveredColor);
             startColors.ForEach(c => c[0] = c[1] = c[2] = c[3] = usedColor);
             usedLinks[linkIndex] = true;
-            Dictionary.GetComponent<Dictionary>().UpdateSearchForSpeechBubble(linkInfo.GetLinkID());
+            DictView.GetComponent<viewDictionary>().UpdateSearchForSpeechBubble(linkInfo.GetLinkID());
         }
         pressedLinkIndex = -1;
     }
