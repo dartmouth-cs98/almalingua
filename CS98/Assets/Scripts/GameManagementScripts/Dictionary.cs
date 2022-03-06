@@ -15,14 +15,13 @@ public class Dictionary : MonoBehaviour{
     public static Hashtable wordMap; //public static hashmap for words
     public static Hashtable verbMapping;
     public TMP_InputField searchBox;
+    public string searchString;
     public Slot[] slots;
-    public WordCollection masterList;
-    public GameObject ViewDict; //will revist
 
     //private WordCollection InputArray;
+    public WordCollection masterList;
     private int length;
     private int startIndex = 0;
-    public string searchString;
     private int TargetID = -1;
     private string path = Application.streamingAssetsPath;
     // private int discoveredWords = 0;
@@ -38,10 +37,9 @@ public class Dictionary : MonoBehaviour{
         lists.Add(readWordFiles(path + "/quest5.json"));
         lists.Add(readWordFiles(path + "/quest6.json"));
 
-
         createVerbMappings();
-
-
+        masterList.wlist = new List<Word>();
+        
         foreach (WordCollection l in lists){
             foreach (Word word in l.wlist){
                 masterList.Add(word);
@@ -148,18 +146,6 @@ public class Dictionary : MonoBehaviour{
         }
     }
 
-    public void UpdateSearchForSpeechBubble(string word){
-        searchString = word;
-        ViewDict.GetComponent<viewDictionary>().Display();
-        if (wordMap.ContainsKey(searchString)){
-            Word searched = (Word)wordMap[searchString];
-            int id = searched.ID;
-            startIndex = id - (id % 8);
-            TargetID = id;
-            refresh();
-        }
-    }
-
     public void reset(){
         searchString = "";
         TargetID = -1;
@@ -169,14 +155,6 @@ public class Dictionary : MonoBehaviour{
 
     }
 
-
-
-    // public void discoveredWord(string newWord){
-    //     if (wordMap.ContainsKey(newWord)){
-    //         Word discovered = (Word)wordMap[newWord];
-    //         discovered.encountered = true;
-    //     }
-    // }
 
     public void RevealWords(){   
 
@@ -198,7 +176,6 @@ public class Dictionary : MonoBehaviour{
         verbMapping = new Hashtable();
         WordCollection verbs = readWordFiles(path + "/verbMaps.json");
 
-
         foreach (Word word in verbs.wlist){
             string[] conjugations = word.w.Split(' ');
             for (int i = 0; i < conjugations.Length; i++){
@@ -206,6 +183,7 @@ public class Dictionary : MonoBehaviour{
             }
 
         }
+        print("finished verbmapping");
 
 
 

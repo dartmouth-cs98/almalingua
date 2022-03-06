@@ -240,6 +240,14 @@
     {
         "w":    "abriste",
         "definition": "abrir"
+    },
+    {
+        "w":    "decidas",
+        "definition": "decidir"
+    },
+    {
+        "w":    "acuerdas",
+        "definition": "acordar"
     }
 ]
 }

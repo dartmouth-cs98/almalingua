@@ -24,9 +24,9 @@
         "stepN": 0
     },
     {
-        "w":  "a propósito",
+        "w":  "propósito",
         "ID":     0,
-        "definition": "on purpose",
+        "definition": "purpose, a propósito means on purpose",
         "encountered": false,
         "questN": 5,
         "stepN": 0
@@ -122,20 +122,52 @@
         "stepN": 1
     },
     {
-        "w":    "extraño",
-        "ID":   0,
-        "definition": "strange, extraña",
-        "encountered": false,
-        "questN": 5,
-        "stepN": 1
-    },
-    {
         "w":    "de vuelta",
         "ID":   0,
         "definition": "go back, back to",
         "encountered": false,
         "questN": 5,
         "stepN": 1
+    },
+    {
+        "w":    "teletransportadores",
+        "ID":   0,
+        "definition": "teleporters",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "soler",
+        "ID":   0,
+        "definition": "used to",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 0
+    },
+    {
+        "w":    "detonar",
+        "ID":   0,
+        "definition": "to explode",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 7
+    },
+    {
+        "w":    "relampaguear",
+        "ID":   0,
+        "definition": "to thunder, lightning",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 7
+    },
+    {
+        "w":    "hogar",
+        "ID":   0,
+        "definition": "home, house",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 7
     }
 
 ]}

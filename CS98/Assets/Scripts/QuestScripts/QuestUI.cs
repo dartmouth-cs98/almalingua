@@ -24,7 +24,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("10", questDetails);
             questDetails = new string[] { "Cesar", "Pídele direcciones a César", "Cesar es el reno en medio del pueblo.",null };
             questNPC.Add("11", questDetails);
-            questDetails = new string[] { "Witch", "Encuentra tu varita", "Ve a la izquierda, arriba, luego a la izquierda.  Está al lado del hospital.",null };
+            questDetails = new string[] { "Witch", "Encuentra tu varita", "Ve a la izquierda, arriba, luego a la izquierda. Está al lado del hospital.",null };
             questNPC.Add("12", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "La granja está debajo del pueblo. El granjero está en medio de la granja.",null };
             questNPC.Add("20", questDetails);
@@ -56,23 +56,23 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("35", questDetails);
             questDetails = new string[] { "Chef", "Hable con la cocinera", "La cocinera es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
-            questDetails = new string[] { "Farmer", "Pregunta los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
+            questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
             questNPC.Add("41", questDetails);
-            questDetails = new string[] { "Chef", "Hable con el chef", "Dale al chef los ingredientes." ,null};
+            questDetails = new string[] { "Chef", "Hable con la chef", "Dale a la chef los ingredientes." ,null};
             questNPC.Add("42", questDetails);
             questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "El arqueólogo está en el pueblo." ,null};
             questNPC.Add("50", questDetails);
-            questDetails = new string[] { "", "Encuentra la sartén", "La sartén está en la esquina superior derecha de las ruinas." ,null};
+            questDetails = new string[] { "", "Encuentra el sartén", "El sartén está en la esquina superior a la derecha de las ruinas." ,null};
             questNPC.Add("51", questDetails);
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("52", questDetails);
 
-            questDetails = new string[] { "", "Encuentre el cuenco.", "El cuenco está en el área central izquierda de las ruinas." ,null};
+            questDetails = new string[] { "", "Encuentre el tazón.", "El tazón está en el área central izquierda." ,null};
             questNPC.Add("53", questDetails);
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("54", questDetails);
 
-            questDetails = new string[] { "", "Encuentra las tijeras", "Las tijeras están en el área central y derecha de las ruinas." ,null};
+            questDetails = new string[] { "", "Encuentra las tijeras", "Las tijeras están en el área central a la derecha de las ruinas." ,null};
             questNPC.Add("55", questDetails);
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("56", questDetails);

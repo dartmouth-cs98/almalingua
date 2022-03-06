@@ -12,6 +12,16 @@ public class MiniMap : MonoBehaviour
 
     void Start(){
         PlayerCamera = GameObject.Find("CameraPlayer/ProtagonistCamera");
+
+        int q =  PlayerPrefs.GetInt("Quest");
+        int step = PlayerPrefs.GetInt("QuestStep");
+        if ( q < 3){
+             player = GameObject.Find("CameraPlayer/PlayerManager/init_Protagonist/init_Character");
+
+        }
+        else{
+            player = GameObject.Find("CameraPlayer/PlayerManager/Protagonist/Character");
+        }
     }
 
     // Update is called once per frame
