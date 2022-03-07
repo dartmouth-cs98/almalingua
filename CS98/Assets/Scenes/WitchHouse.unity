@@ -963,7 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneLoader: {fileID: 2010174062}
-  NextScene: Village
+  NextScene: Tutorial
 --- !u!60 &605596674
 PolygonCollider2D:
   m_ObjectHideFlags: 0
