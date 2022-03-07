@@ -397,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchBox: {fileID: 6655856267232693260}
+  searchString: 
   slots:
   - {fileID: 1982673265149761881}
   - {fileID: 4428871408191393643}
@@ -408,8 +409,6 @@ MonoBehaviour:
   - {fileID: 6509166029988121679}
   masterList:
     wlist: []
-  ViewDict: {fileID: 4245498057212777678}
-  searchString: 
 --- !u!114 &4245498056557719065
 MonoBehaviour:
   m_ObjectHideFlags: 0
