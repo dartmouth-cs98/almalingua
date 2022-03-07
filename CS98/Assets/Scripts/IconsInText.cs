@@ -32,7 +32,7 @@ public class IconsInText : MonoBehaviour
                 cleanWord = ((string)Dictionary.verbMapping[cleanWord]);
             }
 
-            print("remapped word " + cleanWord);
+            // print("remapped word " + cleanWord);
             if (Dictionary.playerDictionary && Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
