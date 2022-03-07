@@ -56,6 +56,7 @@ public class Tutorial : MonoBehaviour
         }
     }
 
+    // Saving entered username in case of later use for the player / online play
     public void EnteredUsername()
     {
         if (!InputField) return;

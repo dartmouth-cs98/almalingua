@@ -104,7 +104,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("90", questDetails);
             questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
             questNPC.Add("91", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Make your way to the witch's house through the weeds to the right.", null };
+            questDetails = new string[] { "Witch", "Tutorial", "Now go to the witch's house - through the weeds to the right!", null };
             questNPC.Add("92", questDetails);
         }
         EventManager.onProtagonistChange += WitchSpeak;
