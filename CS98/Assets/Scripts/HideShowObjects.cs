@@ -11,6 +11,7 @@ public class HideShowObjects : MonoBehaviour
     {
         Hide();
     }
+    
     public void Hide()
     {
         gameObject.SetActive(false);
