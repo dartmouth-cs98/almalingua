@@ -23,17 +23,14 @@ public class IconsInText : MonoBehaviour
         foreach (string word in text.Split(' ')){
             string newWord = word;
             string cleanWord = Regex.Replace(word, "[\".,/!¡?¿;:*']", "").ToLower();
-            //print(cleanWord);
             string icon = "";
 
-            //if word is a conjugated form of verb
-
+            //if word is a conjugated form of verb, replace with infinitive
             if (Dictionary.playerDictionary && Dictionary.verbMapping.ContainsKey(cleanWord)){
                 cleanWord = ((string)Dictionary.verbMapping[cleanWord]);
             }
 
-            // print("remapped word " + cleanWord);
-            if (Dictionary.playerDictionary && Dictionary.wordMap.ContainsKey(cleanWord))
+            if (Dictionary.wordMap.ContainsKey(cleanWord))
             {
                 icon = ((Word)Dictionary.wordMap[cleanWord]).icon;
                 newWord = "<link=\"" + cleanWord + "\"><color=blue>" + newWord + "</color></link>";
