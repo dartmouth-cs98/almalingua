@@ -279,7 +279,7 @@ public class CombatSystem : MonoBehaviour
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
 
-        while (nextIndex == randIndex)
+        while (nextIndex == randIndex && spells.Count >=2)
         {
             nextIndex = rnd.Next(spells.Count);
         }
