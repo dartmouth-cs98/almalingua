@@ -34,6 +34,7 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         UpdateQuest();
     }
 
@@ -41,6 +42,7 @@ public class NPCDialogueUI : MonoBehaviour
     private void OnDisable()
     {
         RespondButton.GetComponent<HideShowObjects>().Hide();
+        // gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
     }
 
     private void Update() {
@@ -64,6 +66,7 @@ public class NPCDialogueUI : MonoBehaviour
         rootTalking = true;
         userTalking = false;
         RespondButton.GetComponent<HideShowObjects>().Show();
+        gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         UpdateQuest();
         NPCTouch = NPCTouched;
         if (NPCTouch != NPCName)
@@ -93,7 +96,6 @@ public class NPCDialogueUI : MonoBehaviour
     */
     public void DisplayNextSentence()
     {
-        gameObject.transform.GetChild(0).gameObject.SetActive(false);
         gameObject.transform.GetChild(3).gameObject.SetActive(false);       //set userinput textbook to inactive
         gameObject.transform.GetChild(1).gameObject.SetActive(true);        //set textbox to active
         NameText.text = NPCName + ":";
@@ -117,7 +119,6 @@ public class NPCDialogueUI : MonoBehaviour
         if (NPC.GetComponent<NPCDialogueManager>().OnLastMessage())
         {
             RespondButton.GetComponent<HideShowObjects>().Hide();
-            gameObject.transform.Find("CloseButton").GetComponent<HideShowObjects>().Show();
         }
         else
         {
@@ -126,12 +127,12 @@ public class NPCDialogueUI : MonoBehaviour
             if (nextMessageRequiresInput)
             {
                 userTalking = true;
-                RespondButton.GetComponentInChildren<Text>().text = "Respond";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "RESPONDER";
             }
             else
             {
                 userTalking = false;
-                RespondButton.GetComponentInChildren<Text>().text = "Next";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "<sprite name=\"derecha\"> PRÓXIMA";
             }
         }
 
@@ -164,7 +165,7 @@ public class NPCDialogueUI : MonoBehaviour
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
-            RespondButton.GetComponentInChildren<Text>().text = "Done";
+            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "HECHO";
             userTalking = false;
         }
         else

@@ -238,26 +238,18 @@ public class NPCDialogueManager : MonoBehaviour
         return false;
     }
 
-
     /**************  GetNextMessage() *****************/
     /*
-     * Find the current speech node's connections. If this node is connected to
-     * OptionNode(s), advance to (last) OptionNode whose text matches currIntent, 
-     * then advance to that OptionNode's SpeechNode child.
-     * 
-     * If current node's children are SpeechNode(s), advance to (last) SpeechNode
-     * whose condition resolves to true.
-     *
-     * Returns null. Use the public property "CurrentText" to access current text. 
+     * Find the current speech node's connections.
+     * Returns list of valid matches, for use in GetNextMessage().
      *
      * Assumes only 1 error intent.
      * 
      */
-    public void GetNextMessage()
+    public List<ConversationNode> GetMatches()
     {
         List<ConversationNode> matches = new List<ConversationNode>();
         OptionNode fallbackNode = null;
-
         // Iterate over each connection, add all valid to list of matches.
         foreach (Connection connection in currNode.Connections)
         {
@@ -286,6 +278,24 @@ public class NPCDialogueManager : MonoBehaviour
         {
             matches.Add(fallbackNode); // If no matching intents, but the convo should continue, set FallbackNode as match.
         }
+        return matches;
+    }
+
+
+    /**************  GetNextMessage() *****************/
+    /*
+     * Find the current speech node's connections. If this node is connected to
+     * OptionNode(s), advance to random OptionNode whose text matches currIntent, 
+     * then advance to that OptionNode's SpeechNode child.
+     * 
+     * If current node's children are SpeechNode(s), advance to random SpeechNode.
+     *
+     * Returns null. Use the public property "CurrentText" to access current text. 
+     * 
+     */
+    public void GetNextMessage()
+    {
+        List<ConversationNode> matches = GetMatches();
         if (matches.Count > 0)
         {
             // In case of multiple matches, return a random match.. 
