@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 504312483}
   - component: {fileID: 504312486}
   - component: {fileID: 504312485}
-  - component: {fileID: 504312484}
+  - component: {fileID: 504312487}
   m_Layer: 0
   m_Name: InfoUI
   m_TagString: Untagged
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &504312484
+--- !u!114 &504312487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,10 +220,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 504312482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445d35446e2c7462bbdac70e0a2a2efa, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a25e3856f4f64457976f67f395e0713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneLoader: {fileID: 0}
 --- !u!1 &1025605939
 GameObject:
   m_ObjectHideFlags: 0

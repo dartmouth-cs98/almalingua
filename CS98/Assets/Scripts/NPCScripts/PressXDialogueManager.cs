@@ -7,13 +7,7 @@ public class PressXDialogueManager : MonoBehaviour
 
     bool inTriggerSpace = false;
     bool isTalking = false;
-    private GameObject InfoUI;
-
-
-    void Start()
-    {
-      InfoUI = GameObject.Find("InfoUI");
-    }
+    public GameObject InfoUI;
 
     void Update()
     {
