@@ -9,6 +9,8 @@ public class PressXDialogueManager : MonoBehaviour
     bool isTalking = false;
     public GameObject InfoUI;
 
+    private const string PLAYER_TAG = "Player";
+
     void Update()
     {
         // Hide the InfoUI and disable X button during conversation.
@@ -33,7 +35,7 @@ public class PressXDialogueManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (!isTalking)
+        if (!isTalking && col.tag == PLAYER_TAG)
         {
             InfoUI.GetComponent<HideShowObjects>().Show();
         }
@@ -42,8 +44,10 @@ public class PressXDialogueManager : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        InfoUI.GetComponent<HideShowObjects>().Hide();
-        inTriggerSpace = false;
+        if (col.tag == PLAYER_TAG) {
+            InfoUI.GetComponent<HideShowObjects>().Hide();
+            inTriggerSpace = false;
+        }
     }
 
 }
