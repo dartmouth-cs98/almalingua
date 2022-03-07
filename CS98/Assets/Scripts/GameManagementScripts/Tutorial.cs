@@ -12,57 +12,47 @@ using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-    public TextMeshProUGUI TextDetails;
-    public GameObject HighlightArrow;
-    public TMP_InputField InputField;
-    public GameObject PathObstacle;
+    public Text InputField;
+    public GameObject Obstacle;
+    public GameObject PlayerObj;
 
-    private static string message1 = "Hello and welcome to the land of Almalingua.";
-    private static string message2 = "Must've been a rough crash... " +
-        "Try using the arrow keys to make your way to the coin over to your left.";
-
-    private static string message3 = "Well done mysterious traveler. What is your name?";
-    private static string message4 = "I may know someone who can help you. " +
-        "Try taking this path to your left through the grass towards the town.";
-    private string[] messages = { message1, message2, message3, message4 };
-    private int currentMessage = 0;
     private string username = "";
+    private int questStep = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        TextDetails.text = message1;
+        QuestUI.SetQuest(9);
+        QuestUI.SetQuestStep(0);
     }
 
-    // Tracking when player uses joystick to find target and displaying next message
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (currentMessage == 1)
+        if (PlayerPrefs.GetInt("QuestStep") == 0)
         {
-            NextMessage();
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            NextQuest();
         }
     }
+
+    private void OnMouseDown()
+    {
+        if (PlayerPrefs.GetInt("QuestStep") == 1)
+        {
+            NextQuest();
+        }
+    }
+
 
     // Updating which message is displayed in the text box
-    public void NextMessage()
+    public void NextQuest()
     {
-        currentMessage += 1;
-        if (currentMessage == 2)
-        {
-            InputField.gameObject.SetActive(true);
-        }
+        questStep += 1;
+        QuestUI.SetQuestStep(questStep);
 
-        if (currentMessage == 3)
+        if (PlayerPrefs.GetInt("QuestStep") == 2)
         {
-            TextDetails.text = "Nice to meet you, " + username + ". " + messages[currentMessage];
-        }
-
-        else
-        {
-            TextDetails.text = messages[currentMessage];
+            Obstacle.SetActive(false);
         }
     }
 

@@ -100,6 +100,12 @@ public class QuestUI : MonoBehaviour
             questDetails = new string[] { "Mayor", "Talk to the Mayor", "Go back to mayor to return items",null };
             questNPC.Add("67", questDetails);
 
+            questDetails = new string[] { "Witch", "Tutorial", "Welcome to Almalingua. Use the arrow keys to find the friendly witch nearby.", null };
+            questNPC.Add("90", questDetails);
+            questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
+            questNPC.Add("91", questDetails);
+            questDetails = new string[] { "Witch", "Tutorial", "Make your way to the witch's house through the weeds to the right.", null };
+            questNPC.Add("92", questDetails);
         }
         EventManager.onProtagonistChange += WitchSpeak;
         EventManager.onQuestChange += UpdateQuest;
@@ -128,7 +134,7 @@ public class QuestUI : MonoBehaviour
 
     }
 
-    public void SetQuest(int quest)
+    public static void SetQuest(int quest)
     {
         PlayerPrefs.SetInt("Quest", quest);
         Debug.Log("Quest " + GetQuest() + " Step " + GetQuestStep());
