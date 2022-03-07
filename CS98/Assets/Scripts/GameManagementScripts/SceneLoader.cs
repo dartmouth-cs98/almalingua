@@ -12,6 +12,13 @@ public class SceneLoader : MonoBehaviour
         currScene = SceneManager.GetActiveScene().name;
     }
 
+    private void Update() {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            LoadScene("TitleScreen");
+             PlayerPrefs.DeleteAll();
+        }
+    }
     public void LoadScene(string nextScene)
     {
         PlayerPrefs.SetString("PrevScene", currScene);

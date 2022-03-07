@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8824430907523169138}
   - component: {fileID: 6545281251983025600}
-  - component: {fileID: 7477088323648850781}
   - component: {fileID: 1885308880}
   - component: {fileID: 1973080052853145509}
   - component: {fileID: 5353425255278615442}
+  - component: {fileID: 589367268}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 137661133854011476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.2272, y: 1.3172, z: 0}
-  m_LocalScale: {x: 0.6669733, y: 0.6669733, z: 0.6669733}
+  m_LocalScale: {x: 0.98952156, y: 0.96264255, z: 0.81717575}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: a38f2f3a00fc7e94f910aacead30a1f0, type: 3}
+  m_SortingOrder: 6
+  m_Sprite: {fileID: 21300000, guid: f0d4bf9a60f3241278a46fe9802e5086, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,52 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &7477088323648850781
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137661133854011476}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.38, y: -0.9}
-      - {x: 0.57, y: -1.28}
-      - {x: 0.65999997, y: -1.28}
-      - {x: 1.28, y: -0.62}
-      - {x: 1.28, y: 0.04}
-      - {x: 1.09, y: 0.19}
-      - {x: 1.28, y: 0.56}
-      - {x: 1.28, y: 0.68}
-      - {x: 1, y: 1.16}
-      - {x: 0.97999996, y: 1.18}
-      - {x: 0.78, y: 1.28}
-      - {x: -0.85999995, y: 1.28}
-      - {x: -1, y: 1.24}
-      - {x: -1.28, y: 0.7}
-      - {x: -1.28, y: -0.65}
-      - {x: -1.04, y: -0.95}
-      - {x: -0.65999997, y: -1.28}
-      - {x: -0.61, y: -1.28}
-      - {x: -0.39999998, y: -0.89}
-      - {x: -0.04, y: -1.28}
-      - {x: 0.01, y: -1.28}
 --- !u!114 &1885308880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,8 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
-  MyQuest: 0
-  Player: {fileID: 0}
 --- !u!114 &1973080052853145509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,9 +111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f1bf6be9ca042f6bc0b23440a116f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyNPCConversation: {fileID: 3771186380850688235, guid: 63658f2d06bba42ac8a1976791e022d2, type: 3}
   CurrentText: 
-  IsLoading: 0
+  currIntent: 
+  MyNPCConversation: {fileID: 5537473062734633176, guid: b41bf68957bfc4f89ab0e2e884b7df7e, type: 3}
 --- !u!114 &5353425255278615442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +126,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459213264786a410bb108bee17e30e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &589367268
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137661133854011476}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.036586583, y: -0.3801068}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.6666667, y: 2.6666667}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.67118454, y: 1.671901}
+  m_EdgeRadius: 0
