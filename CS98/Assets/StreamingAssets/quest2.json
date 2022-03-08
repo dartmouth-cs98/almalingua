@@ -312,7 +312,7 @@
         "definition": "la, storm",
         "encountered": false,
         "questN": 2,
-        "stepN": 4
+        "stepN": 1
     },
     {
         "w":    "temer",
@@ -320,6 +320,6 @@
         "definition": "to fear",
         "encountered": false,
         "questN": 2,
-        "stepN": 4
+        "stepN": 1
     }
 ]}

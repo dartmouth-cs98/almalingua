@@ -53,13 +53,13 @@ public class CombatSystem : MonoBehaviour
             spellDetails = new string[] { "0.3", "IceSpellAnimation" };
             spellInfo.Add("congela", spellDetails);
 
-            spellDetails = new string[] { "0.5", "StormSpellAnimation"};
+            spellDetails = new string[] { "0.3", "StormSpellAnimation"};
             spellInfo.Add("tempestad", spellDetails);
 
             spellDetails = new string[] { "0" , "PumpkinAnimation"};
             spellInfo.Add("teme", spellDetails);
 
-            spellDetails = new string[] { "0.35", "ScreamSpellAnimation" };
+            spellDetails = new string[] { "0.25", "ScreamSpellAnimation" };
             spellInfo.Add("grita", spellDetails);
 
             spellDetails = new string[] { "0.4", "ProtectSpellAnimation"};
@@ -68,7 +68,7 @@ public class CombatSystem : MonoBehaviour
             spellDetails = new string[] { "-2", "StrengthenSpellAnimation"};
             spellInfo.Add("fortalece", spellDetails);
 
-            spellDetails = new string[] { "0.7", "ThunderSpellAnimation" };
+            spellDetails = new string[] { "0.4", "ThunderSpellAnimation" };
             spellInfo.Add("relampaguea", spellDetails);
 
             spellDetails = new string[] { "-1", "HealingSpellAnimation"};
@@ -265,7 +265,7 @@ public class CombatSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
-    public void OnSpellButton()
+    public async void OnSpellButton()
     {
 
         if (state != CombatState.PLAYERTURN)
@@ -278,7 +278,10 @@ public class CombatSystem : MonoBehaviour
         dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "Tus dos hechizos son... ";
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
-
+        print("At Quest: " + currentQuest);
+        for (int i = 0; i < spells.Count; i++) {
+            print("Spell" + spells[i]);
+        }
         if (spells.Count < 2) {
             spellOne = "quema";
             spellTwo = "congela";
