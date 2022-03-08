@@ -7,7 +7,7 @@
         "icon": "<sprite name=\"izquierda\">",
         "questN": 1,
         "stepN": 0
-        },
+    },
     {
         "w":    "derecha",
         "ID":   0,
@@ -17,6 +17,42 @@
         "questN": 1,
         "stepN": 0
     },
+    {
+      "w":    "bruja",
+      "ID":   0,
+      "definition": "la, witch",
+      "encountered": true,
+      "icon": "<sprite=\"Witch\" name=\"Witch\">",
+      "questN": 0,
+      "stepN": 0
+    },
+    {
+      "w":    "reno",
+      "ID":   0,
+      "definition": "el, deer",
+      "encountered": true,
+      "icon": "<sprite=\"deer\" name=\"deer\">",
+      "questN": 1,
+      "stepN": 1
+    },
+    {
+      "w":    "encima",
+      "ID":   0,
+      "definition": "above",
+      "encountered": true,
+      "icon": "<sprite name=\"arriba\">",
+      "questN": 1,
+      "stepN": 0
+    },
+    {
+      "w":    "debajo",
+      "ID":   0,
+      "definition": "below",
+      "encountered": true,
+      "icon": "<sprite=\"debajo\" name=\"debajo\">",
+      "questN": 1,
+      "stepN": 0
+    },    
     {
         "w":  "hospital",
         "ID":     0,
@@ -57,7 +93,6 @@
         "ID":   0,
         "definition": "no",
         "encountered": true,
-        "icon": "<sprite name=\"no\">",
         "questN": 1,
         "stepN": 0
     },
@@ -182,7 +217,7 @@
         "ID":   0,
         "definition": "la, wand",
         "encountered": false,
-        "icon": "<sprite=\"Wand\" name=\"Wand\">",
+        "icon": "<sprite=\"RandomFantasy\" name=\"varita\">",
         "questN": 1,
         "stepN": 0
     },

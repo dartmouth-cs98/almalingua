@@ -14,10 +14,10 @@ public class PlayerMove : MonoBehaviour
     private Vector2 playerDirection;
     float fasterSpeed;
     float slowerSpeed;
-    Vector2[] playerPositions = new Vector2[] {new Vector2((float)0.5, (float)-1), 
+    Vector2[] playerPositions = new Vector2[] {new Vector2((float)-55, (float)-10.8), 
     new Vector2((float)-9.3, (float)-20), new Vector2((float)48, (float)-1.4), 
-    new Vector2((float)-3.5, (float)16.2), new Vector2((float)-57, (float)-2.97), new Vector2((float) -9.5, (float)17.8),
-    new Vector2((float)-5.04, (float)-19), new Vector2((float)0, (float)0)};
+    new Vector2((float)-3.5, (float)16.2), new Vector2((float)-42.4, (float)0.52), new Vector2((float) -9.5, (float)17.8),
+    new Vector2((float)-5.04, (float)-19), new Vector2((float)-55, (float)-11.1)};
 
     // Use this for initialization
     void Start()

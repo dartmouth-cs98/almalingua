@@ -23,36 +23,15 @@ public class Tutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        QuestUI.SetQuest(9);
+        QuestUI.SetQuest(0);
         QuestUI.SetQuestStep(0);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (PlayerPrefs.GetInt("QuestStep") == 0)
+        if (QuestUI.GetQuestStep() == 0 && QuestUI.GetQuest() == 0)
         {
-            NextQuest();
-        }
-    }
-
-    private void OnMouseDown()
-    {
-        if (PlayerPrefs.GetInt("QuestStep") == 1)
-        {
-            NextQuest();
-        }
-    }
-
-
-    // Updating which message is displayed in the text box
-    public void NextQuest()
-    {
-        questStep += 1;
-        QuestUI.SetQuestStep(questStep);
-
-        if (PlayerPrefs.GetInt("QuestStep") == 2)
-        {
-            Obstacle.SetActive(false);
+            QuestUI.SetQuestStep(1);
         }
     }
 

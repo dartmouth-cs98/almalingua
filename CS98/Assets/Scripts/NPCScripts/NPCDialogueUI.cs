@@ -127,7 +127,7 @@ public class NPCDialogueUI : MonoBehaviour
             if (nextMessageRequiresInput)
             {
                 userTalking = true;
-                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "RESPONDER";
+                RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "<sprite name=\"responder\"> RESPONDER";
             }
             else
             {
@@ -165,7 +165,7 @@ public class NPCDialogueUI : MonoBehaviour
             gameObject.transform.GetChild(3).GetComponent<HideShowObjects>().Show();
             gameObject.transform.GetChild(3).GetComponent<InputField>().text = "";
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
-            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "HECHO";
+            RespondButton.GetComponentInChildren<TextMeshProUGUI>().text = "<sprite name=\"si\"> HECHO";
             userTalking = false;
         }
         else

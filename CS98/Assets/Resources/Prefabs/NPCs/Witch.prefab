@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 8122464157940644551}
   - component: {fileID: 8122464157940644550}
   - component: {fileID: 2397678797273551839}
-  - component: {fileID: 7558313118622633433}
+  - component: {fileID: 1348406242}
+  - component: {fileID: 1348406250}
+  - component: {fileID: 1348406249}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -112,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentText: 
+  currIntent: 
   MyNPCConversation: {fileID: 3771186380850688235, guid: 9064f46a886c54ecfa6462503839e5fe, type: 3}
 --- !u!114 &2397678797273551839
 MonoBehaviour:
@@ -125,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 459213264786a410bb108bee17e30e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &7558313118622633433
+--- !u!61 &1348406242
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,3 +154,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0833333, y: 2.5}
   m_EdgeRadius: 0
+--- !u!58 &1348406250
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122464157940644554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4
+--- !u!114 &1348406249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122464157940644554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c1335e1b1a8480e976115823719f32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoUI: {fileID: 0}

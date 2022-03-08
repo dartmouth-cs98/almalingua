@@ -18,9 +18,11 @@ public class QuestUI : MonoBehaviour
         PlayerPrefs.SetInt("QuestLength", questLength);
         if (questNPC.Count == 0)
         {
-            string[] questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja" , null};
+            string[] questDetails = new string[] { "Witch", "Bienvenidos a Almalingua", "Usa las <sprite=\"arrow-keys\" name=\"arrow-keys\"> teclas de flecha para encontrar a la bruja en la playa.", null };
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja.",null };
+            questDetails = new string[] { "Witch", "Bienvenidos a Almalingua", "Habla con la bruja!", null };
+            questNPC.Add("01", questDetails);
+            questDetails = new string[] { "Witch", "Pedir ayuda", "Encontre la bruja en su casa en el pueblo.",null };
             questNPC.Add("10", questDetails);
             questDetails = new string[] { "Cesar", "Pídele direcciones a César", "Cesar es el reno en medio del pueblo.",null };
             questNPC.Add("11", questDetails);
@@ -32,7 +34,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("21", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación." , null};
             questNPC.Add("22", questDetails);
-            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "El limo está al lado de las elotes y el trigo." ,"Farm" };
+            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "El limo está al lado del maíz y el trigo." ,"Farm" };
             questNPC.Add("23", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.", null};
             questNPC.Add("24", questDetails);
@@ -42,21 +44,25 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "Hable con la bruja", "",null };
             questNPC.Add("27", questDetails);
-            questDetails = new string[] { "Teacher", "Hable con el maestro", "El maestro está en el bosque, a la derecha del pueblo." ,null};
+            questDetails = new string[] { "Teacher", "Hable con la maestra", "La maestra está en el bosque, a la derecha del pueblo." ,null};
+
             questNPC.Add("30", questDetails);
-            questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale a César (el reno) dónde están los niños." ,null};
+            questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale al reno César dónde están los niños." ,null};
             questNPC.Add("31", questDetails);
-            questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del bosque.",null };
+            questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del estanque.",null };
             questNPC.Add("32", questDetails);
-            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque." ,"Forest"};
+            questDetails = new string[] { "Teacher", "Lleva los niños a la maestra", "",null };
             questNPC.Add("33", questDetails);
-            questDetails = new string[] { "Teacher", "Hable con el maestro", "Dile al maestro dónde estaban los niños." ,null};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque." ,"Forest"};
             questNPC.Add("34", questDetails);
-            questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
+            questDetails = new string[] { "Teacher", "Hable con la maestra", "Dile a la maestra dónde estaban los niños." ,null};
             questNPC.Add("35", questDetails);
+            questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
+            questNPC.Add("36", questDetails);
+
             questDetails = new string[] { "Chef", "Hable con la cocinera", "La cocinera es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
-            questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
+            questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide leche, azúcar y pimientos al granjero en la granja." ,null};
             questNPC.Add("41", questDetails);
             questDetails = new string[] { "Chef", "Hable con la chef", "Dale a la chef los ingredientes." ,null};
             questNPC.Add("42", questDetails);
@@ -99,13 +105,13 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("66", questDetails);
             questDetails = new string[] { "Mayor", "Hable con el alcalde", "Devolver los artículos al alcalde.",null };
             questNPC.Add("67", questDetails);
+            questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "",null };
+            questNPC.Add("68", questDetails);
 
-            questDetails = new string[] { "Witch", "Tutorial", "Welcome to Almalingua. Use the arrow keys to find the friendly witch nearby.", null };
-            questNPC.Add("90", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
-            questNPC.Add("91", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Now go to the witch's house through the weeds to the right!", null };
-            questNPC.Add("92", questDetails);
+            questDetails = new string[] { "Duo_Enemy", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins" };
+            questNPC.Add("70", questDetails);
+            questDetails = new string[] { "", "Di el hechizo y vete a casa.", "" ,null };
+            questNPC.Add("71", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;
@@ -185,7 +191,6 @@ public class QuestUI : MonoBehaviour
     public void SpawnCombatSystem() {
         if (Children.Count == 2) {
             SetQuestStep(3);
-            SceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
         }
     }
 

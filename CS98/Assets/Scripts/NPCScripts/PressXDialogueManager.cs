@@ -7,13 +7,9 @@ public class PressXDialogueManager : MonoBehaviour
 
     bool inTriggerSpace = false;
     bool isTalking = false;
-    private GameObject InfoUI;
+    public GameObject InfoUI;
 
-
-    void Start()
-    {
-      InfoUI = GameObject.Find("InfoUI");
-    }
+    private const string PLAYER_TAG = "Player";
 
     void Update()
     {
@@ -39,7 +35,7 @@ public class PressXDialogueManager : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (!isTalking)
+        if (!isTalking && col.tag == PLAYER_TAG)
         {
             InfoUI.GetComponent<HideShowObjects>().Show();
         }
@@ -48,8 +44,10 @@ public class PressXDialogueManager : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        InfoUI.GetComponent<HideShowObjects>().Hide();
-        inTriggerSpace = false;
+        if (col.tag == PLAYER_TAG) {
+            InfoUI.GetComponent<HideShowObjects>().Hide();
+            inTriggerSpace = false;
+        }
     }
 
 }

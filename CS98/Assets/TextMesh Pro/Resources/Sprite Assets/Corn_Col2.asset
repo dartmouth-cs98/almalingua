@@ -50,6 +50,21 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 9
       m_Height: 15
+      m_HorizontalBearingX: -3.87
+      m_HorizontalBearingY: 10.89
+      m_HorizontalAdvance: 9
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 0
+      m_Width: 9
+      m_Height: 15
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 21300000, guid: 9f7b535f59ff8d942b45b80a352a637a, type: 3}
+  - m_Index: 0
+    m_Metrics:
+      m_Width: 9
+      m_Height: 15
       m_HorizontalBearingX: 1
       m_HorizontalBearingY: 1
       m_HorizontalAdvance: 9

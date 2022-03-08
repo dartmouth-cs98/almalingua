@@ -13,7 +13,7 @@
         "ID":     0,
         "definition": "to attack",
         "encountered": false,
-        "icon": "<sprite=\"Sword\" name=\"Sword\">",
+        "icon": "<sprite=\"RandomFantasy\" name=\"atacar_2\">",
         "questN": 2,
         "stepN": 0
     },
@@ -25,6 +25,14 @@
         "icon": "<sprite=\"Skull\" name=\"Skull\">",
         "questN": 2,
         "stepN": 0
+    },
+    {
+      "w":  "limo",
+      "ID":     0,
+      "definition": "slime",
+      "encountered": false,
+      "questN": 2,
+      "stepN": 0
     },
     {
         "w":  "regresar",
@@ -58,7 +66,8 @@
         "definition": "las, carrots",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"Vegetable\" name=\"carrot\">"
     },
     {
         "w":    "papas",
@@ -78,7 +87,7 @@
         "stepN": 1
     },
     {
-        "w":    "elotes",
+        "w":   "maíz",
         "ID":   0,
         "definition": "el, corn",
         "encountered": false,
@@ -92,7 +101,8 @@
         "definition": "el, wheat",
         "encountered": false,
         "questN": 2,
-        "stepN": 1
+        "stepN": 1,
+        "icon": "<sprite=\"Resources\" name=\"wheat\">"
     },
     {
         "w":    "por último",
@@ -111,12 +121,13 @@
         "stepN": 2
     },
     {
-        "w":    "aguacate",
+        "w":    "aguacates",
         "ID":   0,
-        "definition": "el, avocado",
+        "definition": "los, avocados",
         "encountered": false,
         "questN": 2,
-        "stepN": 2
+        "stepN": 2,
+        "icon": "<sprite=\"Food\" name=\"avocado\">"
     },
     {
         "w":    "salvar",
@@ -132,7 +143,9 @@
         "definition": "los, cultivos",
         "encountered": false,
         "questN": 2,
-        "stepN": 3
+        "stepN": 2,
+        "icon": "<sprite=\"resources\" name=\"cultivos\">"
+
     },
     {
         "w":    "destruir",
@@ -147,17 +160,17 @@
         "ID":   0,
         "definition": "los, monsters",
         "encountered": false,
-        "icon": "<sprite=\"Standing_left\" name=\"Standing_left\">",
+        "icon": "<sprite=\"monster\" name=\"monster\">",
         "questN": 2,
-        "stepN": 3
+        "stepN": 1
     },
     {
         "w":    "pedir",
         "ID":   0,
         "definition": "to ask for",
         "encountered": false,
-        "questN": 2,
-        "stepN": 3
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "agradecer",
@@ -198,22 +211,24 @@
         "definition": "la, farm",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"barn\" name=\"barn\">"
+    },
+    {
+      "w":    "granjero",
+      "ID":   0,
+      "definition": "el, farmer",
+      "encountered": false,
+      "questN": 2,
+      "stepN": 0,
+      "icon": "<sprite=\"farmer\" name=\"farmer\">"
     },
     {
         "w":    "pueblo",
         "ID":   0,
         "definition": "el, town",
         "encountered": false,
-        "questN": 2,
-        "stepN": 0
-    },
-    {
-        "w":    "granjero",
-        "ID":   0,
-        "definition": "el, farmer",
-        "encountered": false,
-        "questN": 2,
+        "questN": 1,
         "stepN": 0
     },
     {
@@ -262,7 +277,8 @@
         "definition": "el, flash",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"destello\" name=\"destello\">"
     },
     {
         "w":    "cielo",
@@ -270,7 +286,8 @@
         "definition": "el, sky",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"cielo\" name=\"cielo\">"
     },
     {
         "w":    "ver",
@@ -281,11 +298,28 @@
         "stepN": 0
     },
     {
-        "w":    "letrero",
+        "w":    "letreros",
         "ID":   0,
-        "definition": "el, signpost",
+        "definition": "los, signposts",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"sign\" name=\"sign\">"
+    },
+    {
+        "w":    "tempestad",
+        "ID":   0,
+        "definition": "la, storm",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 4
+    },
+    {
+        "w":    "temer",
+        "ID":   0,
+        "definition": "to fear",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 4
     }
 ]}

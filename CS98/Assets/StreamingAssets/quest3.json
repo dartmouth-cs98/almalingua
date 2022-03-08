@@ -37,16 +37,17 @@
         "definition": "el, river",
         "encountered": false,
         "questN": 3,
-        "stepN": 1
-        
+        "stepN": 1,
+        "icon": "<sprite=\"river\" name=\"river\">"
     },
     {
-        "w":    "bosque",
+        "w":    "estanque",
         "ID":   0,
-        "definition": "el, forest",
+        "definition": "el, pond",
         "encountered": false,
-        "questN": 3,
-        "stepN": 1
+        "questN": 2,
+        "stepN": 4,
+        "icon": "<sprite=\"pond\" name=\"pond\">"
         
     },
     {
@@ -112,7 +113,7 @@
         "ID":   0,
         "definition": "to believe, think",
         "encountered": false,
-        "questN": 3,
+        "questN": 2,
         "stepN": 2
     }
     ,
