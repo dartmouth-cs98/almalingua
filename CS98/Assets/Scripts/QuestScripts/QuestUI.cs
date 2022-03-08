@@ -110,7 +110,7 @@ public class QuestUI : MonoBehaviour
 
             questDetails = new string[] { "Duo_Enemy", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins" };
             questNPC.Add("70", questDetails);
-            questDetails = new string[] { "", "Di el hechizo y vete a casa.", "" ,null };
+            questDetails = new string[] { "Portal", "Di el hechizo y vete a casa.", "Di \"revierte\" " ,null };
             questNPC.Add("71", questDetails);
 
         }
