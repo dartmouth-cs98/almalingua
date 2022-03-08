@@ -21,8 +21,15 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadScene(string nextScene)
     {
+        int q =  PlayerPrefs.GetInt("Quest");
+        int step = PlayerPrefs.GetInt("QuestStep");
         PlayerPrefs.SetString("PrevScene", currScene);
-        StartCoroutine(SceneAnimate(nextScene));
+        if (q < 7 && step < 1){
+            StartCoroutine(SceneAnimate(nextScene));
+        }
+        else{
+            SceneManager.LoadScene(nextScene);
+        } 
     }
 
     //adding the cross fade and loading next scene
