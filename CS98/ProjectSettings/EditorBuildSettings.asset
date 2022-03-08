@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ruins.unity
     guid: b9385818a894b40eba9b4917a1a69695
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 8a7b9df604efb4c0a8b191ec2eb9c015
   m_configObjects: {}
