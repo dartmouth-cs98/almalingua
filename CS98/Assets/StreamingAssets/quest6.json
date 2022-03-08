@@ -21,7 +21,8 @@
         "definition": "el, spouse(male) ",
         "encountered": false,
         "questN": 6,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"RandomFantasy\" name=\"ring\">"
     },
     {
         "w":  "enfermo",
@@ -38,7 +39,8 @@
         "definition": "la, potion",
         "encountered": false,
         "questN": 6,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"RandomFantasy\" name=\"potion\">"
     },
     {
         "w":    "especial",
@@ -62,7 +64,8 @@
         "definition": "golden (feminine)",
         "encountered": false,
         "questN": 6,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"RandomFantasy\" name=\"gold\">"
     },
     {
         "w":    "traer",

@@ -589,8 +589,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 91
     m_Scale: 1
-    m_Name: Item copy_91
-    m_HashCode: -623677785
+    m_Name: potion
+    m_HashCode: -12146653
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 92
@@ -599,7 +599,7 @@ MonoBehaviour:
     m_HashCode: -623677788
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 93
+    m_GlyphIndex: 91
     m_Scale: 1
     m_Name: Item copy_93
     m_HashCode: -623677787
@@ -1375,11 +1375,11 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 222
     m_Scale: 1
-    m_Name: Item copy_222
-    m_HashCode: 893475101
+    m_Name: ring
+    m_HashCode: 4142226
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 223
+    m_GlyphIndex: 222
     m_Scale: 1
     m_Name: Item copy_223
     m_HashCode: 893475100
@@ -2549,7 +2549,7 @@ MonoBehaviour:
     m_HashCode: 893472893
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 418
+    m_GlyphIndex: 419
     m_Scale: 1
     m_Name: Item copy_418
     m_HashCode: 893472882
@@ -2557,8 +2557,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 419
     m_Scale: 1
-    m_Name: Item copy_419
-    m_HashCode: 893472883
+    m_Name: gold
+    m_HashCode: 3668640
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 420
@@ -8849,14 +8849,14 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 16
       m_Height: 16
-      m_HorizontalBearingX: -8
-      m_HorizontalBearingY: 8
-      m_HorizontalAdvance: 16
+      m_HorizontalBearingX: -3.5
+      m_HorizontalBearingY: 14.72
+      m_HorizontalAdvance: 14.47
     m_GlyphRect:
       m_X: 432
-      m_Y: 992
-      m_Width: 16
-      m_Height: 16
+      m_Y: 993
+      m_Width: 15
+      m_Height: 14
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: 7117459412500524955, guid: 58f12147a890d4f1b91b725e1812b63d, type: 3}
