@@ -86,8 +86,8 @@
         "ID":   0,
         "definition": "el, spell",
         "encountered": false,
-        "questN": 5,
-        "stepN": 0
+        "questN": 1,
+        "stepN": 2
     },
     {
         "w":    "vaya",

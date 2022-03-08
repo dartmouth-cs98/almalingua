@@ -993,6 +993,11 @@ PolygonCollider2D:
       - {x: -0.1125009, y: -0.16535848}
       - {x: 0.11250085, y: -0.15178725}
       - {x: 0.11250085, y: 0.07714574}
+--- !u!1 &671069817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 504312482, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+  m_PrefabInstance: {fileID: 1404987412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &710579077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1693,6 +1698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI with Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 682006753266435754, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 915162891167587401, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1860,6 +1869,10 @@ PrefabInstance:
     - target: {fileID: 7864308518601071614, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461444909376519404, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
+      propertyPath: m_text
+      value: Ingresar texto...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3224362afe06141acbc0cfdce7f57ff9, type: 3}
@@ -2689,7 +2702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2787746132281043706, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.810654
+      value: 14.810669
       objectReference: {fileID: 0}
     - target: {fileID: 5438487671990643207, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3226,6 +3239,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1348406249, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
+      propertyPath: InfoUI
+      value: 
+      objectReference: {fileID: 671069817}
     - target: {fileID: 8122464157940644550, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
       propertyPath: Player
       value: 

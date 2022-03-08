@@ -8,6 +8,8 @@ public class QuestVisible : MonoBehaviour
     public int ENABLE_ON_QUEST = 0;
     public int ENABLE_ON_QUEST_STEP = 0;
 
+    public bool CHILD_SCRIPT;
+
     void Start()
     {
       CheckVisibility();
@@ -23,6 +25,11 @@ public class QuestVisible : MonoBehaviour
         {
             if (ENABLE_ON_QUEST_STEP == QuestUI.GetQuestStep())
             {
+              foreach (Transform child in transform) {
+                  child.gameObject.SetActive(true);
+              }
+            }
+            if (CHILD_SCRIPT && ENABLE_ON_QUEST_STEP +1 == QuestUI.GetQuestStep()) {
               foreach (Transform child in transform) {
                   child.gameObject.SetActive(true);
               }
