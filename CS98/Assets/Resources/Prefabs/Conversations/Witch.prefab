@@ -115,8 +115,6 @@ MonoBehaviour:
   - {fileID: 9095987716440559493}
   - {fileID: 7506603623273492227}
   - {fileID: 1897585624767651791}
-  - {fileID: 4933075671674609197}
-  - {fileID: 7634319537034509621}
   - {fileID: 7382024421469259892}
   - {fileID: 5768598823460099442}
   - {fileID: 1694682852566535889}
@@ -125,7 +123,6 @@ MonoBehaviour:
   - {fileID: 2993553070860431916}
   - {fileID: 5832197304542187478}
   - {fileID: 7172170078630095742}
-  - {fileID: 2466188570540620282}
   - {fileID: 6490868895368660934}
   - {fileID: 3952000157507902794}
   - {fileID: 2774570463534069512}
@@ -159,7 +156,6 @@ MonoBehaviour:
   - {fileID: 8838930271315656170}
   - {fileID: 5441072317094635041}
   - {fileID: 7683183179956211446}
-  - {fileID: 8449313322753436979}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -183,8 +179,6 @@ GameObject:
   - component: {fileID: 9095987716440559493}
   - component: {fileID: 7506603623273492227}
   - component: {fileID: 1897585624767651791}
-  - component: {fileID: 4933075671674609197}
-  - component: {fileID: 7634319537034509621}
   - component: {fileID: 7382024421469259892}
   - component: {fileID: 5768598823460099442}
   - component: {fileID: 1694682852566535889}
@@ -193,7 +187,6 @@ GameObject:
   - component: {fileID: 2993553070860431916}
   - component: {fileID: 5832197304542187478}
   - component: {fileID: 7172170078630095742}
-  - component: {fileID: 2466188570540620282}
   - component: {fileID: 6490868895368660934}
   - component: {fileID: 3952000157507902794}
   - component: {fileID: 2774570463534069512}
@@ -227,7 +220,6 @@ GameObject:
   - component: {fileID: 8838930271315656170}
   - component: {fileID: 5441072317094635041}
   - component: {fileID: 7683183179956211446}
-  - component: {fileID: 8449313322753436979}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -429,44 +421,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 24
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &4933075671674609197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771186381023757129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 38
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &7634319537034509621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771186381023757129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 39
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -679,25 +633,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 50
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &2466188570540620282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771186381023757129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 54
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
@@ -1517,25 +1452,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 91
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &8449313322753436979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3771186381023757129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 92
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}

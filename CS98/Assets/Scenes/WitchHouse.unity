@@ -2837,7 +2837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2787746132281043706, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.810715
+      value: 14.810684
       objectReference: {fileID: 0}
     - target: {fileID: 5438487671990643207, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3440,7 +3440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8122464157940644554, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
       propertyPath: m_Name
-      value: Witch
+      value: Bruja
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
