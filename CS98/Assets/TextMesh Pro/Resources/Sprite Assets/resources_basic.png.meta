@@ -280,7 +280,7 @@ TextureImporter:
     second: resources_basic_91
   - first:
       213: -1633263102004455777
-    second: resources_basic_92
+    second: cultivos
   - first:
       213: -8793717142574453406
     second: resources_basic_93
@@ -2347,7 +2347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: resources_basic_92
+      name: cultivos
       rect:
         serializedVersion: 2
         x: 144
