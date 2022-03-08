@@ -211,6 +211,15 @@
         "icon": "<sprite=\"barn\" name=\"barn\">"
     },
     {
+      "w":    "granjero",
+      "ID":   0,
+      "definition": "el, farmer",
+      "encountered": false,
+      "questN": 2,
+      "stepN": 0,
+      "icon": "<sprite=\"farmer\" name=\"farmer\">"
+    },
+    {
         "w":    "pueblo",
         "ID":   0,
         "definition": "el, town",
