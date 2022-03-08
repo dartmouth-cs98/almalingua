@@ -77,14 +77,14 @@
         "ID":   0,
         "definition": "flowers",
         "encountered": false,
-        "icon": "<sprite=\"Flower-1\" name=\"Flower-1\">",
+        "icon": "<sprite=\"farm\" name=\"flower\">",
         "questN": 6,
         "stepN": 1
     },
     {
         "w":    "artículos",
         "ID":   0,
-        "definition": "los, items,articles",
+        "definition": "los,items,articles",
         "encountered": false,
         "questN": 6,
         "stepN": 7

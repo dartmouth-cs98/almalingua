@@ -8,7 +8,7 @@
         "stepN": 0
     },
     {
-        "w":  "portal ",
+        "w":  "portal",
         "ID":     0,
         "definition": "el, portal",
         "encountered": false,
