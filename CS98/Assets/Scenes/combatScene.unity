@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Green Slime
+  unitName: Limo Verde
   unitLevel: 10
   damage: 10
   maxHP: 100
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Duo Enemy
+  unitName: Enemigo Duo
   unitLevel: 0
   damage: 25
   maxHP: 150
@@ -887,8 +887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.36, y: 0.05}
-  m_SizeDelta: {x: 42.267, y: 23.9998}
+  m_AnchoredPosition: {x: 1.3129, y: 0.05}
+  m_SizeDelta: {x: 47.356, y: 23.9998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &467345277
 SpriteRenderer:
@@ -2202,7 +2202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Black Slime
+  unitName: Limo Negro
   unitLevel: 10
   damage: 10
   maxHP: 50
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Orange Slime
+  unitName: Limo Naranja
   unitLevel: 10
   damage: 10
   maxHP: 50
@@ -3152,7 +3152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Player
+  unitName: Jugador
   unitLevel: 100
   damage: 20
   maxHP: 100
@@ -3282,8 +3282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.1, y: 0.05}
-  m_SizeDelta: {x: 42.267, y: 23.6546}
+  m_AnchoredPosition: {x: 3.106, y: 0.084}
+  m_SizeDelta: {x: 47.1805, y: 22.5868}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1383371489
 SpriteRenderer:
@@ -3780,7 +3780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f52bacf37f81e4ecbbf781dd822ab53c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Devil
+  unitName: Diablo
   unitLevel: 0
   damage: 10
   maxHP: 100
