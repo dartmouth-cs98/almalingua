@@ -7,7 +7,7 @@
         "icon": "<sprite name=\"izquierda\">",
         "questN": 1,
         "stepN": 0
-        },
+    },
     {
         "w":    "derecha",
         "ID":   0,
