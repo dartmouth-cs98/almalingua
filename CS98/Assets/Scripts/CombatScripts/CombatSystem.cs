@@ -341,6 +341,8 @@ public class CombatSystem : MonoBehaviour
                 StartCoroutine(PlayerSpell(spellName));
 
             }
+        } else {
+            StartCoroutine(PlayerAttack());
         }
     }
 
