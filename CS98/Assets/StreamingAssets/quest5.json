@@ -87,7 +87,8 @@
         "definition": "el, spell",
         "encountered": false,
         "questN": 1,
-        "stepN": 2
+        "stepN": 2,
+        "icon": "<sprite=\"RandomFantasy\" name=\"hechizo\">"
     },
     {
         "w":    "vaya",
@@ -109,6 +110,32 @@
         "definition": "el, journal",
         "encountered": false,
         "icon": "<sprite=\"Book_Col4\" name=\"Book_Col4\">",
+        "questN": 5,
+        "stepN": 1
+    },
+    {
+        "w":    "sartén",
+        "ID":   0,
+        "definition": "frying pan",
+        "questN": 5,
+        "stepN": 1,
+        "icon": "<sprite=\"pan\" name=\"pan\">"
+    },
+    {
+        "w":    "tazón",
+        "ID":   0,
+        "definition": "bowl",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 1,
+        "icon": "<sprite=\"bowl\" name=\"bowl\">"
+    },
+    {
+        "w":    "tijeras",
+        "ID":   0,
+        "definition": "scissors",
+        "encountered": false,
+        "icon": "<sprite=\"scissors\" name=\"scissors\">",
         "questN": 5,
         "stepN": 1
     },

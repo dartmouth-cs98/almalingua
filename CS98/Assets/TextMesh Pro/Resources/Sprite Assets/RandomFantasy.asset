@@ -6973,14 +6973,14 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 1155
     m_Scale: 1
-    m_Name: Item copy_1155
-    m_HashCode: -579986225
+    m_Name: hechizo
+    m_HashCode: 1944672794
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1156
     m_Scale: 1
-    m_Name: Item copy_1156
-    m_HashCode: -579986228
+    m_Name: hechizo_2
+    m_HashCode: 329792919
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1157
