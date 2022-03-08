@@ -113,8 +113,8 @@
         "ID":   0,
         "definition": "to heal",
         "encountered": false,
-        "questN": 4,
-        "stepN": 2
+        "questN": 3,
+        "stepN": 3
     }
 
 ]}
