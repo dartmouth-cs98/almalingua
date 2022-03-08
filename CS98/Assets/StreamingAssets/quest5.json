@@ -16,12 +16,13 @@
         "stepN": 0
     },
     {
-      "w":  "esquina superior",
+      "w":  "superior",
       "ID":     0,
-      "definition": "la, upper corner",
+      "definition": "upper",
       "encountered": false,
       "questN": 5,
-      "stepN": 0
+      "stepN": 0,
+      "icon": "<sprite name=\"arriba\">"
     },
     {
         "w":  "accidente",
