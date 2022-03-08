@@ -280,10 +280,12 @@ public class CombatSystem : MonoBehaviour
         int nextIndex = rnd.Next(spells.Count);
 
         if (spells.Count < 2) {
+            spellOne = "quema";
+            spellTwo = "congela";
             SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u> quema </u>";
             SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u> congela </u>";
         } else {
-            while (nextIndex == randIndex)
+            while (spells[randIndex] == spells[nextIndex])
                 {
                     nextIndex = rnd.Next(spells.Count);
                 }
