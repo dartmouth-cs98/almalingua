@@ -101,7 +101,8 @@
         "definition": "el, wheat",
         "encountered": false,
         "questN": 2,
-        "stepN": 1
+        "stepN": 1,
+        "icon": "<sprite=\"Resources\" name=\"wheat\">"
     },
     {
         "w":    "por último",
@@ -120,12 +121,13 @@
         "stepN": 2
     },
     {
-        "w":    "aguacate",
+        "w":    "aguacates",
         "ID":   0,
-        "definition": "el, avocado",
+        "definition": "los, avocados",
         "encountered": false,
         "questN": 2,
-        "stepN": 2
+        "stepN": 2,
+        "icon": "<sprite=\"Food\" name=\"avocado\">"
     },
     {
         "w":    "salvar",
@@ -141,7 +143,9 @@
         "definition": "los, cultivos",
         "encountered": false,
         "questN": 2,
-        "stepN": 2
+        "stepN": 2,
+        "icon": "<sprite=\"resources\" name=\"cultivos\">"
+
     },
     {
         "w":    "destruir",
@@ -158,7 +162,7 @@
         "encountered": false,
         "icon": "<sprite=\"monster\" name=\"monster\">",
         "questN": 2,
-        "stepN": 3
+        "stepN": 1
     },
     {
         "w":    "pedir",
@@ -211,19 +215,20 @@
         "icon": "<sprite=\"barn\" name=\"barn\">"
     },
     {
+      "w":    "granjero",
+      "ID":   0,
+      "definition": "el, farmer",
+      "encountered": false,
+      "questN": 2,
+      "stepN": 0,
+      "icon": "<sprite=\"farmer\" name=\"farmer\">"
+    },
+    {
         "w":    "pueblo",
         "ID":   0,
         "definition": "el, town",
         "encountered": false,
         "questN": 1,
-        "stepN": 0
-    },
-    {
-        "w":    "granjero",
-        "ID":   0,
-        "definition": "el, farmer",
-        "encountered": false,
-        "questN": 2,
         "stepN": 0
     },
     {
@@ -298,7 +303,8 @@
         "definition": "los, signposts",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"sign\" name=\"sign\">"
     },
     {
         "w":    "tempestad",
