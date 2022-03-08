@@ -18,9 +18,11 @@ public class QuestUI : MonoBehaviour
         PlayerPrefs.SetInt("QuestLength", questLength);
         if (questNPC.Count == 0)
         {
-            string[] questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja" , null};
+            string[] questDetails = new string[] { "Witch", "Tutorial", "Bienvendios a Almalingua. Use the arrow keys to find the friendly witch nearby.", null };
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja.",null };
+            questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
+            questNPC.Add("01", questDetails);
+            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja en su casa en el pueblo.",null };
             questNPC.Add("10", questDetails);
             questDetails = new string[] { "Cesar", "Pídele direcciones a César", "Cesar es el reno en medio del pueblo.",null };
             questNPC.Add("11", questDetails);
@@ -103,13 +105,6 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("66", questDetails);
             questDetails = new string[] { "Mayor", "Hable con el alcalde", "Devolver los artículos al alcalde.",null };
             questNPC.Add("67", questDetails);
-
-            questDetails = new string[] { "Witch", "Tutorial", "Welcome to Almalingua. Use the arrow keys to find the friendly witch nearby.", null };
-            questNPC.Add("90", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
-            questNPC.Add("91", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Now go to the witch's house through the weeds to the right!", null };
-            questNPC.Add("92", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;

@@ -23,7 +23,7 @@ public class Tutorial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        QuestUI.SetQuest(9);
+        QuestUI.SetQuest(0);
         QuestUI.SetQuestStep(0);
     }
 
@@ -31,30 +31,14 @@ public class Tutorial : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("QuestStep") == 0)
         {
-            NextQuest();
+            QuestUI.SetQuestStep(QuestUI.GetQuestStep()+1);
         }
     }
 
-    private void OnMouseDown()
-    {
-        if (PlayerPrefs.GetInt("QuestStep") == 1)
-        {
-            NextQuest();
-        }
-    }
-
+   
 
     // Updating which message is displayed in the text box
-    public void NextQuest()
-    {
-        questStep += 1;
-        QuestUI.SetQuestStep(questStep);
 
-        if (PlayerPrefs.GetInt("QuestStep") == 2)
-        {
-            Obstacle.SetActive(false);
-        }
-    }
 
     // Saving entered username in case of later use for the player / online play
     public void EnteredUsername()
