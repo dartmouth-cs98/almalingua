@@ -23,6 +23,7 @@ public class viewDictionary : MonoBehaviour{
         if  (dictUI.activeSelf){ 
             /* if dictionary is being shown , then call refresh*/
             d.RevealWords();
+            d.refresh();
         }
         else{
             d.reset();

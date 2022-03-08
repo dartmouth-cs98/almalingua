@@ -78,7 +78,7 @@
         "stepN": 1
     },
     {
-        "w":    "elotes",
+        "w":   "maíz",
         "ID":   0,
         "definition": "el, corn",
         "encountered": false,
@@ -132,7 +132,7 @@
         "definition": "los, cultivos",
         "encountered": false,
         "questN": 2,
-        "stepN": 3
+        "stepN": 2
     },
     {
         "w":    "destruir",
@@ -156,8 +156,8 @@
         "ID":   0,
         "definition": "to ask for",
         "encountered": false,
-        "questN": 2,
-        "stepN": 3
+        "questN": 1,
+        "stepN": 0
     },
     {
         "w":    "agradecer",
@@ -205,7 +205,7 @@
         "ID":   0,
         "definition": "el, town",
         "encountered": false,
-        "questN": 2,
+        "questN": 1,
         "stepN": 0
     },
     {
@@ -281,11 +281,27 @@
         "stepN": 0
     },
     {
-        "w":    "letrero",
+        "w":    "letreros",
         "ID":   0,
-        "definition": "el, signpost",
+        "definition": "los, signposts",
         "encountered": false,
         "questN": 2,
         "stepN": 0
+    },
+    {
+        "w":    "tempestad",
+        "ID":   0,
+        "definition": "la, storm",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 4
+    },
+    {
+        "w":    "temer",
+        "ID":   0,
+        "definition": "to fear",
+        "encountered": false,
+        "questN": 2,
+        "stepN": 4
     }
 ]}
