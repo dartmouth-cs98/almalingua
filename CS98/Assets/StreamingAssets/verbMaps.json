@@ -248,6 +248,10 @@
     {
         "w":    "acuerdas",
         "definition": "acordar"
+    },
+    {
+        "w":    "revierte",
+        "definition": "revertir"
     }
 ]
 }

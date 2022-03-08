@@ -88,6 +88,14 @@
         "encountered": false,
         "questN": 6,
         "stepN": 7
+    },
+    {
+        "w":    "revertir",
+        "ID":   0,
+        "definition": "return to an earlier state,revert",
+        "encountered": false,
+        "questN": 5,
+        "stepN": 7
     }
 
 ]}
