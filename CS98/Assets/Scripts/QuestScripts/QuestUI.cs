@@ -68,7 +68,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("42", questDetails);
             questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "El arqueólogo está en el pueblo." ,null};
             questNPC.Add("50", questDetails);
-            questDetails = new string[] { "", "Encuentra el sartén", "El sartén está en la esquina superior a la derecha de las ruinas." ,null};
+            questDetails = new string[] { "", "Encuentra el sartén", "El sartén está en la zona superior derecha de las ruinas." ,null};
             questNPC.Add("51", questDetails);
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("52", questDetails);
@@ -78,7 +78,7 @@ public class QuestUI : MonoBehaviour
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("54", questDetails);
 
-            questDetails = new string[] { "", "Encuentra las tijeras", "Las tijeras están en el área central a la derecha de las ruinas." ,null};
+            questDetails = new string[] { "", "Encuentra las tijeras", "Las tijeras están en el área central derecha de las ruinas." ,null};
             questNPC.Add("55", questDetails);
             questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins"};
             questNPC.Add("56", questDetails);
