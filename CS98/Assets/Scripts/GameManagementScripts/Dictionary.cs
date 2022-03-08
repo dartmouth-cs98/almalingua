@@ -84,19 +84,19 @@ public class Dictionary : MonoBehaviour{
         int i = 0;
         while (i < 8 && currIdx < length){
             TextMeshProUGUI t = slots[i].txtbox.GetComponent<TextMeshProUGUI>();
-            Image img = slots[i].imgbox.GetComponent<UnityEngine.UI.Image>();
+            //Image img = slots[i].imgbox.GetComponent<UnityEngine.UI.Image>();
             Word current = masterList.wlist[currIdx];
 
             if (current.encountered){
                 t.text = current.w + "\n -" + current.definition; //update slot with word definition
 
-                //if user searched for specific word, then highlight word in red
-                if (currIdx == TargetID) img.color = Color.red;
-                else {img.color = Color.white; }
+                ////if user searched for specific word, then highlight word in red
+                //if (currIdx == TargetID) img.color = Color.red;
+                //else {img.color = Color.white; }
             }
 
             else { //unknown words will be in black
-                img.color = Color.black;
+                //img.color = Color.black;
                 t.text = "Desconocido";
             }
             currIdx++;
@@ -106,8 +106,8 @@ public class Dictionary : MonoBehaviour{
         //empty slots because we have reached the end of our word list
         if (i < 8 && currIdx >= length){
             for (int j = i + 1; j < 8; j++){
-                Image img = slots[j].imgbox.GetComponent<UnityEngine.UI.Image>();
-                img.color = Color.black;
+                //Image img = slots[j].imgbox.GetComponent<UnityEngine.UI.Image>();
+                //img.color = Color.black;
                 TextMeshProUGUI t = slots[i].txtbox.GetComponent<TextMeshProUGUI>();
                 t.text = "";
 
@@ -183,7 +183,7 @@ public class Dictionary : MonoBehaviour{
             }
 
         }
-        print("finished verbmapping");
+        
 
 
 
