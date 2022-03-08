@@ -330,7 +330,7 @@ public class CombatSystem : MonoBehaviour
                 playerUnit.damage = Mathf.FloorToInt((float)(playerUnit.damage * 1.1));
                 dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Tu ataque es más poderoso ahora!";
                 increasedStrength = true;
-                spellAnimation = SpellAnimationsParent.transform.Find(spellInfo["fortelance"][1]).gameObject;
+                spellAnimation = SpellAnimationsParent.transform.Find(spellInfo["fortalece"][1]).gameObject;
                 spellAnimation.SetActive(true);
                 StartCoroutine(PlayerAttack());
                 spellAnimation.SetActive(false);

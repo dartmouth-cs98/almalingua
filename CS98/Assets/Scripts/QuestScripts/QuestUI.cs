@@ -98,7 +98,7 @@ public class QuestUI : MonoBehaviour
 
             questDetails = new string[] { "Doctor", "Hable con el doctor", "Dale al doctor las flores.",null };
             questNPC.Add("64", questDetails);
-            questDetails = new string[] { "Bruja", "Habla con la bruja", "Habla con la bruja para que te ayude.",null };
+            questDetails = new string[] { "Bruja", "Habla con la bruja", "Habla con la bruja y pregunta por un libro.",null };
             questNPC.Add("65", questDetails);
 
             questDetails = new string[] { "Granjero",  "Hable con el granjero", "Habla con el granjero para conseguir la manzana dorada.",null };
