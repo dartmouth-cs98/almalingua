@@ -13,7 +13,7 @@
         "ID":     0,
         "definition": "to attack",
         "encountered": false,
-        "icon": "<sprite=\"Sword\" name=\"Sword\">",
+        "icon": "<sprite=\"RandomFantasy\" name=\"atacar_2\">",
         "questN": 2,
         "stepN": 0
     },
@@ -25,6 +25,14 @@
         "icon": "<sprite=\"Skull\" name=\"Skull\">",
         "questN": 2,
         "stepN": 0
+    },
+    {
+      "w":  "limo",
+      "ID":     0,
+      "definition": "slime",
+      "encountered": false,
+      "questN": 2,
+      "stepN": 0
     },
     {
         "w":  "regresar",
@@ -58,7 +66,8 @@
         "definition": "las, carrots",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"Vegetable\" name=\"carrot\">"
     },
     {
         "w":    "papas",
@@ -147,7 +156,7 @@
         "ID":   0,
         "definition": "los, monsters",
         "encountered": false,
-        "icon": "<sprite=\"Standing_left\" name=\"Standing_left\">",
+        "icon": "<sprite=\"monster\" name=\"monster\">",
         "questN": 2,
         "stepN": 3
     },
@@ -198,7 +207,8 @@
         "definition": "la, farm",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"barn\" name=\"barn\">"
     },
     {
         "w":    "pueblo",
@@ -262,7 +272,8 @@
         "definition": "el, flash",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"destello\" name=\"destello\">"
     },
     {
         "w":    "cielo",
@@ -270,7 +281,8 @@
         "definition": "el, sky",
         "encountered": false,
         "questN": 2,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"cielo\" name=\"cielo\">"
     },
     {
         "w":    "ver",

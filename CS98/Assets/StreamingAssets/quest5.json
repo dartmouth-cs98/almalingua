@@ -52,7 +52,7 @@
         "ID":   0,
         "definition": "el, tome",
         "encountered": false,
-        "icon": "<sprite=\"Book_Col45\" name=\"Book_Col45\">",
+        "icon": "<sprite=\"RandomFantasy\" name=\"book\">",
         "questN": 5,
         "stepN": 0
     },

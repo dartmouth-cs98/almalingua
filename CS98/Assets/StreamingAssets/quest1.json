@@ -18,6 +18,24 @@
         "stepN": 0
     },
     {
+      "w":    "encima",
+      "ID":   0,
+      "definition": "above",
+      "encountered": true,
+      "icon": "<sprite=\"encima\" name=\"encima\">",
+      "questN": 1,
+      "stepN": 0
+    },
+    {
+      "w":    "debajo",
+      "ID":   0,
+      "definition": "below",
+      "encountered": true,
+      "icon": "<sprite=\"debajo\" name=\"debajo\">",
+      "questN": 1,
+      "stepN": 0
+    },    
+    {
         "w":  "hospital",
         "ID":     0,
         "definition": "el, hospital",
