@@ -37,8 +37,8 @@
         "definition": "el, river",
         "encountered": false,
         "questN": 3,
-        "stepN": 1
-        
+        "stepN": 1,
+        "icon": "<sprite=\"river\" name=\"river\">"
     },
     {
         "w":    "estanque",
@@ -46,7 +46,8 @@
         "definition": "el, pond",
         "encountered": false,
         "questN": 2,
-        "stepN": 4
+        "stepN": 4,
+        "icon": "<sprite=\"pond\" name=\"pond\">"
         
     },
     {

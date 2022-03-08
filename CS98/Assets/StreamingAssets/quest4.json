@@ -25,12 +25,13 @@
         "icon": "<sprite=\"RandomFantasy\" name=\"azucar\">"
     },
     {
-        "w":  "canela",
+        "w":  "pimientos",
         "ID":     0,
-        "definition": "la, cinnamon",
+        "definition": "los, peppers",
         "encountered": false,
         "questN": 4,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"Food\" name=\"pepper\">"
     },
     {
         "w":    "leche",
@@ -40,14 +41,6 @@
         "questN": 4,
         "stepN": 0,
         "icon": "<sprite=\"RandomFantasy\" name=\"leche\">"
-    },
-    {
-        "w":    "arroz",
-        "ID":   0,
-        "definition": "el, rice",
-        "encountered": false,
-        "questN": 4,
-        "stepN": 0
     },
     {
         "w":    "génial",
@@ -77,10 +70,11 @@
     {
         "w":    "araña",
         "ID":   0,
-        "definition": "la, spidert",
+        "definition": "la, spider",
         "encountered": false,
         "questN": 4,
-        "stepN": 0
+        "stepN": 0,
+        "icon": "<sprite=\"spider\" name=\"spider\">"
     },
     {
         "w":    "extraño",

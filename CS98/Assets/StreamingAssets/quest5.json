@@ -16,6 +16,14 @@
         "stepN": 0
     },
     {
+      "w":  "esquina superior",
+      "ID":     0,
+      "definition": "la, upper corner",
+      "encountered": false,
+      "questN": 5,
+      "stepN": 0
+    },
+    {
         "w":  "accidente",
         "ID":     0,
         "definition": "el, accident",
