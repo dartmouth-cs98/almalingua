@@ -41,7 +41,7 @@ public class CombatSystem : MonoBehaviour
     float playerSpellDamage;
     bool increasedStrength = false;
     GameObject spellAnimation;
-    
+    int oldEnemyHealth;
     void OnEnable()
     {
         rnd = new System.Random();
@@ -88,6 +88,7 @@ public class CombatSystem : MonoBehaviour
         questDetails = new string[PlayerPrefs.GetInt("QuestLength")];
         Debug.Log("Current quest: " + currentQuest);
         Debug.Log("There are " + QuestUI.questNPC.Count + " named objects.");
+
         if (QuestUI.questNPC.TryGetValue(currentQuest, out questDetails))
         {
             string NPCName = questDetails[0];
@@ -110,6 +111,7 @@ public class CombatSystem : MonoBehaviour
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
+        oldEnemyHealth = enemyUnit.currentHP;
 
         yield return new WaitForSeconds(2f);
 
@@ -277,7 +279,7 @@ public class CombatSystem : MonoBehaviour
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
 
-        while (nextIndex == randIndex)
+        while (nextIndex == randIndex && spells.Count >=2)
         {
             nextIndex = rnd.Next(spells.Count);
         }
@@ -305,16 +307,15 @@ public class CombatSystem : MonoBehaviour
         SpellButtons.SetActive(!SpellButtons.activeSelf);
         if (spellInfo.TryGetValue(spellName, out spellDetails))
         {
-            playerSpellDamage = float.Parse(spellDetails[0]) * enemyUnit.currentHP;
-            if (playerSpellDamage == 0)
+            if (spellDetails[0] == "0")
             {
                 StartCoroutine(PlayerSkip());
             }
-            else if (playerSpellDamage == -1)
+            else if (spellDetails[0] == "-1")
             {
                 StartCoroutine(PlayerHeal());
             }
-            else if (playerSpellDamage == -2)
+            else if (spellDetails[0] == "-2")
             {
                 playerUnit.damage = Mathf.FloorToInt((float)(playerUnit.damage * 1.1));
                 dialogueText.GetComponent<TMPro.TextMeshProUGUI>().text = "¡Tu ataque es más poderoso ahora!";
@@ -326,6 +327,7 @@ public class CombatSystem : MonoBehaviour
             }
             else
             {
+                playerSpellDamage = float.Parse(spellDetails[0]) * oldEnemyHealth;
                 StartCoroutine(PlayerSpell(spellName));
 
             }
