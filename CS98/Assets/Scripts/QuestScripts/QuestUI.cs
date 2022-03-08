@@ -105,6 +105,13 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("66", questDetails);
             questDetails = new string[] { "Mayor", "Hable con el alcalde", "Devolver los artículos al alcalde.",null };
             questNPC.Add("67", questDetails);
+            questDetails = new string[] { "Archeologist", "Hable con el arqueólogo", "",null };
+            questNPC.Add("68", questDetails);
+
+            questDetails = new string[] { "Duo_Enemy", "Lucha contra el monstruo", "El monstruo está en las ruinas." ,"Ruins" };
+            questNPC.Add("70", questDetails);
+            questDetails = new string[] { "", "Di el hechizo y vete a casa.", "" ,null };
+            questNPC.Add("71", questDetails);
 
         }
         EventManager.onProtagonistChange += WitchSpeak;

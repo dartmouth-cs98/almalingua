@@ -279,16 +279,21 @@ public class CombatSystem : MonoBehaviour
         int randIndex = rnd.Next(spells.Count);
         int nextIndex = rnd.Next(spells.Count);
 
-        while (nextIndex == randIndex && spells.Count >=2)
-        {
-            nextIndex = rnd.Next(spells.Count);
+        if (spells.Count < 2) {
+            SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u> quema </u>";
+            SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u> congela </u>";
+        } else {
+            while (nextIndex == randIndex)
+                {
+                    nextIndex = rnd.Next(spells.Count);
+                }
+                spellOne = spells[randIndex];
+                spellTwo = spells[nextIndex];
+
+                SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[randIndex]+"</u>";
+                SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[nextIndex] + "</u>";
         }
-        spellOne = spells[randIndex];
-        spellTwo = spells[nextIndex];
-
-        SpellButtons.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[randIndex]+"</u>";
-        SpellButtons.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "<u>" + spells[nextIndex] + "</u>";
-
+        
     }
 
     public void ChooseSpell(int num)
