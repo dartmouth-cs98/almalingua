@@ -763,8 +763,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 120
     m_Scale: 1
-    m_Name: Item copy_120
-    m_HashCode: 893478172
+    m_Name: azucar
+    m_HashCode: -355873602
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 121
@@ -787,8 +787,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 124
     m_Scale: 1
-    m_Name: Item copy_124
-    m_HashCode: 893478168
+    m_Name: leche
+    m_HashCode: 124560583
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 125
@@ -3367,8 +3367,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 554
     m_Scale: 1
-    m_Name: Item copy_554
-    m_HashCode: 893474107
+    m_Name: varita
+    m_HashCode: 362554137
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 555
@@ -6973,14 +6973,14 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 1155
     m_Scale: 1
-    m_Name: Item copy_1155
-    m_HashCode: -579986225
+    m_Name: hechizo
+    m_HashCode: 1944672794
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1156
     m_Scale: 1
-    m_Name: Item copy_1156
-    m_HashCode: -579986228
+    m_Name: hechizo_2
+    m_HashCode: 329792919
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1157
@@ -15792,16 +15792,16 @@ MonoBehaviour:
     sprite: {fileID: 842077169808122522, guid: 58f12147a890d4f1b91b725e1812b63d, type: 3}
   - m_Index: 554
     m_Metrics:
-      m_Width: 16
-      m_Height: 16
-      m_HorizontalBearingX: -8
-      m_HorizontalBearingY: 8
-      m_HorizontalAdvance: 16
+      m_Width: 14
+      m_Height: 14
+      m_HorizontalBearingX: -3.26
+      m_HorizontalBearingY: 9.8
+      m_HorizontalAdvance: 12.87
     m_GlyphRect:
-      m_X: 48
-      m_Y: 816
-      m_Width: 16
-      m_Height: 16
+      m_X: 49
+      m_Y: 817
+      m_Width: 14
+      m_Height: 14
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: -6932593958184110859, guid: 58f12147a890d4f1b91b725e1812b63d, type: 3}
