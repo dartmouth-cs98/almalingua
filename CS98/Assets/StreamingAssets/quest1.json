@@ -93,7 +93,6 @@
         "ID":   0,
         "definition": "no",
         "encountered": true,
-        "icon": "<sprite name=\"no\">",
         "questN": 1,
         "stepN": 0
     },

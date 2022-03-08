@@ -92,8 +92,8 @@ MonoBehaviour:
     m_GlyphRect:
       m_X: 0
       m_Y: 0
-      m_Width: 32
-      m_Height: 32
+      m_Width: 30
+      m_Height: 30
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: 21300000, guid: cca753412ec664347950633981eb5abb, type: 3}

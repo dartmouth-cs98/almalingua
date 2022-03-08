@@ -47,7 +47,7 @@ public class QuestUI : MonoBehaviour
             questDetails = new string[] { "Teacher", "Hable con la maestra", "La maestra está en el bosque, a la derecha del pueblo." ,null};
 
             questNPC.Add("30", questDetails);
-            questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale a César (el reno) dónde están los niños." ,null};
+            questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale al reno César dónde están los niños." ,null};
             questNPC.Add("31", questDetails);
             questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del estanque.",null };
             questNPC.Add("32", questDetails);
@@ -62,7 +62,7 @@ public class QuestUI : MonoBehaviour
 
             questDetails = new string[] { "Chef", "Hable con la cocinera", "La cocinera es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
-            questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
+            questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide leche, azúcar y pimientos al granjero en la granja." ,null};
             questNPC.Add("41", questDetails);
             questDetails = new string[] { "Chef", "Hable con la chef", "Dale a la chef los ingredientes." ,null};
             questNPC.Add("42", questDetails);

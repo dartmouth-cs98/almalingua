@@ -818,8 +818,8 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 12
       m_Height: 15
-      m_HorizontalBearingX: -3
-      m_HorizontalBearingY: 10
+      m_HorizontalBearingX: -4.66
+      m_HorizontalBearingY: 13.44
       m_HorizontalAdvance: 12
     m_GlyphRect:
       m_X: 50
@@ -1118,9 +1118,9 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 16
       m_Height: 12
-      m_HorizontalBearingX: -3
+      m_HorizontalBearingX: 0.3
       m_HorizontalBearingY: 10
-      m_HorizontalAdvance: 16
+      m_HorizontalAdvance: 17.7
     m_GlyphRect:
       m_X: 96
       m_Y: 2
