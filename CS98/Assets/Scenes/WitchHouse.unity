@@ -668,6 +668,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6562078571038187481, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6562078571341395010, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
       propertyPath: Collider
       value: 
@@ -719,6 +723,10 @@ PrefabInstance:
     - target: {fileID: 6562078571341395021, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
       propertyPath: m_Name
       value: init_Protagonist
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562078571341395021, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f011cac64964476a83a77a3f9265d3e, type: 3}
@@ -2829,7 +2837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2787746132281043706, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.810669
+      value: 14.810715
       objectReference: {fileID: 0}
     - target: {fileID: 5438487671990643207, guid: 59279f84c7a5e4809a5fb6813cfe1681, type: 3}
       propertyPath: m_AnchorMax.y
