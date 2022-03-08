@@ -32,7 +32,7 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("21", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación." , null};
             questNPC.Add("22", questDetails);
-            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "El limo está al lado de las elotes y el trigo." ,"Farm" };
+            questDetails = new string[] { "Slime_Orange", "Lucha contra el limo naranja", "El limo está al lado del maíz y el trigo." ,"Farm" };
             questNPC.Add("23", questDetails);
             questDetails = new string[] { "Farmer", "Hable con el granjero", "El granjero te dirá qué hacer a continuación.", null};
             questNPC.Add("24", questDetails);
@@ -42,18 +42,22 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Witch", "Hable con la bruja", "",null };
             questNPC.Add("27", questDetails);
-            questDetails = new string[] { "Teacher", "Hable con el maestro", "El maestro está en el bosque, a la derecha del pueblo." ,null};
+            questDetails = new string[] { "Teacher", "Hable con la maestra", "La maestra está en el bosque, a la derecha del pueblo." ,null};
+
             questNPC.Add("30", questDetails);
             questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale a César (el reno) dónde están los niños." ,null};
             questNPC.Add("31", questDetails);
-            questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del bosque.",null };
+            questDetails = new string[] { "Child", "Encuentra a los niños", "Uno está por el río y el otro está al lado del estanque.",null };
             questNPC.Add("32", questDetails);
-            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque." ,"Forest"};
+            questDetails = new string[] { "Teacher", "Lleva los niños a la maestra", "",null };
             questNPC.Add("33", questDetails);
-            questDetails = new string[] { "Teacher", "Hable con el maestro", "Dile al maestro dónde estaban los niños." ,null};
+            questDetails = new string[] { "Devil", "Lucha contra el monstruo", "El monstruo está en el bosque." ,"Forest"};
             questNPC.Add("34", questDetails);
-            questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
+            questDetails = new string[] { "Teacher", "Hable con la maestra", "Dile a la maestra dónde estaban los niños." ,null};
             questNPC.Add("35", questDetails);
+            questDetails = new string[] { "Witch", "Hable con la bruja", "" ,null};
+            questNPC.Add("36", questDetails);
+
             questDetails = new string[] { "Chef", "Hable con la cocinera", "La cocinera es una araña en el pueblo.",null };
             questNPC.Add("40", questDetails);
             questDetails = new string[] { "Farmer", "Pregunta por los ingredientes al granjero.", "Pide arroz, leche, azúcar y canela." ,null};
@@ -185,7 +189,6 @@ public class QuestUI : MonoBehaviour
     public void SpawnCombatSystem() {
         if (Children.Count == 2) {
             SetQuestStep(3);
-            SceneLoader.GetComponent<SceneLoader>().LoadScene("combatScene");
         }
     }
 

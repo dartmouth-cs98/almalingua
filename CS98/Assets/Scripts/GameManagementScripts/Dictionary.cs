@@ -97,7 +97,7 @@ public class Dictionary : MonoBehaviour{
 
             else { //unknown words will be in black
                 img.color = Color.black;
-                t.text = "Undiscovered";
+                t.text = "Desconocido";
             }
             currIdx++;
             i++;
