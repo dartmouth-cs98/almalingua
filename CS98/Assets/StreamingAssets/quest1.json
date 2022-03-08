@@ -18,6 +18,24 @@
         "stepN": 0
     },
     {
+      "w":    "bruja",
+      "ID":   0,
+      "definition": "la, witch",
+      "encountered": true,
+      "icon": "<sprite=\"Witch\" name=\"Witch\">",
+      "questN": 0,
+      "stepN": 0
+    },
+    {
+      "w":    "reno",
+      "ID":   0,
+      "definition": "el, deer",
+      "encountered": true,
+      "icon": "<sprite=\"deer\" name=\"deer\">",
+      "questN": 1,
+      "stepN": 1
+    },
+    {
       "w":    "encima",
       "ID":   0,
       "definition": "above",

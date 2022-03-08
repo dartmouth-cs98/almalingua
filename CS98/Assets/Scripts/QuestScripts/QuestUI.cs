@@ -18,11 +18,11 @@ public class QuestUI : MonoBehaviour
         PlayerPrefs.SetInt("QuestLength", questLength);
         if (questNPC.Count == 0)
         {
-            string[] questDetails = new string[] { "Witch", "Tutorial", "Bienvendios a Almalingua. Use the arrow keys to find the friendly witch nearby.", null };
+            string[] questDetails = new string[] { "Witch", "Bienvenidos a Almalingua", "Usa las <sprite=\"arrow-keys\" name=\"arrow-keys\"> teclas de flecha para encontrar a la bruja en la playa.", null };
             questNPC.Add("00", questDetails);
-            questDetails = new string[] { "Witch", "Tutorial", "Click on the witch to talk!", null };
+            questDetails = new string[] { "Witch", "Bienvenidos a Almalingua", "Habla con la bruja!", null };
             questNPC.Add("01", questDetails);
-            questDetails = new string[] { "Witch", "Pedir ayuda", "Hable con la bruja en su casa en el pueblo.",null };
+            questDetails = new string[] { "Witch", "Pedir ayuda", "Encontre la bruja en su casa en el pueblo.",null };
             questNPC.Add("10", questDetails);
             questDetails = new string[] { "Cesar", "Pídele direcciones a César", "Cesar es el reno en medio del pueblo.",null };
             questNPC.Add("11", questDetails);

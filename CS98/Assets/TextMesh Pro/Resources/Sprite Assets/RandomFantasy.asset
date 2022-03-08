@@ -763,8 +763,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 120
     m_Scale: 1
-    m_Name: Item copy_120
-    m_HashCode: 893478172
+    m_Name: azucar
+    m_HashCode: -355873602
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 121
@@ -787,8 +787,8 @@ MonoBehaviour:
     m_Unicode: 65534
     m_GlyphIndex: 124
     m_Scale: 1
-    m_Name: Item copy_124
-    m_HashCode: 893478168
+    m_Name: leche
+    m_HashCode: 124560583
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 125

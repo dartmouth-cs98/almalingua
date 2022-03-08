@@ -27,18 +27,13 @@ public class Tutorial : MonoBehaviour
         QuestUI.SetQuestStep(0);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (PlayerPrefs.GetInt("QuestStep") == 0)
+        if (QuestUI.GetQuestStep() == 0 && QuestUI.GetQuest() == 0)
         {
-            QuestUI.SetQuestStep(QuestUI.GetQuestStep()+1);
+            QuestUI.SetQuestStep(1);
         }
     }
-
-   
-
-    // Updating which message is displayed in the text box
-
 
     // Saving entered username in case of later use for the player / online play
     public void EnteredUsername()
