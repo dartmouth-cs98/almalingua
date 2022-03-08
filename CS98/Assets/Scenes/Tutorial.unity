@@ -925,7 +925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8122464157940644554, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
       propertyPath: m_Name
-      value: Witch
+      value: Bruja
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1a73be6fd5f4eaa9cae2bb10525e17, type: 3}
