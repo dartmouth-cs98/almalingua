@@ -14,7 +14,7 @@ public class MiniMap : MonoBehaviour
 
   
     void Start(){
-        PlayerCamera = GameObject.Find("CameraPlayer/ProtagonistCamera");
+        PlayerCamera = GameObject.Find("Main Camera");
 
         int q =  PlayerPrefs.GetInt("Quest");
         int step = PlayerPrefs.GetInt("QuestStep");

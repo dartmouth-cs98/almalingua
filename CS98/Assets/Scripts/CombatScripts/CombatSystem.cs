@@ -203,6 +203,7 @@ public class CombatSystem : MonoBehaviour
         spellAnimation.SetActive(true);
         yield return new WaitForSeconds(3f);
         spellAnimation.SetActive(false);
+        state = CombatState.PLAYERTURN;
         PlayerTurn();
     }
     IEnumerator EnemyTurn()
@@ -257,7 +258,6 @@ public class CombatSystem : MonoBehaviour
     public void OnAttackButton()
     {
         if (state != CombatState.PLAYERTURN){
-            print("HELLLLLLL");
             return;
         }
            

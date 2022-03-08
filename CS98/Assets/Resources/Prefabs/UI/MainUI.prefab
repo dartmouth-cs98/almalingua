@@ -1987,6 +1987,7 @@ GameObject:
   - component: {fileID: 1814009087733272195}
   - component: {fileID: 3246184316481135907}
   - component: {fileID: 4280065811064975298}
+  - component: {fileID: 2399336803556775275}
   m_Layer: 0
   m_Name: QuestDetails
   m_TagString: Untagged
@@ -2110,6 +2111,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2399336803556775275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142344864827159799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a80141d5ffa45b8b2f1c661adee31f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoveredColor:
+    serializedVersion: 2
+    rgba: 4294924544
+  pressedColor:
+    serializedVersion: 2
+    rgba: 4290183168
+  usedColor:
+    serializedVersion: 2
+    rgba: 4294902015
+  usedHoveredColor:
+    serializedVersion: 2
+    rgba: 4294795005
+  usedPressedColor:
+    serializedVersion: 2
+    rgba: 4291756239
+  DictView: {fileID: 7089191861562377289}
 --- !u!1 &2181896785811973329
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,6 +3791,7 @@ GameObject:
   - component: {fileID: 2497777872992896731}
   - component: {fileID: 6147314638899387136}
   - component: {fileID: 7472755101412169289}
+  - component: {fileID: 6926551269935918317}
   m_Layer: 0
   m_Name: QuestTitle
   m_TagString: Untagged
@@ -3885,6 +3915,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6926551269935918317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6118507312162208700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a80141d5ffa45b8b2f1c661adee31f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoveredColor:
+    serializedVersion: 2
+    rgba: 4294924544
+  pressedColor:
+    serializedVersion: 2
+    rgba: 4290183168
+  usedColor:
+    serializedVersion: 2
+    rgba: 4294902015
+  usedHoveredColor:
+    serializedVersion: 2
+    rgba: 4294795005
+  usedPressedColor:
+    serializedVersion: 2
+    rgba: 4291756239
+  DictView: {fileID: 7089191861562377289}
 --- !u!1 &6886370247154250183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,7 +4629,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7089191863029644957}
         m_TargetAssemblyTypeName: Dictionary, Assembly-CSharp
-        m_MethodName: TurnRight
+        m_MethodName: TurnLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5600,7 +5658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Ingresar texto....
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
   m_sharedMaterial: {fileID: 6149013929262502789, guid: a63d123ced73249d599e594e915b6a8d, type: 2}
