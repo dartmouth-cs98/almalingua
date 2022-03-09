@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     new Vector2((float)-9.3, (float)-20), new Vector2((float)48, (float)-1.4), 
     new Vector2((float)-3.5, (float)16.2), new Vector2((float)-42.4, (float)0.52), new Vector2((float) -9.5, (float)17.8),
     new Vector2((float)-5.04, (float)-19), new Vector2((float)-55, (float)-11.1), 
-    new Vector2((float)-5.75, (float)-0.85)};
+    new Vector2((float)-5.75, (float)-0.85), new Vector2((float)-1.71, (float)-0.05)};
 
     // Use this for initialization
     void Start()
@@ -52,7 +52,9 @@ public class PlayerMove : MonoBehaviour
                 }
             } else if (currentScene == "Forest") {
                 if (prevScene == "Village") {
-                    transform.position = playerPositions[4];
+                    transform.position = playerPositions[4]; 
+                } else if (prevScene == "combatScene") {
+                    transform.position = playerPositions[9];
                 }
             } else if (currentScene == "Ruins") {
                 if (prevScene == "Village") {

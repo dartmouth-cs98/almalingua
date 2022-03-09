@@ -81,8 +81,8 @@
         "ID":   0,
         "definition": "to protect",
         "encountered": false,
-        "questN": 3,
-        "stepN": 5
+        "questN": 2,
+        "stepN": 4
     },
     {
         "w":    "cocinera",
@@ -122,7 +122,7 @@
         "ID":   0,
         "definition": "to scream",
         "encountered": false,
-        "questN": 3,
+        "questN": 2,
         "stepN": 4
     }
 

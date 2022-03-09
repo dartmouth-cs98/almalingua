@@ -44,8 +44,8 @@ public class QuestUI : MonoBehaviour
             questNPC.Add("26", questDetails);
             questDetails = new string[] { "Bruja", "Hable con la bruja", "",null };
             questNPC.Add("27", questDetails);
+            
             questDetails = new string[] { "Maestra", "Hable con la maestra", "La maestra está en el bosque, a la derecha del pueblo." ,null};
-
             questNPC.Add("30", questDetails);
             questDetails = new string[] { "Cesar", "Hable con César", "Vuelve al pueblo y pregúntale al reno César dónde están los niños." ,null};
             questNPC.Add("31", questDetails);
@@ -98,7 +98,7 @@ public class QuestUI : MonoBehaviour
 
             questDetails = new string[] { "Doctor", "Hable con el doctor", "Dale al doctor las flores.",null };
             questNPC.Add("64", questDetails);
-            questDetails = new string[] { "Bruja", "Habla con la bruja", "Habla con la bruja para que te ayude.",null };
+            questDetails = new string[] { "Bruja", "Habla con la bruja", "Habla con la bruja y pregunta por un libro.",null };
             questNPC.Add("65", questDetails);
 
             questDetails = new string[] { "Granjero",  "Hable con el granjero", "Habla con el granjero para conseguir la manzana dorada.",null };
@@ -172,13 +172,13 @@ public class QuestUI : MonoBehaviour
     }
     public void WitchSpeak()
     {
-        GameObject.Find("Witch").GetComponent<NPCInteraction>().StartDialogue();
+        GameObject.Find("Bruja").GetComponent<NPCInteraction>().StartDialogue();
     }
 
     public void GiveSpell()
     {
         Vector2 PlayerPosition = GameObject.Find("/CameraPlayer/PlayerManager/Protagonist").transform.position;
-        Witch = GameObject.Find("Witch");
+        Witch = GameObject.Find("Bruja");
         Witch.transform.position = new Vector2(PlayerPosition.x - 0.5f, PlayerPosition.y);
     }
 
