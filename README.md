@@ -84,7 +84,7 @@ We were never able to 100% figure out why, but sometimes if you stand too close 
 
 ## Authors
 
-Celina Tala, Vivian Tran, Brandon Guzman, Ray Christ, Tim Yang, Sada Nichols-Worley
+Celina Tala, Vivian Tran, Brandon Guzman, Ray Crist, Tim Yang, Sada Nichols-Worley
 
 ## Acknowledgments
 
