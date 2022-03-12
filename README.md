@@ -34,10 +34,22 @@ We used Microsoft's Luis.API for the natural-language processing condcted when u
 
 ### Pixel Art Resources
 
+Much of our art was made ourselves, using:
+
 * Photoshop 
 * Illustrator 
-* Unity Asset Store 
-* Itch.io
+* [Pixel Art Maker](http://pixelartmaker.com/)
+
+We would also like to credit art we used from packs, including:
+
+* FARMLANDIA: BASIC FRUIT PACK (by Helm3t) (from Itch.io) [here](https://helm3t.itch.io/farmlandia-fruit)
+* Rocky Roads by essssam [here](https://essssam.itch.io/rocky-roads)
+* Crafting Materials by beast-pixels [here](https://beast-pixels.itch.io/crafting-materials)
+* Farm Fun by strelllka [here](https://strelllka.itch.io/farm-fun-rpg-asset-pack)
+* pixelfood by ghostpixxells [here](https://ghostpixxells.itch.io/pixelfood)
+* 4000+ Simple Icon Pixel Pack by sum studio [here](https://assetstore.unity.com/packages/2d/textures-materials/4000-simple-pixel-icon-pack-137666)
+* Modern Interiors by limezu [here](https://limezu.itch.io/moderninteriors)
+* Pixel Item by henrysoftware [here](https://henrysoftware.itch.io/pixel-item)
 
 ## Setup
 
