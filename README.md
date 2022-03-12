@@ -1,11 +1,10 @@
-# Lingo Defense
+# Alma Lingua
 
 <img src="https://github.co/dartmouth-cs98/21f-lingo-defense/blob/main/Images/Team_Photo.png" alt="Team_Photo" width="700"/>
 
-Lingo Defense is a RPG focused on learning Spanish. There will be a "quest" aspect and also a combative one. It takes place in a fantasy world, where an outsider gets stuck in another realm and must complete tasks with the villagers in order to return home. 
+AlmaLingua is a RPG focused on practicing Spanish. There will be a "quest" aspect and also a combative one. It takes place in a fantasy world, where an outsider gets stuck in another realm and must complete tasks with the villagers in order to return home. 
 
 ## Architecture
-* Linguatools: Looks up a word in a spanish collocation database with the top spanish collocations and returns
 * Luis.API: A basic intent-classification API, which allows us to ingest user input to NPCs and return a predicted user input.
 
 Design
