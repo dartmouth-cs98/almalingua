@@ -84,6 +84,10 @@ Assuming that you have set-up Unity correctly, you should be able to deploy by s
 
 We were never able to 100% figure out why, but sometimes if you stand too close to the wand-frozen-in-ice at the end of step 1, you can't actually pick up your wand. This has to do with the ice-melting Unity event -- if we'd had more time, we could've added a collider to keep users from getting too close.
 
+The link-to-dictionary feature doesn't work in the Quest UI for some reason, but it does for the dialogue.
+
+The dictionary UI behavior will go wonky if you flip past the beginning or end of the pages. 
+
 ## Authors
 
 Celina Tala, Vivian Tran, Brandon Guzman, Ray Crist, Tim Yang, Sada Nichols-Worley
