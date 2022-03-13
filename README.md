@@ -4,7 +4,9 @@
 
 Almalingua is a role-player game focused on practicing Spanish. Users enter the world of Almalingua as a wizard stuck in the wrong dimension. Our wizard must practice an familiar language and help out the village's inhabitants in order to learn the spell to go home.  
 
-Almalingua is a proof-of-concept for a style of language-learning gameplay which emphasizes roleplaying and language expsoure rather than memorization or grammar. We did this based on our research into [language-learning games](https://github.com/dartmouth-cs98/almalingua/wiki/State-Of-The-Art-Research) and [language curriculum design](https://github.com/dartmouth-cs98/almalingua/wiki/Language-Curriculum-Design), which emphasized these characteristics.
+Almalingua is a proof-of-concept for a style of language-learning gameplay which emphasizes roleplaying and language expsoure rather than memorization or grammar. We did this based on our research into [language-learning games](https://github.com/dartmouth-cs98/almalingua/wiki/State-Of-The-Art-Research) and [language curriculum design](https://github.com/dartmouth-cs98/almalingua/wiki/Language-Curriculum-Design), which emphasized these characteristics. Gameplay lasts roughly 30 minutes.
+
+Almalingua was our culminating project for the Computer Science Major at Dartmouth College.
 
 ## Architecture
 
