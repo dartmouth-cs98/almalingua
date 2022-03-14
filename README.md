@@ -1,6 +1,6 @@
 # Almalingua
 
-<img src="https://github.com/dartmouth-cs98/21f-lingo-defense/blob/main/Images/Team_Photo.png" alt="Team_Photo" width="1000"/>
+<img src="https://github.com/dartmouth-cs98/21f-lingo-defense/blob/main/Images/Team_Photo.png" alt="Team_Photo" width="700"/>
 
 Almalingua is a role-player game focused on practicing Spanish. Users enter the world of Almalingua as a wizard stuck in the wrong dimension. Our wizard must practice an familiar language and help out the village's inhabitants in order to learn the spell to go home.  
 
@@ -36,7 +36,7 @@ We used Microsoft's Luis.API for the natural-language processing condcted when u
 
 ### Design
 
-<img src="https://github.com/dartmouth-cs98/almalingua/blob/main/Images/Village_Scene.png" alt="Village_Scene" width="700"/>
+<img src="https://github.com/dartmouth-cs98/almalingua/blob/main/Images/Village_Scene.png" alt="Village_Scene" width="1000"/>
 
 We chose the pixel art style for our design, partially due to the relative ease to create our own art with pixel art, and partially due to our inspiration we get from successful retro-style games like Stardew Valley and Undertale. We want to recreate a visually appealing, relaxing environment in which the player gets to not only learn about and discover a new world but also learn a new language.
 
