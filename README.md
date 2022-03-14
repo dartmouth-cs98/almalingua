@@ -34,12 +34,17 @@ We used Microsoft's Luis.API for the natural-language processing condcted when u
 <img width="700" alt="Screen Shot 2022-03-12 at 4 49 58 PM" src="https://user-images.githubusercontent.com/75859468/158036320-d1f6ad8f-42ca-44fb-bebb-81e85fdcfd5d.png">
 (Screenshots of our Luis set-up).
 
-### Pixel Art Resources
+### Design
+
+We chose the pixel art style for our design, partially due to the relative ease to create our own art with pixel art, and partially due to our inspiration we get from successful retro-style games like Stardew Valley and Undertale. We want to recreate a visually appealing, relaxing environment in which the player gets to not only learn about and discover a new world but also learn a new language.
+
+#### Pixel Art Resources
 
 Much of our art was made ourselves, using:
 
 * Photoshop 
 * Illustrator 
+* Asesprite
 * [Pixel Art Maker](http://pixelartmaker.com/)
 
 We would also like to credit art we used from packs, including:
@@ -52,6 +57,14 @@ We would also like to credit art we used from packs, including:
 * 4000+ Simple Icon Pixel Pack by sum studio [here](https://assetstore.unity.com/packages/2d/textures-materials/4000-simple-pixel-icon-pack-137666)
 * Modern Interiors by limezu [here](https://limezu.itch.io/moderninteriors)
 * Pixel Item by henrysoftware [here](https://henrysoftware.itch.io/pixel-item)
+* Pixel Art Top Down by cainos [here](https://cainos.itch.io/pixel-art-top-down-basic)
+* Cozy Fishing Pack by shubibubi [here](https://shubibubi.itch.io/cozy-fishing)
+* Cozy Farm Pack by shubibubi [here](https://shubibubi.itch.io/cozy-farm)
+* Many other pixel art from here by multiple artists [here](https://itch.io/search?q=pixel+art+magic)
+
+#### Music Credit
+
+We would like to credit the music we used for the different scenes, all of our music is sourced from Epidemic Sound. [here](https://www.epidemicsound.com/music/search/?term=adventure%20forest)
 
 ## Setup
 
