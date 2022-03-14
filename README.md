@@ -1,6 +1,6 @@
 # Almalingua
 
-<img src="https://github.com/dartmouth-cs98/21f-lingo-defense/blob/main/Images/Team_Photo.png" alt="Team_Photo" width="700"/>
+<img src="https://github.com/dartmouth-cs98/21f-lingo-defense/blob/main/Images/Team_Photo.png" alt="Team_Photo" width="1000"/>
 
 Almalingua is a role-player game focused on practicing Spanish. Users enter the world of Almalingua as a wizard stuck in the wrong dimension. Our wizard must practice an familiar language and help out the village's inhabitants in order to learn the spell to go home.  
 
